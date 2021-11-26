@@ -5,12 +5,15 @@ using UnityEngine;
 public class PieceDrop : MonoBehaviour
 {
     [SerializeField] private KeyCode dropKey;
+    [SerializeField] private GameObject projection;
+
+    public const float SNAP_THRESHOLD = 0.15f;
 
     private PieceMove move;
 
     private SpriteRenderer sprite;
 
-    public float rightDistance, leftDistance, centerDistance;
+    private float rightDistance, leftDistance, centerDistance;
 
     private Vector2 targetPos;
 
@@ -18,7 +21,7 @@ public class PieceDrop : MonoBehaviour
 
     private bool put;
 
-    [SerializeField] private Transform projection;
+    private Transform neighbour;
 
     private void Awake()
     {
@@ -63,6 +66,7 @@ public class PieceDrop : MonoBehaviour
             Debug.DrawRay(transform.position, Vector2.down * 15f, Color.red);
             targetPos = centerHit.point + new Vector2(0, sprite.bounds.size.y / 2);
             projection.transform.position = new Vector3(transform.position.x, centerHit.point.y + sprite.bounds.size.y / 2);
+            neighbour = centerHit.transform;
         }
         else 
         {
@@ -72,6 +76,7 @@ public class PieceDrop : MonoBehaviour
                 //Colisiona izquierda
                 targetPos = leftHit.point + new Vector2(sprite.bounds.size.x / 2, sprite.bounds.size.y / 2);
                 projection.transform.position = new Vector3(transform.position.x, leftHit.point.y + sprite.bounds.size.y / 2);
+                neighbour = leftHit.transform;
             }
             else if(leftDistance > rightDistance)
             {
@@ -79,6 +84,7 @@ public class PieceDrop : MonoBehaviour
                 //Colisiona derecha
                 targetPos = rightHit.point + new Vector2(-sprite.bounds.size.x / 2, sprite.bounds.size.y / 2);
                 projection.transform.position = new Vector3(transform.position.x, rightHit.point.y + sprite.bounds.size.y / 2);
+                neighbour = rightHit.transform;
             }
         }
     }
@@ -86,21 +92,20 @@ public class PieceDrop : MonoBehaviour
     void DropPiece()
     {
         put = true;
+        projection.SetActive(false);
         move.enabled = false;
         transform.position = targetPos;
+        CheckSnap();
         rb.constraints = RigidbodyConstraints2D.None;
     }
 
-    #region GIZMOS
-
-    private void OnDrawGizmosSelected()
+    void CheckSnap()
     {
-        /*Gizmos.color = Color.yellow;
-        Gizmos.DrawRay(transform.position, Vector2.down * 15f);
-        Gizmos.DrawRay(transform.position - new Vector3(sprite.bounds.size.x / 2, 0), Vector2.down * 15f);
-        Gizmos.DrawRay(transform.position + new Vector3(sprite.bounds.size.x / 2, 0), Vector2.down * 15f);
-        */
+        var dist = transform.position.x - neighbour.transform.position.x;
+        if(Mathf.Abs(dist) <= SNAP_THRESHOLD)
+        {
+            transform.position = new Vector3(neighbour.transform.position.x, transform.position.y);
+            Debug.Log("Snap");
+        }
     }
-
-    #endregion
 }
