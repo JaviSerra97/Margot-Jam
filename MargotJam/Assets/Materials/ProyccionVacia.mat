@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ProyccionVacia
+  m_Shader: {fileID: -6465566751694194690, guid: 380e46cb020aa294eb5ed0a6da8d870f, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 4c613ae0b309ef64ba7dd1d24eccca49, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_b73fc366b5064f6eac4e672072318db7_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 9f1a6b428ea32f24a98025f0b3e1bff5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_1e4bdb93612c47a5b8ac44431e2f6018: 14.07
+    - Vector1_7ad8321686c04438a4e57a5666bb7ca9: -4.7
+    - Vector1_bfb022d1a7c04e24a8f64a84a3139a10: 300
+    - Vector1_c89c537a149442ffb82dc3c17d06d228: 0.008
+    m_Colors:
+    - Vector2_059d81cb453643efb202fa04bbb83879: {r: 20, g: 20, b: 0, a: 0}
+    - _Color: {r: 1, g: 0.19713613, b: 0, a: 0.3254902}
+  m_BuildTextureStacks: []
