@@ -15,11 +15,13 @@ MonoBehaviour:
   sequences:
   - id: First
     listOfPieces:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
+    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
   - id: Second
     listOfPieces:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
+    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
+    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
+  - id: Third
+    listOfPieces:
+    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}

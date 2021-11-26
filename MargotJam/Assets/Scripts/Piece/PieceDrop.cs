@@ -23,11 +23,14 @@ public class PieceDrop : MonoBehaviour
 
     private Transform neighbour;
 
+    private PiecesManager manager;
+
     private void Awake()
     {
         move = GetComponent<PieceMove>();
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        manager = GameObject.FindObjectOfType<PiecesManager>();
     }
 
     private void Update()
@@ -92,11 +95,15 @@ public class PieceDrop : MonoBehaviour
     void DropPiece()
     {
         put = true;
+
         projection.SetActive(false);
         move.enabled = false;
+
         transform.position = targetPos;
         CheckSnap();
         rb.constraints = RigidbodyConstraints2D.None;
+
+        manager.CreateNextPiece();
     }
 
     void CheckSnap()
