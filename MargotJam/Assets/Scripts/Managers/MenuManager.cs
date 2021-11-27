@@ -7,14 +7,16 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+    [SerializeField] private Image fadeScreen;
+
     [Header("Buttons")]
     [SerializeField] private CanvasGroup buttonsCanvasGroup;
     [SerializeField] private float fallDuration = 0.5f;
     [SerializeField] private float startYPos;
-    [SerializeField] private Button playButton;
-    private float playButtonPos;
-    [SerializeField] private Button tutorialButton;
-    private float tutorialButtonPos;
+    [SerializeField] private GameObject mainButtons;
+    private float mainButtonsPos;
+    [SerializeField] private GameObject logoImage;
+    private float logoImagePos;
     [SerializeField] private Button exitButton;
     private float exitButtonPos;
     [SerializeField] private Button audioButton;
@@ -32,11 +34,11 @@ public class MenuManager : MonoBehaviour
 
     private void Awake()
     {
-        playButtonPos = playButton.transform.position.y;
-        playButton.transform.position += new Vector3(0, startYPos, 0);
+        mainButtonsPos = mainButtons.transform.position.y;
+        mainButtons.transform.position += new Vector3(0, startYPos, 0);
 
-        tutorialButtonPos = tutorialButton.transform.position.y;
-        tutorialButton.transform.position += new Vector3(0, startYPos, 0);
+        logoImagePos = logoImage.transform.position.y;
+        logoImage.transform.position += new Vector3(0, startYPos, 0);
 
         exitButtonPos = exitButton.transform.position.y;
         exitButton.transform.position += new Vector3(0, startYPos, 0);
@@ -48,6 +50,11 @@ public class MenuManager : MonoBehaviour
         creditsButton.transform.position += new Vector3(0, startYPos, 0);
 
         creditsPanel.transform.localScale = Vector3.zero;
+    }
+
+    private void Start()
+    {
+        Invoke(nameof(ShowButtons), 2);
     }
 
     private void Update()
@@ -67,26 +74,22 @@ public class MenuManager : MonoBehaviour
 
     }
 
-    [ContextMenu("Fall")]
     public void ShowButtons()
     {
         Sequence seq = DOTween.Sequence();
 
-        //Caer audio, creditos, tuto
-        seq.Append(audioButton.transform.DOMoveY(audioButtonPos, fallDuration).SetEase(Ease.InQuad));
+        //Fade + Caer jugar, tuto, creditos
+        seq.Append(fadeScreen.DOFade(0.5f, 0.5f));
         seq.Join(creditsButton.transform.DOMoveY(creditsButtonPos, fallDuration).SetEase(Ease.InQuad));
-        seq.Join(tutorialButton.transform.DOMoveY(tutorialButtonPos, fallDuration).SetEase(Ease.InQuad));
+        seq.Join(mainButtons.transform.DOMoveY(mainButtonsPos, fallDuration).SetEase(Ease.InQuad));
             
-        //Caer jugar
-        seq.Append(playButton.transform.DOMoveY(playButtonPos, fallDuration).SetEase(Ease.InQuad));
 
-        //Caer titulo 1
-        //seq.Append
-
-        //Caer titulo 2
-
-        //Caer salir
+        //Caer audio, salir
         seq.Append(exitButton.transform.DOMoveY(exitButtonPos, fallDuration).SetEase(Ease.InQuad));
+        seq.Join(audioButton.transform.DOMoveY(audioButtonPos, fallDuration).SetEase(Ease.InQuad));
+
+        //Caer logo
+        seq.Append(logoImage.transform.DOMoveY(logoImagePos, fallDuration).SetEase(Ease.InQuad));
 
         seq.Play();
     }
