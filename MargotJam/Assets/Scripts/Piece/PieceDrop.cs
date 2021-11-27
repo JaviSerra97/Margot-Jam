@@ -122,6 +122,8 @@ public class PieceDrop : MonoBehaviour
         rb.constraints = RigidbodyConstraints2D.None;
 
         manager.CreateNextPiece();
+
+        manager.CheckMaxHeight(transform.position.y + sprite.bounds.size.y / 2);
     }
 
     void CheckSnap()
