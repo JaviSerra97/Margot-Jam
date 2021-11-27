@@ -17,10 +17,133 @@ MonoBehaviour:
   buildLogLevel: 2
   m_krilloudInDebugMode: 0
   placeholderContract:
-    tags: []
-    variables: []
+    tags:
+    - press_button
+    - hover_button
+    - main_ost
+    - bg_sfx
+    - game_ost
+    - limits_sfx
+    - multiplier_sfx
+    - fail_sfx
+    - counter_sfx
+    - touch_sfx
+    - perfect_sfx
+    - final_ost
+    variables:
+    - VolumeGeneral
+    - MusicGeneral
+    - SFXGeneral
   cacheContract:
-    tags: []
-    variables: []
+    tags:
+    - name: press_button
+      description: 
+      is3D: 0
+      max3DDistance: 0
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: hover_button
+      description: 
+      is3D: 0
+      max3DDistance: 0
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: main_ost
+      description: 
+      is3D: 0
+      max3DDistance: 0
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: bg_sfx
+      description: 
+      is3D: 0
+      max3DDistance: 0
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: game_ost
+      description: 
+      is3D: 0
+      max3DDistance: 0
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: limits_sfx
+      description: 
+      is3D: 0
+      max3DDistance: 0
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: multiplier_sfx
+      description: 
+      is3D: 0
+      max3DDistance: 0
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: fail_sfx
+      description: 
+      is3D: 0
+      max3DDistance: 0
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: counter_sfx
+      description: 
+      is3D: 0
+      max3DDistance: 0
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: touch_sfx
+      description: 
+      is3D: 0
+      max3DDistance: 0
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: perfect_sfx
+      description: 
+      is3D: 0
+      max3DDistance: 0
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: final_ost
+      description: 
+      is3D: 0
+      max3DDistance: 0
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    variables:
+    - name: VolumeGeneral
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 0
+      sourceContract: 2
+    - name: MusicGeneral
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 0
+      sourceContract: 2
+    - name: SFXGeneral
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 0
+      sourceContract: 2
     soundbank_files: []
     channels: []
