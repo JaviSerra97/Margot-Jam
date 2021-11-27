@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class DoTweenStartingManquita : MonoBehaviour
+public class DoTweenEndingManquita : MonoBehaviour
 {
     private float _dotweenDur = 0.85f;
 
