@@ -151,7 +151,7 @@ public class PieceDrop : MonoBehaviour
         {
             if (leftHit.collider.gameObject == LeftNeighbour)
             {
-                ScoreManager.Instance.AddPoints(500);
+                ScoreManager.Instance.AddPoints(500, transform.position);
             }
         }
 
@@ -159,7 +159,7 @@ public class PieceDrop : MonoBehaviour
         {
             if(centerHit.collider.gameObject == DownNeighbour)
             {
-                ScoreManager.Instance.AddPoints(500);
+                ScoreManager.Instance.AddPoints(500, transform.position);
             }
         }
 
@@ -167,7 +167,7 @@ public class PieceDrop : MonoBehaviour
         {
             if(rightHit.collider.gameObject == RightNeighbour)
             {
-                ScoreManager.Instance.AddPoints(500);
+                ScoreManager.Instance.AddPoints(500, transform.position);
             }
         }
     }

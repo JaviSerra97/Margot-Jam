@@ -12,6 +12,9 @@ public class ScoreManager : MonoBehaviour
     public GameObject FinalScorePanel;
     public GameObject Record;
 
+    public GameObject scoreTextPrefab;
+    public Vector3 scorePoint;
+
     private const int ScoreForPerfect = 2000;
 
     private int _score;
@@ -28,35 +31,43 @@ public class ScoreManager : MonoBehaviour
         _score = 0;
         _multiplier = 1;
 
-        UpdateUI();
+        UpdateUI(null);
     }
 
-    public void PerfectPlacementScore()
+    public void PerfectPlacementScore(Vector3 pos)
     {
-        AddPoints(ScoreForPerfect);
+        AddPoints(ScoreForPerfect, pos);
     }
 
     public void SetMultiplier(int difficult)
     {
         _multiplier = (int) Mathf.Pow(2, difficult +1);
-        UpdateUI();
+        UpdateUI(null);
     }
 
-    public void AddPoints(int points)
+    public void AddPoints(int points, Vector3 pos)
     {
-        _score += points * _multiplier;
-        UpdateUI();
+        var p = points * _multiplier;
+        _score += p;
+
+        //Instanciar texto con puntuacion
+        var t = Instantiate(scoreTextPrefab, pos, Quaternion.identity);
+        //Tween del texto
+
+        //UpdateUI();
     }
 
-    private void UpdateUI()
+    private void UpdateUI(GameObject text)
     {
         ScoreText.text = _score.ToString();
         MultiplierText.text = "x" + _multiplier;
+
+        if (text) { Destroy(text); }
     }
 
     public int GetFinalScore()
     {
-        UpdateUI();
+        UpdateUI(null);
         MultiplierText.transform.parent.gameObject.SetActive(false);
         FinalScorePanel.SetActive(true);
         Record.SetActive(false);
