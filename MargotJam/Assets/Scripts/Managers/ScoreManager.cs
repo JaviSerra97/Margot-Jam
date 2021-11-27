@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DG.Tweening;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -13,7 +14,11 @@ public class ScoreManager : MonoBehaviour
     public GameObject Record;
 
     public GameObject scoreTextPrefab;
-    public Vector3 scorePoint;
+    public Transform scorePoint;
+    public float scaleDuration;
+    public float moveDuration;
+
+    public GameObject canvas;
 
     private const int ScoreForPerfect = 2000;
 
@@ -31,7 +36,8 @@ public class ScoreManager : MonoBehaviour
         _score = 0;
         _multiplier = 1;
 
-        UpdateUI(null);
+        UpdateUI();
+        UpdateMultiplier();
     }
 
     public void PerfectPlacementScore(Vector3 pos)
@@ -42,7 +48,7 @@ public class ScoreManager : MonoBehaviour
     public void SetMultiplier(int difficult)
     {
         _multiplier = (int) Mathf.Pow(2, difficult +1);
-        UpdateUI(null);
+        UpdateMultiplier();
     }
 
     public void AddPoints(int points, Vector3 pos)
@@ -51,23 +57,33 @@ public class ScoreManager : MonoBehaviour
         _score += p;
 
         //Instanciar texto con puntuacion
-        var t = Instantiate(scoreTextPrefab, pos, Quaternion.identity);
+        var t = Instantiate(scoreTextPrefab, Camera.main.WorldToScreenPoint(pos), Quaternion.identity, canvas.transform);
+        t.GetComponent<TMP_Text>().text = p.ToString();
+
         //Tween del texto
+        Sequence seq = DOTween.Sequence();
+        seq.Append(t.transform.DOScale(1, scaleDuration).SetEase(Ease.InQuad));
+        seq.Append(t.transform.DOMove(scorePoint.position, moveDuration).SetEase(Ease.OutQuad));
+        seq.OnComplete(UpdateUI);
+
+        Destroy(t, scaleDuration + moveDuration + 0.1f);
 
         //UpdateUI();
     }
 
-    private void UpdateUI(GameObject text)
+    private void UpdateUI()
     {
         ScoreText.text = _score.ToString();
-        MultiplierText.text = "x" + _multiplier;
+    }
 
-        if (text) { Destroy(text); }
+    void UpdateMultiplier()
+    {
+        MultiplierText.text = "x" + _multiplier;
     }
 
     public int GetFinalScore()
     {
-        UpdateUI(null);
+        UpdateUI();
         MultiplierText.transform.parent.gameObject.SetActive(false);
         FinalScorePanel.SetActive(true);
         Record.SetActive(false);

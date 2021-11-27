@@ -1007,6 +1007,10 @@ MonoBehaviour:
   MultiplierText: {fileID: 1169194917}
   FinalScorePanel: {fileID: 1786356713}
   Record: {fileID: 133614375}
+  scoreTextPrefab: {fileID: 6520088487010268886, guid: c66c7da896d6fd94c976a15a6bfe7ba0, type: 3}
+  scorePoint: {fileID: 254657936}
+  scaleDuration: 0.15
+  moveDuration: 0.25
 --- !u!1 &746984803
 GameObject:
   m_ObjectHideFlags: 0
