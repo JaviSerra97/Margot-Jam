@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 7725091805010857973}
   - component: {fileID: 7725091805010857931}
   - component: {fileID: 7725091805010857930}
+  - component: {fileID: 6237542183825048019}
+  - component: {fileID: -2652991695759024854}
   m_Layer: 0
   m_Name: Piece
   m_TagString: Piece
@@ -99,7 +101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39703f2aae74d0498351e9f838d7fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
 --- !u!114 &7725091805010857973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropKey: 32
   projection: {fileID: 7725091805826103252}
-  manager: {fileID: 0}
+  tweenDuration: 0.25
 --- !u!61 &7725091805010857931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -162,6 +163,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 2
+--- !u!114 &6237542183825048019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725091805010857935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca36c690dacad5b449503bd14a590635, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceShape: 0
+  sphereShapeRadius: 1
+  lineShapeStart: {x: -0, y: -0, z: -1}
+  lineShapeEnd: {x: 0, y: 0, z: 1}
+  areaShapeSize: {x: 1, y: 1, z: 1}
+  playOnAwake: 0
+  m_tags: []
+--- !u!114 &-2652991695759024854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725091805010857935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90bf54d12eb4b344abab2030e47ba7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7725091805826103252
 GameObject:
   m_ObjectHideFlags: 0

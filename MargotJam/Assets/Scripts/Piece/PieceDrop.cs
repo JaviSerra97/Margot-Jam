@@ -10,7 +10,7 @@ public class PieceDrop : MonoBehaviour
 
     [SerializeField] private float tweenDuration = 0.25f;
 
-    public const float SNAP_THRESHOLD = 0.15f;
+    public static float SNAP_THRESHOLD = 0.15f;
 
     private PieceMove move;
 
@@ -124,6 +124,11 @@ public class PieceDrop : MonoBehaviour
             transform.position = new Vector3(neighbour.transform.position.x, transform.position.y);
             Debug.Log("Snap");
             VFXManager.Instance.PerfectVFX(transform.position - new Vector3(0, sprite.bounds.size.y / 2));
+            DifficultManager.Instance.PerfectPlacement();
+        }
+        else
+        {
+            DifficultManager.Instance.Fail();
         }
     }
 }
