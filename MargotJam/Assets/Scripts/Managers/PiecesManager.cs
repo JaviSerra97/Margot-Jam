@@ -44,7 +44,11 @@ public class PiecesManager : MonoBehaviour
             pieceIndex = 0;
             CreateNextPiece();
         }
-        else { Debug.Log("Ya"); }
+        else 
+        { 
+            Debug.Log("Ya");
+            ScoreManager.Instance.GetFinalScore();
+        }
     }
 
     void ShufflePieces()
