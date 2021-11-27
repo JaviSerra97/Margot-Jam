@@ -45,6 +45,7 @@ public class DifficultManager : MonoBehaviour
             _difficult = 0;
 
         EvaluateDifficult();
+        SendScore(true);
     }
 
     public void Fail()
@@ -63,6 +64,7 @@ public class DifficultManager : MonoBehaviour
         }
 
         EvaluateDifficult();
+        SendScore(false);
     }
 
     private void EvaluateDifficult()
@@ -87,5 +89,22 @@ public class DifficultManager : MonoBehaviour
             PieceDrop.SNAP_THRESHOLD = SnapHard;
         }
 
+        
+    }
+
+    private void SendScore(bool perfect)
+    {
+        if(perfect)
+        {
+            ScoreManager.Instance.PerfectPlacementScore();
+            ScoreManager.Instance.SetMultiplier(_difficult);
+        }
+        else
+        {
+            if (_difficult == 0 && _failsInEasy > 0)
+                ScoreManager.Instance.SetMultiplier(-1);
+            else
+                ScoreManager.Instance.SetMultiplier(_difficult);
+        }
     }
 }
