@@ -102,11 +102,14 @@ public class PieceDrop : MonoBehaviour
         projection.SetActive(false);
         move.enabled = false;
 
-        transform.DOMove(targetPos, tweenDuration).SetEase(Ease.InQuad).OnComplete(OnPieceDropped).Play();        
+        transform.DOMove(targetPos, tweenDuration).SetEase(Ease.InQuad).OnComplete(OnPieceDropped).Play();
+        VFXManager.Instance.FallingVFX(transform);
     }
 
     void OnPieceDropped()
     {
+        VFXManager.Instance.DustVFX(transform.position - new Vector3(0, sprite.bounds.size.y / 2));
+
         CheckSnap();
         rb.constraints = RigidbodyConstraints2D.None;
 
@@ -120,6 +123,7 @@ public class PieceDrop : MonoBehaviour
         {
             transform.position = new Vector3(neighbour.transform.position.x, transform.position.y);
             Debug.Log("Snap");
+            VFXManager.Instance.PerfectVFX(transform.position - new Vector3(0, sprite.bounds.size.y / 2));
         }
     }
 }
