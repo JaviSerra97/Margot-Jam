@@ -1667,6 +1667,7 @@ MonoBehaviour:
   scorePoint: {fileID: 254657936}
   scaleDuration: 0.15
   moveDuration: 0.25
+  canvas: {fileID: 58634292}
 --- !u!1 &746984803
 GameObject:
   m_ObjectHideFlags: 0
