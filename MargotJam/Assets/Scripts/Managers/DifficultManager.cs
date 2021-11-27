@@ -24,7 +24,7 @@ public class DifficultManager : MonoBehaviour
     private int _failsInEasy;
     private int _streak;
 
-    private Vector3 _lastPos;
+    private Vector3 _lastPos = new Vector3(0,0,0);
     private void Awake()
     {
         Instance = this;
