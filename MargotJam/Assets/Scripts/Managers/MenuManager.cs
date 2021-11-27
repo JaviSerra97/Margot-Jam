@@ -7,7 +7,8 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
-    [Header("Fade buttons")]
+    [Header("Buttons")]
+    [SerializeField] private CanvasGroup buttonsCanvasGroup;
     [SerializeField] private float fallDuration = 0.5f;
     [SerializeField] private float startYPos;
     [SerializeField] private Button playButton;
@@ -20,9 +21,6 @@ public class MenuManager : MonoBehaviour
     private float audioButtonPos;
     [SerializeField] private Button creditsButton;
     private float creditsButtonPos;
-
-    [Space()]
-    [SerializeField] private CanvasGroup buttonsCanvasGroup;
 
     [Header("Credits")]
     [SerializeField] private GameObject creditsPanel;
