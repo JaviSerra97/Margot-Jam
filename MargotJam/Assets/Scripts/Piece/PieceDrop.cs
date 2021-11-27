@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class PieceDrop : MonoBehaviour
 {
     [SerializeField] private KeyCode dropKey;
     [SerializeField] private GameObject projection;
+
+    [SerializeField] private float tweenDuration = 0.25f;
 
     public const float SNAP_THRESHOLD = 0.15f;
 
@@ -99,7 +102,11 @@ public class PieceDrop : MonoBehaviour
         projection.SetActive(false);
         move.enabled = false;
 
-        transform.position = targetPos;
+        transform.DOMove(targetPos, tweenDuration).SetEase(Ease.InQuad).OnComplete(OnPieceDropped).Play();        
+    }
+
+    void OnPieceDropped()
+    {
         CheckSnap();
         rb.constraints = RigidbodyConstraints2D.None;
 
