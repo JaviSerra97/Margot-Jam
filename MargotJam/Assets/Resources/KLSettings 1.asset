@@ -20,7 +20,14 @@ MonoBehaviour:
     tags: []
     variables: []
   cacheContract:
-    tags: []
+    tags:
+    - name: NewTag
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
     variables: []
     soundbank_files: []
     channels: []

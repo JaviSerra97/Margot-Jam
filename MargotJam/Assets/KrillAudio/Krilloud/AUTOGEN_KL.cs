@@ -6,6 +6,13 @@ namespace KrillAudio.Krilloud
 	{
 		public class Tags
 		{
+			/// <summary>
+			/// Tag: NewTag
+			/// 2D
+			/// </summary>
+			[System.Obsolete("Cache")]
+			public const string NewTag = "NewTag";
+
 		}
 
 		public class Variables
