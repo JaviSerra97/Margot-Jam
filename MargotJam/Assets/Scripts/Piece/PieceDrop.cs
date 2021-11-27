@@ -15,6 +15,11 @@ public class PieceDrop : MonoBehaviour
 
     public static float SNAP_THRESHOLD = 0.15f;
 
+    public GameObject LeftNeighbour;
+    public GameObject DownNeighbour;
+    public GameObject RightNeighbour;
+
+
     private PieceMove move;
 
     private SpriteRenderer sprite;
@@ -127,11 +132,43 @@ public class PieceDrop : MonoBehaviour
             transform.position = new Vector3(neighbour.transform.position.x, transform.position.y);
             Debug.Log("Snap");
             VFXManager.Instance.PerfectVFX(transform.position - new Vector3(0, sprite.bounds.size.y / 2));
-            DifficultManager.Instance.PerfectPlacement();
+            DifficultManager.Instance.PerfectPlacement(transform.position);
+            CheckNeighbours();
         }
         else
         {
             DifficultManager.Instance.Fail();
+        }
+    }
+
+    void CheckNeighbours()
+    {
+        RaycastHit2D centerHit = Physics2D.Raycast(transform.position + new Vector3(0, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, Mathf.Infinity);
+        RaycastHit2D rightHit = Physics2D.Raycast(transform.position + new Vector3(sprite.bounds.size.x / 2, 0), Vector2.right, Mathf.Infinity);
+        RaycastHit2D leftHit = Physics2D.Raycast(transform.position + new Vector3(-sprite.bounds.size.x / 2, 0), Vector2.left, Mathf.Infinity);
+
+        if(LeftNeighbour)
+        {
+            if (leftHit.collider.gameObject == LeftNeighbour)
+            {
+                ScoreManager.Instance.AddPoints(500);
+            }
+        }
+
+        if(DownNeighbour)
+        {
+            if(centerHit.collider.gameObject == DownNeighbour)
+            {
+                ScoreManager.Instance.AddPoints(500);
+            }
+        }
+
+        if(RightNeighbour)
+        {
+            if(rightHit.collider.gameObject == RightNeighbour)
+            {
+                ScoreManager.Instance.AddPoints(500);
+            }
         }
     }
 }

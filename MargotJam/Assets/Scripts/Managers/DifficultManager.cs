@@ -24,6 +24,7 @@ public class DifficultManager : MonoBehaviour
     private int _failsInEasy;
     private int _streak;
 
+    private Vector3 _lastPos;
     private void Awake()
     {
         Instance = this;
@@ -31,9 +32,12 @@ public class DifficultManager : MonoBehaviour
         _failsInEasy = 0;
     }
 
-    public void PerfectPlacement()
+    public void PerfectPlacement(Vector3 pos)
     {
+        _lastPos = pos;
+
         _streak++;
+
         if (_failsInEasy > 0)
             _failsInEasy--;
 
@@ -96,7 +100,7 @@ public class DifficultManager : MonoBehaviour
     {
         if(perfect)
         {
-            ScoreManager.Instance.PerfectPlacementScore();
+            ScoreManager.Instance.PerfectPlacementScore(_lastPos);
             ScoreManager.Instance.SetMultiplier(_difficult);
         }
         else
