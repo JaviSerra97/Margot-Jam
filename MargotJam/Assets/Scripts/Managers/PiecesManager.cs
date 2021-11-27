@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static PiecesSequence;
 
 public class PiecesManager : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class PiecesManager : MonoBehaviour
     [SerializeField] private Transform spawnPoint;
     private PiecesSequence chosenSequence;
 
-    private int sequenceIndex = 0;
+    private int sequenceIndex, pieceIndex = 0;
 
     private void Start()
     {
@@ -21,25 +22,51 @@ public class PiecesManager : MonoBehaviour
         chosenSequence = sequences[rand];
         Debug.Log(chosenSequence.name);
 
-        CreateNextPiece(); //Iniciar el juego
+        ShufflePieces();
     }
 
     public void CreateNextPiece()
     {
-        var p = Instantiate(chosenSequence.sequences[GetCurrentSequence()].listOfPieces[0], spawnPoint.position, spawnPoint.rotation);
-        chosenSequence.sequences[sequenceIndex].listOfPieces.Remove(p);
+        if(pieceIndex < chosenSequence.sequences[sequenceIndex].listOfPieces.Count)
+        {
+            Instantiate(chosenSequence.sequences[sequenceIndex].listOfPieces[pieceIndex], spawnPoint.position, spawnPoint.rotation);
+            pieceIndex++;
+        }
+        else { CheckSequences(); }
     }
 
 
-    int GetCurrentSequence()
+    void CheckSequences()
     {
-        if(chosenSequence.sequences[sequenceIndex].listOfPieces.Count > 0 &&
-            sequenceIndex < chosenSequence.sequences.Count - 1)
+        if(sequenceIndex < chosenSequence.sequences.Count - 1)
         {
             sequenceIndex++;
+            pieceIndex = 0;
+            CreateNextPiece();
+        }
+        else { Debug.Log("Ya"); }
+    }
+
+    void ShufflePieces()
+    {
+        for (int i = 0; i < chosenSequence.sequences.Count; i++)
+        {
+            if (chosenSequence.sequences[i].doShuffle)
+            {
+                var count = chosenSequence.sequences[i].listOfPieces.Count;
+
+                for (int j = 0; j < count; j++)
+                {
+                    int rand = Random.Range(j, count);
+                    var temp = chosenSequence.sequences[i].listOfPieces[j];
+
+                    chosenSequence.sequences[i].listOfPieces[j] = chosenSequence.sequences[i].listOfPieces[rand];
+                    chosenSequence.sequences[i].listOfPieces[rand] = temp;
+                }
+            }
         }
 
-        return sequenceIndex;
+        CreateNextPiece(); //Iniciar el juego
     }
 
 }

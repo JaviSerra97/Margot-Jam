@@ -15,13 +15,23 @@ MonoBehaviour:
   sequences:
   - id: First
     listOfPieces:
+    - {fileID: 7725091805010857935, guid: c82f5dcdbcae2b841b60449306a2560d, type: 3}
+    - {fileID: 7725091805010857935, guid: c82f5dcdbcae2b841b60449306a2560d, type: 3}
     - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
     - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
+    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
+    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
+    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
+    doShuffle: 0
   - id: Second
     listOfPieces:
     - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
     - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
-    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
+    - {fileID: 7725091805010857935, guid: 2dcc0f0649e62684aa6155be6251b8e7, type: 3}
+    doShuffle: 1
   - id: Third
     listOfPieces:
-    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
+    - {fileID: 7725091805010857935, guid: c82f5dcdbcae2b841b60449306a2560d, type: 3}
+    - {fileID: 7725091805010857935, guid: 2dcc0f0649e62684aa6155be6251b8e7, type: 3}
+    - {fileID: 7725091805010857935, guid: 2dcc0f0649e62684aa6155be6251b8e7, type: 3}
+    doShuffle: 1

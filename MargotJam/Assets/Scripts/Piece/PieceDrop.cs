@@ -35,7 +35,7 @@ public class PieceDrop : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(dropKey)) { DropPiece(); }
+        if (Input.GetKeyDown(dropKey) && !put) { DropPiece(); }
     }
 
     private void FixedUpdate()

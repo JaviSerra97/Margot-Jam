@@ -10,6 +10,9 @@ public class PiecesSequence : ScriptableObject
     {
         public string id;
         public List<GameObject> listOfPieces;
+        public bool doShuffle;
     }
-    public List<Sequence> sequences; 
+
+    public List<Sequence> sequences;
+
 }
