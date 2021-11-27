@@ -17,7 +17,8 @@ MonoBehaviour:
   buildLogLevel: 2
   m_krilloudInDebugMode: 0
   placeholderContract:
-    tags: []
+    tags:
+    - test
     variables: []
   cacheContract:
     tags:
@@ -25,6 +26,13 @@ MonoBehaviour:
       description: 
       is3D: 0
       max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: test
+      description: 
+      is3D: 0
+      max3DDistance: 0
       isLoop: 0
       channelId: 0
       sourceContract: 2

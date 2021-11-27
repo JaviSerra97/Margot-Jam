@@ -5,6 +5,12 @@ using static PiecesSequence;
 
 public class PiecesManager : MonoBehaviour
 {
+    public const float OFFSET_CAMERA = 2f;
+
+    public Transform LeftCollider;
+    public Transform RightCollider;
+    public Camera MainCamera;
+
     [SerializeField] private List<PiecesSequence> sequences;
     [SerializeField] private Transform spawnPoint;
     private PiecesSequence chosenSequence;
@@ -71,6 +77,18 @@ public class PiecesManager : MonoBehaviour
         }
 
         CreateNextPiece(); //Iniciar el juego
+    }
+
+    public void CheckMaxHeight(float y_pos)
+    {
+        if(y_pos > spawnPoint.position.y - OFFSET_CAMERA)
+        {
+            MainCamera.orthographicSize += 1;
+            MainCamera.transform.position += new Vector3(0, 1, 0);
+            LeftCollider.position += new Vector3(-1, 0, 0);
+            RightCollider.position += new Vector3(1, 0, 0);
+            spawnPoint.position += new Vector3(0, 1, 0);
+        }
     }
 
 }
