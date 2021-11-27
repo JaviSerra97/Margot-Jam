@@ -9,6 +9,8 @@ public class ScoreManager : MonoBehaviour
 
     public TextMeshProUGUI ScoreText;
     public TextMeshProUGUI MultiplierText;
+    public GameObject FinalScorePanel;
+    public GameObject Record;
 
     private const int ScoreForPerfect = 2000;
 
@@ -50,6 +52,16 @@ public class ScoreManager : MonoBehaviour
     {
         ScoreText.text = _score.ToString();
         MultiplierText.text = "x" + _multiplier;
+    }
+
+    public int GetFinalScore()
+    {
+        UpdateUI();
+        MultiplierText.transform.parent.gameObject.SetActive(false);
+        FinalScorePanel.SetActive(true);
+        Record.SetActive(false);
+        ScoreText.GetComponent<Animator>().SetTrigger("End");
+        return _score;
     }
 
 }
