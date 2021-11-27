@@ -21,6 +21,17 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private Button creditsButton;
     private float creditsButtonPos;
 
+    [Space()]
+    [SerializeField] private CanvasGroup buttonsCanvasGroup;
+
+    [Header("Credits")]
+    [SerializeField] private GameObject creditsPanel;
+    [SerializeField] private float creditsTweenDuration;
+    [SerializeField] private float creditsLockDuration;
+    private bool canExitCredits;
+    private bool exitCreditsInput;
+    private float timer;
+
     private void Awake()
     {
         playButtonPos = playButton.transform.position.y;
@@ -37,6 +48,25 @@ public class MenuManager : MonoBehaviour
 
         creditsButtonPos = creditsButton.transform.position.y;
         creditsButton.transform.position += new Vector3(0, startYPos, 0);
+
+        creditsPanel.transform.localScale = Vector3.zero;
+    }
+
+    private void Update()
+    {
+        if (canExitCredits)
+        {
+            if (Input.GetMouseButtonDown(0)) { exitCreditsInput = true; }
+
+            timer += Time.deltaTime;
+            if(timer > creditsLockDuration && exitCreditsInput)
+            {
+                ExitCredits();
+            }
+
+        }
+
+
     }
 
     [ContextMenu("Fall")]
@@ -100,5 +130,26 @@ public class MenuManager : MonoBehaviour
     public void OnCreditsButton()
     {
         //Mostrar creditos
+        buttonsCanvasGroup.DOFade(0, creditsTweenDuration).SetEase(Ease.Linear).Play();
+        creditsPanel.transform.DOScale(1, creditsTweenDuration).SetEase(Ease.Linear).Play();
+
+        buttonsCanvasGroup.interactable = false;
+
+        canExitCredits = true;
+    }
+
+    void ExitCredits()
+    {
+        creditsPanel.transform.DOScale(0, creditsTweenDuration).SetEase(Ease.Linear).Play();
+        buttonsCanvasGroup.DOFade(1, creditsTweenDuration).SetEase(Ease.Linear).OnComplete(AllowButtonsInteraction).Play();
+
+        canExitCredits = false;
+        exitCreditsInput = false;
+        timer = 0;
+    }
+
+    void AllowButtonsInteraction()
+    {
+        buttonsCanvasGroup.interactable = true;
     }
 }
