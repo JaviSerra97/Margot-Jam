@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: 44c7b37298f502d49ad84b4c55602cb1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4172573814253279028
+    second: ManquitaTorres_0
+  - first:
+      213: 1927807923812142216
+    second: ManquitaTorres_1
+  - first:
+      213: 7045864228236931075
+    second: ManquitaTorres_2
+  - first:
+      213: -1940480283650757859
+    second: ManquitaTorres_3
+  - first:
+      213: 5563054488810514585
+    second: ManquitaTorres_4
+  - first:
+      213: 2649969314728384856
+    second: ManquitaTorres_5
+  - first:
+      213: -5207172360221723008
+    second: ManquitaTorres_6
+  - first:
+      213: -1094093392197930774
+    second: ManquitaTorres_10
+  - first:
+      213: 2271461129184237607
+    second: ManquitaTorres_11
+  - first:
+      213: 878201103119933924
+    second: ManquitaTorres_12
+  - first:
+      213: -4809560563531424678
+    second: ManquitaTorres_13
+  - first:
+      213: -4547873995964999877
+    second: ManquitaTorres_14
+  - first:
+      213: -8956027058562931000
+    second: ManquitaTorres_15
+  - first:
+      213: -3796545778359134531
+    second: ManquitaTorres_16
+  - first:
+      213: -6912160548969694284
+    second: ManquitaTorres_17
+  - first:
+      213: 8809108175136437456
+    second: ManquitaTorres_18
+  - first:
+      213: 8459173584015981085
+    second: ManquitaTorres_22
+  - first:
+      213: 7618555954985974865
+    second: ManquitaTorres_23
+  - first:
+      213: 1720009543553982065
+    second: ManquitaTorres_25
+  - first:
+      213: 5255765259847087972
+    second: ManquitaTorres_26
+  - first:
+      213: -6996999357630345653
+    second: ManquitaTorres_28
+  - first:
+      213: 4428004668207728663
+    second: ManquitaTorres_29
+  - first:
+      213: 4731456626229123069
+    second: ManquitaTorres_31
+  - first:
+      213: 6272355058544078708
+    second: ManquitaTorres_32
+  - first:
+      213: 595302289684435945
+    second: ManquitaTorres_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ManquitaTorres_0
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1192
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437d9add6c5f7e930800000000000000
+      internalID: 4172573814253279028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1092
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c810eb713f0ca10800000000000000
+      internalID: 1927807923812142216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1092
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300b1bb5f20f7c160800000000000000
+      internalID: 7045864228236931075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_3
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1092
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1be85f86770215e0800000000000000
+      internalID: -1940480283650757859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 992
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99861bf4590f33d40800000000000000
+      internalID: 5563054488810514585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_5
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 992
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85912163d0596c420800000000000000
+      internalID: 2649969314728384856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_6
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 992
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08670c0c3586cb7b0800000000000000
+      internalID: -5207172360221723008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 799
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0b0f64bdff0d0f0800000000000000
+      internalID: -1094093392197930774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 799
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728522ebcd9d58f10800000000000000
+      internalID: 2271461129184237607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_12
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 799
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1e1d8104fff2c00800000000000000
+      internalID: 878201103119933924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 699
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c5bfc4622014db0800000000000000
+      internalID: -4809560563531424678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_14
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 699
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37154342b4b2e0c0800000000000000
+      internalID: -4547873995964999877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_15
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 699
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6e19f57dcc5b380800000000000000
+      internalID: -8956027058562931000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 599
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db61563cab5ff4bc0800000000000000
+      internalID: -3796545778359134531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_17
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 599
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb31385a921310a0800000000000000
+      internalID: -6912160548969694284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_18
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 599
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d43ffe663d304a70800000000000000
+      internalID: 8809108175136437456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_22
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 399
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1af3a85e85056570800000000000000
+      internalID: 8459173584015981085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_23
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 399
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c3066b64c8ab960800000000000000
+      internalID: 7618555954985974865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 299
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e11dd1193bed710800000000000000
+      internalID: 1720009543553982065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_26
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 299
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467360858aa30f840800000000000000
+      internalID: 5255765259847087972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 199
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e8ecae72aa5ee90800000000000000
+      internalID: -6996999357630345653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_29
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 199
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7180b4009ce637d30800000000000000
+      internalID: 4428004668207728663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_31
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df71e84bbb289a140800000000000000
+      internalID: 4731456626229123069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_32
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fe4a181b1eb0750800000000000000
+      internalID: 6272355058544078708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManquitaTorres_33
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e31e964740f24800800000000000000
+      internalID: 595302289684435945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
