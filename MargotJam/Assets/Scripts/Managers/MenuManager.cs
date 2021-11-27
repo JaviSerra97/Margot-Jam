@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+    public static MenuManager Instance;
+
     [SerializeField] private Image fadeScreen;
 
     [Header("Buttons")]
@@ -34,6 +36,8 @@ public class MenuManager : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
+
         mainButtonsPos = mainButtons.transform.position.y;
         mainButtons.transform.position += new Vector3(0, startYPos, 0);
 
@@ -50,11 +54,6 @@ public class MenuManager : MonoBehaviour
         creditsButton.transform.position += new Vector3(0, startYPos, 0);
 
         creditsPanel.transform.localScale = Vector3.zero;
-    }
-
-    private void Start()
-    {
-        Invoke(nameof(ShowButtons), 2);
     }
 
     private void Update()

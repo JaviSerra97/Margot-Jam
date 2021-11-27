@@ -33,6 +33,6 @@ public class DoTweenEndingManquita : MonoBehaviour
     
     public void MenuAppear()
     {
-        //MenuManager.Instance.
+        MenuManager.Instance.ShowButtons();
     }
 }
