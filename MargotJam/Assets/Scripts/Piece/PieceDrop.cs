@@ -5,7 +5,7 @@ using DG.Tweening;
 
 public class PieceDrop : MonoBehaviour
 {
-    public enum UbicacionSprite { Suelo, Pared, Columna, Ventana, Techo }
+    public enum UbicacionSprite { Suelo, Pared, Detalles, Techo }
     public UbicacionSprite ubicacion;
 
     [SerializeField] private KeyCode dropKey;
