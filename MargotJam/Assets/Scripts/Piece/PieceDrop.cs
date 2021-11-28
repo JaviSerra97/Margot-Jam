@@ -8,12 +8,14 @@ public class PieceDrop : MonoBehaviour
     public enum UbicacionSprite { Suelo, Pared, Detalles, Techo }
     public UbicacionSprite ubicacion;
 
+
     [SerializeField] private KeyCode dropKey;
     [SerializeField] private GameObject projection;
 
     [SerializeField] private float tweenDuration = 0.25f;
 
     public static float SNAP_THRESHOLD = 0.15f;
+    public static float RAYCAST_VARIATION = 0.2f;
 
     public GameObject LeftNeighbour;
     public GameObject DownNeighbour;
@@ -54,8 +56,8 @@ public class PieceDrop : MonoBehaviour
         if (put) { return; }
 
         RaycastHit2D centerHit = Physics2D.Raycast(transform.position + new Vector3(0, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, Mathf.Infinity);
-        RaycastHit2D rightHit = Physics2D.Raycast(transform.position + new Vector3(sprite.bounds.size.x / 2, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, Mathf.Infinity);
-        RaycastHit2D leftHit = Physics2D.Raycast(transform.position + new Vector3(-sprite.bounds.size.x / 2, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, Mathf.Infinity);
+        RaycastHit2D rightHit = Physics2D.Raycast(transform.position + new Vector3(sprite.bounds.size.x / 2 - RAYCAST_VARIATION, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, Mathf.Infinity);
+        RaycastHit2D leftHit = Physics2D.Raycast(transform.position + new Vector3(-sprite.bounds.size.x / 2 + RAYCAST_VARIATION, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, Mathf.Infinity);
 
         if (centerHit.collider.CompareTag("Piece"))
         {
@@ -86,7 +88,7 @@ public class PieceDrop : MonoBehaviour
         {
             if(rightDistance > leftDistance)
             {
-                Debug.DrawRay(transform.position + new Vector3(-sprite.bounds.size.x / 2, 0), Vector2.down * 15f, Color.red);
+                Debug.DrawRay(transform.position + new Vector3(-sprite.bounds.size.x / 2 + RAYCAST_VARIATION, 0), Vector2.down * 15f, Color.red);
                 //Colisiona izquierda
                 targetPos = leftHit.point + new Vector2(sprite.bounds.size.x / 2, sprite.bounds.size.y / 2);
                 projection.transform.position = new Vector3(transform.position.x, leftHit.point.y + sprite.bounds.size.y / 2);
@@ -94,7 +96,7 @@ public class PieceDrop : MonoBehaviour
             }
             else if(leftDistance > rightDistance)
             {
-                Debug.DrawRay(transform.position + new Vector3(sprite.bounds.size.x / 2, 0), Vector2.down * 15f, Color.red);
+                Debug.DrawRay(transform.position + new Vector3(sprite.bounds.size.x / 2 - RAYCAST_VARIATION, 0), Vector2.down * 15f, Color.red);
                 //Colisiona derecha
                 targetPos = rightHit.point + new Vector2(-sprite.bounds.size.x / 2, sprite.bounds.size.y / 2);
                 projection.transform.position = new Vector3(transform.position.x, rightHit.point.y + sprite.bounds.size.y / 2);
@@ -150,7 +152,7 @@ public class PieceDrop : MonoBehaviour
         RaycastHit2D rightHit = Physics2D.Raycast(transform.position + new Vector3(sprite.bounds.size.x / 2, 0), Vector2.right, 0.5f);
         RaycastHit2D leftHit = Physics2D.Raycast(transform.position + new Vector3(-sprite.bounds.size.x / 2, 0), Vector2.left, 0.5f);
 
-        if(LeftNeighbour)
+        if(LeftNeighbour && leftHit.collider)
         {
             if (leftHit.collider.gameObject == LeftNeighbour)
             {
@@ -158,7 +160,7 @@ public class PieceDrop : MonoBehaviour
             }
         }
 
-        if(DownNeighbour)
+        if(DownNeighbour && centerHit.collider)
         {
             if(centerHit.collider.gameObject == DownNeighbour)
             {
@@ -166,7 +168,7 @@ public class PieceDrop : MonoBehaviour
             }
         }
 
-        if(RightNeighbour)
+        if(RightNeighbour && rightHit.collider)
         {
             if(rightHit.collider.gameObject == RightNeighbour)
             {

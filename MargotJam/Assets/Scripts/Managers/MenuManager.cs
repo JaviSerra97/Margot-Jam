@@ -67,10 +67,7 @@ public class MenuManager : MonoBehaviour
             {
                 ExitCredits();
             }
-
         }
-
-
     }
 
     public void ShowButtons()

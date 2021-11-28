@@ -6,7 +6,6 @@ public class PieceMove : MonoBehaviour
 {
     public static float speed = 5f;
 
-    
     private float _sign;
     private CubeSounds _sounds;
     private void Start()
