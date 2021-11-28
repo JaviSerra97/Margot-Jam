@@ -13,26 +13,111 @@ MonoBehaviour:
   m_Name: Inicio1
   m_EditorClassIdentifier: 
   sequences:
-  - id: First
+  - id: Suelos
     listOfPieces:
-    - {fileID: 7725091805010857935, guid: c82f5dcdbcae2b841b60449306a2560d, type: 3}
-    - {fileID: 7725091805010857935, guid: c82f5dcdbcae2b841b60449306a2560d, type: 3}
     - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
-    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
-    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
-    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
-    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
+    - {fileID: 7725091805010857935, guid: 2dcc0f0649e62684aa6155be6251b8e7, type: 3}
+    - {fileID: 7725091805010857935, guid: 2dcc0f0649e62684aa6155be6251b8e7, type: 3}
+    - {fileID: 7725091805010857935, guid: 2dcc0f0649e62684aa6155be6251b8e7, type: 3}
+    doShuffle: 1
+  - id: Barandillas
+    listOfPieces:
+    - {fileID: 7725091805010857935, guid: 17ffe950d4258ee4492487b08af6beb1, type: 3}
+    - {fileID: 7725091805010857935, guid: 17ffe950d4258ee4492487b08af6beb1, type: 3}
+    - {fileID: 7725091805010857935, guid: 17ffe950d4258ee4492487b08af6beb1, type: 3}
+    - {fileID: 7725091805010857935, guid: 17ffe950d4258ee4492487b08af6beb1, type: 3}
+    - {fileID: 7725091805010857935, guid: 17ffe950d4258ee4492487b08af6beb1, type: 3}
+    - {fileID: 7725091805010857935, guid: c7dcf3690d504a5419db1d4cc8501414, type: 3}
+    - {fileID: 7725091805010857935, guid: 5dd266a7730eabb4e8e33dd020074c43, type: 3}
+    - {fileID: 7725091805010857935, guid: 05b16387ce5bb524592eed7798a526bd, type: 3}
+    - {fileID: 7725091805010857935, guid: bf53c3fb80064664598bf6423cb761da, type: 3}
+    - {fileID: 7725091805010857935, guid: bf53c3fb80064664598bf6423cb761da, type: 3}
+    - {fileID: 7725091805010857935, guid: bf53c3fb80064664598bf6423cb761da, type: 3}
+    - {fileID: 7725091805010857935, guid: bf53c3fb80064664598bf6423cb761da, type: 3}
+    doShuffle: 1
+  - id: Puerta
+    listOfPieces:
+    - {fileID: 7725091805010857935, guid: 5f2100f30d28aaa43808c024a8ae2bd6, type: 3}
     doShuffle: 0
-  - id: Second
+  - id: Columnas
     listOfPieces:
-    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
-    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
-    - {fileID: 7725091805010857935, guid: 2dcc0f0649e62684aa6155be6251b8e7, type: 3}
+    - {fileID: 7725091805010857935, guid: 3b1f2b954ab346c4398e8157a0b84109, type: 3}
+    - {fileID: 7725091805010857935, guid: 3b1f2b954ab346c4398e8157a0b84109, type: 3}
+    - {fileID: 7725091805010857935, guid: b17110362ddb53f4ab2e2395109c541d, type: 3}
     doShuffle: 1
-  - id: Third
+  - id: Freestyle
     listOfPieces:
-    - {fileID: 7725091805010857935, guid: c82f5dcdbcae2b841b60449306a2560d, type: 3}
-    - {fileID: 7725091805010857935, guid: 2dcc0f0649e62684aa6155be6251b8e7, type: 3}
-    - {fileID: 7725091805010857935, guid: 2dcc0f0649e62684aa6155be6251b8e7, type: 3}
+    - {fileID: 7725091805010857935, guid: b390f8ffbc86a3e44844637cfe36158e, type: 3}
+    - {fileID: 7725091805010857935, guid: b390f8ffbc86a3e44844637cfe36158e, type: 3}
+    - {fileID: 7725091805010857935, guid: 8a41386752cb1074b9d58d69a2cb5462, type: 3}
+    - {fileID: 7725091805010857935, guid: 8a41386752cb1074b9d58d69a2cb5462, type: 3}
+    - {fileID: 7725091805010857935, guid: cc94e699e7f6a2446bbd9f5e90c72103, type: 3}
+    - {fileID: 7725091805010857935, guid: d71a01a03316bc24da486a053e85c8f2, type: 3}
+    - {fileID: 7725091805010857935, guid: 48088cffbad867e42bc54b2b0ee23611, type: 3}
+    - {fileID: 7725091805010857935, guid: 4800fdfc4c4a0ca4598cfdf622425953, type: 3}
+    - {fileID: 7725091805010857935, guid: 08d94f5153fa4ca488dd20c889bafa50, type: 3}
+    - {fileID: 7725091805010857935, guid: d2093b03a7a6f944980ea38fbe02f172, type: 3}
+    - {fileID: 7725091805010857935, guid: d2093b03a7a6f944980ea38fbe02f172, type: 3}
+    - {fileID: 7725091805010857935, guid: d2093b03a7a6f944980ea38fbe02f172, type: 3}
+    - {fileID: 7725091805010857935, guid: d2093b03a7a6f944980ea38fbe02f172, type: 3}
+    - {fileID: 7725091805010857935, guid: 1a2ad54b794fdad4e9721b947fd98e13, type: 3}
+    - {fileID: 7725091805010857935, guid: 1a2ad54b794fdad4e9721b947fd98e13, type: 3}
+    - {fileID: 7725091805010857935, guid: 1a2ad54b794fdad4e9721b947fd98e13, type: 3}
+    - {fileID: 7725091805010857935, guid: 1a2ad54b794fdad4e9721b947fd98e13, type: 3}
+    - {fileID: 7725091805010857935, guid: 63d0332aa50402843ac5e7e6a78e7df8, type: 3}
+    - {fileID: 7725091805010857935, guid: 63d0332aa50402843ac5e7e6a78e7df8, type: 3}
+    - {fileID: 7725091805010857935, guid: 813a1292238a07243914dc761b7f68e1, type: 3}
+    - {fileID: 7725091805010857935, guid: 813a1292238a07243914dc761b7f68e1, type: 3}
+    - {fileID: 7725091805010857935, guid: 7bf009aef7289e44b901a767414e8b65, type: 3}
+    - {fileID: 7725091805010857935, guid: 8e4abc2c0fedea54cb95a4a86cb9fd86, type: 3}
+    - {fileID: 7725091805010857935, guid: e199f1c0183927d4ba48961505ea4381, type: 3}
+    - {fileID: 7725091805010857935, guid: d3fb3201cba3020469ac6bfc23b5b26d, type: 3}
+    - {fileID: 7725091805010857935, guid: cfbe7d5cddbcbd9449dbfbc99234ba64, type: 3}
+    - {fileID: 7725091805010857935, guid: ff16d0194001f094fb3448e635fd8344, type: 3}
+    - {fileID: 7725091805010857935, guid: 6febc0c21b6f04047a8205e1c44df313, type: 3}
+    - {fileID: 7725091805010857935, guid: 2d889ae3709140740b89c061d245586a, type: 3}
+    - {fileID: 7725091805010857935, guid: f3b4bdbd9c429024694d17504f4ad539, type: 3}
+    - {fileID: 7725091805010857935, guid: 9218be5e21433e04184392a7eac60fd8, type: 3}
+    - {fileID: 7725091805010857935, guid: 2d889ae3709140740b89c061d245586a, type: 3}
+    - {fileID: 7725091805010857935, guid: 5e71ef5879213d848befe930c4983c02, type: 3}
+    - {fileID: 7725091805010857935, guid: ea8058b05b5c6974c8c4c0671ed0ea8f, type: 3}
+    - {fileID: 7725091805010857935, guid: d47fb9370f14f2749921d7316fa9a62e, type: 3}
+    - {fileID: 7725091805010857935, guid: adfaeba94a27f0a46884db33838e031b, type: 3}
     doShuffle: 1
+  - id: Techo
+    listOfPieces:
+    - {fileID: 7725091805010857935, guid: aff410210532abe41902279c3906fbb0, type: 3}
+    - {fileID: 7725091805010857935, guid: cccbe1c66f8c6fc46a207f3e81dcbfc8, type: 3}
+    - {fileID: 7725091805010857935, guid: 2f75a534423468545bb6aab9324f5d27, type: 3}
+    - {fileID: 7725091805010857935, guid: 47516b3ef27ee5f498b26dba50d413eb, type: 3}
+    - {fileID: 7725091805010857935, guid: 0b02ab6f77782324d9b4b8de6eed4157, type: 3}
+    - {fileID: 7725091805010857935, guid: 0506e809923939b4a958cd36fad2fd03, type: 3}
+    - {fileID: 7725091805010857935, guid: 99b0a9e5e4868b748841709b1efe1f80, type: 3}
+    - {fileID: 7725091805010857935, guid: 63a394114f9e6664aa979c7c54c44023, type: 3}
+    - {fileID: 7725091805010857935, guid: bbc5eabccb5c1a645a3d93d3c9b1eaa5, type: 3}
+    - {fileID: 7725091805010857935, guid: 6fa77814f626d1641b89578b5d4e0b06, type: 3}
+    - {fileID: 7725091805010857935, guid: 6fa77814f626d1641b89578b5d4e0b06, type: 3}
+    - {fileID: 7725091805010857935, guid: 8c78b2f31432db645a48c319f8b41841, type: 3}
+    - {fileID: 7725091805010857935, guid: 8c78b2f31432db645a48c319f8b41841, type: 3}
+    - {fileID: 7725091805010857935, guid: 8c78b2f31432db645a48c319f8b41841, type: 3}
+    - {fileID: 7725091805010857935, guid: 8c78b2f31432db645a48c319f8b41841, type: 3}
+    - {fileID: 7725091805010857935, guid: 1f41580b7f31db340b4b07115877a502, type: 3}
+    - {fileID: 7725091805010857935, guid: 1f41580b7f31db340b4b07115877a502, type: 3}
+    - {fileID: 7725091805010857935, guid: 91f24bc462277334385b93c87896d71d, type: 3}
+    doShuffle: 1
+  - id: Torres
+    listOfPieces:
+    - {fileID: 7725091805010857935, guid: 529caf696a3708647a2154b681599cb0, type: 3}
+    - {fileID: 7725091805010857935, guid: a6a99efa3dd5b664e87759fcf46adfae, type: 3}
+    - {fileID: 7725091805010857935, guid: c53378c622c4bc04cb324693acebbc78, type: 3}
+    doShuffle: 1
+  - id: TorreGorda
+    listOfPieces:
+    - {fileID: 7725091805010857935, guid: ecb5a98abc3f03941977fb862833571e, type: 3}
+    - {fileID: 7725091805010857935, guid: e9e70b10ba41c3640ad4c47fc84d84e6, type: 3}
+    - {fileID: 7725091805010857935, guid: 1d51484da5f6dc04f845574bb12bcc40, type: 3}
+    - {fileID: 7725091805010857935, guid: 0067ce51d5876604a9be4cb47d110356, type: 3}
+    - {fileID: 7725091805010857935, guid: c05849414a0781e46874b83ca3e2be3d, type: 3}
+    - {fileID: 7725091805010857935, guid: f1b92220f9b3cec4a99e57b6d66b0bee, type: 3}
+    doShuffle: 0
   initialPrefab: {fileID: 8253075997216628159, guid: a95c602640c28ef448c4df161686cdb1, type: 3}
