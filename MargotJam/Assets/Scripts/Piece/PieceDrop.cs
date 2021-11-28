@@ -109,6 +109,8 @@ public class PieceDrop : MonoBehaviour
     {
         put = true;
 
+        gameObject.layer = 0;
+
         projection.SetActive(false);
         move.enabled = false;
 

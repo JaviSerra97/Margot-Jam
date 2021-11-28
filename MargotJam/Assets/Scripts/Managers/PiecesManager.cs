@@ -59,9 +59,15 @@ public class PiecesManager : MonoBehaviour
             CreateNextPiece();
         }
         else 
-        { 
-            ScoreManager.Instance.GetFinalScore();
+        {
+            StartCoroutine(EndGame());
         }
+    }
+
+     IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(2.5f);
+        ScoreManager.Instance.GetFinalScore();
     }
 
     void ShufflePieces()
