@@ -55,7 +55,7 @@ public class PieceDrop : MonoBehaviour
     {
         if (put) { return; }
 
-        RaycastHit2D centerHit = Physics2D.Raycast(transform.position + new Vector3(0, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, Mathf.Infinity);
+        RaycastHit2D centerHit = Physics2D.Raycast(transform.position + new Vector3(0, -sprite.bounds.size.y / 2 - 1f), Vector2.down, Mathf.Infinity);
         RaycastHit2D rightHit = Physics2D.Raycast(transform.position + new Vector3(sprite.bounds.size.x / 2 - RAYCAST_VARIATION, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, Mathf.Infinity);
         RaycastHit2D leftHit = Physics2D.Raycast(transform.position + new Vector3(-sprite.bounds.size.x / 2 + RAYCAST_VARIATION, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, Mathf.Infinity);
 
@@ -81,7 +81,7 @@ public class PieceDrop : MonoBehaviour
         {
             Debug.DrawRay(transform.position, Vector2.down * 15f, Color.red);
             targetPos = centerHit.point + new Vector2(0, sprite.bounds.size.y / 2);
-            projection.transform.position = new Vector3(transform.position.x, centerHit.point.y + sprite.bounds.size.y / 2);
+            projection.transform.position = new Vector3(transform.position.x, centerHit.point.y + projection.GetComponent<SpriteRenderer>().bounds.size.y / 2);
             neighbour = centerHit.transform;
         }
         else 
@@ -91,7 +91,7 @@ public class PieceDrop : MonoBehaviour
                 Debug.DrawRay(transform.position + new Vector3(-sprite.bounds.size.x / 2 + RAYCAST_VARIATION, 0), Vector2.down * 15f, Color.red);
                 //Colisiona izquierda
                 targetPos = leftHit.point + new Vector2(sprite.bounds.size.x / 2, sprite.bounds.size.y / 2);
-                projection.transform.position = new Vector3(transform.position.x, leftHit.point.y + sprite.bounds.size.y / 2);
+                projection.transform.position = new Vector3(transform.position.x, leftHit.point.y + projection.GetComponent<SpriteRenderer>().bounds.size.y / 2);
                 neighbour = leftHit.transform;
             }
             else if(leftDistance > rightDistance)
@@ -99,7 +99,7 @@ public class PieceDrop : MonoBehaviour
                 Debug.DrawRay(transform.position + new Vector3(sprite.bounds.size.x / 2 - RAYCAST_VARIATION, 0), Vector2.down * 15f, Color.red);
                 //Colisiona derecha
                 targetPos = rightHit.point + new Vector2(-sprite.bounds.size.x / 2, sprite.bounds.size.y / 2);
-                projection.transform.position = new Vector3(transform.position.x, rightHit.point.y + sprite.bounds.size.y / 2);
+                projection.transform.position = new Vector3(transform.position.x, rightHit.point.y + projection.GetComponent<SpriteRenderer>().bounds.size.y / 2);
                 neighbour = rightHit.transform;
             }
         }
