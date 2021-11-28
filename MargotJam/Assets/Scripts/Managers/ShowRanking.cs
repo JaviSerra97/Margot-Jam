@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ShowRanking : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public TMP_Text text;
+    public void SetRanking()
     {
-        
+        text.text = "Ranking Mundial: " + PlayfabManager.Instance.GetRanking();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    void OnEnable() { SetRanking(); }
 }

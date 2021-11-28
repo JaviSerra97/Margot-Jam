@@ -99,7 +99,7 @@ public class ScoreManager : MonoBehaviour
     public int GetFinalScore()
     {
         UpdateUI();
-        
+       
         PieceDrop[] pieces = GameObject.FindObjectsOfType<PieceDrop>();
 
         _scoreDetalle = 0;

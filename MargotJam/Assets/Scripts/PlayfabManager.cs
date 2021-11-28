@@ -24,6 +24,8 @@ public class PlayfabManager : MonoBehaviour
 
     private string _playfabID;
 
+    private string playerPosition;
+
     private void Awake()
     {
         Instance = this;
@@ -123,6 +125,7 @@ public class PlayfabManager : MonoBehaviour
                     if (player.PlayFabId == _playfabID)
                     {
                         Debug.Log((player.Position + 1).ToString());
+                        playerPosition = (player.Position + 1).ToString();
                     }
                 }
             },
@@ -131,6 +134,8 @@ public class PlayfabManager : MonoBehaviour
                 Debug.LogError("ERROR:: " + error.ErrorMessage);
             });
     }
+
+    public string GetRanking() { return playerPosition; }
 
     #endregion
 }
