@@ -140,7 +140,7 @@ public class PieceDrop : MonoBehaviour
         {
             transform.position = new Vector3(neighbour.transform.position.x, transform.position.y);
             //VFXManager.Instance.PerfectVFX(transform.position - new Vector3(0, sprite.bounds.size.y / 2));
-            VFXManager.Instance.PerfectVFX(new Vector3(transform.position.x, -2));
+            VFXManager.Instance.PerfectVFX(new Vector3(transform.position.x, -1));
             DifficultManager.Instance.PerfectPlacement(transform.position);
             CheckNeighbours();
             _sounds.PerfectPlaySound();
