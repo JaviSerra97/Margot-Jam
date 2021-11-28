@@ -20,6 +20,9 @@ public class ScoreManager : MonoBehaviour
 
     public GameObject canvas;
 
+    public Animator SeniorAnim;
+    public Animator ShadowAnim;
+
     public GameObject scorePanel;
     public GameObject multiplierPanel;
 
@@ -49,6 +52,8 @@ public class ScoreManager : MonoBehaviour
     public void PerfectPlacementScore(Vector3 pos)
     {
         AddPoints(ScoreForPerfect, pos);
+        SeniorAnim.SetTrigger("Sorpresa");
+        ShadowAnim.SetTrigger("Sorpresa");
     }
 
     public void SetMultiplier(int difficult)
@@ -144,5 +149,7 @@ public class ScoreManager : MonoBehaviour
         AddPoints(_scoreTecho, new Vector3(0, 6, 0));
         yield return new WaitForSeconds(0.5f);
         AddPoints(_scoreDetalle, new Vector3(-3, 0, 0));
+        yield return new WaitForSeconds(0.5f);
+        PlayfabManager.Instance.UpdateHighscore(_score);
     }
 }

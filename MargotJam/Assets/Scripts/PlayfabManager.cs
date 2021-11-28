@@ -9,18 +9,14 @@ using TMPro;
 
 public class PlayfabManager : MonoBehaviour
 {
+    public static PlayfabManager Instance;
+
     [Header("Playfab Variables")]
     public string GameVersion;
-
-    [Header("References")]
-    public GameObject LoadingPanel;
 
     [Header("Control Versiones")]
     [SerializeField]
     private bool _isTest = false;
-
-    private static string PLAYFAB_PROJECTID_TEST = "9EE97";
-    private static string PLAYFAB_PROJECTID_RELEASE = "47872";
 
     private bool _isItemPurchased;
 
@@ -30,8 +26,8 @@ public class PlayfabManager : MonoBehaviour
 
     private void Awake()
     {
-        SetupPlayfabServer();
-        LoadingPanel.SetActive(true);
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     void Start()
@@ -41,10 +37,6 @@ public class PlayfabManager : MonoBehaviour
 
     #region PlayFab Server
 
-    private void SetupPlayfabServer()
-    {
-        PlayFabSettings.TitleId = (_isTest ? PLAYFAB_PROJECTID_TEST : PLAYFAB_PROJECTID_RELEASE);
-    }
 
     public void LoadServerData()
     {
@@ -92,9 +84,6 @@ public class PlayfabManager : MonoBehaviour
         _playfabID = loginResult.PlayFabId;
         LoadServerData();
         GetLeaderboard();
-        UpdateHighscore(0);
-        //LoadingPanel.SetActive(false);
-        if (LoadingPanel) Destroy(LoadingPanel, 2f);
     }
 
     private void OnLoginFailed(PlayFabError error)
