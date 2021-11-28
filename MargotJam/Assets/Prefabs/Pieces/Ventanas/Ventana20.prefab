@@ -119,7 +119,7 @@ MonoBehaviour:
   tweenDuration: 0.25
   LeftNeighbour: {fileID: 0}
   DownNeighbour: {fileID: 0}
-  RightNeighbour: {fileID: 0}
+  RightNeighbour: {fileID: 7725091805010857935, guid: d47fb9370f14f2749921d7316fa9a62e, type: 3}
 --- !u!61 &7725091805010857931
 BoxCollider2D:
   m_ObjectHideFlags: 0

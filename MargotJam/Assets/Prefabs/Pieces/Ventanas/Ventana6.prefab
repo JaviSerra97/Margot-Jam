@@ -118,8 +118,8 @@ MonoBehaviour:
   projection: {fileID: 7725091805826103252}
   tweenDuration: 0.25
   LeftNeighbour: {fileID: 0}
-  DownNeighbour: {fileID: 0}
-  RightNeighbour: {fileID: 0}
+  DownNeighbour: {fileID: 7725091805010857935, guid: 5e71ef5879213d848befe930c4983c02, type: 3}
+  RightNeighbour: {fileID: 7725091805010857935, guid: cccbe1c66f8c6fc46a207f3e81dcbfc8, type: 3}
 --- !u!61 &7725091805010857931
 BoxCollider2D:
   m_ObjectHideFlags: 0
