@@ -146,15 +146,15 @@ public class PieceDrop : MonoBehaviour
 
     void CheckNeighbours()
     {
-        RaycastHit2D centerHit = Physics2D.Raycast(transform.position + new Vector3(0, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, Mathf.Infinity);
-        RaycastHit2D rightHit = Physics2D.Raycast(transform.position + new Vector3(sprite.bounds.size.x / 2, 0), Vector2.right, Mathf.Infinity);
-        RaycastHit2D leftHit = Physics2D.Raycast(transform.position + new Vector3(-sprite.bounds.size.x / 2, 0), Vector2.left, Mathf.Infinity);
+        RaycastHit2D centerHit = Physics2D.Raycast(transform.position + new Vector3(0, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, 0.5f);
+        RaycastHit2D rightHit = Physics2D.Raycast(transform.position + new Vector3(sprite.bounds.size.x / 2, 0), Vector2.right, 0.5f);
+        RaycastHit2D leftHit = Physics2D.Raycast(transform.position + new Vector3(-sprite.bounds.size.x / 2, 0), Vector2.left, 0.5f);
 
         if(LeftNeighbour)
         {
             if (leftHit.collider.gameObject == LeftNeighbour)
             {
-                ScoreManager.Instance.AddPoints(500, transform.position);
+                ScoreManager.Instance.AddPoints(500, leftHit.transform.position);
             }
         }
 
@@ -162,7 +162,7 @@ public class PieceDrop : MonoBehaviour
         {
             if(centerHit.collider.gameObject == DownNeighbour)
             {
-                ScoreManager.Instance.AddPoints(500, transform.position);
+                ScoreManager.Instance.AddPoints(500, centerHit.transform.position);
             }
         }
 
@@ -170,7 +170,7 @@ public class PieceDrop : MonoBehaviour
         {
             if(rightHit.collider.gameObject == RightNeighbour)
             {
-                ScoreManager.Instance.AddPoints(500, transform.position);
+                ScoreManager.Instance.AddPoints(500, rightHit.transform.position);
             }
         }
     }
