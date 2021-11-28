@@ -150,6 +150,7 @@ public class ScoreManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         AddPoints(_scoreDetalle, new Vector3(-3, 0, 0));
         yield return new WaitForSeconds(0.5f);
-        PlayfabManager.Instance.UpdateHighscore(_score);
+        if(PlayfabManager.Instance)
+            PlayfabManager.Instance.UpdateHighscore(_score);
     }
 }
