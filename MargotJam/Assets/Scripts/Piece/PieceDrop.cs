@@ -38,6 +38,8 @@ public class PieceDrop : MonoBehaviour
 
     private PiecesManager manager;
 
+    private CubeSounds _sounds;
+
     private void Awake()
     {
         move = GetComponent<PieceMove>();
@@ -128,6 +130,7 @@ public class PieceDrop : MonoBehaviour
         manager.CreateNextPiece();
 
         manager.CheckMaxHeight(transform.position.y + sprite.bounds.size.y / 2);
+        _sounds.TouchOtherPlaySound();
     }
 
     void CheckSnap()
@@ -137,9 +140,10 @@ public class PieceDrop : MonoBehaviour
         {
             transform.position = new Vector3(neighbour.transform.position.x, transform.position.y);
             //VFXManager.Instance.PerfectVFX(transform.position - new Vector3(0, sprite.bounds.size.y / 2));
-            VFXManager.Instance.PerfectVFX(new Vector3(transform.position.x, -2));
+            VFXManager.Instance.PerfectVFX(new Vector3(transform.position.x, -1));
             DifficultManager.Instance.PerfectPlacement(transform.position);
             CheckNeighbours();
+            _sounds.PerfectPlaySound();
         }
         else
         {
