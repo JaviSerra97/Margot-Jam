@@ -60,7 +60,6 @@ public class PiecesManager : MonoBehaviour
         }
         else 
         { 
-            Debug.Log("Ya");
             ScoreManager.Instance.GetFinalScore();
         }
     }
