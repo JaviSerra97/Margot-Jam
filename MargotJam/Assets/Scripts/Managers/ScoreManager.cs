@@ -21,9 +21,12 @@ public class ScoreManager : MonoBehaviour
     public GameObject canvas;
 
     private const int ScoreForPerfect = 2000;
+    private const int ScoreForPlace = 500;
 
     private int _score;
     private int _multiplier;
+
+    private int _scoreSuelo, _scorePared, _scoreDetalle, _scoreTecho;
 
     private void Awake()
     {
@@ -62,8 +65,9 @@ public class ScoreManager : MonoBehaviour
 
         //Tween del texto
         Sequence seq = DOTween.Sequence();
-        seq.Append(t.transform.DOScale(1, scaleDuration).SetEase(Ease.InQuad));
-        seq.Append(t.transform.DOMove(scorePoint.position, moveDuration).SetEase(Ease.OutQuad));
+        seq.Append(t.transform.DOScale(1, scaleDuration * Random.Range(0.8f, 1.2f)).SetEase(Ease.InQuad));
+        seq.Append(t.transform.DOMove(scorePoint.position, moveDuration * Random.Range(0.8f, 1.2f)).SetEase(Ease.OutQuad));
+        seq.Join(t.transform.DOBlendableLocalMoveBy(new Vector3(Random.Range(-1, 1), 0, 0), moveDuration));
         seq.OnComplete(UpdateUI);
 
         Destroy(t, scaleDuration + moveDuration + 0.1f);
@@ -84,11 +88,56 @@ public class ScoreManager : MonoBehaviour
     public int GetFinalScore()
     {
         UpdateUI();
+        
+        PieceDrop[] pieces = GameObject.FindObjectsOfType<PieceDrop>();
+
+        _scoreDetalle = 0;
+        _scorePared = 0;
+        _scoreSuelo = 0;
+        _scoreTecho = 0;
+
+        foreach (PieceDrop piece in pieces)
+        {
+            switch (piece.ubicacion)
+            {
+                case PieceDrop.UbicacionSprite.Suelo:
+                    if (piece.transform.position.y < -1)
+                        _scoreSuelo += ScoreForPlace;
+                    break;
+                case PieceDrop.UbicacionSprite.Pared:
+                    if (piece.transform.position.y > -1 && piece.transform.position.y < 3)
+                        _scorePared += ScoreForPlace;
+                    break;
+                case PieceDrop.UbicacionSprite.Detalles:
+                    if (piece.transform.position.y > -2 && piece.transform.position.y < 4 && piece.transform.position.x > -6 && piece.transform.position.x < 6)
+                        _scoreDetalle += ScoreForPlace;
+                        break;
+                case PieceDrop.UbicacionSprite.Techo:
+                    if (piece.transform.position.y > 3)
+                        _scoreTecho += ScoreForPlace;
+                    break;
+            }
+        }
+        StartCoroutine(ExtraScore());
+
         MultiplierText.transform.parent.gameObject.SetActive(false);
         FinalScorePanel.SetActive(true);
+        
         Record.SetActive(false);
         ScoreText.GetComponent<Animator>().SetTrigger("End");
+        
         return _score;
     }
 
+    private IEnumerator ExtraScore()
+    {
+        yield return new WaitForSeconds(2f);
+        AddPoints(_scoreSuelo, new Vector3(0, -3, 0));
+        yield return new WaitForSeconds(0.5f);
+        AddPoints(_scorePared, new Vector3(3, 0, 0));
+        yield return new WaitForSeconds(0.5f);
+        AddPoints(_scoreTecho, new Vector3(0, 6, 0));
+        yield return new WaitForSeconds(0.5f);
+        AddPoints(_scoreDetalle, new Vector3(-3, 0, 0));
+    }
 }

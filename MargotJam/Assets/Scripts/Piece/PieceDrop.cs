@@ -134,7 +134,6 @@ public class PieceDrop : MonoBehaviour
         if(Mathf.Abs(dist) <= SNAP_THRESHOLD)
         {
             transform.position = new Vector3(neighbour.transform.position.x, transform.position.y);
-            Debug.Log("Snap");
             //VFXManager.Instance.PerfectVFX(transform.position - new Vector3(0, sprite.bounds.size.y / 2));
             VFXManager.Instance.PerfectVFX(new Vector3(transform.position.x, -2));
             DifficultManager.Instance.PerfectPlacement(transform.position);
