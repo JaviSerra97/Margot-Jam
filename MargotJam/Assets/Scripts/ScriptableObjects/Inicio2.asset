@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36a60706a621ddf4aafb15e0af3409bf, type: 3}
-  m_Name: Test
+  m_Name: Inicio2
   m_EditorClassIdentifier: 
   sequences:
   - id: First
@@ -35,3 +35,4 @@ MonoBehaviour:
     - {fileID: 7725091805010857935, guid: 2dcc0f0649e62684aa6155be6251b8e7, type: 3}
     - {fileID: 7725091805010857935, guid: 2dcc0f0649e62684aa6155be6251b8e7, type: 3}
     doShuffle: 1
+  initialPrefab: {fileID: 6546548600348215548, guid: a61e1828eae3db84c8fba71ff7f9f5fb, type: 3}

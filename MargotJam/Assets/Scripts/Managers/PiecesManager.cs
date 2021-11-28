@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static PiecesSequence;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class PiecesManager : MonoBehaviour
 {
+    public Image fadeImage;
+    public float fadeDuration;
+
     public const float OFFSET_CAMERA = 2f;
 
     public Transform LeftCollider;
@@ -26,7 +31,10 @@ public class PiecesManager : MonoBehaviour
     {
         int rand = Random.Range(0, sequences.Count);
         chosenSequence = sequences[rand];
-        Debug.Log(chosenSequence.name);
+
+        var init = chosenSequence.initialPrefab;
+
+        Instantiate(init, init.transform.position, init.transform.rotation);
 
         ShufflePieces();
     }
@@ -76,7 +84,7 @@ public class PiecesManager : MonoBehaviour
             }
         }
 
-        CreateNextPiece(); //Iniciar el juego
+        FadeScreen();
     }
 
     public void CheckMaxHeight(float y_pos)
@@ -89,6 +97,16 @@ public class PiecesManager : MonoBehaviour
             RightCollider.position += new Vector3(1, 0, 0);
             spawnPoint.position += new Vector3(0, 1, 0);
         }
+    }
+
+    void FadeScreen()
+    {
+        fadeImage.DOFade(0, fadeDuration).SetEase(Ease.Linear).OnComplete(StartGame).Play();
+    }
+
+    void StartGame()
+    {
+        CreateNextPiece();
     }
 
 }
