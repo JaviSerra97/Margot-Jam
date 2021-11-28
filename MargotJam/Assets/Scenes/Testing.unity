@@ -3544,7 +3544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1365947500}
   - component: {fileID: 1365947499}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: LeftScreenLimits
   m_TagString: ScreenLimit
   m_Icon: {fileID: 0}
@@ -4558,7 +4558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1824944212}
   - component: {fileID: 1824944210}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: RightScreenLimits
   m_TagString: ScreenLimit
   m_Icon: {fileID: 0}

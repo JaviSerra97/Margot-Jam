@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7725091805010857930}
   - component: {fileID: 6237542183825048019}
   - component: {fileID: -2652991695759024854}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ventana15
   m_TagString: Piece
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2728363998514026516, guid: fd357f2e8aed0814aacf3bc26026fc85, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d28893c188b9dd64bb733f7d3e08dc9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

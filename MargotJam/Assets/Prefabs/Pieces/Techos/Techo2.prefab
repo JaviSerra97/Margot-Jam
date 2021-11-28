@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7725091805010857930}
   - component: {fileID: 6237542183825048019}
   - component: {fileID: -2652991695759024854}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Techo2
   m_TagString: Piece
   m_Icon: {fileID: 0}
