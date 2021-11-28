@@ -1,3 +1,4 @@
+using KrillAudio.Krilloud;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,6 +7,8 @@ using UnityEngine;
 public class DifficultManager : MonoBehaviour
 {
     public static DifficultManager Instance;
+
+    //layer1 = 0,1,2
 
     [Header("Snap")]
     public float SnapEasy = 0.6f;
@@ -24,12 +27,16 @@ public class DifficultManager : MonoBehaviour
     private int _failsInEasy;
     private int _streak;
 
+    private KLAudioSource _source;
+
     private Vector3 _lastPos = new Vector3(0,0,0);
     private void Awake()
     {
         Instance = this;
         _difficult = 0;
         _failsInEasy = 0;
+        _source = GetComponent<KLAudioSource>();
+        _source.Play("game_ost");
     }
 
     public void PerfectPlacement(Vector3 pos)
@@ -42,11 +49,26 @@ public class DifficultManager : MonoBehaviour
             _failsInEasy--;
 
         if (_streak > StreakHard)
+        {
             _difficult = 2;
+            _source.SetFloatVar("layer1", 0);
+            _source.SetFloatVar("layer2", 0);
+            _source.SetFloatVar("layer3", 1);
+        }
         else if (_streak > StreakMedium)
+        {
             _difficult = 1;
+            _source.SetFloatVar("layer1", 0);
+            _source.SetFloatVar("layer2", 1);
+            _source.SetFloatVar("layer3", 0);
+        }
         else
+        {
             _difficult = 0;
+            _source.SetFloatVar("layer1", 1);
+            _source.SetFloatVar("layer2", 0);
+            _source.SetFloatVar("layer3", 0);
+        }
 
         EvaluateDifficult();
         SendScore(true);
