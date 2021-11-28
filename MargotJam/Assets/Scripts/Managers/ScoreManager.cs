@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -152,5 +153,10 @@ public class ScoreManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         if(PlayfabManager.Instance)
             PlayfabManager.Instance.UpdateHighscore(_score);
+    }
+
+    public void OnBackButton(int index)
+    {
+        SceneManager.LoadScene(index);
     }
 }

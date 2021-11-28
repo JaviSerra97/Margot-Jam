@@ -95,7 +95,7 @@ public class MenuManager : MonoBehaviour
         if (PlayerPrefs.GetFloat("ShowTutorial") == 1)
         {
             //Jugar
-            LoadSceneByIndex(2);
+            LoadSceneByIndex(3);
         }
         else
         {
@@ -103,7 +103,7 @@ public class MenuManager : MonoBehaviour
             PlayerPrefs.SetFloat("ShowTutorial", 1);
             PlayerPrefs.Save();
 
-            LoadSceneByIndex(1);
+            LoadSceneByIndex(2);
         }
     }
 
@@ -112,11 +112,6 @@ public class MenuManager : MonoBehaviour
     public void OnTutorialButton()
     {
         LoadSceneByIndex(1);
-    }
-
-    public void OnAudioToggle()
-    {
-        //Mutear/desmutear
     }
 
     public void OnExitButton()
