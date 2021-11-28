@@ -41,23 +41,10 @@ public class PlayfabManager : MonoBehaviour
     public void LoadServerData()
     {
         PlayFabClientAPI.GetTitleData(new GetTitleDataRequest(),
-        result => {
-            LoadGameSetup(result.Data);
-        },
+        result => {        },
         error => {
             Debug.Log("Getting titleData ERROR::" + error.ErrorMessage);
-        }
-);
-    }
-
-    private void LoadGameSetup(Dictionary<string, string> data)
-    {
-        SetPlayfabVersion(data["ClientVersion"]);
-    }
-
-    private void SetPlayfabVersion(string version)
-    {
-        GameVersion = version;
+        });
     }
     #endregion
 
@@ -95,6 +82,7 @@ public class PlayfabManager : MonoBehaviour
     #region LEADERBOARDS
     public void UpdateHighscore(int amount)
     {
+        Debug.Log("Score " + amount + " Enviado");
         var request = new UpdatePlayerStatisticsRequest()
         {
             Statistics = new List<StatisticUpdate>()
@@ -134,7 +122,7 @@ public class PlayfabManager : MonoBehaviour
                 {
                     if (player.PlayFabId == _playfabID)
                     {
-                        //RankingText.text = (player.Position + 1).ToString();
+                        Debug.Log((player.Position + 1).ToString());
                     }
                 }
             },
