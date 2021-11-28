@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd5d1904cd5304843a753e2194a13d50, type: 3}
   m_Name: KLSettings 1
   m_EditorClassIdentifier: 
-  autogenerateCode: 1
+  autogenerateCode: 0
   editorLogLevel: 1
   buildLogLevel: 2
   m_krilloudInDebugMode: 0
@@ -29,6 +29,27 @@ MonoBehaviour:
       isLoop: 0
       channelId: 0
       sourceContract: 2
+    - name: musica
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 1
+      channelId: 0
+      sourceContract: 2
+    - name: interface
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 3
+      sourceContract: 2
+    - name: gameplay
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 1
+      sourceContract: 2
     - name: test
       description: 
       is3D: 0
@@ -36,6 +57,54 @@ MonoBehaviour:
       isLoop: 0
       channelId: 0
       sourceContract: 2
-    variables: []
+    variables:
+    - name: musica
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 1
+      sourceContract: 2
+    - name: layer2
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 1
+      sourceContract: 2
+    - name: layer3
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 1
+      sourceContract: 2
+    - name: interface
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 1
+      sourceContract: 2
+    - name: pitch counter
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 12
+      sourceContract: 2
+    - name: gameplay
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 5
+      sourceContract: 2
     soundbank_files: []
     channels: []

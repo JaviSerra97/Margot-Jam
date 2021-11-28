@@ -129,7 +129,7 @@ public class ScoreManager : MonoBehaviour
         FinalScorePanel.SetActive(true);
         
         Record.SetActive(false);
-        ScoreText.GetComponent<Animator>().SetTrigger("End");
+        ScoreText.transform.parent.GetComponent<Animator>().SetTrigger("End");
         
         return _score;
     }
