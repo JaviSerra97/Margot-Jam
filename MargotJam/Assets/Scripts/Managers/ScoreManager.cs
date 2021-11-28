@@ -20,6 +20,9 @@ public class ScoreManager : MonoBehaviour
 
     public GameObject canvas;
 
+    public GameObject scorePanel;
+    public GameObject multiplierPanel;
+
     private const int ScoreForPerfect = 2000;
     private const int ScoreForPlace = 500;
 
@@ -78,11 +81,13 @@ public class ScoreManager : MonoBehaviour
     private void UpdateUI()
     {
         ScoreText.text = _score.ToString();
+        scorePanel.transform.DOPunchScale(Vector3.one * 0.15f, 0.25f);
     }
 
     void UpdateMultiplier()
     {
         MultiplierText.text = "x" + _multiplier;
+        multiplierPanel.transform.DOPunchScale(Vector3.one * 0.25f, 0.25f);
     }
 
     public int GetFinalScore()
