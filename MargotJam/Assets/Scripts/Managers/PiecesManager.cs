@@ -88,13 +88,13 @@ public class PiecesManager : MonoBehaviour
 
     public void CheckMaxHeight(float y_pos)
     {
-        if(y_pos > spawnPoint.position.y - OFFSET_CAMERA)
+        if(y_pos > spawnPoint.position.y - OFFSET_CAMERA && y_pos < 8.3f)
         {
             MainCamera.orthographicSize += 1;
             MainCamera.transform.position += new Vector3(0, 1, 0);
             LeftCollider.position += new Vector3(-1, 0, 0);
             RightCollider.position += new Vector3(1, 0, 0);
-            spawnPoint.position += new Vector3(0, 1, 0);
+            spawnPoint.position += new Vector3(0, 1.35f, 0);
         }
     }
 
