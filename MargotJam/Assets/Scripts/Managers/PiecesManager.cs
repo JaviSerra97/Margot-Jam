@@ -18,7 +18,9 @@ public class PiecesManager : MonoBehaviour
 
     [SerializeField] private List<PiecesSequence> sequences;
     [SerializeField] private Transform spawnPoint;
+    public float dropDelay;
     private PiecesSequence chosenSequence;
+    private bool canDropPiece;
 
     private int sequenceIndex, pieceIndex = 0;
 
@@ -45,6 +47,9 @@ public class PiecesManager : MonoBehaviour
         {
             Instantiate(chosenSequence.sequences[sequenceIndex].listOfPieces[pieceIndex], spawnPoint.position, spawnPoint.rotation);
             pieceIndex++;
+
+            canDropPiece = false;
+            Invoke(nameof(AllowDrop), dropDelay);
         }
         else { CheckSequences(); }
     }
@@ -113,5 +118,9 @@ public class PiecesManager : MonoBehaviour
     {
         CreateNextPiece();
     }
+
+    public bool CanDrop() { return canDropPiece; }
+
+    void AllowDrop() { canDropPiece = true; }
 
 }
