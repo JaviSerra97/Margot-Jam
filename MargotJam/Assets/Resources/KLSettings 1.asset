@@ -17,8 +17,7 @@ MonoBehaviour:
   buildLogLevel: 2
   m_krilloudInDebugMode: 0
   placeholderContract:
-    tags:
-    - test
+    tags: []
     variables: []
   cacheContract:
     tags:
@@ -26,6 +25,13 @@ MonoBehaviour:
       description: 
       is3D: 0
       max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: test
+      description: 
+      is3D: 0
+      max3DDistance: 0
       isLoop: 0
       channelId: 0
       sourceContract: 2
@@ -50,31 +56,92 @@ MonoBehaviour:
       isLoop: 0
       channelId: 1
       sourceContract: 2
-    - name: test
+    - name: perfect_sfx
       description: 
       is3D: 0
-      max3DDistance: 0
+      max3DDistance: 2
       isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: counter_sfx
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: fail_sfx
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: hover_button
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: limits_sfx
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: press_button
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: multiplier_sfx
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: touch_sfx
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: main_ost
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 1
+      channelId: 0
+      sourceContract: 2
+    - name: final_ost
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: inicio_sfx
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: music
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 1
       channelId: 0
       sourceContract: 2
     variables:
     - name: musica
-      defaultValue: 0
-      isGlobal: 0
-      source: 2
-      content: 0
-      min: 0
-      max: 1
-      sourceContract: 2
-    - name: layer2
-      defaultValue: 0
-      isGlobal: 0
-      source: 2
-      content: 0
-      min: 0
-      max: 1
-      sourceContract: 2
-    - name: layer3
       defaultValue: 0
       isGlobal: 0
       source: 2
@@ -105,6 +172,38 @@ MonoBehaviour:
       content: 0
       min: 0
       max: 5
+      sourceContract: 2
+    - name: layers
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 2
+      sourceContract: 2
+    - name: layer1
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 1
+      sourceContract: 2
+    - name: layer2
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 1
+      sourceContract: 2
+    - name: layer3
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 1
       sourceContract: 2
     soundbank_files: []
     channels: []

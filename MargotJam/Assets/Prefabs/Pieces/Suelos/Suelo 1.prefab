@@ -185,7 +185,11 @@ MonoBehaviour:
   lineShapeEnd: {x: 0, y: 0, z: 1}
   areaShapeSize: {x: 1, y: 1, z: 1}
   playOnAwake: 0
-  m_tags: []
+  m_tags:
+  - fail_sfx
+  - perfect_sfx
+  - limits_sfx
+  - touch_sfx
 --- !u!114 &2603662064263787808
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -23,6 +23,7 @@ public class PiecesManager : MonoBehaviour
     private bool canDropPiece;
 
     private int sequenceIndex, pieceIndex = 0;
+    private bool _elevate = false;
 
     private void Start()
     {
@@ -106,6 +107,11 @@ public class PiecesManager : MonoBehaviour
             LeftCollider.position += new Vector3(-1, 0, 0);
             RightCollider.position += new Vector3(1, 0, 0);
             spawnPoint.position += new Vector3(0, 1.35f, 0);
+        }
+        else if(y_pos > spawnPoint.position.y - OFFSET_CAMERA && !_elevate)
+        {
+            spawnPoint.position += new Vector3(0, 1.35f, 0);
+            _elevate = true;
         }
     }
 

@@ -134,7 +134,7 @@ public class ScoreManager : MonoBehaviour
         MultiplierText.transform.parent.gameObject.SetActive(false);
         FinalScorePanel.SetActive(true);
         
-        Record.SetActive(false);
+        Record.SetActive(true);
         ScoreText.transform.parent.GetComponent<Animator>().SetTrigger("End");
         
         return _score;
