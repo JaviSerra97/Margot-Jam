@@ -143,13 +143,13 @@ public class ScoreManager : MonoBehaviour
     private IEnumerator ExtraScore()
     {
         yield return new WaitForSeconds(2f);
-        AddPoints(_scoreSuelo, new Vector3(0, -3, 0));
+        AddPoints(_scoreSuelo, new Vector3(0, -6, 0));
         yield return new WaitForSeconds(0.5f);
-        AddPoints(_scorePared, new Vector3(3, 0, 0));
+        AddPoints(_scorePared, new Vector3(6, 0, 0));
         yield return new WaitForSeconds(0.5f);
         AddPoints(_scoreTecho, new Vector3(0, 6, 0));
         yield return new WaitForSeconds(0.5f);
-        AddPoints(_scoreDetalle, new Vector3(-3, 0, 0));
+        AddPoints(_scoreDetalle, new Vector3(-6, 0, 0));
         yield return new WaitForSeconds(0.5f);
         if(PlayfabManager.Instance)
             PlayfabManager.Instance.UpdateHighscore(_score);
