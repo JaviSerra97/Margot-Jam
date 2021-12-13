@@ -34,7 +34,7 @@ public class ScoreManager : MonoBehaviour
     public GameObject multiplierPanel;
 
     private const int ScoreForPerfect = 5000;
-    private const int ScoreForPlace = 4000;
+    private const int ScoreForPlace = 1000;
 
     private int _score;
     private int _multiplier;
@@ -118,11 +118,11 @@ public class ScoreManager : MonoBehaviour
             switch (piece.ubicacion)
             {
                 case PieceDrop.UbicacionSprite.Suelo:
-                    if (piece.transform.position.y < -1)
+                    if (piece.transform.position.y < 2.5f)
                         _scoreSuelo += ScoreForPlace;
                     break;
                 case PieceDrop.UbicacionSprite.Pared:
-                    if (piece.transform.position.y > -1 && piece.transform.position.y < 3)
+                    if (piece.transform.position.y > 2 && piece.transform.position.y < 10)
                         _scorePared += ScoreForPlace;
                     break;
                 case PieceDrop.UbicacionSprite.Detalles:
@@ -130,7 +130,7 @@ public class ScoreManager : MonoBehaviour
                         _scoreDetalle += ScoreForPlace;
                         break;
                 case PieceDrop.UbicacionSprite.Techo:
-                    if (piece.transform.position.y > 3)
+                    if (piece.transform.position.y > 10)
                         _scoreTecho += ScoreForPlace;
                     break;
             }

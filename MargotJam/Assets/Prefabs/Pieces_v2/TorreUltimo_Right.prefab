@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eb967fc3afe0ca499c271aaf95a008a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ubicacion: 0
+  ubicacion: 3
   dropKey: 32
   projection: {fileID: 1551869405203927218}
   tweenDuration: 0.25
