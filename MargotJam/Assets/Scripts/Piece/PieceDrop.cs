@@ -52,7 +52,10 @@ public class PieceDrop : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(dropKey) && !put && manager.CanDrop()) { DropPiece(); }
+        if (Input.GetKeyDown(dropKey) && !put && manager.CanDrop())
+        {
+            DropPiece();
+        }
     }
 
     private void FixedUpdate()
@@ -111,7 +114,6 @@ public class PieceDrop : MonoBehaviour
 
     void DropPiece()
     {
-        Debug.Log("Drop");
         put = true;
 
         gameObject.layer = 0;

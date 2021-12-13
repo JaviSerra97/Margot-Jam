@@ -28,7 +28,10 @@ public class TutorialScreen : MonoBehaviour
     {
         if (canCloseTutorial)
         {
-            GetComponent<CanvasGroup>().DOFade(0, 0.5f);
+            var canvasGroup = GetComponent<CanvasGroup>();
+            canvasGroup.DOFade(0, 0.5f);
+            canvasGroup.interactable = false;
+            
             manager.StartGame();
         }
     }
