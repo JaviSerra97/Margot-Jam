@@ -15,10 +15,10 @@ MonoBehaviour:
   sequences:
   - id: Suelos
     listOfPieces:
-    - {fileID: 7725091805010857935, guid: 20f6c10234f9ac248a8d1650b3726b41, type: 3}
-    - {fileID: 7725091805010857935, guid: 2dcc0f0649e62684aa6155be6251b8e7, type: 3}
-    - {fileID: 7725091805010857935, guid: 2dcc0f0649e62684aa6155be6251b8e7, type: 3}
-    - {fileID: 7725091805010857935, guid: 2dcc0f0649e62684aa6155be6251b8e7, type: 3}
+    - {fileID: 1551869403454284002, guid: cbede5c117e5e9c4f967964035c1f3b5, type: 3}
+    - {fileID: 1551869403454284002, guid: cbede5c117e5e9c4f967964035c1f3b5, type: 3}
+    - {fileID: 1551869403454284002, guid: cbede5c117e5e9c4f967964035c1f3b5, type: 3}
+    - {fileID: 1551869403454284002, guid: cbede5c117e5e9c4f967964035c1f3b5, type: 3}
     doShuffle: 1
   - id: Barandillas
     listOfPieces:
