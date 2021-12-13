@@ -27,8 +27,8 @@ public class ScoreManager : MonoBehaviour
     public GameObject scorePanel;
     public GameObject multiplierPanel;
 
-    private const int ScoreForPerfect = 2000;
-    private const int ScoreForPlace = 500;
+    private const int ScoreForPerfect = 5000;
+    private const int ScoreForPlace = 4000;
 
     private int _score;
     private int _multiplier;
