@@ -117,10 +117,10 @@ public class PiecesManager : MonoBehaviour
 
     void FadeScreen()
     {
-        fadeImage.DOFade(0, fadeDuration).SetEase(Ease.Linear).OnComplete(StartGame).Play();
+        fadeImage.DOFade(0, fadeDuration).SetEase(Ease.Linear).Play();
     }
 
-    void StartGame()
+    public void StartGame()
     {
         CreateNextPiece();
     }
