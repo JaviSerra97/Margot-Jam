@@ -28,12 +28,16 @@ public class TutorialScreen : MonoBehaviour
     {
         if (canCloseTutorial)
         {
-            var canvasGroup = GetComponent<CanvasGroup>();
-            canvasGroup.DOFade(0, 0.5f);
-            canvasGroup.interactable = false;
-            
-            manager.StartGame();
+            CanvasGroup g = GetComponent<CanvasGroup>();
+            g.interactable = false;
+            g.DOFade(0, 0.5f).OnComplete(HideScreen);
         }
+    }
+
+    void HideScreen()
+    {
+        gameObject.SetActive(false);
+        manager.StartGame();
     }
 
     void AllowCloseTutorial()
