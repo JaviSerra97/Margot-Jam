@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1665132163156099365}
   - component: {fileID: 8596270989629719072}
   m_Layer: 0
-  m_Name: topeRight
+  m_Name: topeBienRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
