@@ -15,6 +15,7 @@ public class PieceDrop : MonoBehaviour
     [SerializeField] private float tweenDuration = 0.25f;
 
     public static float SNAP_THRESHOLD = 0.15f;
+    public static float SNAP_SAFE = 0.9f;
     public static float RAYCAST_VARIATION = 0.2f;
 
     public GameObject LeftNeighbour;
@@ -137,7 +138,7 @@ public class PieceDrop : MonoBehaviour
     {
         _sounds.TouchOtherPlaySound();
         var dist = transform.position.x - neighbour.transform.position.x;
-        if(Mathf.Abs(dist) <= SNAP_THRESHOLD)
+        if(Mathf.Abs(dist) <= SNAP_THRESHOLD * sprite.bounds.size.x)
         {
             transform.position = new Vector3(neighbour.transform.position.x, transform.position.y);
             //VFXManager.Instance.PerfectVFX(transform.position - new Vector3(0, sprite.bounds.size.y / 2));
@@ -145,6 +146,10 @@ public class PieceDrop : MonoBehaviour
             DifficultManager.Instance.PerfectPlacement(transform.position);
             CheckNeighbours();
             _sounds.PerfectPlaySound();
+        }
+        else if(Mathf.Abs(dist) <= SNAP_SAFE * sprite.bounds.size.x)
+        {
+            transform.position = new Vector3(neighbour.transform.position.x, transform.position.y);
         }
         else
         {

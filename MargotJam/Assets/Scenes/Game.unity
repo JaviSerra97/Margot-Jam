@@ -1614,7 +1614,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca2d19103a42ac24fbc6714179ddef28, type: 3}
   m_Name: 
@@ -2184,7 +2184,7 @@ GameObject:
   - component: {fileID: 727977132}
   - component: {fileID: 727977133}
   m_Layer: 0
-  m_Name: FARLOPA_6
+  m_Name: Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2496,7 +2496,7 @@ GameObject:
   - component: {fileID: 899590283}
   - component: {fileID: 899590284}
   m_Layer: 0
-  m_Name: FARLOPA_6
+  m_Name: Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4065,7 +4065,7 @@ GameObject:
   - component: {fileID: 1586184796}
   - component: {fileID: 1586184797}
   m_Layer: 0
-  m_Name: FARLOPA_6
+  m_Name: Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4147,7 +4147,7 @@ GameObject:
   - component: {fileID: 1600064658}
   - component: {fileID: 1600064659}
   m_Layer: 0
-  m_Name: FARLOPA_6
+  m_Name: Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5453,7 +5453,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2007878500
 MonoBehaviour:
   m_ObjectHideFlags: 0
