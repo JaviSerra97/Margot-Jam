@@ -14,10 +14,6 @@ public class PlayfabManager : MonoBehaviour
     [Header("Playfab Variables")]
     public string GameVersion;
 
-    [Header("Control Versiones")]
-    [SerializeField]
-    private bool _isTest = false;
-
     private bool _isItemPurchased;
 
     private int _chessPoints;
@@ -109,7 +105,7 @@ public class PlayfabManager : MonoBehaviour
             });
     }
 
-    private void GetLeaderboard()
+    public void GetLeaderboard()
     {
         var request = new GetLeaderboardRequest()
         {
@@ -126,6 +122,7 @@ public class PlayfabManager : MonoBehaviour
                     {
                         Debug.Log((player.Position + 1).ToString());
                         playerPosition = (player.Position + 1).ToString();
+                        Debug.Log("PlayerPos: " + playerPosition);
                     }
                 }
             },

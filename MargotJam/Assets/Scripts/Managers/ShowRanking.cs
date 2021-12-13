@@ -5,8 +5,6 @@ using TMPro;
 
 public class ShowRanking : MonoBehaviour
 {
-    
-    
     public TMP_Text text;
     private float _timer;
     public void SetRanking()
@@ -14,7 +12,7 @@ public class ShowRanking : MonoBehaviour
         text.text = "Ranking: " + PlayfabManager.Instance.GetRanking();
     }
 
-    void OnEnable() { SetRanking(); }
+    void OnEnable() { SetRanking(); Invoke(nameof(UpdateLeaderboards), 5f); }
 
     private void Update()
     {
@@ -23,6 +21,13 @@ public class ShowRanking : MonoBehaviour
         {
             SetRanking();
             _timer = 0;
+            Debug.Log("Hihi");
         }
+    }
+
+    private void UpdateLeaderboards()
+    {
+        if(PlayfabManager.Instance?.GetRanking() == null)
+            PlayfabManager.Instance?.GetLeaderboard();
     }
 }
