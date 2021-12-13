@@ -840,11 +840,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SnapEasy: 0.6
-  SnapHard: 0.2
+  SnapHard: 0.3
   FailsForEasy: 2
-  StreakMedium: 2
-  StreakHard: 3
-  speedEasy: 4
+  StreakMedium: 4
+  StreakHard: 6
+  speedEasy: 5
   speedHard: 7
 --- !u!1 &172608977
 GameObject:
@@ -1654,7 +1654,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1678,7 +1678,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.94, z: -10}
+  m_LocalPosition: {x: 0, y: 1.75, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4548,7 +4548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1335888037
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6155,7 +6155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1890620090
 RectTransform:
   m_ObjectHideFlags: 0
