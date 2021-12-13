@@ -28,7 +28,7 @@ public class TutorialScreen : MonoBehaviour
     {
         if (canCloseTutorial)
         {
-            GetComponent<Image>().DOFade(0, 0.15f);
+            GetComponent<CanvasGroup>().DOFade(0, 0.5f);
             manager.StartGame();
         }
     }

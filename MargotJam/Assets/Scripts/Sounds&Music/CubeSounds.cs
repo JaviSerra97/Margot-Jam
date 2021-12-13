@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using KrillAudio.Krilloud;
+//using KrillAudio.Krilloud;
 using UnityEngine;
 
 public class CubeSounds : MonoBehaviour
 {
-    KLAudioSource _source;
+    /*KLAudioSource _source;
     //AudioSource _source;
 
     private const string perfect_tag = "perfect_sfx";
@@ -37,5 +37,5 @@ public class CubeSounds : MonoBehaviour
     public void FailPlaySound()
     {
         _source.Play(fail_tag);
-    }
+    }*/
 }

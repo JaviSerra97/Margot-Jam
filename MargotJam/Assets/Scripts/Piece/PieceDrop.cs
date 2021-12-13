@@ -111,6 +111,7 @@ public class PieceDrop : MonoBehaviour
 
     void DropPiece()
     {
+        Debug.Log("Drop");
         put = true;
 
         gameObject.layer = 0;
@@ -136,7 +137,7 @@ public class PieceDrop : MonoBehaviour
 
     void CheckSnap()
     {
-        _sounds.TouchOtherPlaySound();
+        //_sounds.TouchOtherPlaySound();
         var dist = transform.position.x - neighbour.transform.position.x;
         if(Mathf.Abs(dist) <= SNAP_THRESHOLD * sprite.bounds.size.x)
         {
@@ -145,7 +146,7 @@ public class PieceDrop : MonoBehaviour
             VFXManager.Instance.PerfectVFX(new Vector3(transform.position.x, -2));
             DifficultManager.Instance.PerfectPlacement(transform.position);
             CheckNeighbours();
-            _sounds.PerfectPlaySound();
+            //_sounds.PerfectPlaySound();
         }
         else if(Mathf.Abs(dist) <= SNAP_SAFE * sprite.bounds.size.x)
         {
@@ -154,7 +155,7 @@ public class PieceDrop : MonoBehaviour
         else
         {
             DifficultManager.Instance.Fail();
-            _sounds.FailPlaySound();
+            //_sounds.FailPlaySound();
         }
     }
 

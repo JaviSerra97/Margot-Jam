@@ -24,7 +24,7 @@ public class PieceMove : MonoBehaviour
     void ChangeDirection() 
     { 
         _sign *= -1; 
-        _sounds.LimitsPlaySound();
+        //_sounds.LimitsPlaySound();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
