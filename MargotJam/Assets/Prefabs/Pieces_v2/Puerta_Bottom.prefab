@@ -120,9 +120,9 @@ MonoBehaviour:
   dropKey: 32
   projection: {fileID: 1551869405203927218}
   tweenDuration: 0.25
-  LeftNeighbour: {fileID: 0}
-  DownNeighbour: {fileID: 0}
-  RightNeighbour: {fileID: 0}
+  LeftNeighbour: {fileID: 1551869403454284002, guid: 5085dfa89a42c19488fb3ad080fa386f, type: 3}
+  DownNeighbour: {fileID: 1551869403454284002, guid: 7313081fbb3e52a41865d4af3bad8c78, type: 3}
+  RightNeighbour: {fileID: 1551869403454284002, guid: 28e6c54814e75f047ad6bfdf41ead1dd, type: 3}
 --- !u!114 &4510474247335434521
 MonoBehaviour:
   m_ObjectHideFlags: 0
