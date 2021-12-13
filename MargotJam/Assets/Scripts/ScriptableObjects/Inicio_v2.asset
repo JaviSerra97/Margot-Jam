@@ -12,5 +12,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a60706a621ddf4aafb15e0af3409bf, type: 3}
   m_Name: Inicio_v2
   m_EditorClassIdentifier: 
-  sequences: []
+  sequences:
+  - id: 0
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: 7313081fbb3e52a41865d4af3bad8c78, type: 3}
+    doShuffle: 0
+  - id: 1
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: 5085dfa89a42c19488fb3ad080fa386f, type: 3}
+    - {fileID: 1551869403454284002, guid: c3143aec43fd3de4ba141460da72e05d, type: 3}
+    - {fileID: 1551869403454284002, guid: 85c299fac44fe2145b20648b16dc1b9a, type: 3}
+    doShuffle: 1
+  - id: 2
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: d81b61a5054ff24498e1c13a2150c8d5, type: 3}
+    - {fileID: 1551869403454284002, guid: aecdddb6fda182e4ea139cd4a7d07544, type: 3}
+    - {fileID: 1551869403454284002, guid: 94c82f5a8dee02144bbb7f032ff237de, type: 3}
+    - {fileID: 1551869403454284002, guid: 76e86fa301f328648b339df8702126af, type: 3}
+    - {fileID: 1551869403454284002, guid: 8777784fcf1b70b4db1ccdc787f4a2f1, type: 3}
+    doShuffle: 1
+  - id: 3
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: 76e86fa301f328648b339df8702126af, type: 3}
+    - {fileID: 1551869403454284002, guid: 8777784fcf1b70b4db1ccdc787f4a2f1, type: 3}
+    - {fileID: 1551869403454284002, guid: cbede5c117e5e9c4f967964035c1f3b5, type: 3}
+    - {fileID: 1551869403454284002, guid: cbede5c117e5e9c4f967964035c1f3b5, type: 3}
+    - {fileID: 1551869403454284002, guid: 68cf71940ef0bd646b112504c2af06d0, type: 3}
+    doShuffle: 1
+  - id: 4
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: 3b0b8de334ff46a43a5885064cc74ff6, type: 3}
+    - {fileID: 1551869403454284002, guid: 3b0b8de334ff46a43a5885064cc74ff6, type: 3}
+    - {fileID: 1551869403454284002, guid: 3b0b8de334ff46a43a5885064cc74ff6, type: 3}
+    - {fileID: 1551869403454284002, guid: ad43f82b4f0c65b4784b6a76d3e2e7a0, type: 3}
+    - {fileID: 1551869403454284002, guid: a83849c52a820534b9d7c4092619e6fb, type: 3}
+    doShuffle: 1
+  - id: 5
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: 76e86fa301f328648b339df8702126af, type: 3}
+    - {fileID: 1551869403454284002, guid: 8777784fcf1b70b4db1ccdc787f4a2f1, type: 3}
+    - {fileID: 1551869403454284002, guid: 68cf71940ef0bd646b112504c2af06d0, type: 3}
+    - {fileID: 1551869403454284002, guid: 0a424a78291add340a8a4b21c61a87e7, type: 3}
+    - {fileID: 1551869403454284002, guid: 80d9adc3510c94d428eed3743b4529a5, type: 3}
+    doShuffle: 1
+  - id: 6
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: 58e65d7aee184ab4f9cc8006f193413d, type: 3}
+    - {fileID: 1551869403454284002, guid: 58e65d7aee184ab4f9cc8006f193413d, type: 3}
+    - {fileID: 1551869403454284002, guid: 58e65d7aee184ab4f9cc8006f193413d, type: 3}
+    - {fileID: 1551869403454284002, guid: 68cf71940ef0bd646b112504c2af06d0, type: 3}
+    - {fileID: 1551869403454284002, guid: 68cf71940ef0bd646b112504c2af06d0, type: 3}
+    doShuffle: 1
+  - id: 7
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: 4f6e5d745478a2144b387c24c723eaa2, type: 3}
+    - {fileID: 1551869403454284002, guid: 915da842966e7ec4f9cf94a57169924a, type: 3}
+    - {fileID: 1551869403454284002, guid: 7a0e79faf79874c4483a4682e9d484d7, type: 3}
+    - {fileID: 1551869403454284002, guid: 07e8f836f4954f04e8a0b08efa6ec856, type: 3}
+    - {fileID: 1551869403454284002, guid: 07e8f836f4954f04e8a0b08efa6ec856, type: 3}
+    doShuffle: 1
+  - id: 8
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: 4a062c80ff840044fab8abbfefa16fc2, type: 3}
+    - {fileID: 1551869403454284002, guid: 9d01938bb101725469297c9fc7f3f96a, type: 3}
+    doShuffle: 0
+  - id: 9
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: 746e449431bc4304cb117ffbf18207b7, type: 3}
+    - {fileID: 1551869403454284002, guid: a8a19112f9d0cc84b96846c27464c05e, type: 3}
+    doShuffle: 0
+  - id: 10
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: 50ef95c9969eecc48a820ce91c52ea94, type: 3}
+    - {fileID: 1551869403454284002, guid: cefaa85f8bedf144db6232ca05e418e8, type: 3}
+    doShuffle: 0
   initialPrefab: {fileID: 8253075997216628159, guid: 29a8c31d3ef07cb4b845792ffc2dabe3, type: 3}

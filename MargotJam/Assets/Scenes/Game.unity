@@ -5986,8 +5986,7 @@ MonoBehaviour:
   RightCollider: {fileID: 1824944212}
   MainCamera: {fileID: 519420031}
   sequences:
-  - {fileID: 11400000, guid: 0db3710671dafde47861c2f49983effd, type: 2}
-  - {fileID: 11400000, guid: 515db47b43da1dd48b7015343348add4, type: 2}
+  - {fileID: 11400000, guid: 280b9c60078232943baba7c9b53764af, type: 2}
   spawnPoint: {fileID: 1903044345}
   dropDelay: 0.5
 --- !u!1 &2123823385
