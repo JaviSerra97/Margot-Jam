@@ -11,7 +11,7 @@ public class PiecesManager : MonoBehaviour
     public Image fadeImage;
     public float fadeDuration;
 
-    public const float OFFSET_CAMERA = 2f;
+    public const float OFFSET_CAMERA = 3.5f;
 
     public Transform LeftCollider;
     public Transform RightCollider;
@@ -101,17 +101,19 @@ public class PiecesManager : MonoBehaviour
 
     public void CheckMaxHeight(float y_pos)
     {
-        if(y_pos > spawnPoint.position.y - OFFSET_CAMERA && y_pos < 8.3f)
+        if(y_pos > spawnPoint.position.y - OFFSET_CAMERA && y_pos < 18f)
         {
             MainCamera.orthographicSize += 1;
-            MainCamera.transform.position += new Vector3(0, 1, 0);
-            LeftCollider.position += new Vector3(-1, 0, 0);
-            RightCollider.position += new Vector3(1, 0, 0);
-            spawnPoint.position += new Vector3(0, 1.35f, 0);
+            MainCamera.transform.position += new Vector3(0, 1.1f, 0);
+            LeftCollider.position += new Vector3(-0.5f, 0, 0);
+            RightCollider.position += new Vector3(0.5f, 0, 0);
+            spawnPoint.position += new Vector3(0, 2f, 0);
         }
         else if(y_pos > spawnPoint.position.y - OFFSET_CAMERA && !_elevate)
         {
-            spawnPoint.position += new Vector3(0, 1.35f, 0);
+            spawnPoint.position += new Vector3(0, 1f, 0);
+            MainCamera.orthographicSize += 0.3f;
+            MainCamera.transform.position += new Vector3(0, 0.3f, 0);
             _elevate = true;
         }
     }
