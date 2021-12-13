@@ -20,6 +20,7 @@ public class TutorialScreen : MonoBehaviour
     private void Start()
     {
         StartText.DOFade(0, FadeDuration).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InQuad).Play();
+        StartText.gameObject.SetActive(false);
         
         Invoke(nameof(AllowCloseTutorial), minTutorialTime);
     }
@@ -43,5 +44,6 @@ public class TutorialScreen : MonoBehaviour
     void AllowCloseTutorial()
     {
         canCloseTutorial = true;
+        StartText.gameObject.SetActive(true);
     }
 }

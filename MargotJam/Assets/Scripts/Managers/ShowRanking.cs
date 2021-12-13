@@ -21,7 +21,6 @@ public class ShowRanking : MonoBehaviour
         {
             SetRanking();
             _timer = 0;
-            Debug.Log("Hihi");
         }
     }
 

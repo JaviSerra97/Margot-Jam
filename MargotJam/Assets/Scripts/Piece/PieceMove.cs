@@ -23,8 +23,8 @@ public class PieceMove : MonoBehaviour
 
     void ChangeDirection() 
     { 
-        _sign *= -1; 
-        //_sounds.LimitsPlaySound();
+        _sign *= -1;
+        SFX_Manager.Instance.PlayBounceSFX();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -7,23 +7,29 @@ using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
+    [Header("Condicion de victoria")]
+    public int ScoreToBeat = 200000;
+    public static bool GameBeated = false;
+
     public static ScoreManager Instance;
 
+    [Header("Referencias")]
     public TextMeshProUGUI ScoreText;
     public TextMeshProUGUI MultiplierText;
     public GameObject FinalScorePanel;
     public GameObject Record;
 
+    [Header("DoTween")]
     public GameObject scoreTextPrefab;
     public Transform scorePoint;
     public float scaleDuration;
     public float moveDuration;
-
+    [Header("Canvas")]
     public GameObject canvas;
-
+    [Header("Animator walking man")]
     public Animator SeniorAnim;
     public Animator ShadowAnim;
-
+    [Header("Panels")]
     public GameObject scorePanel;
     public GameObject multiplierPanel;
 
@@ -155,6 +161,13 @@ public class ScoreManager : MonoBehaviour
         {
             PlayfabManager.Instance.UpdateHighscore(_score);
             Debug.Log("Final score: " + _score);
+        }
+        SFX_Manager.Instance.PlayFanfarriaSFX();
+
+        if (_score > ScoreToBeat)
+        {
+            Debug.Log("Prueba superada"); // ** Cambiar aqui la variable deseada ** //
+            GameBeated = true;
         }
     }
 

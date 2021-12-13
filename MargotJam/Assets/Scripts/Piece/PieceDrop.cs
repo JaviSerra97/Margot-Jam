@@ -15,7 +15,7 @@ public class PieceDrop : MonoBehaviour
     [SerializeField] private float tweenDuration = 0.25f;
 
     public static float SNAP_THRESHOLD = 0.15f;
-    public static float SNAP_SAFE = 0.9f;
+    public static float SNAP_SAFE = 0.8f;
     public static float RAYCAST_VARIATION = 0.2f;
 
     public GameObject LeftNeighbour;
@@ -39,14 +39,11 @@ public class PieceDrop : MonoBehaviour
 
     private PiecesManager manager;
 
-    private CubeSounds _sounds;
-
     private void Awake()
     {
         move = GetComponent<PieceMove>();
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
-        _sounds = GetComponent<CubeSounds>();
         manager = GameObject.FindObjectOfType<PiecesManager>();
     }
 
@@ -139,7 +136,7 @@ public class PieceDrop : MonoBehaviour
 
     void CheckSnap()
     {
-        //_sounds.TouchOtherPlaySound();
+        SFX_Manager.Instance.PlayHitSound();
         var dist = transform.position.x - neighbour.transform.position.x;
         if(Mathf.Abs(dist) <= SNAP_THRESHOLD * sprite.bounds.size.x)
         {
@@ -148,7 +145,7 @@ public class PieceDrop : MonoBehaviour
             VFXManager.Instance.PerfectVFX(new Vector3(transform.position.x, -2));
             DifficultManager.Instance.PerfectPlacement(transform.position);
             CheckNeighbours();
-            //_sounds.PerfectPlaySound();
+            SFX_Manager.Instance.PlayPerfectSFX();
         }
         else if(Mathf.Abs(dist) <= SNAP_SAFE * sprite.bounds.size.x)
         {
@@ -157,7 +154,7 @@ public class PieceDrop : MonoBehaviour
         else
         {
             DifficultManager.Instance.Fail();
-            //_sounds.FailPlaySound();
+            SFX_Manager.Instance.PlayFailSound();
         }
     }
 

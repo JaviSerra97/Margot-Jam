@@ -41,10 +41,17 @@ public class DifficultManager : MonoBehaviour
         if (_failsInEasy > 0)
             _failsInEasy--;
 
-        if (_streak > StreakHard)
+        if (_streak >= StreakHard)
+        {
             _difficult = 2;
+
+            if(_streak == StreakHard)
+                SFX_Manager.Instance.PlayCounterSFX();
+        }
         else if (_streak > StreakMedium)
+        {
             _difficult = 1;
+        }
         else
             _difficult = 0;
 
