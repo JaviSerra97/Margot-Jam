@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static PiecesSequence;
 using UnityEngine.UI;
 using DG.Tweening;
@@ -128,5 +129,10 @@ public class PiecesManager : MonoBehaviour
     public bool CanDrop() { return canDropPiece; }
 
     void AllowDrop() { canDropPiece = true; }
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
 }
