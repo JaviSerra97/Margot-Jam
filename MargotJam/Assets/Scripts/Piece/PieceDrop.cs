@@ -9,7 +9,7 @@ public class PieceDrop : MonoBehaviour
     public UbicacionSprite ubicacion;
 
 
-    [SerializeField] private KeyCode dropKey;
+    //[SerializeField] private KeyCode dropKey;
     [SerializeField] private GameObject projection;
 
     [SerializeField] private float tweenDuration = 0.25f;
@@ -49,9 +49,14 @@ public class PieceDrop : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(dropKey) && !put && manager.CanDrop())
+        if (Input.touchCount > 0)
         {
-            DropPiece();
+            var touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began && !put && manager.CanDrop())
+            {
+                DropPiece();
+            }
         }
     }
 
