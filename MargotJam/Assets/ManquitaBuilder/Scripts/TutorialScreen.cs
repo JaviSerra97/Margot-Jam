@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class TutorialScreen : MonoBehaviour
 {
+    public static bool ShowTuto = true; // Tienes que poner a true cuando se vuelva a iniciar el minijuego //
+    
     public TMP_Text StartText;
     public float FadeDuration;
 
@@ -16,13 +18,19 @@ public class TutorialScreen : MonoBehaviour
     public PiecesManager manager;
 
     private bool canCloseTutorial = false;
+
     
     private void Start()
     {
-        StartText.DOFade(0, FadeDuration).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InQuad).Play();
-        StartText.gameObject.SetActive(false);
-        
-        Invoke(nameof(AllowCloseTutorial), minTutorialTime);
+        if (ShowTuto)
+        {
+            StartText.DOFade(0, FadeDuration).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InQuad).Play();
+            StartText.gameObject.SetActive(false);
+
+            Invoke(nameof(AllowCloseTutorial), minTutorialTime);
+        }
+        else
+            Invoke(nameof(HideScreen), 0.1f);
     }
 
     public void StartGame()

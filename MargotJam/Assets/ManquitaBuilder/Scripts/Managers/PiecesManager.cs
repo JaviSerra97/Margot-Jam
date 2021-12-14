@@ -134,6 +134,7 @@ public class PiecesManager : MonoBehaviour
 
     public void ResetGame()
     {
+        TutorialScreen.ShowTuto = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

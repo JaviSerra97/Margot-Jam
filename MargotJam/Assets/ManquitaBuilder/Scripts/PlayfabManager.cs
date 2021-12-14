@@ -120,9 +120,7 @@ public class PlayfabManager : MonoBehaviour
                 {
                     if (player.PlayFabId == _playfabID)
                     {
-                        Debug.Log((player.Position + 1).ToString());
                         playerPosition = (player.Position + 1).ToString();
-                        Debug.Log("PlayerPos: " + playerPosition);
                     }
                 }
             },

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.EventSystems;
 
 public class PieceDrop : MonoBehaviour
 {
@@ -55,7 +56,8 @@ public class PieceDrop : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began && !put && manager.CanDrop())
             {
-                DropPiece();
+                if(!EventSystem.current.IsPointerOverGameObject(touch.fingerId))
+                    DropPiece();
             }
         }
     }
