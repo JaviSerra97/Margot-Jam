@@ -1,4 +1,6 @@
-﻿namespace OWO
+﻿using UnityEngine;
+
+namespace OWO
 {
     public class OWOController
     {

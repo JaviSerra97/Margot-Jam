@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using OWO;
 using UnityEngine.EventSystems;
 
 public class PieceDrop : MonoBehaviour
@@ -145,23 +146,43 @@ public class PieceDrop : MonoBehaviour
     {
         SFX_Manager.Instance.PlayHitSound();
         var dist = transform.position.x - neighbour.transform.position.x;
-        if(Mathf.Abs(dist) <= SNAP_THRESHOLD * sprite.bounds.size.x)
+        if(Mathf.Abs(dist) <= SNAP_THRESHOLD * sprite.bounds.size.x) //DE LOCOS
         {
             transform.position = new Vector3(neighbour.transform.position.x, transform.position.y);
-            //VFXManager.Instance.PerfectVFX(transform.position - new Vector3(0, sprite.bounds.size.y / 2));
             VFXManager.Instance.PerfectVFX(new Vector3(transform.position.x, -2));
             DifficultManager.Instance.PerfectPlacement(transform.position);
             CheckNeighbours();
             SFX_Manager.Instance.PlayPerfectSFX();
+
+            if (transform.position.x >= 0)
+            {
+                OWOManager.Instance.SendSensation(SensationId.FreeFall, OWOMuscle.Pectoral_R);
+            }
+            else
+            {
+                OWOManager.Instance.SendSensation(SensationId.FreeFall, OWOMuscle.Pectoral_L);
+            }
         }
-        else if(Mathf.Abs(dist) <= SNAP_SAFE * sprite.bounds.size.x)
+        else if(Mathf.Abs(dist) <= SNAP_SAFE * sprite.bounds.size.x) //MEH
         {
             transform.position = new Vector3(neighbour.transform.position.x, transform.position.y);
+            
+            if (transform.position.x >= 0)
+            {
+                OWOManager.Instance.SendSensation(SensationId.FreeFall, OWOMuscle.Arm_R);
+            }
+            else
+            {
+                OWOManager.Instance.SendSensation(SensationId.FreeFall, OWOMuscle.Arm_L);
+            }
         }
-        else
+        else //BOBO O Q
         {
             DifficultManager.Instance.Fail();
             SFX_Manager.Instance.PlayFailSound();
+
+            OWOManager.Instance.SendSensation(SensationId.InsectBites, OWOMuscle.Pectoral_R);
+            OWOManager.Instance.SendSensation(SensationId.InsectBites, OWOMuscle.Pectoral_L);
         }
     }
 
