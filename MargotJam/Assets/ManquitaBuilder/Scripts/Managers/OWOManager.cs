@@ -13,9 +13,9 @@ public class OWOManager : MonoBehaviour
     private void Awake()
     {
         if (!Instance)
-        {
             Instance = this;
-        }
+        else
+            Destroy(this);
 
         controller = new OWOController();
     }

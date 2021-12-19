@@ -169,11 +169,11 @@ public class PieceDrop : MonoBehaviour
             
             if (transform.position.x >= 0)
             {
-                OWOManager.Instance.SendSensation(SensationId.FreeFall, OWOMuscle.Arm_R);
+                OWOManager.Instance.SendSensation(SensationId.Ball, OWOMuscle.Arm_R);
             }
             else
             {
-                OWOManager.Instance.SendSensation(SensationId.FreeFall, OWOMuscle.Arm_L);
+                OWOManager.Instance.SendSensation(SensationId.Ball, OWOMuscle.Arm_L);
             }
         }
         else //BOBO O Q
@@ -181,8 +181,10 @@ public class PieceDrop : MonoBehaviour
             DifficultManager.Instance.Fail();
             SFX_Manager.Instance.PlayFailSound();
 
-            OWOManager.Instance.SendSensation(SensationId.InsectBites, OWOMuscle.Pectoral_R);
-            OWOManager.Instance.SendSensation(SensationId.InsectBites, OWOMuscle.Pectoral_L);
+            if(transform.position.x >= 0)
+                OWOManager.Instance.SendSensation(SensationId.InsectBites, OWOMuscle.Pectoral_R);
+            else
+                OWOManager.Instance.SendSensation(SensationId.InsectBites, OWOMuscle.Pectoral_L);
         }
     }
 

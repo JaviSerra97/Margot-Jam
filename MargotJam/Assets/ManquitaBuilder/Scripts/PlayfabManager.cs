@@ -24,8 +24,10 @@ public class PlayfabManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
-        //DontDestroyOnLoad(gameObject);
+        if (!Instance)
+            Instance = this;
+        else
+            Destroy(this);
     }
 
     void Start()
