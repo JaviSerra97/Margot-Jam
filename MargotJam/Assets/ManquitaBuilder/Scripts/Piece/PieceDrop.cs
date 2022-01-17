@@ -124,7 +124,8 @@ public class PieceDrop : MonoBehaviour
 
         projection.SetActive(false);
         move.enabled = false;
-
+        
+        transform.position = new Vector3(targetPos.x, transform.position.y);
         transform.DOMove(targetPos, tweenDuration).SetEase(Ease.InQuad).OnComplete(OnPieceDropped).Play();
         VFXManager.Instance.FallingVFX(transform);
     }
