@@ -1,0 +1,44 @@
+{
+    "name": "Game",
+    "maps": [
+        {
+            "name": "GameController",
+            "id": "f0bea77b-7d0b-44f8-9d9c-1cfdb24e3e6d",
+            "actions": [
+                {
+                    "name": "DropPiece",
+                    "type": "Button",
+                    "id": "14d993bb-396b-4017-8673-6fe8e3c8cfc3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1a420690-fe8c-473e-a658-da106f96a86b",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DropPiece",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8bae0b38-0c18-4b0e-864d-e7dbcc3942bc",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DropPiece",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

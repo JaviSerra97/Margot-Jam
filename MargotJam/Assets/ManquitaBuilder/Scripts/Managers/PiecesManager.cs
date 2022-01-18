@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,8 @@ using UnityEngine.SceneManagement;
 using static PiecesSequence;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 public class PiecesManager : MonoBehaviour
 {
@@ -30,6 +33,14 @@ public class PiecesManager : MonoBehaviour
     private CameraPos InitialPos;
     private CameraPos EndPos;
 
+    private PieceDrop pieceDrop;
+    private PlayerInput input;
+
+    private void Awake()
+    {
+        input = GetComponent<PlayerInput>();
+    }
+
     private void Start()
     {
         SetSequence();
@@ -51,7 +62,7 @@ public class PiecesManager : MonoBehaviour
     {
         if(pieceIndex < chosenSequence.sequences[sequenceIndex].listOfPieces.Count)
         {
-            Instantiate(chosenSequence.sequences[sequenceIndex].listOfPieces[pieceIndex], spawnPoint.position, spawnPoint.rotation);
+            pieceDrop = Instantiate(chosenSequence.sequences[sequenceIndex].listOfPieces[pieceIndex], spawnPoint.position, spawnPoint.rotation).GetComponent<PieceDrop>();
             pieceIndex++;
 
             canDropPiece = false;
@@ -161,6 +172,14 @@ public class PiecesManager : MonoBehaviour
     }
     #endregion
 
+    #region INPUTS
+
+    void OnDropPiece()
+    {
+        pieceDrop.DropPiece();
+    }
+
+    #endregion
 }
 
 public class CameraPos

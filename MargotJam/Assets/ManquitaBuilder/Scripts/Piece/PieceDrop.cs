@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class PieceDrop : MonoBehaviour
 {
@@ -22,8 +23,7 @@ public class PieceDrop : MonoBehaviour
     public GameObject LeftNeighbour;
     public GameObject DownNeighbour;
     public GameObject RightNeighbour;
-
-
+    
     private PieceMove move;
 
     private SpriteRenderer sprite;
@@ -46,20 +46,6 @@ public class PieceDrop : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         manager = GameObject.FindObjectOfType<PiecesManager>();
-    }
-
-    private void Update()
-    {
-        if (Input.touchCount > 0)
-        {
-            var touch = Input.GetTouch(0);
-
-            if (touch.phase == TouchPhase.Began && !put && manager.CanDrop())
-            {
-                if(!EventSystem.current.IsPointerOverGameObject(touch.fingerId))
-                    DropPiece();
-            }
-        }
     }
 
     private void FixedUpdate()
@@ -116,7 +102,7 @@ public class PieceDrop : MonoBehaviour
         }
     }
 
-    void DropPiece()
+    public void DropPiece()
     {
         put = true;
 
