@@ -16,6 +16,7 @@ public class PiecesManager : MonoBehaviour
     public Transform LeftCollider;
     public Transform RightCollider;
     public Camera MainCamera;
+    public float MaxHeightY = 80f;
 
     [SerializeField] private List<PiecesSequence> sequences;
     [SerializeField] private Transform spawnPoint;
@@ -25,6 +26,9 @@ public class PiecesManager : MonoBehaviour
 
     private int sequenceIndex, pieceIndex = 0;
     private bool _elevate = false;
+
+    private CameraPos InitialPos;
+    private CameraPos EndPos;
 
     private void Start()
     {
@@ -101,15 +105,16 @@ public class PiecesManager : MonoBehaviour
 
     public void CheckMaxHeight(float y_pos)
     {
-        if(y_pos > spawnPoint.position.y - OFFSET_CAMERA && y_pos < 18f)
+        if(y_pos > spawnPoint.position.y - OFFSET_CAMERA && y_pos < MaxHeightY)
         {
-            MainCamera.orthographicSize += 1;
-            MainCamera.transform.position += new Vector3(0, 1.1f, 0);
-            LeftCollider.position += new Vector3(-0.5f, 0, 0);
-            RightCollider.position += new Vector3(0.5f, 0, 0);
-            spawnPoint.position += new Vector3(0, 2f, 0);
+            float _valueLerp = y_pos / MaxHeightY;
+            MainCamera.orthographicSize = Mathf.Lerp(InitialPos.OrthoSize, EndPos.OrthoSize,_valueLerp);
+            MainCamera.transform.position = new Vector3(Mathf.Lerp(InitialPos.Pos.x, EndPos.Pos.x, _valueLerp), Mathf.Lerp(InitialPos.Pos.y, EndPos.Pos.y, _valueLerp), Mathf.Lerp(InitialPos.Pos.z, EndPos.Pos.z, _valueLerp)) ;
+            LeftCollider.position = MainCamera.ScreenToWorldPoint(new Vector3(MainCamera.pixelWidth * 0.1f, MainCamera.pixelHeight * 0.5f, 10)); // Mitad de pantalla pegado a la izquierda
+            RightCollider.position = MainCamera.ScreenToWorldPoint(new Vector3(MainCamera.pixelWidth * 0.9f, MainCamera.pixelHeight * 0.5f, 10)); // Mitad de pantalla pegado a la derecha
+            spawnPoint.position = MainCamera.ScreenToWorldPoint(new Vector3(MainCamera.pixelWidth * 0.5f, MainCamera.pixelHeight * 0.9f, 10)); // Mitad de la pantalla en el centro arriba
         }
-        else if(y_pos > spawnPoint.position.y - OFFSET_CAMERA && !_elevate)
+        else if(y_pos > spawnPoint.position.y - OFFSET_CAMERA && !_elevate) // Un poco de seguridad por si llegan muy alto
         {
             spawnPoint.position += new Vector3(0, 1f, 0);
             MainCamera.orthographicSize += 0.3f;
@@ -138,4 +143,34 @@ public class PiecesManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    #region Camera
+    [ContextMenu("Set Initial Pos")]
+    public void SetInitialPos()
+    {
+        if (!MainCamera) { Debug.LogError("[Pieces Manager]: Main Camera no ha sido referenciada en el objeto"); return; }
+        InitialPos.Pos = MainCamera.transform.position;
+        InitialPos.OrthoSize = MainCamera.orthographicSize;
+    }
+
+    [ContextMenu("Set End Position")]
+    public void SetEndPos()
+    {
+        if (!MainCamera) { Debug.LogError("[Pieces Manager]: Main Camera no ha sido referenciada en el objeto"); return; }
+        EndPos.Pos = MainCamera.transform.position;
+        EndPos.OrthoSize = MainCamera.orthographicSize;
+    }
+    #endregion
+
+}
+
+public class CameraPos
+{
+    public Vector3 Pos;
+    public float OrthoSize;
+
+    public CameraPos(Vector3 pos, float ortho)
+    {
+        Pos = pos;
+        OrthoSize = ortho;
+    }
 }
