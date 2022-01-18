@@ -18,7 +18,7 @@ public class PieceDrop : MonoBehaviour
 
     public static float SNAP_THRESHOLD = 0.15f;
     public static float SNAP_SAFE = 0.8f;
-    public static float RAYCAST_VARIATION = 0.2f;
+    public static float RAYCAST_VARIATION = 0.50f;
 
     public GameObject LeftNeighbour;
     public GameObject DownNeighbour;
