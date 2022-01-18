@@ -6983,7 +6983,7 @@ MonoBehaviour:
   LeftCollider: {fileID: 1365947500}
   RightCollider: {fileID: 1824944212}
   MainCamera: {fileID: 519420031}
-  MaxHeightY: 80
+  MaxHeightY: 19
   sequences:
   - {fileID: 11400000, guid: 280b9c60078232943baba7c9b53764af, type: 2}
   spawnPoint: {fileID: 1903044345}

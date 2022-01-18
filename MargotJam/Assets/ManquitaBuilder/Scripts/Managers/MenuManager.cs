@@ -4,19 +4,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using TMPro;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+    public static MenuManager Instance;
+    
+    [Header("Fade ------------------------------------------------------------")]
     [SerializeField] private Image fadeScreen;
     [SerializeField] private float fadeDuration;
 
+    [Header("Canvas panels ---------------------------------------------------")]
     [SerializeField] private GameObject menuCanvas;
     [SerializeField] private GameObject settingsCanvas;
     [SerializeField] private GameObject levelsCanvas;
     [SerializeField] private float changePanelDuration;
 
+    [Header("Buttons ---------------------------------------------------------")]
+    [SerializeField] private Button playButton;
+    [SerializeField] private Button firstLevelButton;
+
+    [Header("Level Info ------------------------------------------------------")] 
+    [SerializeField] private Image levelSprite;
+    [SerializeField] private TMP_Text levelText;
+    
     private int selectedSceneIndex;
     private bool canInteract;
 
@@ -27,6 +40,8 @@ public class MenuManager : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
+        
         input = GetComponent<PlayerInput>();
         
         fadeScreen.gameObject.SetActive(true);
@@ -43,6 +58,7 @@ public class MenuManager : MonoBehaviour
         {
             ChangePanel(menuCanvas, levelsCanvas);
             isOnLevels = true;
+            firstLevelButton.Select();
         }
     }
 
@@ -65,6 +81,7 @@ public class MenuManager : MonoBehaviour
     {
         ChangePanel(levelsCanvas, menuCanvas);
         isOnLevels = false;
+        playButton.Select();
     }
     
     void FadeIn()
@@ -77,15 +94,15 @@ public class MenuManager : MonoBehaviour
         fadeScreen.DOFade(0, fadeDuration).SetEase(Ease.Linear).OnComplete(AllowInteractions).Play();
     }
 
-    public void LoadSceneByIndex(int i)
+    public void LoadLevel()
     {
-        selectedSceneIndex = i;
         FadeIn();
     }
 
     void LoadScene()
     {
-        SceneManager.LoadScene(selectedSceneIndex);
+        //SceneManager.LoadScene(selectedSceneIndex);
+        Debug.Log("Load scene: " + selectedSceneIndex);
     }
 
     void AllowInteractions()
@@ -99,6 +116,15 @@ public class MenuManager : MonoBehaviour
         openPanel.transform.DOScale(1, changePanelDuration).SetEase(Ease.Linear).Play();
     }
 
+    public void SetLevelIInfo(int i, Sprite s, string t)
+    {
+        selectedSceneIndex = i;
+        levelSprite.sprite = s;
+        levelText.text = t;
+        
+        Debug.Log("Selected level index: " + selectedSceneIndex);
+    }
+    
     #region INPUTS
 
     void OnBackToMenu()
