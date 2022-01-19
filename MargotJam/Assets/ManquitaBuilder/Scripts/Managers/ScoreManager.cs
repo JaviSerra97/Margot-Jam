@@ -39,8 +39,6 @@ public class ScoreManager : MonoBehaviour
     private int _score;
     private int _multiplier;
 
-    private int _scoreSuelo, _scorePared, _scoreDetalle, _scoreTecho;
-
     private void Awake()
     {
         Instance = this;
@@ -102,65 +100,28 @@ public class ScoreManager : MonoBehaviour
         multiplierPanel.transform.DOPunchScale(Vector3.one * 0.25f, 0.25f);
     }
 
-    public int GetFinalScore()
+    public void GetFinalScore()
     {
         UpdateUI();
-       
-        PieceDrop[] pieces = GameObject.FindObjectsOfType<PieceDrop>();
-
-        _scoreDetalle = 0;
-        _scorePared = 0;
-        _scoreSuelo = 0;
-        _scoreTecho = 0;
-
-        foreach (PieceDrop piece in pieces)
-        {
-            switch (piece.ubicacion)
-            {
-                case PieceDrop.UbicacionSprite.Suelo:
-                    if (piece.transform.position.y < 2.5f)
-                        _scoreSuelo += ScoreForPlace;
-                    break;
-                case PieceDrop.UbicacionSprite.Pared:
-                    if (piece.transform.position.y > 2 && piece.transform.position.y < 10)
-                        _scorePared += ScoreForPlace;
-                    break;
-                case PieceDrop.UbicacionSprite.Detalles:
-                    if (piece.transform.position.y > -2 && piece.transform.position.y < 4 && piece.transform.position.x > -6 && piece.transform.position.x < 6)
-                        _scoreDetalle += ScoreForPlace;
-                        break;
-                case PieceDrop.UbicacionSprite.Techo:
-                    if (piece.transform.position.y > 10)
-                        _scoreTecho += ScoreForPlace;
-                    break;
-            }
-        }
+        
         StartCoroutine(ExtraScore());
-
-        MultiplierText.transform.parent.gameObject.SetActive(false);
-        FinalScorePanel.SetActive(true);
-        
-        Record.SetActive(true);
-        ScoreText.transform.parent.GetComponent<Animator>().SetTrigger("End");
-        
-        return _score;
     }
 
     private IEnumerator ExtraScore()
     {
-        yield return new WaitForSeconds(2f);
-        AddPoints(_scoreSuelo, new Vector3(0, -6, 0));
-        yield return new WaitForSeconds(0.5f);
-        AddPoints(_scorePared, new Vector3(6, 0, 0));
-        yield return new WaitForSeconds(0.5f);
-        AddPoints(_scoreTecho, new Vector3(0, 6, 0));
-        yield return new WaitForSeconds(0.5f);
-        AddPoints(_scoreDetalle, new Vector3(-6, 0, 0));
-        yield return new WaitForSeconds(0.5f);
-        if(PlayfabManager.Instance)
+        PieceDrop[] pieces = GameObject.FindObjectsOfType<PieceDrop>();
+
+        foreach (PieceDrop piece in pieces)
+        {
+            if (piece.CheckNeighbour())
+                AddPoints(ScoreForPlace, piece.transform.position);
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        if (PlayfabManager.Instance)
         {
             PlayfabManager.Instance.UpdateHighscore(_score);
-            Debug.Log("Final score: " + _score);
+            //Debug.Log("Final score: " + _score);
         }
         SFX_Manager.Instance.PlayFanfarriaSFX();
 
@@ -169,6 +130,12 @@ public class ScoreManager : MonoBehaviour
             Debug.Log("Prueba superada"); // ** Cambiar aqui la variable deseada ** //
             GameBeated = true;
         }
+
+        MultiplierText.transform.parent.gameObject.SetActive(false);
+        FinalScorePanel.SetActive(true);
+
+        Record.SetActive(true);
+        ScoreText.transform.parent.GetComponent<Animator>().SetTrigger("End");
     }
 
     public void OnBackButton(int index)

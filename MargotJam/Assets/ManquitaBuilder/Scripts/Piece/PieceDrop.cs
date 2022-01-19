@@ -20,9 +20,7 @@ public class PieceDrop : MonoBehaviour
     public static float SNAP_SAFE = 0.8f;
     public static float RAYCAST_VARIATION = 0.50f;
 
-    public GameObject LeftNeighbour;
     public GameObject DownNeighbour;
-    public GameObject RightNeighbour;
     
     private PieceMove move;
 
@@ -138,7 +136,6 @@ public class PieceDrop : MonoBehaviour
             //VFXManager.Instance.PerfectVFX(transform.position - new Vector3(0, sprite.bounds.size.y / 2));
             VFXManager.Instance.PerfectVFX(new Vector3(transform.position.x, -2));
             DifficultManager.Instance.PerfectPlacement(transform.position);
-            CheckNeighbours();
             SFX_Manager.Instance.PlayPerfectSFX();
         }
         else if(Mathf.Abs(dist) <= SNAP_SAFE * sprite.bounds.size.x)
@@ -152,34 +149,14 @@ public class PieceDrop : MonoBehaviour
         }
     }
 
-    void CheckNeighbours()
+    public bool CheckNeighbour()
     {
         RaycastHit2D centerHit = Physics2D.Raycast(transform.position + new Vector3(0, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, 0.5f);
-        RaycastHit2D rightHit = Physics2D.Raycast(transform.position + new Vector3(sprite.bounds.size.x / 2, 0), Vector2.right, 0.5f);
-        RaycastHit2D leftHit = Physics2D.Raycast(transform.position + new Vector3(-sprite.bounds.size.x / 2, 0), Vector2.left, 0.5f);
-
-        if(LeftNeighbour && leftHit.collider)
+        bool _isNeighbouhDown = DownNeighbour && centerHit.collider;
+        if (_isNeighbouhDown) 
         {
-            if (leftHit.collider.gameObject == LeftNeighbour)
-            {
-                ScoreManager.Instance.AddPoints(500, leftHit.transform.position);
-            }
+            sprite.DOColor(Color.blue, 0.4f).SetLoops(2, LoopType.Yoyo).Play(); // Cambiar por vfx a elección
         }
-
-        if(DownNeighbour && centerHit.collider)
-        {
-            if(centerHit.collider.gameObject == DownNeighbour)
-            {
-                ScoreManager.Instance.AddPoints(500, centerHit.transform.position);
-            }
-        }
-
-        if(RightNeighbour && rightHit.collider)
-        {
-            if(rightHit.collider.gameObject == RightNeighbour)
-            {
-                ScoreManager.Instance.AddPoints(500, rightHit.transform.position);
-            }
-        }
+        return _isNeighbouhDown;
     }
 }
