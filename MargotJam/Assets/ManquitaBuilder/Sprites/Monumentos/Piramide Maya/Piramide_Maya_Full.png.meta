@@ -1,0 +1,792 @@
+fileFormatVersion: 2
+guid: 14bef4bb4e8ef66428bfdd66f1a6edd4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -744919001483097139
+    second: Piramide_Maya_0
+  - first:
+      213: 7491866932272975213
+    second: Piramide_Maya_1
+  - first:
+      213: 3661352174159783829
+    second: Piramide_Maya_2
+  - first:
+      213: 7352531577003693214
+    second: Piramide_Maya_3
+  - first:
+      213: 6371965851870475935
+    second: Piramide_Maya_4
+  - first:
+      213: 4958753859318717145
+    second: Piramide_Maya_5
+  - first:
+      213: -5771165626728376831
+    second: Piramide_Maya_6
+  - first:
+      213: -6630490738554636753
+    second: Piramide_Maya_7
+  - first:
+      213: -8160869310441284326
+    second: Piramide_Maya_8
+  - first:
+      213: 4103192887164473473
+    second: Piramide_Maya_9
+  - first:
+      213: 2704620322346455006
+    second: Piramide_Maya_10
+  - first:
+      213: 5658179279773313658
+    second: Piramide_Maya_11
+  - first:
+      213: -98957363079740079
+    second: Piramide_Maya_12
+  - first:
+      213: -8992422453599396103
+    second: Piramide_Maya_13
+  - first:
+      213: -1336139291177531260
+    second: Piramide_Maya_14
+  - first:
+      213: -1672347529104223556
+    second: Piramide_Maya_15
+  - first:
+      213: -435857985523022358
+    second: Piramide_Maya_16
+  - first:
+      213: 1254489116000381624
+    second: Piramide_Maya_17
+  - first:
+      213: 7774860799616488255
+    second: Piramide_Maya_18
+  - first:
+      213: -5354578818287933959
+    second: Piramide_Maya_19
+  - first:
+      213: 4316012044544052351
+    second: Piramide_Maya_20
+  - first:
+      213: 3360661230142769150
+    second: Piramide_Maya_21
+  - first:
+      213: 9041365562697699860
+    second: Piramide_Maya_22
+  - first:
+      213: -5110757076278499899
+    second: Piramide_Maya_23
+  - first:
+      213: -2144690011768509257
+    second: Piramide_Maya_24
+  - first:
+      213: 8614289590555735395
+    second: Piramide_Maya_25
+  - first:
+      213: 1181220026266524384
+    second: Piramide_Maya_26
+  - first:
+      213: 5876564578599019625
+    second: Piramide_Maya_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Piramide_Maya_0
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 801.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb492a6d1489a5f0800000000000000
+      internalID: -744919001483097139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_1
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 801.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d40a2084578f760800000000000000
+      internalID: 7491866932272975213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 601.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597e56a576cbfc230800000000000000
+      internalID: 3661352174159783829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 601.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94d52f8380790660800000000000000
+      internalID: 7352531577003693214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 601.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96b8a1ae25cd6850800000000000000
+      internalID: 6371965851870475935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 601.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da1a49cc5801d440800000000000000
+      internalID: 4958753859318717145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 401.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10619ee7073b8efa0800000000000000
+      internalID: -5771165626728376831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 401.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26fee99dc3cbf3a0800000000000000
+      internalID: -6630490738554636753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 401.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d92cca994cebe80800000000000000
+      internalID: -8160869310441284326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_9
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 401.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1801954f03871f830800000000000000
+      internalID: 4103192887164473473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 401.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf43cd7addb88520800000000000000
+      internalID: 2704620322346455006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_11
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 401.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a2d5e9314e58e40800000000000000
+      internalID: 5658179279773313658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15509b57dce60aef0800000000000000
+      internalID: -98957363079740079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_13
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 201.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe16fe1c6f743380800000000000000
+      internalID: -8992422453599396103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 201.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488cbe2d464157de0800000000000000
+      internalID: -1336139291177531260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 201.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb29db268c0aac8e0800000000000000
+      internalID: -1672347529104223556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_16
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 201.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae50260b87583f9f0800000000000000
+      internalID: -435857985523022358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 201.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8baebc55437d86110800000000000000
+      internalID: 1254489116000381624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_18
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 202
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33104b44bad5eb60800000000000000
+      internalID: 7774860799616488255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_19
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 201.6
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5ed1e3fe6b0b5b0800000000000000
+      internalID: -5354578818287933959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.6000061
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c0b59561e85eb30800000000000000
+      internalID: 4316012044544052351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1.6000061
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef74611559773ae20800000000000000
+      internalID: 3360661230142769150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1.6000061
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412db097312697d70800000000000000
+      internalID: 9041365562697699860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_23
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1.6000061
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c52b1f5481f219b0800000000000000
+      internalID: -5110757076278499899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_24
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1.6000061
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bca53f1cc78c32e0800000000000000
+      internalID: -2144690011768509257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_25
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1.6000061
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3657b6dfdba1c8770800000000000000
+      internalID: 8614289590555735395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1.6000061
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea91330b59846010800000000000000
+      internalID: 1181220026266524384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piramide_Maya_27
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1.6000061
+        width: 200.25
+        height: 200.4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964a90f4950cd8150800000000000000
+      internalID: 5876564578599019625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
