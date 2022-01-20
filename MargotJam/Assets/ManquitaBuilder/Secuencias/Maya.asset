@@ -17,12 +17,9 @@ MonoBehaviour:
     listOfPieces:
     - {fileID: 1551869403454284002, guid: 7cf334314c6574b449ec4fefe9c9456c, type: 3}
     - {fileID: 8891705668775784105, guid: 63bb2913d5c3a0a4487da5ebd139e8fa, type: 3}
-    - {fileID: 8891705668775784105, guid: 5f7746b857a55e545b94d0fa3b012445, type: 3}
     - {fileID: 8891705668775784105, guid: 2530ce0280516c94884ee11338b29de0, type: 3}
     - {fileID: 8891705668775784105, guid: 680a074246c9d6d4393180e3dcb008f6, type: 3}
-    - {fileID: 8891705668775784105, guid: ed46a0dc8a38f1c43932295817cffdd1, type: 3}
     - {fileID: 8891705668775784105, guid: 6446e10d96bb73f4fabcd97018c7fa6e, type: 3}
-    - {fileID: 8891705668775784105, guid: 6113c7b642d3b73439b7b50559ec19b6, type: 3}
     doShuffle: 1
   - id: 2
     listOfPieces:
