@@ -1,91 +1,100 @@
 fileFormatVersion: 2
-guid: 128b07a342b7c9940b7ec775f5d81405
+guid: b64399876e83147418ae2968369abd7d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -744919001483097139
-    second: Piramide_Maya_0
+      213: 2328435120813773603
+    second: Templo_Toji_Pieces_1
   - first:
-      213: 7491866932272975213
-    second: Piramide_Maya_1
+      213: -3610863750418013542
+    second: Templo_Toji_Pieces_3
   - first:
-      213: 3661352174159783829
-    second: Piramide_Maya_2
+      213: -6947235170217976273
+    second: Templo_Toji_Pieces_4
   - first:
-      213: 7352531577003693214
-    second: Piramide_Maya_3
+      213: 2284063092195567025
+    second: Templo_Toji_Pieces_5
   - first:
-      213: 6371965851870475935
-    second: Piramide_Maya_4
+      213: -7734950735005164759
+    second: Templo_Toji_Pieces_6
   - first:
-      213: 4958753859318717145
-    second: Piramide_Maya_5
+      213: -7756402930061457282
+    second: Templo_Toji_Pieces_7
   - first:
-      213: -5771165626728376831
-    second: Piramide_Maya_6
+      213: 3710133827406121293
+    second: Templo_Toji_Pieces_8
   - first:
-      213: -6630490738554636753
-    second: Piramide_Maya_7
+      213: -1337694159529918305
+    second: Templo_Toji_Pieces_9
   - first:
-      213: -8160869310441284326
-    second: Piramide_Maya_8
+      213: -430472974491878928
+    second: Templo_Toji_Pieces_10
   - first:
-      213: 4103192887164473473
-    second: Piramide_Maya_9
+      213: 972754253274720640
+    second: Templo_Toji_Pieces_11
   - first:
-      213: 2704620322346455006
-    second: Piramide_Maya_10
+      213: 1376174012157421716
+    second: Templo_Toji_Pieces_12
   - first:
-      213: 5658179279773313658
-    second: Piramide_Maya_11
+      213: -8618020334045254458
+    second: Templo_Toji_Pieces_13
   - first:
-      213: -98957363079740079
-    second: Piramide_Maya_12
+      213: -5984803529724153146
+    second: Templo_Toji_Pieces_14
   - first:
-      213: -8992422453599396103
-    second: Piramide_Maya_13
+      213: -3909115048242785371
+    second: Templo_Toji_Pieces_15
   - first:
-      213: -1336139291177531260
-    second: Piramide_Maya_14
+      213: -488130729296360259
+    second: Templo_Toji_Pieces_16
   - first:
-      213: -1672347529104223556
-    second: Piramide_Maya_15
+      213: -941851073445296198
+    second: Templo_Toji_Pieces_17
   - first:
-      213: -435857985523022358
-    second: Piramide_Maya_16
+      213: 3253846021821037286
+    second: Templo_Toji_Pieces_18
   - first:
-      213: 1254489116000381624
-    second: Piramide_Maya_17
+      213: 5745401153358788451
+    second: Templo_Toji_Pieces_19
   - first:
-      213: 7774860799616488255
-    second: Piramide_Maya_18
+      213: 3286819552531740170
+    second: Templo_Toji_Pieces_20
   - first:
-      213: -5354578818287933959
-    second: Piramide_Maya_19
+      213: -2693527147532813863
+    second: Templo_Toji_Pieces_21
   - first:
-      213: 4316012044544052351
-    second: Piramide_Maya_20
+      213: -5213557921664966565
+    second: Templo_Toji_Pieces_22
   - first:
-      213: 3360661230142769150
-    second: Piramide_Maya_21
+      213: -1781734381892436150
+    second: Templo_Toji_Pieces_23
   - first:
-      213: 9041365562697699860
-    second: Piramide_Maya_22
+      213: 3512916935116529441
+    second: Templo_Toji_Pieces_24
   - first:
-      213: -5110757076278499899
-    second: Piramide_Maya_23
+      213: 5723911546458208582
+    second: Templo_Toji_Pieces_25
   - first:
-      213: -2144690011768509257
-    second: Piramide_Maya_24
+      213: -1505100889348183224
+    second: Templo_Toji_Pieces_26
   - first:
-      213: 8614289590555735395
-    second: Piramide_Maya_25
+      213: 8981662907059276850
+    second: Templo_Toji_Pieces_27
   - first:
-      213: 1181220026266524384
-    second: Piramide_Maya_26
+      213: 1289421727655716139
+    second: Templo_Toji_Pieces_28
   - first:
-      213: 5876564578599019625
-    second: Piramide_Maya_27
+      213: 8411535767641664974
+    second: Templo_Toji_Pieces_29
+  - first:
+      213: -5568110615964490472
+    second: Templo_Toji_Pieces_30
+  - first:
+      213: -4755797497656210518
+    second: Templo_Toji_Pieces_31
+  - first:
+      213: 797735296446565729
+    second: Templo_Toji_Pieces_32
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -187,13 +196,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Piramide_Maya_0
+      name: Templo_Toji_Pieces_1
       rect:
         serializedVersion: 2
-        x: 600
-        y: 801.6
-        width: 200.25
-        height: 200.4
+        x: 399
+        y: 2001.8181
+        width: 399.66666
+        height: 200.18182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,251 +210,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcb492a6d1489a5f0800000000000000
-      internalID: -744919001483097139
+      spriteID: 32316a2e763405020800000000000000
+      internalID: 2328435120813773603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piramide_Maya_1
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 801.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6d40a2084578f760800000000000000
-      internalID: 7491866932272975213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_2
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 601.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 597e56a576cbfc230800000000000000
-      internalID: 3661352174159783829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_3
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 601.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e94d52f8380790660800000000000000
-      internalID: 7352531577003693214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_4
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 601.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f96b8a1ae25cd6850800000000000000
-      internalID: 6371965851870475935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_5
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 601.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9da1a49cc5801d440800000000000000
-      internalID: 4958753859318717145
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_6
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 401.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10619ee7073b8efa0800000000000000
-      internalID: -5771165626728376831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_7
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 401.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f26fee99dc3cbf3a0800000000000000
-      internalID: -6630490738554636753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_8
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 401.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1d92cca994cebe80800000000000000
-      internalID: -8160869310441284326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_9
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 401.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1801954f03871f830800000000000000
-      internalID: 4103192887164473473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_10
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 401.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edf43cd7addb88520800000000000000
-      internalID: 2704620322346455006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_11
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 401.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7a2d5e9314e58e40800000000000000
-      internalID: 5658179279773313658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_12
+      name: Templo_Toji_Pieces_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 201.6
-        width: 200.25
-        height: 200.4
+        y: 1801.8181
+        width: 399.66666
+        height: 200.18182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -453,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15509b57dce60aef0800000000000000
-      internalID: -98957363079740079
+      spriteID: a92eff7dc82a3edc0800000000000000
+      internalID: -3610863750418013542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piramide_Maya_13
+      name: Templo_Toji_Pieces_4
       rect:
         serializedVersion: 2
-        x: 200
-        y: 201.6
-        width: 200.25
-        height: 200.4
+        x: 399
+        y: 1801.8181
+        width: 399.66666
+        height: 200.18182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -474,20 +252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fe16fe1c6f743380800000000000000
-      internalID: -8992422453599396103
+      spriteID: f2e9e04bb66769f90800000000000000
+      internalID: -6947235170217976273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piramide_Maya_14
+      name: Templo_Toji_Pieces_5
       rect:
         serializedVersion: 2
-        x: 400
-        y: 201.6
-        width: 200.25
-        height: 200.4
+        x: 798
+        y: 1801.8181
+        width: 399.66666
+        height: 200.18182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -495,125 +273,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 488cbe2d464157de0800000000000000
-      internalID: -1336139291177531260
+      spriteID: 1b5a5e6e74f92bf10800000000000000
+      internalID: 2284063092195567025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piramide_Maya_15
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 201.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb29db268c0aac8e0800000000000000
-      internalID: -1672347529104223556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_16
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 201.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae50260b87583f9f0800000000000000
-      internalID: -435857985523022358
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_17
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 201.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8baebc55437d86110800000000000000
-      internalID: 1254489116000381624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_18
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 201.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f33104b44bad5eb60800000000000000
-      internalID: 7774860799616488255
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_19
-      rect:
-        serializedVersion: 2
-        x: 1400
-        y: 201.6
-        width: 200.25
-        height: 200.4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f5ed1e3fe6b0b5b0800000000000000
-      internalID: -5354578818287933959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piramide_Maya_20
+      name: Templo_Toji_Pieces_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 1.6000061
-        width: 200.25
-        height: 200.4
+        y: 1601.8181
+        width: 399.66666
+        height: 200.18182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -621,20 +294,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7c0b59561e85eb30800000000000000
-      internalID: 4316012044544052351
+      spriteID: 92bdedcb94fe7a490800000000000000
+      internalID: -7734950735005164759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piramide_Maya_21
+      name: Templo_Toji_Pieces_7
       rect:
         serializedVersion: 2
-        x: 200
-        y: 1.6000061
-        width: 200.25
-        height: 200.4
+        x: 399
+        y: 1601.8181
+        width: 399.66666
+        height: 200.18182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -642,20 +315,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef74611559773ae20800000000000000
-      internalID: 3360661230142769150
+      spriteID: e7843ea51a8bb5490800000000000000
+      internalID: -7756402930061457282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piramide_Maya_22
+      name: Templo_Toji_Pieces_8
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1.6000061
-        width: 200.25
-        height: 200.4
+        x: 798
+        y: 1601.8181
+        width: 399.66666
+        height: 200.18182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -663,20 +336,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 412db097312697d70800000000000000
-      internalID: 9041365562697699860
+      spriteID: d49c3b31f0b0d7330800000000000000
+      internalID: 3710133827406121293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piramide_Maya_23
+      name: Templo_Toji_Pieces_9
       rect:
         serializedVersion: 2
-        x: 600
-        y: 1.6000061
-        width: 200.25
-        height: 200.4
+        x: 0
+        y: 1401.8181
+        width: 399.66666
+        height: 200.18182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -684,20 +357,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c52b1f5481f219b0800000000000000
-      internalID: -5110757076278499899
+      spriteID: f90ca13df3e8f6de0800000000000000
+      internalID: -1337694159529918305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piramide_Maya_24
+      name: Templo_Toji_Pieces_10
       rect:
         serializedVersion: 2
-        x: 800
-        y: 1.6000061
-        width: 200.25
-        height: 200.4
+        x: 399
+        y: 1401.8181
+        width: 399.66666
+        height: 200.18182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -705,20 +378,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bca53f1cc78c32e0800000000000000
-      internalID: -2144690011768509257
+      spriteID: 0f971064c17a60af0800000000000000
+      internalID: -430472974491878928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piramide_Maya_25
+      name: Templo_Toji_Pieces_11
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 1.6000061
-        width: 200.25
-        height: 200.4
+        x: 798
+        y: 1401.8181
+        width: 399.66666
+        height: 200.18182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -726,20 +399,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3657b6dfdba1c8770800000000000000
-      internalID: 8614289590555735395
+      spriteID: 089a038e6daef7d00800000000000000
+      internalID: 972754253274720640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piramide_Maya_26
+      name: Templo_Toji_Pieces_12
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 1.6000061
-        width: 200.25
-        height: 200.4
+        x: 0
+        y: 1201.8181
+        width: 399.66666
+        height: 200.18182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -747,20 +420,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ea91330b59846010800000000000000
-      internalID: 1181220026266524384
+      spriteID: 49864c709f6291310800000000000000
+      internalID: 1376174012157421716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piramide_Maya_27
+      name: Templo_Toji_Pieces_13
       rect:
         serializedVersion: 2
-        x: 1400
-        y: 1.6000061
-        width: 200.25
-        height: 200.4
+        x: 399
+        y: 1201.8181
+        width: 399.66666
+        height: 200.18182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -768,8 +441,407 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 964a90f4950cd8150800000000000000
-      internalID: 5876564578599019625
+      spriteID: 6cca32a9a24a66880800000000000000
+      internalID: -8618020334045254458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_14
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1201.8181
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2b94806e4b1fca0800000000000000
+      internalID: -5984803529724153146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1001.8182
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3da53339800c9c0800000000000000
+      internalID: -3909115048242785371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_16
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1001.8182
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc865c10bfc939f0800000000000000
+      internalID: -488130729296360259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_17
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1001.8182
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab709f7507fdde2f0800000000000000
+      internalID: -941851073445296198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 801.8182
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eaf57c97bbf72d20800000000000000
+      internalID: 3253846021821037286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_19
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 801.8182
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367f11698e3cbbf40800000000000000
+      internalID: 5745401153358788451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_20
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 801.8182
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06767df7f02d9d20800000000000000
+      internalID: 3286819552531740170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 601.8182
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d97f6a845bae9ad0800000000000000
+      internalID: -2693527147532813863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_22
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 601.8182
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b506c3f51b8b5a7b0800000000000000
+      internalID: -5213557921664966565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_23
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 601.8182
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f733b05020647e0800000000000000
+      internalID: -1781734381892436150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 401.81818
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f131b175360c030800000000000000
+      internalID: 3512916935116529441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_25
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 401.81818
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649f564993b6f6f40800000000000000
+      internalID: 5723911546458208582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_26
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 401.81818
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84be64b27becc1be0800000000000000
+      internalID: -1505100889348183224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201.81818
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c029bb3d645ac70800000000000000
+      internalID: 8981662907059276850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_28
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 201.81818
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25e69aca32f4e110800000000000000
+      internalID: 1289421727655716139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_29
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 201.81818
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd26c5e637cbb470800000000000000
+      internalID: 8411535767641664974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.8181763
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815ea5955e81ab2b0800000000000000
+      internalID: -5568110615964490472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_31
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1.8181763
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab82888f53000eb0800000000000000
+      internalID: -4755797497656210518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Templo_Toji_Pieces_32
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1.8181763
+        width: 399.66666
+        height: 200.18182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d0d798600221b00800000000000000
+      internalID: 797735296446565729
       vertices: []
       indices: 
       edges: []
