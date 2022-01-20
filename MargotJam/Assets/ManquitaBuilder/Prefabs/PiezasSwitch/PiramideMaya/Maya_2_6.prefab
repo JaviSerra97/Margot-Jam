@@ -116,7 +116,7 @@ MonoBehaviour:
   ubicacion: 3
   projection: {fileID: 1551869405203927218}
   tweenDuration: 0.25
-  DownNeighbour: {fileID: 0}
+  DownNeighbour: {fileID: 1551869403454284002, guid: 5ce213d090decfb4aa0f3ff44172e59e, type: 3}
 --- !u!114 &4510474247335434521
 MonoBehaviour:
   m_ObjectHideFlags: 0
