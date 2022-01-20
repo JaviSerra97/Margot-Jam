@@ -62,11 +62,7 @@ public class PiecesManager : MonoBehaviour
     {
         int rand = Random.Range(0, sequences.Count);
         chosenSequence = sequences[rand];
-
-        var init = chosenSequence.initialPrefab;
-
-        Instantiate(init, init.transform.position, init.transform.rotation);
-
+        
         ShufflePieces();
     }
 

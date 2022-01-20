@@ -14,7 +14,4 @@ public class PiecesSequence : ScriptableObject
     }
 
     public List<Sequence> sequences;
-
-    public GameObject initialPrefab;
-
 }
