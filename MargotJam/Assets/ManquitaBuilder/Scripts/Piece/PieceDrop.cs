@@ -7,10 +7,6 @@ using UnityEngine.InputSystem;
 
 public class PieceDrop : MonoBehaviour
 {
-    public enum UbicacionSprite { Suelo, Pared, Detalles, Techo }
-    public UbicacionSprite ubicacion;
-
-
     //[SerializeField] private KeyCode dropKey;
     [SerializeField] private GameObject projection;
 
@@ -155,7 +151,7 @@ public class PieceDrop : MonoBehaviour
         bool _isNeighbouhDown = DownNeighbour && centerHit.collider;
         if (_isNeighbouhDown) 
         {
-            sprite.DOColor(Color.blue, 0.4f).SetLoops(2, LoopType.Yoyo).Play(); // Cambiar por vfx a elección
+            sprite.DOColor(Color.blue, 0.4f).SetLoops(2, LoopType.Yoyo).Play(); // Cambiar por vfx a elecciï¿½n
         }
         return _isNeighbouhDown;
     }
