@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a60706a621ddf4aafb15e0af3409bf, type: 3}
+  m_Name: Japon
+  m_EditorClassIdentifier: 
+  sequences:
+  - id: 1
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: 7cf334314c6574b449ec4fefe9c9456c, type: 3}
+    - {fileID: 8891705668775784105, guid: 63bb2913d5c3a0a4487da5ebd139e8fa, type: 3}
+    - {fileID: 8891705668775784105, guid: 2530ce0280516c94884ee11338b29de0, type: 3}
+    - {fileID: 8891705668775784105, guid: 680a074246c9d6d4393180e3dcb008f6, type: 3}
+    - {fileID: 8891705668775784105, guid: 6446e10d96bb73f4fabcd97018c7fa6e, type: 3}
+    doShuffle: 1
+  - id: 2
+    listOfPieces:
+    - {fileID: 8891705668775784105, guid: dd020d449a6563f4894d9e2c6b5089ab, type: 3}
+    - {fileID: 8891705668775784105, guid: 0d162e84e98069e4cbf2ad1d1f221f01, type: 3}
+    - {fileID: 8891705668775784105, guid: 9aab1858c6379734182b331a128a1dac, type: 3}
+    - {fileID: 8891705668775784105, guid: 0c4f6f93fd99e044ba9b35ebca22547b, type: 3}
+    - {fileID: 8891705668775784105, guid: 90381236c9685b945b52a382648259d0, type: 3}
+    - {fileID: 8891705668775784105, guid: 24eccecad8bf2174b97ff0099b85a3c7, type: 3}
+    doShuffle: 1
+  - id: 3
+    listOfPieces:
+    - {fileID: 8891705668775784105, guid: 3ecefe6f76822ee4c94b8bd19179b7d2, type: 3}
+    - {fileID: 8891705668775784105, guid: 44402adbe91bb364dbb74b702e8a0fb9, type: 3}
+    - {fileID: 8891705668775784105, guid: 9039efca45c7c7f4b96df0d82cf89d9b, type: 3}
+    - {fileID: 8891705668775784105, guid: 6cfadb3d1d408f743a5bf7e4267e1258, type: 3}
+    doShuffle: 1
+  - id: 4
+    listOfPieces:
+    - {fileID: 8891705668775784105, guid: 9d24b22c3fe2aaf4fbff90d98b7b769e, type: 3}
+    - {fileID: 8891705668775784105, guid: d2e2d87f12e0a2648a812cb090d1d5a3, type: 3}
+    doShuffle: 1
+  - id: 5
+    listOfPieces:
+    - {fileID: 8891705668775784105, guid: e05ef2144a3e5aa409c9b16f8bff1484, type: 3}
+    - {fileID: 8891705668775784105, guid: f2516d86635b0984fa620b1cd29982d1, type: 3}
+    doShuffle: 1
+  - id: 6
+    listOfPieces:
+    - {fileID: 8891705668775784105, guid: e05ef2144a3e5aa409c9b16f8bff1484, type: 3}
+    - {fileID: 8891705668775784105, guid: f2516d86635b0984fa620b1cd29982d1, type: 3}
+    doShuffle: 1
+  - id: 7
+    listOfPieces:
+    - {fileID: 8891705668775784105, guid: e05ef2144a3e5aa409c9b16f8bff1484, type: 3}
+    - {fileID: 8891705668775784105, guid: f2516d86635b0984fa620b1cd29982d1, type: 3}
+    doShuffle: 1
+  - id: 8
+    listOfPieces:
+    - {fileID: 8891705668775784105, guid: e05ef2144a3e5aa409c9b16f8bff1484, type: 3}
+    - {fileID: 8891705668775784105, guid: f2516d86635b0984fa620b1cd29982d1, type: 3}
+    doShuffle: 1
