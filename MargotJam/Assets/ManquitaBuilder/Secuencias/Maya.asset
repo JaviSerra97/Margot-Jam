@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a60706a621ddf4aafb15e0af3409bf, type: 3}
+  m_Name: Maya
+  m_EditorClassIdentifier: 
+  sequences:
+  - id: 1
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: d92035c1c915cde459ff9b5faac58eaf, type: 3}
+    - {fileID: 1551869403454284002, guid: 65255d81076a55846acb39fc6655bed7, type: 3}
+    - {fileID: 1551869403454284002, guid: 83732718ee5a41249bff8bc1c086e55d, type: 3}
+    - {fileID: 1551869403454284002, guid: d8e08c95ecb4dbc4489a8fae8d0970de, type: 3}
+    - {fileID: 1551869403454284002, guid: 5ce213d090decfb4aa0f3ff44172e59e, type: 3}
+    doShuffle: 1
+  - id: 2
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: 6e1ad491a52444940b10add819cfae07, type: 3}
+    - {fileID: 1551869403454284002, guid: 816bc9261669eb043b2bca973beac0f8, type: 3}
+    - {fileID: 1551869403454284002, guid: cd5d740efe3c65a44998b9bb06b33ae4, type: 3}
+    - {fileID: 1551869403454284002, guid: 3489603116c250743a7e67e63370617c, type: 3}
+    - {fileID: 1551869403454284002, guid: ac7da394f6a9d084fb3f556652826b19, type: 3}
+    - {fileID: 1551869403454284002, guid: 7e7785c2eb01a124994e58063ca71339, type: 3}
+    doShuffle: 1
+  - id: 3
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: 0ede9f14bbe78564094678d38991572c, type: 3}
+    - {fileID: 1551869403454284002, guid: 4d1ade8a0d222a04291c149bdf531a6e, type: 3}
+    - {fileID: 1551869403454284002, guid: 734ff5b725d936a4b8259fd126427068, type: 3}
+    - {fileID: 1551869403454284002, guid: ab809675f40485d48b33352c0651a313, type: 3}
+    doShuffle: 1
+  - id: 4
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: b18e9f4632d3c504bb9e16cc6750d287, type: 3}
+    - {fileID: 1551869403454284002, guid: c58af019a5243694e8756dc9baa42269, type: 3}
+    doShuffle: 1
+  - id: 5
+    listOfPieces:
+    - {fileID: 1551869403454284002, guid: 9e1faa9475d005e49a71fa9833d75e3f, type: 3}
+    - {fileID: 1551869403454284002, guid: 5422a027f8a78934aa42ff2615af0e5d, type: 3}
+    doShuffle: 1
