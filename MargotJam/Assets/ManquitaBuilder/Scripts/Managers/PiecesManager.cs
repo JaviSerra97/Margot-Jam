@@ -210,6 +210,19 @@ public class PiecesManager : MonoBehaviour
         pieceDrop.DropPiece();
     }
 
+    void OnRotatePiece()
+    {
+        float v = input.actions["RotatePiece"].ReadValue<float>();
+        if (v > 0)
+        {
+            pieceDrop.TurnRight();
+        }
+        else if (v < 0)
+        {
+            pieceDrop.TurnLeft();
+        }
+    }
+    
     #endregion
 }
 
