@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Unity.Mathematics;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 public class PieceDrop : MonoBehaviour
 {
@@ -40,6 +42,25 @@ public class PieceDrop : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         manager = GameObject.FindObjectOfType<PiecesManager>();
+
+        int rand = Random.Range(0, 4);
+        switch (rand)
+        {
+            case 0:
+                break;
+            case 1:
+                TurnRight();
+                break;
+            case 2:
+                TurnRight();
+                TurnRight();
+                break;
+            case 3:
+                TurnRight();
+                TurnRight();
+                TurnRight();
+                break;
+        }
     }
 
     private void FixedUpdate()
