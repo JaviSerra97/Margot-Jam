@@ -158,11 +158,11 @@ public class PieceDrop : MonoBehaviour
 
     public void TurnRight()
     {
-        transform.rotation *= Quaternion.Euler(new Vector3(0, 0, 90));
+        transform.GetChild(0).rotation *= Quaternion.Euler(new Vector3(0, 0, 90));
     }
 
     public void TurnLeft()
     {
-        transform.rotation *= Quaternion.Euler(new Vector3(0, 0, -90));
+        transform.GetChild(0).rotation *= Quaternion.Euler(new Vector3(0, 0, -90));
     }
 }
