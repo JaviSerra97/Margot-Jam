@@ -172,7 +172,8 @@ public class PieceDrop : MonoBehaviour
         bool _isNeighbouhDown = DownNeighbour && centerHit.collider;
         if (_isNeighbouhDown) 
         {
-            sprite.DOColor(Color.blue, 0.4f).SetLoops(2, LoopType.Yoyo).Play(); // Cambiar por vfx a elecci�n
+            transform.GetChild(0).GetComponent<SpriteRenderer>().DOColor(Color.blue, 0.4f).SetLoops(2, LoopType.Yoyo).Play(); // Cambiar por vfx a elecci�n
+            transform.GetChild(0).DOScale(1.25f, 0.4f).SetLoops(2, LoopType.Yoyo).Play(); //No lo he probado
         }
         return _isNeighbouhDown;
     }
