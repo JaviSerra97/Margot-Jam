@@ -3231,7 +3231,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: e93a537f010ffd749bc61adc28c22e14, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.4}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4498,6 +4498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touji_1_2
       objectReference: {fileID: 0}
+    - target: {fileID: 442612487964199236, guid: 1b54ff9ff1a761a4fb316c37b5f02337, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7070345315850017010, guid: 1b54ff9ff1a761a4fb316c37b5f02337, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5252,6 +5256,22 @@ PrefabInstance:
     - target: {fileID: 1551869405203927219, guid: e08cbb9cbdab8ce4a8701418febd02e7, type: 3}
       propertyPath: m_Color.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551869405203927219, guid: e08cbb9cbdab8ce4a8701418febd02e7, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551869405203927219, guid: e08cbb9cbdab8ce4a8701418febd02e7, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551869405203927219, guid: e08cbb9cbdab8ce4a8701418febd02e7, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551869405203927219, guid: e08cbb9cbdab8ce4a8701418febd02e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8193113340922183941, guid: e08cbb9cbdab8ce4a8701418febd02e7, type: 3}
       propertyPath: m_IsActive
@@ -6153,7 +6173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4552575137585319429, guid: a68a6cd4f9a2f9e499fe698d1ac0c86e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4552575137585319433, guid: a68a6cd4f9a2f9e499fe698d1ac0c86e, type: 3}
       propertyPath: m_Pivot.x
