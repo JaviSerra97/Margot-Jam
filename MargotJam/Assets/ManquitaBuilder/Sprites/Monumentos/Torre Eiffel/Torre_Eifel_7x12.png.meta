@@ -1,0 +1,627 @@
+fileFormatVersion: 2
+guid: 68cb9f86b758a5f419956d0a39d8f543
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2212396977158109559
+    second: Torre_Eifel_7x12_3
+  - first:
+      213: -5596451170864710316
+    second: Torre_Eifel_7x12_4
+  - first:
+      213: -3944520162205714287
+    second: Torre_Eifel_7x12_7
+  - first:
+      213: -2718655223723531010
+    second: Torre_Eifel_7x12_8
+  - first:
+      213: 5726831260863580999
+    second: Torre_Eifel_7x12_9
+  - first:
+      213: 8223632830199650377
+    second: Torre_Eifel_7x12_10
+  - first:
+      213: -2479529803619272767
+    second: Torre_Eifel_7x12_11
+  - first:
+      213: -66375912166122109
+    second: Torre_Eifel_7x12_12
+  - first:
+      213: 87048781095885664
+    second: Torre_Eifel_7x12_13
+  - first:
+      213: 3079732780815659368
+    second: Torre_Eifel_7x12_14
+  - first:
+      213: 9061649973291176897
+    second: Torre_Eifel_7x12_15
+  - first:
+      213: 695348569403399947
+    second: Torre_Eifel_7x12_16
+  - first:
+      213: 826745306874853235
+    second: Torre_Eifel_7x12_17
+  - first:
+      213: 2985292387888420777
+    second: Torre_Eifel_7x12_18
+  - first:
+      213: 7667953768982143389
+    second: Torre_Eifel_7x12_19
+  - first:
+      213: 4832031815628203448
+    second: Torre_Eifel_7x12_20
+  - first:
+      213: -5223762313741554829
+    second: Torre_Eifel_7x12_21
+  - first:
+      213: 6185239998562879275
+    second: Torre_Eifel_7x12_22
+  - first:
+      213: -6958288251630284623
+    second: Torre_Eifel_7x12_23
+  - first:
+      213: 5915873002917811564
+    second: Torre_Eifel_7x12_24
+  - first:
+      213: -1522275040965321627
+    second: Torre_Eifel_7x12_25
+  - first:
+      213: 3216271922391356201
+    second: Torre_Eifel_7x12_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_3
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 2004.1666
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986c75acbacfb41e0800000000000000
+      internalID: -2212396977158109559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_4
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 2004.1666
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d3ac5bf496552b0800000000000000
+      internalID: -5596451170864710316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_7
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1604.1666
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198bc5abfcf3249c0800000000000000
+      internalID: -3944520162205714287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_8
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1604.1666
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4e2336a75654ad0800000000000000
+      internalID: -2718655223723531010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_9
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1204.1666
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b406090bac97f40800000000000000
+      internalID: 5726831260863580999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_10
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1204.1666
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9485a470d76302270800000000000000
+      internalID: 8223632830199650377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_11
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 804.1666
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7774dd7c0f69dd0800000000000000
+      internalID: -2479529803619272767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_12
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 804.1666
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d12b5a57f241ff0800000000000000
+      internalID: -66375912166122109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_13
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 804.1666
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06bd95bb762453100800000000000000
+      internalID: 87048781095885664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_15
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 404.16666
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3d2f8d3a271cd70800000000000000
+      internalID: 9061649973291176897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_16
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 404.16666
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f9d5af6df56a900800000000000000
+      internalID: 695348569403399947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_17
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 404.16666
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3773fffe970397b00800000000000000
+      internalID: 826745306874853235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_18
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 404.16666
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a754ca2c93ed6920800000000000000
+      internalID: 2985292387888420777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_19
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 404.16666
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d916c4a835b0a6a60800000000000000
+      internalID: 7667953768982143389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4.1666565
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5a7e9c553de0340800000000000000
+      internalID: 4832031815628203448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_21
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 4.1666565
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bac523ad77187b0800000000000000
+      internalID: -5223762313741554829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_22
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 4.1666565
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27c0e4020366d550800000000000000
+      internalID: 6185239998562879275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_23
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 4.1666565
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b09dc4a3b13f6f90800000000000000
+      internalID: -6958288251630284623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_24
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 4.1666565
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c655d3b0727691250800000000000000
+      internalID: 5915873002917811564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_25
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 4.1666565
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c91d46aeacfdae0800000000000000
+      internalID: -1522275040965321627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_Eifel_7x12_26
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 4.1666565
+        width: 188.28572
+        height: 400.83334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923133bd54e72ac20800000000000000
+      internalID: 3216271922391356201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

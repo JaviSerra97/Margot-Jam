@@ -1,7 +1,127 @@
 fileFormatVersion: 2
-guid: 8891be56f4683294aa5454933b9864e0
+guid: 95f3ab032eb44f2458c9a344f5387153
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7509613869411891226
+    second: coliseo_7x8_0
+  - first:
+      213: 2970512209543272655
+    second: coliseo_7x8_2
+  - first:
+      213: -3916112098851758319
+    second: coliseo_7x8_3
+  - first:
+      213: -418007337379663001
+    second: coliseo_7x8_4
+  - first:
+      213: 1533044485292110797
+    second: coliseo_7x8_5
+  - first:
+      213: 6405801058870398423
+    second: coliseo_7x8_6
+  - first:
+      213: 9139861783248230591
+    second: coliseo_7x8_7
+  - first:
+      213: 2591766953654065239
+    second: coliseo_7x8_8
+  - first:
+      213: 6292842545249922647
+    second: coliseo_7x8_9
+  - first:
+      213: 904141702939551505
+    second: coliseo_7x8_10
+  - first:
+      213: 6980758988700996540
+    second: coliseo_7x8_11
+  - first:
+      213: -2172275830293231358
+    second: coliseo_7x8_12
+  - first:
+      213: -3509414923886004383
+    second: coliseo_7x8_13
+  - first:
+      213: 6703358984155328651
+    second: coliseo_7x8_14
+  - first:
+      213: 7542618303453375834
+    second: coliseo_7x8_15
+  - first:
+      213: -4206175402862416167
+    second: coliseo_7x8_16
+  - first:
+      213: 5224382834821063208
+    second: coliseo_7x8_17
+  - first:
+      213: -8739681854402299216
+    second: coliseo_7x8_18
+  - first:
+      213: -7303500816764075907
+    second: coliseo_7x8_19
+  - first:
+      213: -2608706736293601927
+    second: coliseo_7x8_20
+  - first:
+      213: 1668055064085828254
+    second: coliseo_7x8_21
+  - first:
+      213: 8688425339157715078
+    second: coliseo_7x8_22
+  - first:
+      213: -2499822277398884812
+    second: coliseo_7x8_23
+  - first:
+      213: -6795303913243893813
+    second: coliseo_7x8_24
+  - first:
+      213: 6710042579607785517
+    second: coliseo_7x8_25
+  - first:
+      213: -6623449919595065185
+    second: coliseo_7x8_26
+  - first:
+      213: -2232568818471431319
+    second: coliseo_7x8_27
+  - first:
+      213: 5470433674738417988
+    second: coliseo_7x8_28
+  - first:
+      213: 2737041138445226485
+    second: coliseo_7x8_29
+  - first:
+      213: -1769448713841358357
+    second: coliseo_7x8_30
+  - first:
+      213: 692956200893257635
+    second: coliseo_7x8_31
+  - first:
+      213: 5005530724759974445
+    second: coliseo_7x8_32
+  - first:
+      213: -8718252383626990274
+    second: coliseo_7x8_33
+  - first:
+      213: -5146541527430158368
+    second: coliseo_7x8_34
+  - first:
+      213: 7310798848527228734
+    second: coliseo_7x8_35
+  - first:
+      213: 5950302154989119399
+    second: coliseo_7x8_36
+  - first:
+      213: 1316398175706446395
+    second: coliseo_7x8_37
+  - first:
+      213: -3369182300423963877
+    second: coliseo_7x8_38
+  - first:
+      213: 4344694995724884615
+    second: coliseo_7x8_39
+  - first:
+      213: 6929379048002948114
+    second: coliseo_7x8_40
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +161,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +195,873 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: coliseo_7x8_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1403.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1874aec602873860800000000000000
+      internalID: 7509613869411891226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1203.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc899cabd11693920800000000000000
+      internalID: 2970512209543272655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1203.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fd4576bcc27a9c0800000000000000
+      internalID: -3916112098851758319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1003.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7637af59a80f23af0800000000000000
+      internalID: -418007337379663001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1003.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc335b246d7764510800000000000000
+      internalID: 1533044485292110797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 803.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd8ac7af1af5e850800000000000000
+      internalID: 6405801058870398423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 803.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8dda6eddf47de70800000000000000
+      internalID: 9139861783248230591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 803.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7589525005ec7f320800000000000000
+      internalID: 2591766953654065239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_9
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 803.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e261934faa45750800000000000000
+      internalID: 6292842545249922647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_10
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 803.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1172456a6182c8c00800000000000000
+      internalID: 904141702939551505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_11
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 803.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb353288053a0e060800000000000000
+      internalID: 6980758988700996540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_12
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 803.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209843d34a68ad1e0800000000000000
+      internalID: -2172275830293231358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 603.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167f15c68bd0c4fc0800000000000000
+      internalID: -3509414923886004383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 603.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80708cea7d170d50800000000000000
+      internalID: 6703358984155328651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_15
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 603.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5da2bd6263cca860800000000000000
+      internalID: 7542618303453375834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_16
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 603.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de6661a1c9a0a5c0800000000000000
+      internalID: -4206175402862416167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_17
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 603.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8226820228cb08840800000000000000
+      internalID: 5224382834821063208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_18
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 603.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba7c6288a966b680800000000000000
+      internalID: -8739681854402299216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_19
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 603.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d708008e3b0c4aa90800000000000000
+      internalID: -7303500816764075907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 403.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d1d0c7b030ccbd0800000000000000
+      internalID: -2608706736293601927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 403.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9290a83e3f162710800000000000000
+      internalID: 1668055064085828254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 403.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6889ffd00dc739870800000000000000
+      internalID: 8688425339157715078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_23
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 403.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e080222e8de4dd0800000000000000
+      internalID: -2499822277398884812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_24
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 403.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf964e081b32b1a0800000000000000
+      internalID: -6795303913243893813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_25
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 403.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d209441cc2cde1d50800000000000000
+      internalID: 6710042579607785517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 403.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9052f20467c414a0800000000000000
+      internalID: -6623449919595065185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 203.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963956efc725401e0800000000000000
+      internalID: -2232568818471431319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_28
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 203.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4414e1e8172eaeb40800000000000000
+      internalID: 5470433674738417988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_29
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 203.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f198a8f96cebf520800000000000000
+      internalID: 2737041138445226485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_30
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 203.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9c63b05c7a177e0800000000000000
+      internalID: -1769448713841358357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_31
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 203.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a795274effdd9900800000000000000
+      internalID: 692956200893257635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_32
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 203.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d223f997ca7377540800000000000000
+      internalID: 5005530724759974445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_33
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 203.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3de5bbf5ab820780800000000000000
+      internalID: -8718252383626990274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7aab39fbfc398b0800000000000000
+      internalID: -5146541527430158368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_35
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fdcc681dc257560800000000000000
+      internalID: 7310798848527228734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_36
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a72e5ea848b39250800000000000000
+      internalID: 5950302154989119399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_37
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a74fd8a29c44210800000000000000
+      internalID: 1316398175706446395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_38
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b32b76c824e31d0800000000000000
+      internalID: -3369182300423963877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_39
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a599554157b4c30800000000000000
+      internalID: 4344694995724884615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coliseo_7x8_40
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3.5
+        width: 200.28572
+        height: 200.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c004ed7891a2060800000000000000
+      internalID: 6929379048002948114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
