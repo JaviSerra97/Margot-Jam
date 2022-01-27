@@ -50,6 +50,13 @@ public class PieceDrop : MonoBehaviour
 
     private void Update()
     {
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.Space) && !put && manager.CanDrop())
+        {
+            DropPiece();
+        }
+#endif
+    
         if (Input.touchCount > 0)
         {
             var touch = Input.GetTouch(0);
@@ -118,12 +125,14 @@ public class PieceDrop : MonoBehaviour
 
     void DropPiece()
     {
+        Debug.Log("Drop");
         put = true;
 
         gameObject.layer = 0;
 
         projection.SetActive(false);
         move.enabled = false;
+        
 
         transform.DOMove(targetPos, tweenDuration).SetEase(Ease.InQuad).OnComplete(OnPieceDropped).Play();
         VFXManager.Instance.FallingVFX(transform);

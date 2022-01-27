@@ -157,11 +157,7 @@ public class ScoreManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         AddPoints(_scoreDetalle, new Vector3(-6, 0, 0));
         yield return new WaitForSeconds(0.5f);
-        if(PlayfabManager.Instance)
-        {
-            PlayfabManager.Instance.UpdateHighscore(_score);
-            Debug.Log("Final score: " + _score);
-        }
+        
         SFX_Manager.Instance.PlayFanfarriaSFX();
 
         if (_score > ScoreToBeat)
