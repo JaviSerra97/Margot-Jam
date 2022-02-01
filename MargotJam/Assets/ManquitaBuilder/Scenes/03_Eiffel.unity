@@ -405,6 +405,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4552575137585319429, guid: a68a6cd4f9a2f9e499fe698d1ac0c86e, type: 3}
   m_PrefabInstance: {fileID: 4552575137608826417}
   m_PrefabAsset: {fileID: 0}
+--- !u!225 &58634297
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58634292}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &67157927
 GameObject:
   m_ObjectHideFlags: 0
@@ -5863,7 +5875,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903044344}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.56, z: 0}
+  m_LocalPosition: {x: 0, y: 1.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 469187092}
@@ -6323,7 +6335,7 @@ MonoBehaviour:
   LeftCollider: {fileID: 1365947500}
   RightCollider: {fileID: 1824944212}
   MainCamera: {fileID: 519420031}
-  LerpSteps: 2
+  LerpSteps: 5
   StartY: -1.2
   EndY: 7
   StartOrtho: 5
@@ -7421,7 +7433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4552575137585319429, guid: a68a6cd4f9a2f9e499fe698d1ac0c86e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4552575137585319433, guid: a68a6cd4f9a2f9e499fe698d1ac0c86e, type: 3}
       propertyPath: m_Pivot.x
