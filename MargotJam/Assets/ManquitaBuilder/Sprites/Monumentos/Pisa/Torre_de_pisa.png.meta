@@ -1,0 +1,1104 @@
+fileFormatVersion: 2
+guid: c7eae54570d7b634a8b3835a80aea081
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8645982606610512102
+    second: Torre_de_pisa_0
+  - first:
+      213: 3243041997279703994
+    second: Torre_de_pisa_1
+  - first:
+      213: 7544927557782356309
+    second: Torre_de_pisa_2
+  - first:
+      213: -6784048717831279567
+    second: Torre_de_pisa_3
+  - first:
+      213: -8866303465734223292
+    second: Torre_de_pisa_4
+  - first:
+      213: 5234536694886587266
+    second: Torre_de_pisa_5
+  - first:
+      213: 3383271209489705334
+    second: Torre_de_pisa_6
+  - first:
+      213: 5811048480601177526
+    second: Torre_de_pisa_7
+  - first:
+      213: 8698356913734728778
+    second: Torre_de_pisa_8
+  - first:
+      213: 3628150011305958598
+    second: Torre_de_pisa_9
+  - first:
+      213: -7233566793526930289
+    second: Torre_de_pisa_10
+  - first:
+      213: -5926864582084854100
+    second: Torre_de_pisa_11
+  - first:
+      213: -5563032662302909354
+    second: Torre_de_pisa_12
+  - first:
+      213: -6776507106289046317
+    second: Torre_de_pisa_13
+  - first:
+      213: -6286504623981463712
+    second: Torre_de_pisa_14
+  - first:
+      213: -3900899192025483702
+    second: Torre_de_pisa_15
+  - first:
+      213: 2322686920966535037
+    second: Torre_de_pisa_16
+  - first:
+      213: 5607138490519741915
+    second: Torre_de_pisa_17
+  - first:
+      213: 8240581908731462867
+    second: Torre_de_pisa_18
+  - first:
+      213: -2841540044355054047
+    second: Torre_de_pisa_19
+  - first:
+      213: 8000000169555496408
+    second: Torre_de_pisa_20
+  - first:
+      213: 6766710244840523144
+    second: Torre_de_pisa_21
+  - first:
+      213: -6515234052655537885
+    second: Torre_de_pisa_22
+  - first:
+      213: -7023035919427554419
+    second: Torre_de_pisa_23
+  - first:
+      213: 3108173312299852761
+    second: Torre_de_pisa_24
+  - first:
+      213: -5105091079825380657
+    second: Torre_de_pisa_25
+  - first:
+      213: -7404471152748992093
+    second: Torre_de_pisa_26
+  - first:
+      213: -2796211265795249137
+    second: Torre_de_pisa_27
+  - first:
+      213: -3169620703948957070
+    second: Torre_de_pisa_28
+  - first:
+      213: 191587569637286788
+    second: Torre_de_pisa_29
+  - first:
+      213: 1439870852082695569
+    second: Torre_de_pisa_30
+  - first:
+      213: 1768177460030852219
+    second: Torre_de_pisa_31
+  - first:
+      213: 4886386391503275498
+    second: Torre_de_pisa_32
+  - first:
+      213: 583408477642944332
+    second: Torre_de_pisa_33
+  - first:
+      213: 4361743028035023939
+    second: Torre_de_pisa_34
+  - first:
+      213: 173683103944853233
+    second: Torre_de_pisa_35
+  - first:
+      213: 3118199104828118413
+    second: Torre_de_pisa_36
+  - first:
+      213: 5936912273781773371
+    second: Torre_de_pisa_37
+  - first:
+      213: -783757845865092573
+    second: Torre_de_pisa_38
+  - first:
+      213: -8999235246399102739
+    second: Torre_de_pisa_39
+  - first:
+      213: -485255136655684105
+    second: Torre_de_pisa_40
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Torre_de_pisa_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2488.5715
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1746cea0ac430880800000000000000
+      internalID: -8645982606610512102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 2488.5715
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3b78f9389910d20800000000000000
+      internalID: 3243041997279703994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_2
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 2488.5715
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5514ca993a7f4b860800000000000000
+      internalID: 7544927557782356309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2297.5715
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ce8b272a73ad1a0800000000000000
+      internalID: -6784048717831279567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 2297.5715
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ac81e39ff84f480800000000000000
+      internalID: -8866303465734223292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2106.5715
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b5676e36fc4a840800000000000000
+      internalID: 5234536694886587266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_6
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 2106.5715
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679a07c5d3bc3fe20800000000000000
+      internalID: 3383271209489705334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_7
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 2106.5715
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd7eca0ecdf4a050800000000000000
+      internalID: 5811048480601177526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1915.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4cb8b4f685c6b870800000000000000
+      internalID: 8698356913734728778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_9
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1915.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc98b76637c95230800000000000000
+      internalID: 3628150011305958598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_10
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1915.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8414cc83553d9b90800000000000000
+      internalID: -7233566793526930289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1724.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caefcf0801c8fbda0800000000000000
+      internalID: -5926864582084854100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_12
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1724.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c1a8194432cc2b0800000000000000
+      internalID: -5563032662302909354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_13
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1724.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc2bb7b0b205f1a0800000000000000
+      internalID: -6776507106289046317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1533.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067fbb01a59d1c8a0800000000000000
+      internalID: -6286504623981463712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_15
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1533.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4676ba4ad83dd9c0800000000000000
+      internalID: -3900899192025483702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1533.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77f7a0d277db3020800000000000000
+      internalID: 2322686920966535037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1342.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd569ddcfbe80dd40800000000000000
+      internalID: 5607138490519741915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_18
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1342.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d40374e59d6c5270800000000000000
+      internalID: 8240581908731462867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_19
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1342.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1265b218262d098d0800000000000000
+      internalID: -2841540044355054047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1151.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd8b65b4c5b50f60800000000000000
+      internalID: 8000000169555496408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_21
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1151.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88547b9bd1f28ed50800000000000000
+      internalID: 6766710244840523144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_22
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1151.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32120f6f52d3595a0800000000000000
+      internalID: -6515234052655537885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8336b97a0a298e90800000000000000
+      internalID: -7023035919427554419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_24
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 960.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d36bf3e823722b20800000000000000
+      internalID: 3108173312299852761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_25
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 960.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca2ef8f5b21729b0800000000000000
+      internalID: -5105091079825380657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 769.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a9e4c697b80e3990800000000000000
+      internalID: -7404471152748992093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_27
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 769.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c24513bacd139d0800000000000000
+      internalID: -2796211265795249137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_28
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 769.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a166c53ce3304d0800000000000000
+      internalID: -3169620703948957070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 578.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4836c9721e7a8a200800000000000000
+      internalID: 191587569637286788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_30
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 578.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19df3d449e27bf310800000000000000
+      internalID: 1439870852082695569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_31
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 578.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ccdfc1804d98810800000000000000
+      internalID: 1768177460030852219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 387.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae50bdca88eefc340800000000000000
+      internalID: 4886386391503275498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_33
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 387.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4febdc5beea81800800000000000000
+      internalID: 583408477642944332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_34
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 387.5714
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344709bac26088c30800000000000000
+      internalID: 4361743028035023939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196.57143
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6ce12ecdb096200800000000000000
+      internalID: 173683103944853233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_36
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 196.57143
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85983e9091164b20800000000000000
+      internalID: 3118199104828118413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_37
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 196.57143
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b345b650246246250800000000000000
+      internalID: 5936912273781773371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5.5714264
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a294744688f15f0800000000000000
+      internalID: -783757845865092573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_39
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 5.5714264
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0e430393b4c1380800000000000000
+      internalID: -8999235246399102739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torre_de_pisa_40
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 5.5714264
+        width: 260
+        height: 191.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd443236070449f0800000000000000
+      internalID: -485255136655684105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

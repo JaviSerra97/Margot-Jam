@@ -1,0 +1,1248 @@
+fileFormatVersion: 2
+guid: df6eee122274d184c896b2e739e26732
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6347775426648809313
+    second: Taj_majal_0
+  - first:
+      213: 2343637055563133002
+    second: Taj_majal_1
+  - first:
+      213: 6615589421659059920
+    second: Taj_majal_2
+  - first:
+      213: 7239684121712310593
+    second: Taj_majal_3
+  - first:
+      213: 440434928358628534
+    second: Taj_majal_4
+  - first:
+      213: -7703898321744601771
+    second: Taj_majal_5
+  - first:
+      213: -4277203926813238173
+    second: Taj_majal_6
+  - first:
+      213: -2655994872504581212
+    second: Taj_majal_7
+  - first:
+      213: 8735235704065795376
+    second: Taj_majal_8
+  - first:
+      213: -1408438593858219787
+    second: Taj_majal_9
+  - first:
+      213: 1314553128198921860
+    second: Taj_majal_10
+  - first:
+      213: 5480081995995825468
+    second: Taj_majal_11
+  - first:
+      213: -3295700144784344075
+    second: Taj_majal_12
+  - first:
+      213: 5477524265904295687
+    second: Taj_majal_13
+  - first:
+      213: 6652860139851706932
+    second: Taj_majal_14
+  - first:
+      213: 1117491665961678842
+    second: Taj_majal_15
+  - first:
+      213: -8666677963434171524
+    second: Taj_majal_16
+  - first:
+      213: 7236692252177537347
+    second: Taj_majal_17
+  - first:
+      213: -5721876996979837718
+    second: Taj_majal_18
+  - first:
+      213: 1113701959421219451
+    second: Taj_majal_19
+  - first:
+      213: -5378336496292429329
+    second: Taj_majal_20
+  - first:
+      213: -2804458087494737863
+    second: Taj_majal_21
+  - first:
+      213: 2087554403243710583
+    second: Taj_majal_22
+  - first:
+      213: 2187606365379821230
+    second: Taj_majal_23
+  - first:
+      213: -134681917798175685
+    second: Taj_majal_24
+  - first:
+      213: 3143468340480807530
+    second: Taj_majal_25
+  - first:
+      213: 378317289023027464
+    second: Taj_majal_26
+  - first:
+      213: 8222106160222596644
+    second: Taj_majal_27
+  - first:
+      213: 5015926926517236961
+    second: Taj_majal_28
+  - first:
+      213: 7787205364333495517
+    second: Taj_majal_29
+  - first:
+      213: -5986534079073042617
+    second: Taj_majal_30
+  - first:
+      213: -5089319057811687054
+    second: Taj_majal_31
+  - first:
+      213: -7123663086214504369
+    second: Taj_majal_32
+  - first:
+      213: -8016280734257322884
+    second: Taj_majal_33
+  - first:
+      213: 7267221749792685201
+    second: Taj_majal_34
+  - first:
+      213: -2368790718518153040
+    second: Taj_majal_35
+  - first:
+      213: -3723742188517659256
+    second: Taj_majal_36
+  - first:
+      213: -5066148261177927068
+    second: Taj_majal_37
+  - first:
+      213: 2413752507171698670
+    second: Taj_majal_38
+  - first:
+      213: 135778378057917977
+    second: Taj_majal_39
+  - first:
+      213: 7563618810639904275
+    second: Taj_majal_40
+  - first:
+      213: 3408368250290915716
+    second: Taj_majal_41
+  - first:
+      213: -2529036760184133622
+    second: Taj_majal_42
+  - first:
+      213: 2716527358095392072
+    second: Taj_majal_43
+  - first:
+      213: -8761341909298676991
+    second: Taj_majal_44
+  - first:
+      213: -3003624899798202566
+    second: Taj_majal_45
+  - first:
+      213: 6837389929452822071
+    second: Taj_majal_46
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Taj_majal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1243.7142
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90e4a4a1eb28e7a0800000000000000
+      internalID: -6347775426648809313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_1
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1243.7142
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4078432c75468020800000000000000
+      internalID: 2343637055563133002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_2
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1243.7142
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6f1d1378b4fcb50800000000000000
+      internalID: 6615589421659059920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_3
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1243.7142
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149b2b8e956887460800000000000000
+      internalID: 7239684121712310593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_4
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1243.7142
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc9d7bdb3dbc1600800000000000000
+      internalID: 440434928358628534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1036.7142
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d5faa1b41461590800000000000000
+      internalID: -7703898321744601771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_6
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1036.7142
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c146ea0b154a4c0800000000000000
+      internalID: -4277203926813238173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_7
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1036.7142
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a30b1b4cb2042bd0800000000000000
+      internalID: -2655994872504581212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_8
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1036.7142
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035a622779ac93970800000000000000
+      internalID: 8735235704065795376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_9
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1036.7142
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f05125af88347ce0800000000000000
+      internalID: -1408438593858219787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_10
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1036.7142
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48edca4fa1b3e3210800000000000000
+      internalID: 1314553128198921860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_11
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1036.7142
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3548576a892d0c40800000000000000
+      internalID: 5480081995995825468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 829.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbfceffd225342d0800000000000000
+      internalID: -3295700144784344075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_13
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 829.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fcec57c43140c40800000000000000
+      internalID: 5477524265904295687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_14
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 829.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43277308c05b35c50800000000000000
+      internalID: 6652860139851706932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_15
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 829.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7fa1ddfb0228f00800000000000000
+      internalID: 1117491665961678842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_16
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 829.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73ecce6f46c9b780800000000000000
+      internalID: -8666677963434171524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_17
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 829.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3491ddff245ed6460800000000000000
+      internalID: 7236692252177537347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_18
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 829.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4b982ef2fc790b0800000000000000
+      internalID: -5721876996979837718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 622.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7255fc080aa47f00800000000000000
+      internalID: 1113701959421219451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_20
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 622.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe188f7c37f4c55b0800000000000000
+      internalID: -5378336496292429329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_21
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 622.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930a7636a309419d0800000000000000
+      internalID: -2804458087494737863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_22
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 622.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778d4ae5bab78fc10800000000000000
+      internalID: 2087554403243710583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_23
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 622.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaef8dc1660fb5e10800000000000000
+      internalID: 2187606365379821230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_24
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 622.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ca8f36283812ef0800000000000000
+      internalID: -134681917798175685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_25
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 622.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a629b050dc7df9b20800000000000000
+      internalID: 3143468340480807530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8093b98e19d004500800000000000000
+      internalID: 378317289023027464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_27
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 415.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e6e997df9ca1270800000000000000
+      internalID: 8222106160222596644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_28
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 415.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e47062d6f62c9540800000000000000
+      internalID: 5015926926517236961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_29
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 415.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd44d1e3506b11c60800000000000000
+      internalID: 7787205364333495517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_30
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 415.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fb41d19fe8beca0800000000000000
+      internalID: -5986534079073042617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_31
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 415.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2793282084b1f59b0800000000000000
+      internalID: -5089319057811687054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_32
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 415.7143
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f402f967a2aa32d90800000000000000
+      internalID: -7123663086214504369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208.71428
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74e8cee42370c090800000000000000
+      internalID: -8016280734257322884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_34
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 208.71428
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cb2649dab5ad460800000000000000
+      internalID: 7267221749792685201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_35
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 208.71428
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0bb73546d502fd0800000000000000
+      internalID: -2368790718518153040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_36
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 208.71428
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88de442753c925cc0800000000000000
+      internalID: -3723742188517659256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_37
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 208.71428
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ad6018ffc61b9b0800000000000000
+      internalID: -5066148261177927068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_38
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 208.71428
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee77daddd1f5f7120800000000000000
+      internalID: 2413752507171698670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_39
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 208.71428
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916225827b162e100800000000000000
+      internalID: 135778378057917977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.7142792
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e67a80c3f57f860800000000000000
+      internalID: 7563618810639904275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_41
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1.7142792
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4894f468dd4fc4f20800000000000000
+      internalID: 3408368250290915716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_42
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1.7142792
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08e15d477e07ecd0800000000000000
+      internalID: -2529036760184133622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_43
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1.7142792
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84df7e94d3b03b520800000000000000
+      internalID: 2716527358095392072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_44
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1.7142792
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b728cf3f5796680800000000000000
+      internalID: -8761341909298676991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_45
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1.7142792
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a378209411bf056d0800000000000000
+      internalID: -3003624899798202566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Taj_majal_46
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1.7142792
+        width: 228.85715
+        height: 207.28572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e5edf2ae943ee50800000000000000
+      internalID: 6837389929452822071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
