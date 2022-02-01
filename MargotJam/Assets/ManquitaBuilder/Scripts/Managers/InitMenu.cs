@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InitMenu : MonoBehaviour
+namespace ManquitaBuilder
 {
-    void Start()
+    public class InitMenu : MonoBehaviour
     {
-        MenuManager.Instance.ShowButtons();
+        void Start()
+        {
+            MenuManager.Instance.ShowButtons();
+        }
     }
 }

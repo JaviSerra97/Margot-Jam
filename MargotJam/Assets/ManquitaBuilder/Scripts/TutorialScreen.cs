@@ -6,52 +6,55 @@ using TMPro;
 using DG.Tweening;
 using UnityEngine.UI;
 
-public class TutorialScreen : MonoBehaviour
+namespace ManquitaBuilder
 {
-    public static bool ShowTuto = true; // Tienes que poner a true cuando se vuelva a iniciar el minijuego //
-    
-    public TMP_Text StartText;
-    public float FadeDuration;
-
-    public float minTutorialTime;
-
-    public PiecesManager manager;
-
-    private bool canCloseTutorial = false;
-
-    
-    private void Start()
+    public class TutorialScreen : MonoBehaviour
     {
-        if (ShowTuto)
+        public static bool ShowTuto = true; // Tienes que poner a true cuando se vuelva a iniciar el minijuego //
+
+        public TMP_Text StartText;
+        public float FadeDuration;
+
+        public float minTutorialTime;
+
+        public PiecesManager manager;
+
+        private bool canCloseTutorial = false;
+
+
+        private void Start()
         {
-            StartText.DOFade(0, FadeDuration).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InQuad).Play();
-            StartText.gameObject.SetActive(false);
+            if (ShowTuto)
+            {
+                StartText.DOFade(0, FadeDuration).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InQuad).Play();
+                StartText.gameObject.SetActive(false);
 
-            Invoke(nameof(AllowCloseTutorial), minTutorialTime);
+                Invoke(nameof(AllowCloseTutorial), minTutorialTime);
+            }
+            else
+                Invoke(nameof(HideScreen), 0.1f);
         }
-        else
-            Invoke(nameof(HideScreen), 0.1f);
-    }
 
-    public void StartGame()
-    {
-        if (canCloseTutorial)
+        public void StartGame()
         {
-            CanvasGroup g = GetComponent<CanvasGroup>();
-            g.interactable = false;
-            g.DOFade(0, 0.5f).OnComplete(HideScreen);
+            if (canCloseTutorial)
+            {
+                CanvasGroup g = GetComponent<CanvasGroup>();
+                g.interactable = false;
+                g.DOFade(0, 0.5f).OnComplete(HideScreen);
+            }
         }
-    }
 
-    void HideScreen()
-    {
-        gameObject.SetActive(false);
-        manager.StartGame();
-    }
+        void HideScreen()
+        {
+            gameObject.SetActive(false);
+            manager.StartGame();
+        }
 
-    void AllowCloseTutorial()
-    {
-        canCloseTutorial = true;
-        StartText.gameObject.SetActive(true);
+        void AllowCloseTutorial()
+        {
+            canCloseTutorial = true;
+            StartText.gameObject.SetActive(true);
+        }
     }
 }

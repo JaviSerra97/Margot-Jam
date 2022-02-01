@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioToggle : MonoBehaviour
+namespace ManquitaBuilder
 {
-    [SerializeField] private GameObject soundImage;
-
-    private bool sound = true;
-
-    public void OnAudioToggle()
+    public class AudioToggle : MonoBehaviour
     {
-        sound = !sound;
+        [SerializeField] private GameObject soundImage;
 
-        soundImage.SetActive(sound);
-        Debug.Log("Implementar aqui el mute");
+        private bool sound = true;
+
+        public void OnAudioToggle()
+        {
+            sound = !sound;
+
+            soundImage.SetActive(sound);
+            Debug.Log("Implementar aqui el mute");
+        }
     }
 }

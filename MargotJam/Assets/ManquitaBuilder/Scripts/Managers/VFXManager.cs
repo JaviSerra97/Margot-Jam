@@ -2,30 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VFXManager : MonoBehaviour
+namespace ManquitaBuilder
 {
-    public static VFXManager Instance;
-    public GameObject PerfectVFX_Prefab;
-    public GameObject DustVFX_Prefab;
-    public GameObject FallVFX_Prefab;
 
-    private void Awake()
+    public class VFXManager : MonoBehaviour
     {
-        Instance = this;
-    }
+        public static VFXManager Instance;
+        public GameObject PerfectVFX_Prefab;
+        public GameObject DustVFX_Prefab;
+        public GameObject FallVFX_Prefab;
 
-    public void FallingVFX(Transform cubetransform)
-    {
-        Instantiate(FallVFX_Prefab, cubetransform);
-    }
+        private void Awake()
+        {
+            Instance = this;
+        }
 
-    public void DustVFX(Vector3 pos)
-    {
-        Instantiate(DustVFX_Prefab, pos, DustVFX_Prefab.transform.rotation);
-    }
+        public void FallingVFX(Transform cubetransform)
+        {
+            Instantiate(FallVFX_Prefab, cubetransform);
+        }
 
-    public void PerfectVFX(Vector3 pos)
-    {
-        Instantiate(PerfectVFX_Prefab, pos, PerfectVFX_Prefab.transform.rotation);
+        public void DustVFX(Vector3 pos)
+        {
+            Instantiate(DustVFX_Prefab, pos, DustVFX_Prefab.transform.rotation);
+        }
+
+        public void PerfectVFX(Vector3 pos)
+        {
+            Instantiate(PerfectVFX_Prefab, pos, PerfectVFX_Prefab.transform.rotation);
+        }
     }
 }

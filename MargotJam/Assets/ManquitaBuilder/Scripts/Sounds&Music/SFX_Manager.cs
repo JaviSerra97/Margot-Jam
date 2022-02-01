@@ -2,65 +2,67 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SFX_Manager : MonoBehaviour
+namespace ManquitaBuilder
 {
-    public static SFX_Manager Instance;
-
-    public AudioClip HitSFX, FailSFX, BounceSFX, HoverSFX, ClickSFX, CounterSFX, Fanfarria;
-    public List<AudioClip> PerfectSFX;
-
-    private AudioSource _source;
-
-
-    private void Awake()
+    public class SFX_Manager : MonoBehaviour
     {
-        Instance = this;
-        _source = GetComponent<AudioSource>();
-    }
+        public static SFX_Manager Instance;
 
-    public void PlayHitSound()
-    {
-        _source.PlayOneShot(HitSFX);
-    }
+        public AudioClip HitSFX, FailSFX, BounceSFX, HoverSFX, ClickSFX, CounterSFX, Fanfarria;
+        public List<AudioClip> PerfectSFX;
 
-    public void PlayFailSound()
-    {
-        _source.PlayOneShot(FailSFX);
-    }
+        private AudioSource _source;
 
-    public void PlayBounceSFX()
-    {
-        _source.PlayOneShot(BounceSFX);
-    }
 
-    public void PlayHoverSFX()
-    {
-        _source.PlayOneShot(HoverSFX);
-    }
+        private void Awake()
+        {
+            Instance = this;
+            _source = GetComponent<AudioSource>();
+        }
 
-    public void PlayClickSFX()
-    {
-        _source.PlayOneShot(ClickSFX);
-    }
+        public void PlayHitSound()
+        {
+            _source.PlayOneShot(HitSFX);
+        }
 
-    public void PlayPerfectSFX()
-    {
-        _source.PlayOneShot(PerfectSFX[Random.Range(0, PerfectSFX.Count)]);
-    }
+        public void PlayFailSound()
+        {
+            _source.PlayOneShot(FailSFX);
+        }
 
-    public void PlayFanfarriaSFX()
-    {
-        _source.PlayOneShot(Fanfarria);
-    }
+        public void PlayBounceSFX()
+        {
+            _source.PlayOneShot(BounceSFX);
+        }
 
-    public void PlayCounterSFX()
-    {
-        _source.PlayOneShot(CounterSFX);
-    }
-    
-    public void MuteSounds(bool value)
-    {
-        _source.mute = value;
-    }
+        public void PlayHoverSFX()
+        {
+            _source.PlayOneShot(HoverSFX);
+        }
 
+        public void PlayClickSFX()
+        {
+            _source.PlayOneShot(ClickSFX);
+        }
+
+        public void PlayPerfectSFX()
+        {
+            _source.PlayOneShot(PerfectSFX[Random.Range(0, PerfectSFX.Count)]);
+        }
+
+        public void PlayFanfarriaSFX()
+        {
+            _source.PlayOneShot(Fanfarria);
+        }
+
+        public void PlayCounterSFX()
+        {
+            _source.PlayOneShot(CounterSFX);
+        }
+
+        public void MuteSounds(bool value)
+        {
+            _source.mute = value;
+        }
+    }
 }

@@ -2,19 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Sequence", menuName = "Custom/Pieces Sequence")]
-public class PiecesSequence : ScriptableObject
+namespace ManquitaBuilder
 {
-    [System.Serializable]
-    public class Sequence
+    [CreateAssetMenu(fileName = "New Sequence", menuName = "Custom/Pieces Sequence")]
+    public class PiecesSequence : ScriptableObject
     {
-        public string id;
-        public List<GameObject> listOfPieces;
-        public bool doShuffle;
+        [System.Serializable]
+        public class Sequence
+        {
+            public string id;
+            public List<GameObject> listOfPieces;
+            public bool doShuffle;
+        }
+
+        public List<Sequence> sequences;
+
+        public GameObject initialPrefab;
     }
-
-    public List<Sequence> sequences;
-
-    public GameObject initialPrefab;
-
 }

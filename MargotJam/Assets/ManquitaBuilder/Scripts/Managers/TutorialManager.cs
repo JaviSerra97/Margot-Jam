@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TutorialManager : MonoBehaviour
+namespace ManquitaBuilder
 {
-    public void LoadSceneByIndex(int index)
+    public class TutorialManager : MonoBehaviour
     {
-        SceneManager.LoadScene(index);        
+        public void LoadSceneByIndex(int index)
+        {
+            SceneManager.LoadScene(index);
+        }
     }
 }

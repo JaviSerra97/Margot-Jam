@@ -3,22 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MuteButton : MonoBehaviour
+namespace ManquitaBuilder
 {
-    public AudioSource Music;
-    public Image ButtonImage;
-    private bool _muted = false;
-    public GameObject SoundGO;
-    public void SwitchMute()
+    public class MuteButton : MonoBehaviour
     {
-        _muted = !_muted;
-        SoundGO.SetActive(!_muted);
-        SFX_Manager.Instance.MuteSounds(_muted);
-        Music.mute = _muted;
+        public AudioSource Music;
+        public Image ButtonImage;
+        private bool _muted = false;
+        public GameObject SoundGO;
 
-        if (_muted)
-            ButtonImage.color = Color.red;
-        else
-            ButtonImage.color = Color.white;
+        public void SwitchMute()
+        {
+            _muted = !_muted;
+            SoundGO.SetActive(!_muted);
+            SFX_Manager.Instance.MuteSounds(_muted);
+            Music.mute = _muted;
+
+            if (_muted)
+                ButtonImage.color = Color.red;
+            else
+                ButtonImage.color = Color.white;
+        }
     }
 }
