@@ -12,6 +12,7 @@ using Random = UnityEngine.Random;
 public class PiecesManager : MonoBehaviour
 {
     private const float MarginSideColliders = 0.45f;
+    private const float PIECE_MARGIN = 0.25f;
 
     public Image fadeImage;
     public float fadeDuration;
@@ -25,6 +26,7 @@ public class PiecesManager : MonoBehaviour
     public float EndY;
     public float StartOrtho;
     public float EndOrtho;
+    public float PieceHeight = 1;
     public const float OFFSET_CAMERA = 3.5f;
 
     [SerializeField] private List<PiecesSequence> sequences;
@@ -124,7 +126,9 @@ public class PiecesManager : MonoBehaviour
 
     public void CheckMaxHeight(float y_pos)
     {
-        if(y_pos > spawnPoint.position.y - OFFSET_CAMERA && _lerpCurrentValue < LerpSteps)
+        Debug.Log(y_pos);
+        Debug.Log(y_pos > spawnPoint.position.y - PieceHeight * 1.2f);
+        if(y_pos > spawnPoint.position.y - PieceHeight * 1.2f && _lerpCurrentValue < LerpSteps)
         {
             ++_lerpCurrentValue;
             float _valueLerp =(float) _lerpCurrentValue/LerpSteps;
@@ -133,7 +137,9 @@ public class PiecesManager : MonoBehaviour
             MainCamera.transform.position = new Vector3(MainCamera.transform.position.x, Mathf.Lerp(StartY, EndY, _valueLerp), -10f);
             LeftCollider.position = MainCamera.ScreenToWorldPoint(new Vector3(MainCamera.pixelWidth * MarginSideColliders, MainCamera.pixelHeight * 0.5f, 10)); // Mitad de pantalla pegado a la izquierda
             RightCollider.position = MainCamera.ScreenToWorldPoint(new Vector3(MainCamera.pixelWidth * (1 - MarginSideColliders), MainCamera.pixelHeight * 0.5f, 10)); // Mitad de pantalla pegado a la derecha
-            spawnPoint.position = MainCamera.ScreenToWorldPoint(new Vector3(MainCamera.pixelWidth * 0.5f, MainCamera.pixelHeight * 0.9f, 10)); // Mitad de la pantalla en el centro arriba
+            //spawnPoint.position = MainCamera.ScreenToWorldPoint(new Vector3(MainCamera.pixelWidth * 0.5f, MainCamera.pixelHeight * 0.9f, 10)); // Mitad de la pantalla en el centro arriba
+            float Y_Var_spawn = MainCamera.orthographicSize - PieceHeight - PIECE_MARGIN;
+            spawnPoint.position = MainCamera.transform.position + new Vector3(0,Y_Var_spawn, 10f);
         }
         else if(y_pos > spawnPoint.position.y - OFFSET_CAMERA && !_elevate) // Un poco de seguridad por si llegan muy alto
         {
