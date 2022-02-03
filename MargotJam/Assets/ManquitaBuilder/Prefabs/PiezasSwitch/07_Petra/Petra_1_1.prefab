@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7915445982385511270}
   - component: {fileID: 6300526759674253775}
   m_Layer: 0
-  m_Name: Colloseum_1_1
+  m_Name: Petra_1_1
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,7 +138,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1769448713841358357, guid: 95f3ab032eb44f2458c9a344f5387153, type: 3}
+  m_Sprite: {fileID: -269369198775521387, guid: f30a0acf267831f49a2cb496f2ef54f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
@@ -166,7 +166,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.0028572, y: 2.005}
+    oldSize: {x: 2.0019999, y: 2.0042858}
     newSize: {x: 2.0025, y: 2.004}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -246,7 +246,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 16
-  m_Sprite: {fileID: -5146541527430158368, guid: 95f3ab032eb44f2458c9a344f5387153, type: 3}
+  m_Sprite: {fileID: -269369198775521387, guid: f30a0acf267831f49a2cb496f2ef54f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

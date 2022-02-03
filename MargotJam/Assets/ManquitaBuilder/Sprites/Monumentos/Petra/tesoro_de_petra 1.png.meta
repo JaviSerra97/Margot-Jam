@@ -1,0 +1,960 @@
+fileFormatVersion: 2
+guid: f30a0acf267831f49a2cb496f2ef54f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5755141696812458649
+    second: tesoro_de_petra 1_0
+  - first:
+      213: 3964242575672489627
+    second: tesoro_de_petra 1_1
+  - first:
+      213: -1417032964576145475
+    second: tesoro_de_petra 1_2
+  - first:
+      213: -4061979691501201756
+    second: tesoro_de_petra 1_3
+  - first:
+      213: -7589910465670720587
+    second: tesoro_de_petra 1_4
+  - first:
+      213: -4464917632381416732
+    second: tesoro_de_petra 1_5
+  - first:
+      213: 7767780929429076807
+    second: tesoro_de_petra 1_6
+  - first:
+      213: -3018699715524885804
+    second: tesoro_de_petra 1_7
+  - first:
+      213: -6483189615716801439
+    second: tesoro_de_petra 1_8
+  - first:
+      213: 6986643177663691925
+    second: tesoro_de_petra 1_9
+  - first:
+      213: -1116770674404530670
+    second: tesoro_de_petra 1_10
+  - first:
+      213: 4506928604329542390
+    second: tesoro_de_petra 1_11
+  - first:
+      213: -4406512299295003101
+    second: tesoro_de_petra 1_12
+  - first:
+      213: 3734738644351706091
+    second: tesoro_de_petra 1_13
+  - first:
+      213: -293415972355320039
+    second: tesoro_de_petra 1_14
+  - first:
+      213: -3097580657306486446
+    second: tesoro_de_petra 1_15
+  - first:
+      213: -9055784793328060785
+    second: tesoro_de_petra 1_16
+  - first:
+      213: 6856377551490248581
+    second: tesoro_de_petra 1_17
+  - first:
+      213: 3802597539033319329
+    second: tesoro_de_petra 1_18
+  - first:
+      213: 3150595587205913682
+    second: tesoro_de_petra 1_19
+  - first:
+      213: 19019572002577248
+    second: tesoro_de_petra 1_20
+  - first:
+      213: 2870838125190000413
+    second: tesoro_de_petra 1_21
+  - first:
+      213: 7215900324026375223
+    second: tesoro_de_petra 1_22
+  - first:
+      213: 5192920120041916281
+    second: tesoro_de_petra 1_23
+  - first:
+      213: -8616535965436346170
+    second: tesoro_de_petra 1_24
+  - first:
+      213: 9041860488588752689
+    second: tesoro_de_petra 1_25
+  - first:
+      213: 5231626473371204182
+    second: tesoro_de_petra 1_26
+  - first:
+      213: -5608105087802001766
+    second: tesoro_de_petra 1_27
+  - first:
+      213: -519992865977674716
+    second: tesoro_de_petra 1_28
+  - first:
+      213: -172638695248597571
+    second: tesoro_de_petra 1_29
+  - first:
+      213: -269369198775521387
+    second: tesoro_de_petra 1_30
+  - first:
+      213: 1412648082592576154
+    second: tesoro_de_petra 1_31
+  - first:
+      213: -4972249082690581126
+    second: tesoro_de_petra 1_32
+  - first:
+      213: 4265935724929751470
+    second: tesoro_de_petra 1_33
+  - first:
+      213: 6031733211261424613
+    second: tesoro_de_petra 1_34
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1202.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d54796e11a120b0800000000000000
+      internalID: -5755141696812458649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1202.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96307e7e91d30730800000000000000
+      internalID: 3964242575672489627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1202.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf8b67c600b55ce0800000000000000
+      internalID: -1417032964576145475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1202.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6583bedf2f0a7c0800000000000000
+      internalID: -4061979691501201756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1202.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b35da005a83ba690800000000000000
+      internalID: -7589910465670720587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1002.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea078ac11d6902c0800000000000000
+      internalID: -4464917632381416732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1002.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b7caf8993bccb60800000000000000
+      internalID: 7767780929429076807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1002.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2019c3a9c6b16d0800000000000000
+      internalID: -3018699715524885804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1002.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164e2b7d4651706a0800000000000000
+      internalID: -6483189615716801439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_9
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1002.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cfc0904fa85f060800000000000000
+      internalID: 6986643177663691925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 802.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2166b801dfe6080f0800000000000000
+      internalID: -1116770674404530670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 802.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f20c19dfa3db8e30800000000000000
+      internalID: 4506928604329542390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 802.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ea126196ce8d2c0800000000000000
+      internalID: -4406512299295003101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 802.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3e181720574d330800000000000000
+      internalID: 3734738644351706091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_14
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 802.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917d55c4ab39debf0800000000000000
+      internalID: -293415972355320039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 602.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259302acdce2305d0800000000000000
+      internalID: -3097580657306486446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 602.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86fb47c5b3635280800000000000000
+      internalID: -9055784793328060785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_17
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 602.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fe9827e0fb62f50800000000000000
+      internalID: 6856377551490248581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_18
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 602.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a70bd1905a85c430800000000000000
+      internalID: 3802597539033319329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_19
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 602.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c52567ef929bb20800000000000000
+      internalID: 3150595587205913682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 402.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b5ef03332934000800000000000000
+      internalID: 19019572002577248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 402.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f2993801447d720800000000000000
+      internalID: 2870838125190000413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 402.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73cd73cfc17042460800000000000000
+      internalID: 7215900324026375223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_23
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 402.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977c31ef555f01840800000000000000
+      internalID: 5192920120041916281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_24
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 402.5714
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c00ac9113aeb6880800000000000000
+      internalID: -8616535965436346170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 202.57143
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137f8f265342b7d70800000000000000
+      internalID: 9041860488588752689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_26
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 202.57143
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65af1d62f887a9840800000000000000
+      internalID: 5231626473371204182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 202.57143
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96308ab2220c22b0800000000000000
+      internalID: -5608105087802001766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_28
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 202.57143
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424d9a15e3d98c8f0800000000000000
+      internalID: -519992865977674716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_29
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 202.57143
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd6837750aaa9df0800000000000000
+      internalID: -172638695248597571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.5714264
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59fad811422034cf0800000000000000
+      internalID: -269369198775521387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2.5714264
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92319352fbba9310800000000000000
+      internalID: 1412648082592576154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2.5714264
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d477badc50ffab0800000000000000
+      internalID: -4972249082690581126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_33
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2.5714264
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9161f90f5a33b30800000000000000
+      internalID: 4265935724929751470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tesoro_de_petra 1_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2.5714264
+        width: 200.2
+        height: 200.42857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3d92de56505b350800000000000000
+      internalID: 6031733211261424613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
