@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Petra_7_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1551869403454284003, guid: bfe083fe7cbf6334891c022e2679b45c, type: 3}
+      propertyPath: DownNeighbour
+      value: 
+      objectReference: {fileID: 3287151310237309643, guid: ee216ed747c0f7f48a40c93db22a64c5, type: 3}
     - target: {fileID: 1551869403454284006, guid: bfe083fe7cbf6334891c022e2679b45c, type: 3}
       propertyPath: m_RootOrder
       value: 0

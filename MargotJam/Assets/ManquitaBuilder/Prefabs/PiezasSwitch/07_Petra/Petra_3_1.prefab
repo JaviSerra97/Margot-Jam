@@ -9,8 +9,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1551869403454284002, guid: bfe083fe7cbf6334891c022e2679b45c, type: 3}
       propertyPath: m_Name
-      value: Petra_3_2
+      value: Petra_3_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1551869403454284003, guid: bfe083fe7cbf6334891c022e2679b45c, type: 3}
+      propertyPath: DownNeighbour
+      value: 
+      objectReference: {fileID: 3287151310237309643, guid: cce277f9b4f61b6498b9b849645f08d5, type: 3}
     - target: {fileID: 1551869403454284006, guid: bfe083fe7cbf6334891c022e2679b45c, type: 3}
       propertyPath: m_RootOrder
       value: 0

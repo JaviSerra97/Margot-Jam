@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pisa_12_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1551869403454284003, guid: 3a253c4db0038e34e9c42e9c225a3b76, type: 3}
+      propertyPath: DownNeighbour
+      value: 
+      objectReference: {fileID: 3876534848101872936, guid: d3f11d1917e1f7146aecdd57a9cc00b4, type: 3}
     - target: {fileID: 1551869403454284006, guid: 3a253c4db0038e34e9c42e9c225a3b76, type: 3}
       propertyPath: m_RootOrder
       value: 0
