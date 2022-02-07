@@ -19,9 +19,23 @@ public class MenuManager : MonoBehaviour
 
     [Header("Canvas panels ---------------------------------------------------")]
     [SerializeField] private GameObject buttonsPanel;
+    [SerializeField] private GameObject buttonsHeader;
     [SerializeField] private GameObject settingsPanel;
-    [SerializeField] private GameObject levelsPanel;
+    [SerializeField] private GameObject settingsHeader;
     [SerializeField] private float changePanelDuration;
+    [SerializeField] private GameObject levelsPanel;
+    [SerializeField] private float showLevelsDuration;
+    private Vector2 levelsStartPos;
+
+    [Header("Sound sliders ---------------------------------------------------")]
+    [SerializeField] private float valueRate;
+    [SerializeField] private Slider musicSlider;
+    [SerializeField] private Image musicHandler;
+    [SerializeField] private Slider soundSlider;
+    [SerializeField] private Image soundHandler;
+    [SerializeField] private Color selectedColor;
+    [SerializeField] private Color deselectedColor;
+    private Slider currentSlider;
 
     [Header("Level Info ------------------------------------------------------")] 
     [SerializeField] private Image levelSprite;
@@ -32,12 +46,23 @@ public class MenuManager : MonoBehaviour
 
     private bool isOnSettings;
     private bool isOnLevels;
+
+    private bool switchSlider = true;
+    public bool addValue;
+    public bool decreaseValue;
     
     private void Awake()
     {
         Instance = this;
         
         fadeScreen.gameObject.SetActive(true);
+
+        PlayerInput pl = GetComponent<PlayerInput>();
+        pl.actions["SwitchSlider"].canceled += ctx => switchSlider = true;
+        pl.actions["SliderValue"].canceled += ctx => addValue = false;
+        pl.actions["SliderValue"].canceled += ctx => decreaseValue = false;
+
+        levelsStartPos = levelsPanel.transform.localPosition;
     }
 
     private void Start()
@@ -45,13 +70,27 @@ public class MenuManager : MonoBehaviour
         FadeOut();
     }
 
+    private void Update()
+    {
+        if (addValue)
+        {
+            currentSlider.value += valueRate * Time.deltaTime;
+        }
+
+        if (decreaseValue)
+        {
+            currentSlider.value -= valueRate * Time.deltaTime;
+        }
+    }
+
     public void OnPlayButton()
     {
         if (canInteract)
         {
+            EventSystem.current.SetSelectedGameObject(null);
             //ChangePanel(menuCanvas, levelsCanvas);
-            //isOnLevels = true;
-            //firstLevelButton.Select();
+            isOnLevels = true;
+            levelsPanel.transform.DOLocalMoveY(0, showLevelsDuration).SetEase(Ease.OutBounce);
         }
     }
 
@@ -60,21 +99,27 @@ public class MenuManager : MonoBehaviour
         if (canInteract)
         {
             ChangePanel(buttonsPanel, settingsPanel);
+            ChangePanel(buttonsHeader, settingsHeader);
             isOnSettings = true;
+            //EventSystem.current.SetSelectedGameObject(null);
+            SelectMusicSlider();
         }
     }
 
     void OnSettingsBack()
     {
         ChangePanel(settingsPanel, buttonsPanel);
+        ChangePanel(settingsHeader, buttonsHeader);
+        buttonsPanel.GetComponentInChildren<Button>().Select();
         isOnSettings = false;
     }
 
     void OnLevelsBack()
     {
         //ChangePanel(levelsCanvas, menuCanvas);
-        //isOnLevels = false;
-        //playButton.Select();
+        levelsPanel.transform.DOLocalMoveY(levelsStartPos.y, showLevelsDuration).SetEase(Ease.OutQuint);
+        buttonsPanel.GetComponentInChildren<Button>().Select();
+        isOnLevels = false;
     }
     
     void FadeIn()
@@ -121,6 +166,20 @@ public class MenuManager : MonoBehaviour
         
         Debug.Log("Selected level index: " + selectedSceneIndex);
     }
+
+    void SelectMusicSlider()
+    {
+        musicHandler.color = selectedColor;
+        soundHandler.color = deselectedColor;
+        currentSlider = musicSlider;
+    }
+
+    void SelectSoundSlider()
+    {
+        musicHandler.color = deselectedColor;
+        soundHandler.color = selectedColor;
+        currentSlider = soundSlider;
+    }
     
     #region INPUTS
 
@@ -135,6 +194,36 @@ public class MenuManager : MonoBehaviour
         {
             OnLevelsBack();
         }
+    }
+
+    void OnSwitchSlider()
+    {
+        if(!isOnSettings || !switchSlider){ return; }
+
+        switchSlider = false;
+        if (currentSlider == musicSlider)
+        {
+            SelectSoundSlider();
+        }
+        else
+        {
+            SelectMusicSlider();
+        }
+    }
+
+    void OnSliderValue(InputValue value)
+    {
+        if(!isOnSettings){return;}
+
+        if (value.Get<float>() > 0)
+        {
+            addValue = true;
+        }
+        else if (value.Get<float>() < 0)
+        {
+            decreaseValue = true;
+        }
+        
     }
 
     #endregion

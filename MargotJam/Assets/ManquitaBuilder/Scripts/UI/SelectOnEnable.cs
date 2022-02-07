@@ -7,22 +7,24 @@ using UnityEngine.UI;
 
 public class SelectOnEnable : MonoBehaviour
 {
-    private bool init = false;
+    public bool init = false;
     
     private void Start()
     {
-        GetComponent<Button>().Select();
+        //GetComponent<Button>().Select();
     }
 
     private void OnEnable()
     {
-        if (init)
+        /*if (init)
         {
             GetComponent<Button>().Select();
         }
         else
         {
             init = true;
-        }
+        }*/
+        GetComponent<Button>().Select();
+        //GetComponent<SelectedButton>().SelectButton();
     }
 }

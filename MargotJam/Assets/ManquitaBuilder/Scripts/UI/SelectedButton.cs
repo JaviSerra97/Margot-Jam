@@ -9,12 +9,17 @@ public class SelectedButton : MonoBehaviour, ISelectHandler, IDeselectHandler
     public GameObject marker;
 
     public bool blink;
+
+    public void SelectButton()
+    {
+        //StartCoroutine(nameof(BlinkEffect));
+    }
     
     public void OnSelect(BaseEventData eventData)
     {
-        Debug.Log("selected");
         blink = true;
         StartCoroutine(nameof(BlinkEffect));
+        marker.SetActive(true);
     }
 
     public void OnDeselect(BaseEventData eventData)
