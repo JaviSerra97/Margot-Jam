@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using TMPro;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
@@ -17,14 +18,10 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private float fadeDuration;
 
     [Header("Canvas panels ---------------------------------------------------")]
-    [SerializeField] private GameObject menuCanvas;
-    [SerializeField] private GameObject settingsCanvas;
-    [SerializeField] private GameObject levelsCanvas;
+    [SerializeField] private GameObject buttonsPanel;
+    [SerializeField] private GameObject settingsPanel;
+    [SerializeField] private GameObject levelsPanel;
     [SerializeField] private float changePanelDuration;
-
-    [Header("Buttons ---------------------------------------------------------")]
-    [SerializeField] private Button playButton;
-    [SerializeField] private Button firstLevelButton;
 
     [Header("Level Info ------------------------------------------------------")] 
     [SerializeField] private Image levelSprite;
@@ -35,14 +32,10 @@ public class MenuManager : MonoBehaviour
 
     private bool isOnSettings;
     private bool isOnLevels;
-
-    private PlayerInput input;
-
+    
     private void Awake()
     {
         Instance = this;
-        
-        input = GetComponent<PlayerInput>();
         
         fadeScreen.gameObject.SetActive(true);
     }
@@ -56,9 +49,9 @@ public class MenuManager : MonoBehaviour
     {
         if (canInteract)
         {
-            ChangePanel(menuCanvas, levelsCanvas);
-            isOnLevels = true;
-            firstLevelButton.Select();
+            //ChangePanel(menuCanvas, levelsCanvas);
+            //isOnLevels = true;
+            //firstLevelButton.Select();
         }
     }
 
@@ -66,22 +59,22 @@ public class MenuManager : MonoBehaviour
     {
         if (canInteract)
         {
-            ChangePanel(menuCanvas, settingsCanvas);
+            ChangePanel(buttonsPanel, settingsPanel);
             isOnSettings = true;
         }
     }
 
-    public void OnSettingsBack()
+    void OnSettingsBack()
     {
-        ChangePanel(settingsCanvas, menuCanvas);
+        ChangePanel(settingsPanel, buttonsPanel);
         isOnSettings = false;
     }
 
-    public void OnLevelsBack()
+    void OnLevelsBack()
     {
-        ChangePanel(levelsCanvas, menuCanvas);
-        isOnLevels = false;
-        playButton.Select();
+        //ChangePanel(levelsCanvas, menuCanvas);
+        //isOnLevels = false;
+        //playButton.Select();
     }
     
     void FadeIn()
@@ -112,8 +105,12 @@ public class MenuManager : MonoBehaviour
 
     void ChangePanel(GameObject closePanel, GameObject openPanel)
     {
-        closePanel.transform.DOScale(0, changePanelDuration).SetEase(Ease.Linear).Play();
-        openPanel.transform.DOScale(1, changePanelDuration).SetEase(Ease.Linear).Play();
+        openPanel.transform.localScale = Vector3.zero;
+        openPanel.SetActive(true);
+        
+        Sequence seq = DOTween.Sequence().OnComplete(() => closePanel.SetActive(false));
+        seq.Append(closePanel.transform.DOScale(0, changePanelDuration/2).SetEase(Ease.InBack));
+        seq.Append(openPanel.transform.DOScale(1, changePanelDuration/2).SetEase(Ease.OutBack));
     }
 
     public void SetLevelIInfo(int i, Sprite s, string t)
