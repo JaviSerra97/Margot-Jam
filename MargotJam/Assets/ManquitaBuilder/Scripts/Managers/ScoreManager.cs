@@ -124,7 +124,7 @@ public class ScoreManager : MonoBehaviour
                 AddPoints(ScoreForPlace, piece.transform.position);
             else
                 AddPoints(-ScoreForPlace, piece.transform.position);
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.12f);
         }
 
         //Send Highscore a NEX
