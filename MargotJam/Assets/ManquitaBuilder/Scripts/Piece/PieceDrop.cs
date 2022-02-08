@@ -71,19 +71,19 @@ public class PieceDrop : MonoBehaviour
         RaycastHit2D rightHit = Physics2D.Raycast(transform.position + new Vector3(sprite.bounds.size.x / 2 - RAYCAST_VARIATION, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, Mathf.Infinity);
         RaycastHit2D leftHit = Physics2D.Raycast(transform.position + new Vector3(-sprite.bounds.size.x / 2 + RAYCAST_VARIATION, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, Mathf.Infinity);
         
-        if (centerHit.collider.CompareTag("Piece"))
+        if (centerHit.collider && centerHit.collider.CompareTag("Piece"))
         {
             centerDistance = Vector2.Distance(centerHit.point, transform.position);
         }
         else { centerDistance = 0; }
 
-        if (rightHit.collider.CompareTag("Piece"))
+        if (rightHit.collider && rightHit.collider.CompareTag("Piece"))
         {
             rightDistance = Vector2.Distance(rightHit.point, transform.position + new Vector3(sprite.bounds.size.x / 2, 0));
         }
         else { rightDistance = 0; }
 
-        if (leftHit.collider.CompareTag("Piece"))
+        if (leftHit.collider && leftHit.collider.CompareTag("Piece"))
         {
             leftDistance = Vector2.Distance(leftHit.point, transform.position + new Vector3(-sprite.bounds.size.x / 2, 0));
         }
