@@ -6,6 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewLevel", menuName = "Custom/Level")]
 public class LevelInfo : ScriptableObject
 {
+    public string id;
     public Sprite Sprite;
     public string Info;
     public int sceneIndex;

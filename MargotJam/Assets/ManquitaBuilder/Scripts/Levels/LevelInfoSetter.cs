@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class LevelInfoSetter : MonoBehaviour, ISelectHandler
 {
-    public LevelInfo level;
+    public LevelInfo levelInfo;
     private Button button;
 
     private void Awake()
@@ -17,6 +17,6 @@ public class LevelInfoSetter : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData eventData)
     {
-        MenuManager.Instance.SetLevelIInfo(level.sceneIndex, level.Sprite, level.Info);
+        MenuManager.Instance.SetLevelIInfo(levelInfo.sceneIndex, levelInfo.Sprite, levelInfo.Info);
     }
 }

@@ -48,8 +48,8 @@ public class MenuManager : MonoBehaviour
     private bool isOnLevels;
 
     private bool switchSlider = true;
-    public bool addValue;
-    public bool decreaseValue;
+    private bool addValue;
+    private bool decreaseValue;
     
     private void Awake()
     {
@@ -114,6 +114,11 @@ public class MenuManager : MonoBehaviour
         isOnSettings = false;
     }
 
+    public bool OnLevels()
+    {
+        return isOnLevels;
+    }
+    
     void OnLevelsBack()
     {
         //ChangePanel(levelsCanvas, menuCanvas);
