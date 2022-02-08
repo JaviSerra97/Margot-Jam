@@ -93,7 +93,7 @@ Animator:
   m_GameObject: {fileID: 7788381660962146010}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 524465d2f166d7d4c9dc12eb522e6627, type: 2}
+  m_Controller: {fileID: 9100000, guid: efb95dc037d5a9842820e6f00124e046, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 7788381661053280847}
   - component: {fileID: 7788381661053280846}
   m_Layer: 0
-  m_Name: NPC_0 (1)
+  m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,7 +195,7 @@ Animator:
   m_GameObject: {fileID: 7788381661053280844}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 524465d2f166d7d4c9dc12eb522e6627, type: 2}
+  m_Controller: {fileID: 9100000, guid: efb95dc037d5a9842820e6f00124e046, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

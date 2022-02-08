@@ -264,13 +264,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 469187092}
     m_Modifications:
+    - target: {fileID: 7788381660962146012, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788381661053280847, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 49
+      objectReference: {fileID: 0}
     - target: {fileID: 7788381661175583322, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
       propertyPath: m_Name
       value: NPC_Parent
       objectReference: {fileID: 0}
     - target: {fileID: 7788381661175583322, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7788381661175583324, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
       propertyPath: m_RootOrder
@@ -282,7 +290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7788381661175583324, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.7700043
+      value: -5.62
       objectReference: {fileID: 0}
     - target: {fileID: 7788381661175583324, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3385,6 +3393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
