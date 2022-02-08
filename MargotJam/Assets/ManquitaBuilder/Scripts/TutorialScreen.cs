@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class TutorialScreen : MonoBehaviour
 {
-    public static bool ShowTuto = true; // Tienes que poner a true cuando se vuelva a iniciar el minijuego //
+    public static bool ShowTuto = false; // Tienes que poner a true cuando se vuelva a iniciar el minijuego //
     
     public TMP_Text StartText;
     public float FadeDuration;
@@ -30,7 +30,7 @@ public class TutorialScreen : MonoBehaviour
             Invoke(nameof(AllowCloseTutorial), minTutorialTime);
         }
         else
-            Invoke(nameof(HideScreen), 0.1f);
+            Invoke(nameof(HideScreen), 0.05f);
     }
 
     public void StartGame()

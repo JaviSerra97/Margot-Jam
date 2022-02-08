@@ -126,8 +126,6 @@ public class PiecesManager : MonoBehaviour
 
     public void CheckMaxHeight(float y_pos)
     {
-        Debug.Log(y_pos);
-        Debug.Log(y_pos > spawnPoint.position.y - PieceHeight * 1.2f);
         if(y_pos > spawnPoint.position.y - PieceHeight * 1.2f && _lerpCurrentValue < LerpSteps)
         {
             ++_lerpCurrentValue;

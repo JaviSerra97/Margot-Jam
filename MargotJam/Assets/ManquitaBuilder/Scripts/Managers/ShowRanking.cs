@@ -9,7 +9,8 @@ public class ShowRanking : MonoBehaviour
     private float _timer;
     public void SetRanking()
     {
-        text.text = "Ranking: " + PlayfabManager.Instance.GetRanking();
+        //Cambiar ranking por el de NEX
+        //text.text = "Ranking: " + PlayfabManager.Instance.GetRanking();
     }
 
     void OnEnable() { SetRanking(); Invoke(nameof(UpdateLeaderboards), 5f); }
@@ -26,7 +27,8 @@ public class ShowRanking : MonoBehaviour
 
     private void UpdateLeaderboards()
     {
-        if(PlayfabManager.Instance?.GetRanking() == null)
-            PlayfabManager.Instance?.GetLeaderboard();
+        // Obtener ranking de NEX
+        //if(PlayfabManager.Instance?.GetRanking() == null)
+        //    PlayfabManager.Instance?.GetLeaderboard();
     }
 }

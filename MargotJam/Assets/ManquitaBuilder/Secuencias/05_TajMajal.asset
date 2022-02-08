@@ -10,17 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36a60706a621ddf4aafb15e0af3409bf, type: 3}
-  m_Name: TajMajal
+  m_Name: 05_TajMajal
   m_EditorClassIdentifier: 
   sequences:
   - id: 1
     listOfPieces:
-    - {fileID: 5455349343649192848, guid: b5a7e09683623c047a99dd00ddca33de, type: 3}
-    - {fileID: 5455349343649192848, guid: 229aacedcec716f4fa5633f273e40f7f, type: 3}
     - {fileID: 5455349343649192848, guid: 17b89c0866bc0bc4c8d12263495302c6, type: 3}
-    - {fileID: 5455349343649192848, guid: 9cbca91f55554834b9cd62560e999211, type: 3}
-    - {fileID: 5455349343649192848, guid: b44b063d630add64886154974dc2c4b8, type: 3}
-    doShuffle: 1
+    doShuffle: 0
   - id: 2
     listOfPieces:
     - {fileID: 5455349343649192848, guid: 7d094020e323f834584d5a2335be4feb, type: 3}

@@ -1171,7 +1171,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281040893}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.6, y: 12.8, z: 0}
+  m_LocalPosition: {x: -25.6, y: 12.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 12890759}
@@ -1335,7 +1335,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314146435}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.8, y: 12.8, z: 0}
+  m_LocalPosition: {x: -12.8, y: 12.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 12890759}
@@ -1806,6 +1806,10 @@ PrefabInstance:
     - target: {fileID: 747800295720180599, guid: ec16689e3f18b0b4c8225795d38f3507, type: 3}
       propertyPath: m_Name
       value: PlayfabManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 747800295720180599, guid: ec16689e3f18b0b4c8225795d38f3507, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec16689e3f18b0b4c8225795d38f3507, type: 3}
@@ -2570,7 +2574,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733166485}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.6, y: 12.8, z: 0}
+  m_LocalPosition: {x: 25.6, y: 12.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 12890759}
@@ -2726,7 +2730,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795839557}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.8, y: 12.8, z: 0}
+  m_LocalPosition: {x: 12.8, y: 12.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 12890759}
@@ -3044,7 +3048,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 14bef4bb4e8ef66428bfdd66f1a6edd4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.4}
   m_FlipX: 0
@@ -3179,6 +3183,10 @@ PrefabInstance:
     - target: {fileID: 2260594938899844942, guid: 6113c7b642d3b73439b7b50559ec19b6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788575469159763822, guid: 6113c7b642d3b73439b7b50559ec19b6, type: 3}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8891705668775784104, guid: 6113c7b642d3b73439b7b50559ec19b6, type: 3}
       propertyPath: m_Enabled
@@ -4083,6 +4091,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 8788575469159763822, guid: ed46a0dc8a38f1c43932295817cffdd1, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8891705668775784104, guid: ed46a0dc8a38f1c43932295817cffdd1, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -4258,6 +4270,10 @@ PrefabInstance:
     - target: {fileID: 2260594938899844942, guid: 5f7746b857a55e545b94d0fa3b012445, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788575469159763822, guid: 5f7746b857a55e545b94d0fa3b012445, type: 3}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8891705668775784104, guid: 5f7746b857a55e545b94d0fa3b012445, type: 3}
       propertyPath: m_Enabled
@@ -6134,7 +6150,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915574821}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 12.8, z: 0}
+  m_LocalPosition: {x: 0, y: 12.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 12890759}
@@ -6532,6 +6548,7 @@ MonoBehaviour:
   EndY: 1.2
   StartOrtho: 5
   EndOrtho: 7
+  PieceHeight: 1
   sequences:
   - {fileID: 11400000, guid: 5eb2fa6b5e9f33e44b04eb602cd20683, type: 2}
   spawnPoint: {fileID: 1903044345}
