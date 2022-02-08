@@ -127,11 +127,12 @@ public class ScoreManager : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
 
-        if (PlayfabManager.Instance)
-        {
-            PlayfabManager.Instance.UpdateHighscore(_score);
-            //Debug.Log("Final score: " + _score);
-        }
+        //Send Highscore a NEX
+        //if (PlayfabManager.Instance)
+        //{
+        //    PlayfabManager.Instance.UpdateHighscore(_score);
+        //}
+
         SFX_Manager.Instance.PlayFanfarriaSFX();
 
         if (_score > ScoreToBeat)
