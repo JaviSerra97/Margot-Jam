@@ -34,7 +34,7 @@ public class ScoreManager : MonoBehaviour
     public GameObject multiplierPanel;
 
     private const int ScoreForPerfect = 5000;
-    private const int ScoreForPlace = 1000;
+    private const int ScoreForPlace = 10000;
 
     private int _score;
     private int _multiplier;
@@ -69,12 +69,19 @@ public class ScoreManager : MonoBehaviour
 
     public void AddPoints(int points, Vector3 pos)
     {
-        var p = points * _multiplier;
+        var p = points;
+        if(points > 0)
+            p *= _multiplier;
+        
         _score += p;
 
         //Instanciar texto con puntuacion
         var t = Instantiate(scoreTextPrefab, Camera.main.WorldToScreenPoint(pos), Quaternion.identity, canvas.transform);
         t.GetComponent<TMP_Text>().text = p.ToString();
+        if (p > 0)
+            t.GetComponent<TMP_Text>().color = Color.blue;
+        else
+            t.GetComponent<TMP_Text>().color = Color.red;
 
         //Tween del texto
         Sequence seq = DOTween.Sequence();
@@ -115,6 +122,8 @@ public class ScoreManager : MonoBehaviour
         {
             if (piece.CheckNeighbour())
                 AddPoints(ScoreForPlace, piece.transform.position);
+            else
+                AddPoints(-ScoreForPlace, piece.transform.position);
             yield return new WaitForSeconds(0.05f);
         }
 
@@ -142,4 +151,6 @@ public class ScoreManager : MonoBehaviour
     {
         SceneManager.LoadScene(index);
     }
+
+    
 }

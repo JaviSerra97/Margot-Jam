@@ -168,12 +168,22 @@ public class PieceDrop : MonoBehaviour
 
     public bool CheckNeighbour()
     {
+        if (!DownNeighbour) return false;
+
         RaycastHit2D centerHit = Physics2D.Raycast(transform.position + new Vector3(0, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, 0.5f);
-        bool _isNeighbouhDown = DownNeighbour && centerHit.collider;
+        //bool _isNeighbouhDown = DownNeighbour == centerHit.collider.gameObject;
+        //Debug.Log(this.name + " Down Neighbour is " + DownNeighbour + " And the object beneath is " + centerHit.collider.gameObject);
+        bool _isNeighbouhDown = centerHit.collider.gameObject.name.Contains(DownNeighbour.name);
         if (_isNeighbouhDown) 
         {
             transform.GetChild(0).GetComponent<SpriteRenderer>().DOColor(Color.blue, 0.4f).SetLoops(2, LoopType.Yoyo).Play(); // Cambiar por vfx a elecci�n
-            transform.GetChild(0).DOScale(1.25f, 0.4f).SetLoops(2, LoopType.Yoyo).Play(); //No lo he probado
+            transform.GetChild(0).DOScale(1.25f, 0.4f).SetLoops(2, LoopType.Yoyo).Play();
+        }
+        else
+        {
+            transform.GetChild(0).GetComponent<SpriteRenderer>().DOColor(Color.black, 0.4f).SetLoops(2, LoopType.Yoyo).Play(); // Cambiar por vfx a elecci�n
+            transform.GetChild(0).DOScale(0.75f, 0.4f).SetLoops(2, LoopType.Yoyo).Play();
+            transform.GetChild(0).DOShakePosition(1.25f, 0.4f).Play();
         }
         return _isNeighbouhDown;
     }
@@ -186,5 +196,11 @@ public class PieceDrop : MonoBehaviour
     public void TurnLeft()
     {
         transform.GetChild(0).rotation *= Quaternion.Euler(new Vector3(0, 0, -90));
+    }
+
+    [ContextMenu("Check neighbour")]
+    public void CheckNeighbourVariant()
+    {
+        Debug.Log("The object is equal to the Neighbour Prefab:" + (DownNeighbour == gameObject));
     }
 }
