@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a60706a621ddf4aafb15e0af3409bf, type: 3}
+  m_Name: 07_Petra
+  m_EditorClassIdentifier: 
+  sequences:
+  - id: 1
+    listOfPieces:
+    - {fileID: 3287151310237309643, guid: 48f0c1f655f014247976bf2e48641538, type: 3}
+    - {fileID: 3287151310237309643, guid: 752d6dea0ada6f14ebd5aa074d433f62, type: 3}
+    doShuffle: 0
+  - id: 2
+    listOfPieces:
+    - {fileID: 3287151310237309643, guid: cce277f9b4f61b6498b9b849645f08d5, type: 3}
+    - {fileID: 3287151310237309643, guid: 64d7d27f0b3c882498a98f9b9aa5fb0a, type: 3}
+    - {fileID: 3287151310237309643, guid: 7d853130dc638374e8e2f5288e9229ae, type: 3}
+    - {fileID: 3287151310237309643, guid: 4dac3c436cc6e3143adeb94930410d4c, type: 3}
+    doShuffle: 1
+  - id: 3
+    listOfPieces:
+    - {fileID: 3287151310237309643, guid: ced622502e19c944e9526feaccc26d21, type: 3}
+    - {fileID: 3287151310237309643, guid: 4ad67cbd4ae815c458738bd96c9d487e, type: 3}
+    - {fileID: 3287151310237309643, guid: 7cde0b527d63265458158bce1e3ee576, type: 3}
+    - {fileID: 3287151310237309643, guid: 0588d5819c7a047498a5758db3187613, type: 3}
+    - {fileID: 3287151310237309643, guid: 765dd78e94f84e545aba5745847b758a, type: 3}
+    doShuffle: 1
+  - id: 4
+    listOfPieces:
+    - {fileID: 3287151310237309643, guid: 6905362b642cefb4b9925aae194c50ab, type: 3}
+    - {fileID: 3287151310237309643, guid: 79c22cb221aaa1e4b918f4b3504151d4, type: 3}
+    - {fileID: 3287151310237309643, guid: 958e68ade6b3bc04d93116fa2dc45e92, type: 3}
+    - {fileID: 3287151310237309643, guid: 870299f924746ee4086c938a738b668a, type: 3}
+    - {fileID: 3287151310237309643, guid: 6fd7981139d5adb42a7b447ab814d3ca, type: 3}
+    doShuffle: 1
+  - id: 5
+    listOfPieces:
+    - {fileID: 3287151310237309643, guid: 9d68c7b891a4cc0409b40b87fc5bd3fd, type: 3}
+    - {fileID: 3287151310237309643, guid: 4a8c21f02d2815a45b7502bc9be67d79, type: 3}
+    - {fileID: 3287151310237309643, guid: 101511c3a5aa40e49854fee4f5a11366, type: 3}
+    - {fileID: 3287151310237309643, guid: ea292dc011785064cbe0e9214db34c81, type: 3}
+    - {fileID: 3287151310237309643, guid: ce8974cec0e8e5a4b8c78376e9066995, type: 3}
+    doShuffle: 1
+  - id: 6
+    listOfPieces:
+    - {fileID: 3287151310237309643, guid: ee216ed747c0f7f48a40c93db22a64c5, type: 3}
+    - {fileID: 3287151310237309643, guid: d1603d48930ae164b8d5df52da183890, type: 3}
+    - {fileID: 3287151310237309643, guid: 2c5730a8c4ff3f74a8d9e833eb1b639b, type: 3}
+    - {fileID: 3287151310237309643, guid: 78a3a923c832acd4084e8fcec37a6d8b, type: 3}
+    - {fileID: 3287151310237309643, guid: acfbaeb01eed9594196d5f09f7906d03, type: 3}
+    doShuffle: 1
+  - id: 7
+    listOfPieces:
+    - {fileID: 3287151310237309643, guid: 8aae68c7335409b4681c43bbcbda5ef9, type: 3}
+    - {fileID: 3287151310237309643, guid: 7f8b306364220ba4a955af3f5a270cff, type: 3}
+    - {fileID: 3287151310237309643, guid: 864209428142c0a4b9eaf29db02d0633, type: 3}
+    - {fileID: 3287151310237309643, guid: b61e473df2494cf4c949e7859faf19cc, type: 3}
+    - {fileID: 3287151310237309643, guid: 6baba0f2475ff754f9d9a4a944251608, type: 3}
+    doShuffle: 1

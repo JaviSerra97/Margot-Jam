@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a60706a621ddf4aafb15e0af3409bf, type: 3}
+  m_Name: 06_Pisa
+  m_EditorClassIdentifier: 
+  sequences:
+  - id: 1
+    listOfPieces:
+    - {fileID: 3876534848101872936, guid: bc59665d271fc3445b7c4a7637b0d55a, type: 3}
+    - {fileID: 3876534848101872936, guid: 9943e66934729bd4caba7a158bafa64d, type: 3}
+    doShuffle: 0
+  - id: 2
+    listOfPieces:
+    - {fileID: 3876534848101872936, guid: a3e35fd6b97f7f64d832eb7ece4e7316, type: 3}
+    - {fileID: 3876534848101872936, guid: 094f58a259efeb4409980b8bfbe07857, type: 3}
+    - {fileID: 3876534848101872936, guid: 1b16e0a577464b5498cd868a44e229be, type: 3}
+    doShuffle: 1
+  - id: 3
+    listOfPieces:
+    - {fileID: 3876534848101872936, guid: 45a21508bc7766f459bb7828242a2113, type: 3}
+    - {fileID: 3876534848101872936, guid: eb7c26382a6bba1408856adca9ba483b, type: 3}
+    - {fileID: 3876534848101872936, guid: f4e60aa854ed24f44accf52281644b33, type: 3}
+    doShuffle: 1
+  - id: 4
+    listOfPieces:
+    - {fileID: 3876534848101872936, guid: 1b94e14f22a2c7c459bd7992da13505f, type: 3}
+    - {fileID: 3876534848101872936, guid: 90c2b4368a4b3724dbe4b1be4fea3084, type: 3}
+    - {fileID: 3876534848101872936, guid: 71953109f85f23747a99055ccfecc6cd, type: 3}
+    doShuffle: 1
+  - id: 5
+    listOfPieces:
+    - {fileID: 3876534848101872936, guid: ceda0918047af414a8777bce9fb8a53c, type: 3}
+    - {fileID: 3876534848101872936, guid: b4b2bcb391d330e4895f97282e870539, type: 3}
+    - {fileID: 3876534848101872936, guid: 0404e57460224544bb68a46132c7d314, type: 3}
+    doShuffle: 1
+  - id: 6
+    listOfPieces:
+    - {fileID: 3876534848101872936, guid: 1a576f292cf723e4f98514724af73e3d, type: 3}
+    - {fileID: 3876534848101872936, guid: 2a5babd8efd5cdf47a728f642ea4da78, type: 3}
+    - {fileID: 3876534848101872936, guid: aecd437003c659346a6f62fd1d11b30e, type: 3}
+    doShuffle: 1
+  - id: 7
+    listOfPieces:
+    - {fileID: 3876534848101872936, guid: 473387a23f84fe54ab0fdc11156877d2, type: 3}
+    - {fileID: 3876534848101872936, guid: 7149e8d7b46e63241a08a887883097e1, type: 3}
+    - {fileID: 3876534848101872936, guid: 6477fdf9bd2e5ad4383a527b2620b76a, type: 3}
+    doShuffle: 1
+  - id: 8
+    listOfPieces:
+    - {fileID: 3876534848101872936, guid: 711463db82ddfd949909054e699bc98f, type: 3}
+    - {fileID: 3876534848101872936, guid: ec40bed92d78d3e479b25cea4f1dc7c7, type: 3}
+    - {fileID: 3876534848101872936, guid: 5e454edcdf691544e83b36b884c9dcfd, type: 3}
+    doShuffle: 1
+  - id: 9
+    listOfPieces:
+    - {fileID: 3876534848101872936, guid: 4502b839858242346b7b4b3173645b84, type: 3}
+    - {fileID: 3876534848101872936, guid: e598886b64dbd0f498b86e289d6df54d, type: 3}
+    - {fileID: 3876534848101872936, guid: ed2293330700f84409d36da1543d6276, type: 3}
+    doShuffle: 1
+  - id: 10
+    listOfPieces:
+    - {fileID: 3876534848101872936, guid: d3f11d1917e1f7146aecdd57a9cc00b4, type: 3}
+    - {fileID: 3876534848101872936, guid: dac6358e1fa401b43bd3eeb62a85e9b8, type: 3}
+    - {fileID: 3876534848101872936, guid: 7ab67a60f49ed2c428e984f523ab69e4, type: 3}
+    doShuffle: 1
+  - id: 11
+    listOfPieces:
+    - {fileID: 3876534848101872936, guid: 9244c87ab72fa9a4c9f036b05a0e342a, type: 3}
+    - {fileID: 3876534848101872936, guid: 745bcffd7e0fefc479a87f442a2e57a9, type: 3}
+    - {fileID: 3876534848101872936, guid: 529f6c1f5bec02f46bd851d54b0149bf, type: 3}
+    doShuffle: 1
+  - id: 12
+    listOfPieces:
+    - {fileID: 3876534848101872936, guid: c8f11a6616e98e24083ba3ea9c5e27f9, type: 3}
+    - {fileID: 3876534848101872936, guid: 4b71e0648b8ddcf4aaf1a27192d9b981, type: 3}
+    doShuffle: 1
+  - id: 13
+    listOfPieces:
+    - {fileID: 3876534848101872936, guid: b9dc03a9b171fdd4fa48b7b9dd761e2b, type: 3}
+    - {fileID: 3876534848101872936, guid: bdaed09d238cfd244919d12d02c4dc24, type: 3}
+    doShuffle: 1
