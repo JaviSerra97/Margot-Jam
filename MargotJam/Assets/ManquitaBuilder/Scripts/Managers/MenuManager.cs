@@ -51,6 +51,7 @@ public class MenuManager : MonoBehaviour
     private bool addValue;
     private bool decreaseValue;
     
+    private bool onAnimation;
     private void Awake()
     {
         Instance = this;
@@ -155,14 +156,21 @@ public class MenuManager : MonoBehaviour
 
     void ChangePanel(GameObject closePanel, GameObject openPanel)
     {
+        onAnimation = true;
+        
         openPanel.transform.localScale = Vector3.zero;
         openPanel.SetActive(true);
         
         Sequence seq = DOTween.Sequence().OnComplete(() => closePanel.SetActive(false));
         seq.Append(closePanel.transform.DOScale(0, changePanelDuration/2).SetEase(Ease.InBack));
-        seq.Append(openPanel.transform.DOScale(1, changePanelDuration/2).SetEase(Ease.OutBack));
+        seq.Append(openPanel.transform.DOScale(1, changePanelDuration/2).SetEase(Ease.OutBack)).OnComplete(EndAnimation);
     }
 
+    void EndAnimation()
+    {
+        onAnimation = false;
+    }
+    
     public void SetLevelIInfo(int i, Sprite s, string t)
     {
         selectedSceneIndex = i;
@@ -190,6 +198,8 @@ public class MenuManager : MonoBehaviour
 
     void OnBackToMenu()
     {
+        if(onAnimation){return;}
+        
         if (isOnSettings)
         {
             OnSettingsBack();
@@ -203,6 +213,8 @@ public class MenuManager : MonoBehaviour
 
     void OnSwitchSlider()
     {
+        if(onAnimation){return;}
+        
         if(!isOnSettings || !switchSlider){ return; }
 
         switchSlider = false;
@@ -218,7 +230,7 @@ public class MenuManager : MonoBehaviour
 
     void OnSliderValue(InputValue value)
     {
-        if(!isOnSettings){return;}
+        if(!isOnSettings || onAnimation){return;}
 
         if (value.Get<float>() > 0)
         {

@@ -107,6 +107,7 @@ public class LevelManager : MonoBehaviour
         if(!MenuManager.Instance.OnLevels()){return;}
         if (canPlay)
         {
+            canPlay = false;
             SceneManager.LoadScene(levelIndex);
         }
     }
