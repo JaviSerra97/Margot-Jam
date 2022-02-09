@@ -1,7 +1,109 @@
 fileFormatVersion: 2
 guid: 1ea5a0c58c339f749a55778ac7440eff
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8703734223630935459
+    second: animacion_gente_0
+  - first:
+      213: -5865818018290462233
+    second: animacion_gente_1
+  - first:
+      213: 230696144732530312
+    second: animacion_gente_2
+  - first:
+      213: 2068199111502131930
+    second: animacion_gente_3
+  - first:
+      213: -6801878455614050904
+    second: animacion_gente_4
+  - first:
+      213: 7920186099338430689
+    second: animacion_gente_5
+  - first:
+      213: 5881574860530797946
+    second: animacion_gente_6
+  - first:
+      213: 7390955040784886857
+    second: animacion_gente_7
+  - first:
+      213: 8685643781347420050
+    second: animacion_gente_8
+  - first:
+      213: 5773342306296550555
+    second: animacion_gente_9
+  - first:
+      213: 1525569859750615418
+    second: animacion_gente_10
+  - first:
+      213: 7720589422598098671
+    second: animacion_gente_11
+  - first:
+      213: 8904473033242174134
+    second: animacion_gente_12
+  - first:
+      213: 3758578197456251923
+    second: animacion_gente_13
+  - first:
+      213: 8792677114726890644
+    second: animacion_gente_14
+  - first:
+      213: -986960890133166560
+    second: animacion_gente_15
+  - first:
+      213: 7502902114866571161
+    second: animacion_gente_16
+  - first:
+      213: -5446932928407155414
+    second: animacion_gente_17
+  - first:
+      213: 5008078604661003312
+    second: animacion_gente_18
+  - first:
+      213: 4277112851405334073
+    second: animacion_gente_19
+  - first:
+      213: 6138031764502009374
+    second: animacion_gente_20
+  - first:
+      213: 169646355273718519
+    second: animacion_gente_21
+  - first:
+      213: 129233908945365021
+    second: animacion_gente_22
+  - first:
+      213: -3475529974895043078
+    second: animacion_gente_23
+  - first:
+      213: 1769784126750863838
+    second: animacion_gente_24
+  - first:
+      213: -4822690111303427316
+    second: animacion_gente_25
+  - first:
+      213: -6953066843623903885
+    second: animacion_gente_26
+  - first:
+      213: -5749004618572295446
+    second: animacion_gente_27
+  - first:
+      213: -7693398409835927773
+    second: animacion_gente_28
+  - first:
+      213: 7061640953932468615
+    second: animacion_gente_29
+  - first:
+      213: -2931096072764880757
+    second: animacion_gente_30
+  - first:
+      213: 4175989271443870058
+    second: animacion_gente_31
+  - first:
+      213: 3691304473514389473
+    second: animacion_gente_32
+  - first:
+      213: -4570131919269076843
+    second: animacion_gente_33
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +143,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,9 +177,747 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Nintendo Switch
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: animacion_gente_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 860.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.44656026, y: 0.6017409}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a511586df163780800000000000000
+      internalID: -8703734223630935459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 860.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.46761104, y: 0.59103143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e116be379d689ea0800000000000000
+      internalID: -5865818018290462233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_2
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 860.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.43740475, y: 0.6464533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886a5dddbe8933300800000000000000
+      internalID: 230696144732530312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_3
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 860.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.38773024, y: 0.6287683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2fcd55228b3bc10800000000000000
+      internalID: 2068199111502131930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_4
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 860.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.40878022, y: 0.60788673}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8adedbf159fda91a0800000000000000
+      internalID: -6801878455614050904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_5
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 860.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.38772982, y: 0.63572854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8cd0e5b472aed60800000000000000
+      internalID: 7920186099338430689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_6
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 860.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.55613434, y: 0.6148474}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d4ec97c2d8f9150800000000000000
+      internalID: 5881574860530797946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_7
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 860.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.63217133, y: 0.63384014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94caddc5372f19660800000000000000
+      internalID: 7390955040784886857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_8
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 860.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.6101429, y: 0.62564623}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2972bc8200b998870800000000000000
+      internalID: 8685643781347420050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 574.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.37710476, y: 0.52234983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b945a853d380f1050800000000000000
+      internalID: 5773342306296550555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_10
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 574.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.45493835, y: 0.5020321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a795a7264b9eb2510800000000000000
+      internalID: 1525569859750615418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_11
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 574.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.4672281, y: 0.50000024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee0996ac2b052b60800000000000000
+      internalID: 7720589422598098671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_12
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 574.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.48361406, y: 0.50000024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2e17abb0b039b70800000000000000
+      internalID: 8904473033242174134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_13
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 574.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.5204824, y: 0.47358704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c68efe4f6292430800000000000000
+      internalID: 3758578197456251923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_14
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 574.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.54915804, y: 0.46545994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cb000104dd50a70800000000000000
+      internalID: 8792677114726890644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_15
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 574.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.5573514, y: 0.45123765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026c860bc4c9d42f0800000000000000
+      internalID: -986960890133166560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_16
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 574.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.54506177, y: 0.4390466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997262da8b9af1860800000000000000
+      internalID: 7502902114866571161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288.25
+        width: 142.22223
+        height: 286.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2dc9e65c5b9864b0800000000000000
+      internalID: -5446932928407155414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_18
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 288.25
+        width: 142.22223
+        height: 286.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0349d0ef4f4408540800000000000000
+      internalID: 5008078604661003312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_19
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 288.25
+        width: 142.22223
+        height: 286.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936e54c2a7b5b5b30800000000000000
+      internalID: 4277112851405334073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_20
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 288.25
+        width: 142.22223
+        height: 286.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16d43f7e5bae2550800000000000000
+      internalID: 6138031764502009374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_21
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 288.25
+        width: 142.22223
+        height: 286.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa97871674ba5200800000000000000
+      internalID: 169646355273718519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_22
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 288.25
+        width: 142.22223
+        height: 286.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18af933e812bc100800000000000000
+      internalID: 129233908945365021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_23
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 288.25
+        width: 142.22223
+        height: 286.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd9828e6ef64cfc0800000000000000
+      internalID: -3475529974895043078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_24
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 288.25
+        width: 142.22223
+        height: 286.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed13c1c59498f8810800000000000000
+      internalID: 1769784126750863838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_25
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 288.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.58637035, y: 0.50000024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b58fd35ec521db0800000000000000
+      internalID: -4822690111303427316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.3380553, y: 0.49464542}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d204e6b8eb18f90800000000000000
+      internalID: -6953066843623903885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_27
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 2.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.43522218, y: 0.47322637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae21be942ce6730b0800000000000000
+      internalID: -5749004618572295446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_28
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 2.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.5107962, y: 0.4839359}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327ac2a58ee8b3590800000000000000
+      internalID: -7693398409835927773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_29
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 2.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47858113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781de7e880dfff160800000000000000
+      internalID: 7061640953932468615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_30
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 2.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.5539817, y: 0.46787167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b888e44c6a7a257d0800000000000000
+      internalID: -2931096072764880757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_31
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 2.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.59716654, y: 0.4839359}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a611146fd1814f930800000000000000
+      internalID: 4175989271443870058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_32
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 2.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.59716654, y: 0.47322637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1efa2ad7cd52a3330800000000000000
+      internalID: 3691304473514389473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion_gente_33
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 2.25
+        width: 142.22223
+        height: 286.75
+      alignment: 9
+      pivot: {x: 0.64035267, y: 0.47322637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590ea47ab31a390c0800000000000000
+      internalID: -4570131919269076843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -347,11 +347,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7788381661175583322, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7788381661175583324, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7788381661175583324, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -359,7 +359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7788381661175583324, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.7700043
+      value: -5.24
       objectReference: {fileID: 0}
     - target: {fileID: 7788381661175583324, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2181,7 +2181,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -2880,11 +2879,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90bf54d12eb4b344abab2030e47ba7e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &628241053 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7788381660962146013, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
-  m_PrefabInstance: {fileID: 32301157}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &648540918
 GameObject:
   m_ObjectHideFlags: 0
@@ -3541,8 +3535,6 @@ MonoBehaviour:
   scaleDuration: 0.15
   moveDuration: 0.25
   canvas: {fileID: 58634292}
-  SeniorAnim: {fileID: 628241053}
-  ShadowAnim: {fileID: 2130692679}
   scorePanel: {fileID: 1164990769}
   multiplierPanel: {fileID: 1342442238}
 --- !u!1 &727277348
@@ -3840,6 +3832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
@@ -8710,11 +8703,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2130692679 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7788381661053280846, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
-  m_PrefabInstance: {fileID: 32301157}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &148936984800683954
 Transform:
   m_ObjectHideFlags: 0
