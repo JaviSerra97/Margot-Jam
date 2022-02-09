@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db280fa46a46d864095dc6d63bbe6c88, type: 3}
-  m_Name: Maya
+  m_Name: TajMahal
   m_EditorClassIdentifier: 
-  id: "Temple of Kukulc\xE1n"
+  id: Taj Mahal
   Sprite: {fileID: 21300000, guid: 9714ecba8436e934a93494a8ba778708, type: 3}
   Info: 
-  sceneIndex: 1
+  sceneIndex: 2
