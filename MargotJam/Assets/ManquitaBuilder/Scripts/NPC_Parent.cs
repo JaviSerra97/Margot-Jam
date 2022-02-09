@@ -70,6 +70,7 @@ public class NPC_Parent : MonoBehaviour
 
     public void SetAnimation()
     {
+        CancelInvoke(nameof(ResetSpeed));
         PJ.GetComponent<Animator>().SetTrigger("Sorpresa");
         Shadow.GetComponent<Animator>().SetTrigger("Sorpresa");
         _currentSpeed = 0;
