@@ -290,7 +290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7788381661175583324, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.62
+      value: -5.37
       objectReference: {fileID: 0}
     - target: {fileID: 7788381661175583324, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2008,7 +2008,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -2070,7 +2069,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.5, z: -10}
+  m_LocalPosition: {x: 0, y: -1.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2257,11 +2256,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &628241053 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7788381660962146013, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
-  m_PrefabInstance: {fileID: 32301157}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &648540918
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,8 +3235,6 @@ MonoBehaviour:
   scaleDuration: 0.15
   moveDuration: 0.25
   canvas: {fileID: 58634292}
-  SeniorAnim: {fileID: 628241053}
-  ShadowAnim: {fileID: 2130692679}
   scorePanel: {fileID: 1164990769}
   multiplierPanel: {fileID: 1342442238}
 --- !u!1 &727277348
@@ -9885,11 +9877,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90bf54d12eb4b344abab2030e47ba7e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &2130692679 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7788381661053280846, guid: daf4c1000c23ab14c9885be7000502d5, type: 3}
-  m_PrefabInstance: {fileID: 32301157}
-  m_PrefabAsset: {fileID: 0}
 --- !u!212 &91661463695940468
 SpriteRenderer:
   m_ObjectHideFlags: 0
