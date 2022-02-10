@@ -8,6 +8,8 @@ public class VFXManager : MonoBehaviour
     public GameObject PerfectVFX_Prefab;
     public GameObject DustVFX_Prefab;
     public GameObject FallVFX_Prefab;
+    public GameObject SuccessVFX_Prefab;
+    public GameObject FailVFX_Prefab;
 
     private void Awake()
     {
@@ -27,5 +29,14 @@ public class VFXManager : MonoBehaviour
     public void PerfectVFX(Vector3 pos)
     {
         Instantiate(PerfectVFX_Prefab, pos, PerfectVFX_Prefab.transform.rotation);
+    }
+
+    public void SuccessVFX(Vector3 pos)
+    {
+        Instantiate(SuccessVFX_Prefab, pos, SuccessVFX_Prefab.transform.rotation);
+    }
+    public void FailVFX(Vector3 pos)
+    {
+        Instantiate(FailVFX_Prefab, pos, FailVFX_Prefab.transform.rotation);
     }
 }

@@ -189,6 +189,7 @@ public class PieceDrop : MonoBehaviour
             transform.GetChild(0).DOScale(1.10f, 0.1f).SetLoops(2, LoopType.Yoyo).Play();
             transform.GetChild(0).GetComponent<SpriteRenderer>().material.DOFloat(1f, "FresnelRatio", 0.15f);
             transform.GetChild(0).GetComponent<SpriteRenderer>().material.DOFloat(0.05f, "Distortion", 0.2f);
+            VFXManager.Instance.SuccessVFX(transform.position);
             Invoke(nameof(ReturnNormal), 0.3f);
         }
         else
@@ -196,6 +197,7 @@ public class PieceDrop : MonoBehaviour
             //transform.GetChild(0).GetComponent<SpriteRenderer>().DOColor(Color.black, 0.4f).SetLoops(2, LoopType.Yoyo).Play(); // Cambiar por vfx a elecci�n
             transform.GetChild(0).DOShakePosition(1.1f, 0.4f).Play();
             transform.GetChild(0).GetComponent<SpriteRenderer>().material.DOFloat(0f, "Saturation", 0.2f);
+            VFXManager.Instance.FailVFX(transform.position);
             //transform.GetChild(0).DOScale(0.9f, 0.1f).SetLoops(2, LoopType.Yoyo).Play();
             Invoke(nameof(ReturnNormal), 0.3f);
         }

@@ -121,7 +121,7 @@ public class ScoreManager : MonoBehaviour
                 AddPoints(ScoreForPlace, piece.transform.position);
             else
                 AddPoints(-ScoreForPlace, piece.transform.position);
-            yield return new WaitForSeconds(0.08f);
+            yield return new WaitForSeconds(0.18f);
         }
 
         yield return new WaitForSeconds(moveDuration * 1.5f);
@@ -137,7 +137,7 @@ public class ScoreManager : MonoBehaviour
         {
             Debug.Log("Prueba superada"); // ** Cambiar aqui la variable deseada ** //
             GameBeated = true;
-            UnlockManager.Instance.CompleteThisLevel(SceneManager.GetActiveScene().buildIndex);
+            UnlockManager.Instance?.CompleteThisLevel(SceneManager.GetActiveScene().buildIndex);
         }
 
         MultiplierText.transform.parent.gameObject.SetActive(false);

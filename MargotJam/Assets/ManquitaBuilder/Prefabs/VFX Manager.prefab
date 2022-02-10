@@ -46,3 +46,5 @@ MonoBehaviour:
   PerfectVFX_Prefab: {fileID: 5055806366637653404, guid: 5323bca89f0ff7c4baec32069f4e01f6, type: 3}
   DustVFX_Prefab: {fileID: 4265606623714713157, guid: 3e2041976ed6716489fb951548096428, type: 3}
   FallVFX_Prefab: {fileID: 1510054616740543237, guid: 89241cec4cd05714fb517e18b0b1bf7d, type: 3}
+  SuccessVFX_Prefab: {fileID: 111368753230107611, guid: 7153540022897164a8f54e45d69d93ca, type: 3}
+  FailVFX_Prefab: {fileID: 1275980792277255964, guid: d08a5d012a2c81e4280ee16a60ecd45f, type: 3}
