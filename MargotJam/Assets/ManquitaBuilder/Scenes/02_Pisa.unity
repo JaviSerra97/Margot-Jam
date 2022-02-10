@@ -6423,6 +6423,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f9f94f8661e1a1043ae730c88256e83b, type: 2}
   spawnPoint: {fileID: 1903044345}
   dropDelay: 0.5
+  BlockMaterial: {fileID: 2100000, guid: 7a41b02ad012f3f4ba2ad330f9fa7977, type: 2}
 --- !u!114 &1992333140
 MonoBehaviour:
   m_ObjectHideFlags: 0

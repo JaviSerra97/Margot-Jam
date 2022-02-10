@@ -29,9 +29,13 @@ public class PiecesManager : MonoBehaviour
     public float PieceHeight = 1;
     public const float OFFSET_CAMERA = 3.5f;
 
+    [Header("Pieces")]
     [SerializeField] private List<PiecesSequence> sequences;
     [SerializeField] private Transform spawnPoint;
     public float dropDelay;
+
+    [Header("Material")]
+    public Material BlockMaterial;
     private PiecesSequence chosenSequence;
     private bool canDropPiece;
 
@@ -51,6 +55,14 @@ public class PiecesManager : MonoBehaviour
     {
         SetSequence();
         InitCamera();
+        InitMaterial();
+    }
+
+    private void InitMaterial()
+    {
+        BlockMaterial.SetFloat("FresnelRatio", 0f);
+        BlockMaterial.SetFloat("Distortion", 0f);
+        BlockMaterial.SetFloat("Saturation", 1f);
     }
 
     private void InitCamera()

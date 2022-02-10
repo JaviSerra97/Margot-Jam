@@ -66,8 +66,9 @@ public class ScoreManager : MonoBehaviour
     public void AddPoints(int points, Vector3 pos)
     {
         var p = points;
-        if(points > 0)
+        if (points > 0)
             p *= _multiplier;
+            
         
         _score += p;
 
@@ -120,9 +121,10 @@ public class ScoreManager : MonoBehaviour
                 AddPoints(ScoreForPlace, piece.transform.position);
             else
                 AddPoints(-ScoreForPlace, piece.transform.position);
-            yield return new WaitForSeconds(0.12f);
+            yield return new WaitForSeconds(0.08f);
         }
 
+        yield return new WaitForSeconds(moveDuration * 1.5f);
         //Send Highscore a NEX
         //if (PlayfabManager.Instance)
         //{
