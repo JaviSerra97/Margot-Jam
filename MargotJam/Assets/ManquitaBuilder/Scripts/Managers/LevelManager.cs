@@ -59,7 +59,7 @@ public class LevelManager : MonoBehaviour
         currentMarker.SetActive(true);
 
         canPlay = selectedLevel.unlocked;
-        lockImage.SetActive(canPlay);
+        lockImage.SetActive(!canPlay);
         if (canPlay)
         {
             unlockInfo.text = "";
