@@ -26,9 +26,6 @@ public class ScoreManager : MonoBehaviour
     public float moveDuration;
     [Header("Canvas")]
     public GameObject canvas;
-    [Header("Animator walking man")]
-    public Animator SeniorAnim;
-    public Animator ShadowAnim;
     [Header("Panels")]
     public GameObject scorePanel;
     public GameObject multiplierPanel;
@@ -57,8 +54,7 @@ public class ScoreManager : MonoBehaviour
     public void PerfectPlacementScore(Vector3 pos)
     {
         AddPoints(ScoreForPerfect, pos);
-        SeniorAnim.SetTrigger("Sorpresa");
-        ShadowAnim.SetTrigger("Sorpresa");
+        NPC_Parent.Instance.SetAnimation();
     }
 
     public void SetMultiplier(int difficult)

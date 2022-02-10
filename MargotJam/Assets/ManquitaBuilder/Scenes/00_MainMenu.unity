@@ -358,6 +358,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7413434574867229136, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
   m_PrefabInstance: {fileID: 45769629}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &45769631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7413434574867229137, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
+  m_PrefabInstance: {fileID: 45769629}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &63597119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -863,6 +868,11 @@ PrefabInstance:
 --- !u!224 &191514985 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7413434574867229136, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
+  m_PrefabInstance: {fileID: 191514984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &191514986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7413434574867229137, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
   m_PrefabInstance: {fileID: 191514984}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &292533743
@@ -3808,6 +3818,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7413434574867229136, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
   m_PrefabInstance: {fileID: 1250157941}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1250157943 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7413434574867229137, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
+  m_PrefabInstance: {fileID: 1250157941}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1255055531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4501,7 +4516,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -5313,11 +5327,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   listOfLevels:
-  - levelInfo: {fileID: 11400000, guid: ea657afcd15791e43b1f856fe14fbd1c, type: 2}
+  - levelInfo: {fileID: 11400000, guid: 53bc41619ee23ac4ba864b9d8e00ed2e, type: 2}
+    mapMarker: {fileID: 1250157943}
+    unlocked: 1
+  - levelInfo: {fileID: 11400000, guid: 577d109819c3f414c9662f4642bb01d3, type: 2}
+    mapMarker: {fileID: 7413434575817640184}
+    unlocked: 0
+  - levelInfo: {fileID: 11400000, guid: 984cc9ba02860d9418b59f102dc85d15, type: 2}
     mapMarker: {fileID: 461579875}
     unlocked: 0
-  - levelInfo: {fileID: 11400000, guid: dd3340f6435f34244b6f72cb1fac5924, type: 2}
+  - levelInfo: {fileID: 11400000, guid: 95634ac2a003a1a4b912123b56914c19, type: 2}
     mapMarker: {fileID: 1155896744}
+    unlocked: 0
+  - levelInfo: {fileID: 11400000, guid: 3b4a95d09faedc24b883dcbd71ea12d7, type: 2}
+    mapMarker: {fileID: 45769631}
+    unlocked: 0
+  - levelInfo: {fileID: 11400000, guid: a4b96ee644cc3434d9896d9352b6b584, type: 2}
+    mapMarker: {fileID: 191514986}
     unlocked: 0
   levelSprite: {fileID: 1405512104}
   levelName: {fileID: 631249987}
@@ -6407,3 +6433,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
+--- !u!1 &7413434575817640184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7413434574867229137, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
+  m_PrefabInstance: {fileID: 7413434575817640183}
+  m_PrefabAsset: {fileID: 0}
