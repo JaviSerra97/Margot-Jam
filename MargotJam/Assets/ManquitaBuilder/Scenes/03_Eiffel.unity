@@ -1246,7 +1246,7 @@ GameObject:
   - component: {fileID: 217871825}
   - component: {fileID: 217871824}
   m_Layer: 0
-  m_Name: Eiffel_1_6 (1)
+  m_Name: Eiffel_1_6(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4810,7 +4810,7 @@ GameObject:
   - component: {fileID: 1012553481}
   - component: {fileID: 1012553480}
   m_Layer: 0
-  m_Name: Eiffel_1_1 (1)
+  m_Name: Eiffel_1_1(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7284,7 +7284,7 @@ GameObject:
   - component: {fileID: 1420745923}
   - component: {fileID: 1420745922}
   m_Layer: 0
-  m_Name: Eiffel_1_3 (1)
+  m_Name: Eiffel_1_3(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8276,7 +8276,7 @@ GameObject:
   - component: {fileID: 1804293546}
   - component: {fileID: 1804293545}
   m_Layer: 0
-  m_Name: Eiffel_1_8 (1)
+  m_Name: Eiffel_1_8(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8869,7 +8869,7 @@ GameObject:
   - component: {fileID: 1885842322}
   - component: {fileID: 1885842321}
   m_Layer: 0
-  m_Name: Eiffel_1_7 (1)
+  m_Name: Eiffel_1_7(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9151,7 +9151,7 @@ GameObject:
   - component: {fileID: 1909798269}
   - component: {fileID: 1909798268}
   m_Layer: 0
-  m_Name: Eiffel_1_4 (1)
+  m_Name: Eiffel_1_4(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9810,7 +9810,7 @@ GameObject:
   - component: {fileID: 2125165642}
   - component: {fileID: 2125165641}
   m_Layer: 0
-  m_Name: Eiffel_1_2 (1)
+  m_Name: Eiffel_1_2(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

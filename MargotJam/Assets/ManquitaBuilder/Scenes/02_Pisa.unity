@@ -1409,8 +1409,8 @@ Transform:
   - {fileID: 1903044345}
   - {fileID: 1205039880}
   - {fileID: 424971687}
-  - {fileID: 1257356483}
   - {fileID: 428236481}
+  - {fileID: 1257356483}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2076,7 +2076,7 @@ GameObject:
   - component: {fileID: 667433014}
   - component: {fileID: 667433013}
   m_Layer: 0
-  m_Name: Pisa_1_2 (1)
+  m_Name: Pisa_1_2(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3337,7 +3337,7 @@ GameObject:
   - component: {fileID: 1049098530}
   - component: {fileID: 1049098529}
   m_Layer: 0
-  m_Name: Pisa_1_3 (1)
+  m_Name: Pisa_1_3(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5561,7 +5561,7 @@ GameObject:
   - component: {fileID: 1756471272}
   - component: {fileID: 1756471271}
   m_Layer: 0
-  m_Name: Pisa_1_1 (1)
+  m_Name: Pisa_1_1(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -68,7 +68,7 @@ MonoBehaviour:
     m_Bits: 129
   projection: {fileID: 8193113340922183941}
   tweenDuration: 0.25
-  DownNeighbour: {fileID: 0}
+  DownNeighbour: {fileID: 1551869403454284002}
 --- !u!114 &4510474247335434521
 MonoBehaviour:
   m_ObjectHideFlags: 0

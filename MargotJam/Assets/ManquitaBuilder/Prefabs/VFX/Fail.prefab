@@ -47,7 +47,7 @@ ParticleSystem:
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -747,8 +747,8 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.35
-      mode: 0
+      value: 1
+      mode: 1
       spread: 0
       speed:
         serializedVersion: 2
@@ -977,7 +977,7 @@ ParticleSystem:
         serializedVersion: 2
         minMaxState: 0
         scalar: 1
-        minScalar: 30
+        minScalar: 1
         maxCurve:
           serializedVersion: 2
           m_Curve:
@@ -1026,8 +1026,8 @@ ParticleSystem:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-      cycleCount: 1
-      repeatInterval: 0.01
+      cycleCount: 4
+      repeatInterval: 0.1
       probability: 1
   SizeModule:
     enabled: 0

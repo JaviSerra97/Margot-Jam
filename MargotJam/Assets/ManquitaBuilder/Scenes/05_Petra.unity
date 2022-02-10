@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 41197683}
   - component: {fileID: 41197682}
   m_Layer: 0
-  m_Name: Petra_1_2 (1)
+  m_Name: Petra_1_2(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -429,7 +429,7 @@ Transform:
   - {fileID: 1222460366}
   - {fileID: 2006112694}
   m_Father: {fileID: 1090779764}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &41197682
 BoxCollider2D:
@@ -1446,7 +1446,7 @@ GameObject:
   - component: {fileID: 381483353}
   - component: {fileID: 381483352}
   m_Layer: 0
-  m_Name: Petra_1_2 (2)
+  m_Name: Petra_1_4(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1466,7 +1466,7 @@ Transform:
   - {fileID: 1197072323}
   - {fileID: 19224977}
   m_Father: {fileID: 1090779764}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &381483352
 BoxCollider2D:
@@ -2810,7 +2810,7 @@ GameObject:
   - component: {fileID: 626141259}
   - component: {fileID: 626141258}
   m_Layer: 0
-  m_Name: Petra_1_5 (1)
+  m_Name: Petra_1_5(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2830,7 +2830,7 @@ Transform:
   - {fileID: 1687984820}
   - {fileID: 1939251167}
   m_Father: {fileID: 1090779764}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &626141258
 BoxCollider2D:
@@ -5163,7 +5163,7 @@ GameObject:
   - component: {fileID: 991000501}
   - component: {fileID: 991000500}
   m_Layer: 0
-  m_Name: Petra_1_1 (1)
+  m_Name: Petra_1_1(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5183,7 +5183,7 @@ Transform:
   - {fileID: 1106767314}
   - {fileID: 2075168329}
   m_Father: {fileID: 1090779764}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &991000500
 BoxCollider2D:
@@ -5531,15 +5531,15 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 991000499}
+  - {fileID: 41197681}
+  - {fileID: 1742788100}
+  - {fileID: 381483351}
+  - {fileID: 626141257}
   - {fileID: 1551869404324262785}
   - {fileID: 3287151309622488607}
   - {fileID: 3287151309495306822}
   - {fileID: 3287151308786159510}
-  - {fileID: 41197681}
-  - {fileID: 626141257}
-  - {fileID: 991000499}
-  - {fileID: 381483351}
-  - {fileID: 1742788100}
   - {fileID: 743408418}
   - {fileID: 1698430111}
   - {fileID: 599086740}
@@ -7658,7 +7658,7 @@ GameObject:
   - component: {fileID: 1742788102}
   - component: {fileID: 1742788101}
   m_Layer: 0
-  m_Name: Petra_1_1 (2)
+  m_Name: Petra_1_3(Clone)
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7672,13 +7672,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742788099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0000009536743, y: -6.195286, z: 0}
+  m_LocalPosition: {x: -0, y: -6.195286, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 414695924}
   - {fileID: 953511824}
   m_Father: {fileID: 1090779764}
-  m_RootOrder: 8
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1742788101
 BoxCollider2D:
@@ -8941,7 +8941,7 @@ Transform:
   - {fileID: 1551869403925169107}
   - {fileID: 4181089593813490597}
   m_Father: {fileID: 1090779764}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1551869404324262789
 GameObject:
@@ -9018,7 +9018,7 @@ Transform:
   - {fileID: 3287151310534770628}
   - {fileID: 148936984800683954}
   m_Father: {fileID: 1090779764}
-  m_RootOrder: 3
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3287151309495306818
 GameObject:
@@ -9054,7 +9054,7 @@ Transform:
   - {fileID: 3287151309893351956}
   - {fileID: 148936985299591778}
   m_Father: {fileID: 1090779764}
-  m_RootOrder: 2
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3287151309622488603
 GameObject:
@@ -9090,7 +9090,7 @@ Transform:
   - {fileID: 3287151310298193485}
   - {fileID: 148936985704957499}
   m_Father: {fileID: 1090779764}
-  m_RootOrder: 1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3287151309893351954
 GameObject:

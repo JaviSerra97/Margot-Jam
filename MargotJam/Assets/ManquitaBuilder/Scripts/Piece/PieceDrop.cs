@@ -17,7 +17,7 @@ public class PieceDrop : MonoBehaviour
     [SerializeField] private float tweenDuration = 0.25f;
 
     public static float SNAP_THRESHOLD = 0.15f;
-    public static float SNAP_SAFE = 0.8f;
+    public static float SNAP_SAFE = 0.25f;
     public static float RAYCAST_VARIATION = 0.50f;
 
     public GameObject DownNeighbour;
@@ -173,15 +173,17 @@ public class PieceDrop : MonoBehaviour
 
     public bool CheckNeighbour()
     {
-        if (!DownNeighbour) return false;
-
         bool _isNeighbouhDown = false;
         RaycastHit2D centerHit = Physics2D.Raycast(transform.position + new Vector3(0, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, 0.5f);
 
-        if (centerHit.collider)
+
+        if (centerHit.collider && DownNeighbour)
+        {
+            Debug.Log(gameObject.name);
+            Debug.Log(DownNeighbour.name);
+            Debug.Log(centerHit.collider.gameObject.name);
             _isNeighbouhDown = centerHit.collider.transform.parent.gameObject.name.Contains(DownNeighbour.name) || centerHit.collider.gameObject.name.Contains(DownNeighbour.name);
-        else
-            return _isNeighbouhDown;
+        }
 
         if (_isNeighbouhDown)
         {

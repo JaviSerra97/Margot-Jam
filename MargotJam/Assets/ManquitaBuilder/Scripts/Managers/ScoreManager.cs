@@ -117,6 +117,7 @@ public class ScoreManager : MonoBehaviour
 
         foreach (PieceDrop piece in pieces)
         {
+            Debug.Log(piece.name);
             if (piece.CheckNeighbour())
                 AddPoints(ScoreForPlace, piece.transform.position);
             else
