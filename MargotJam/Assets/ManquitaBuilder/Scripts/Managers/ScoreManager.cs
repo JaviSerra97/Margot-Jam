@@ -71,6 +71,7 @@ public class ScoreManager : MonoBehaviour
             
         
         _score += p;
+        _score = Mathf.Max(0, _score);
 
         //Instanciar texto con puntuacion
         var t = Instantiate(scoreTextPrefab, Camera.main.WorldToScreenPoint(pos), Quaternion.identity, canvas.transform);
