@@ -54,9 +54,10 @@ public class UnlockManager : MonoBehaviour
         }
     }
 
-    public void SetCurrentLevel(int i)
+    //Llamar desde ScoreManager al superar la puntuación.
+    public void CompleteThisLevel(int sceneIndex)
     {
-        currentLevelIndex = i;
+        unlocksList[sceneIndex].state = true; //El indice 0 del menu se compensa con el indice 0 de la lista
     }
 
     public void SetLevelsState(LevelManager manager)
