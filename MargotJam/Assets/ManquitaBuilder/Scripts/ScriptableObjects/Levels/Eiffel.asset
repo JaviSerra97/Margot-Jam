@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Eiffel
   m_EditorClassIdentifier: 
   id: Eiffel Tower
-  Sprite: {fileID: 21300000, guid: 9714ecba8436e934a93494a8ba778708, type: 3}
+  Sprite: {fileID: 21300000, guid: 897e05bb9ffd43f4f8a44e626c2f94d3, type: 3}
   Info: 
   sceneIndex: 2

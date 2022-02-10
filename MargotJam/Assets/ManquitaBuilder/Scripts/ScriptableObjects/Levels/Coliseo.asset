@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Coliseo
   m_EditorClassIdentifier: 
   id: Colosseum
-  Sprite: {fileID: 21300000, guid: 9714ecba8436e934a93494a8ba778708, type: 3}
+  Sprite: {fileID: 21300000, guid: e425f02defbb09b4ca5a6bce70007e68, type: 3}
   Info: 
   sceneIndex: 2

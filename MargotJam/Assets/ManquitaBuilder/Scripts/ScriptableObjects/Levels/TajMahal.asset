@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TajMahal
   m_EditorClassIdentifier: 
   id: Taj Mahal
-  Sprite: {fileID: 21300000, guid: 9714ecba8436e934a93494a8ba778708, type: 3}
+  Sprite: {fileID: 21300000, guid: 113b990dbbd5453419bd1cea28ca818a, type: 3}
   Info: 
   sceneIndex: 2

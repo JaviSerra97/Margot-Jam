@@ -5,6 +5,14 @@ using UnityEngine;
 
 public class UnlockManager : MonoBehaviour
 {
+    [System.Serializable]
+    public class LevelState
+    {
+        public string id;
+        public bool state;
+    }
+    
+    public List<LevelState> unlocksList;
     public static UnlockManager Instance;
 
     private int currentLevelIndex;
@@ -21,6 +29,29 @@ public class UnlockManager : MonoBehaviour
             Destroy(this);
         }
         #endregion
+        SetStatesOnStart();
+    }
+
+    void SetStatesOnStart()
+    {
+        //Unlock first level
+        PlayerPrefs.SetInt(unlocksList[0].id, 1);
+        
+        foreach (LevelState s in unlocksList)
+        {
+            int state = PlayerPrefs.GetInt(s.id);
+
+            switch (state)
+            {
+                case 0:
+                    s.state = false;
+                    break;
+                case 1:
+                    s.state = true;
+                    break;
+            }
+            //Debug.Log(s.id + ": " + s.state);
+        }
     }
 
     public void SetCurrentLevel(int i)
@@ -28,10 +59,18 @@ public class UnlockManager : MonoBehaviour
         currentLevelIndex = i;
     }
 
-    public void UnlockNextLevel()
+    public void SetLevelsState(LevelManager manager)
     {
-        
+        for (int i = 0; i < unlocksList.Count; i++)
+        {
+            var s = 0;
+            if (unlocksList[i].state)
+            {
+                s = 1;
+            }
+            PlayerPrefs.SetInt(unlocksList[i].id, s);
+            
+            manager.UnlockLevel(i, unlocksList[i].state);
+        }
     }
-    
-    
 }

@@ -9,12 +9,16 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    [ExecuteInEditMode]
     [System.Serializable]
     public class Level
     {
+        public string id;
         public LevelInfo levelInfo;
         public GameObject mapMarker;
         public bool unlocked = false;
+        [TextArea()]
+        public string lockedInfo;
     }
 
     [Header("Levels list -----------------------------------------------------")]
@@ -24,7 +28,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Image levelSprite;
     [SerializeField] private TMP_Text levelName;
     [SerializeField] private TMP_Text levelInfo;
+    [SerializeField] private TMP_Text unlockInfo;
 
+    public GameObject lockImage;
+    
     private int levelIndex = 0;
     private int listIndex = 0;
 
@@ -33,6 +40,8 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        UnlockManager.Instance.SetLevelsState(this);
+        
         ShowSelectedLevel();
     }
 
@@ -50,6 +59,15 @@ public class LevelManager : MonoBehaviour
         currentMarker.SetActive(true);
 
         canPlay = selectedLevel.unlocked;
+        lockImage.SetActive(canPlay);
+        if (canPlay)
+        {
+            unlockInfo.text = "";
+        }
+        else
+        {
+            unlockInfo.text = selectedLevel.lockedInfo;
+        }
     }
     
     void SetLevelInfo(LevelInfo lv)
@@ -109,6 +127,20 @@ public class LevelManager : MonoBehaviour
         {
             canPlay = false;
             SceneManager.LoadScene(levelIndex);
+        }
+    }
+
+    public void UnlockLevel(int i, bool state)
+    {
+        listOfLevels[i].unlocked = state;
+    }
+    
+    [ContextMenu("Set ID")]
+    public void SetIDInInspector()
+    {
+        foreach (Level l in listOfLevels)
+        {
+            l.id = l.levelInfo.id;
         }
     }
 }

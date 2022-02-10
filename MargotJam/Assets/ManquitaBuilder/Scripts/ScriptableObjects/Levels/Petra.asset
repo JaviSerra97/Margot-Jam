@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Petra
   m_EditorClassIdentifier: 
   id: Al-Khazneh
-  Sprite: {fileID: 21300000, guid: 9714ecba8436e934a93494a8ba778708, type: 3}
+  Sprite: {fileID: 21300000, guid: 57cef701bbfccae44906402fd8e5380a, type: 3}
   Info: 
   sceneIndex: 2

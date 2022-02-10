@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Maya
   m_EditorClassIdentifier: 
   id: "Temple of Kukulc\xE1n"
-  Sprite: {fileID: 21300000, guid: 9714ecba8436e934a93494a8ba778708, type: 3}
+  Sprite: {fileID: 21300000, guid: 42871ce3ad6703349b4add71bb469e0f, type: 3}
   Info: 
   sceneIndex: 1

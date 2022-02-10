@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Pisa
   m_EditorClassIdentifier: 
   id: Leaning Tower of Pisa
-  Sprite: {fileID: 21300000, guid: 9714ecba8436e934a93494a8ba778708, type: 3}
+  Sprite: {fileID: 21300000, guid: 3ef691f334f09bf48a0a9bd884e5238c, type: 3}
   Info: 
   sceneIndex: 2
