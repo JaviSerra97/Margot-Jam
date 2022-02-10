@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AciertoCaja
+  m_Name: CajaMaterial
   m_Shader: {fileID: -6465566751694194690, guid: e1d7428093ea03841aae4e28f98c913e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -40,6 +40,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Distortion: 0
+    - FresnelRatio: 0
+    - Saturation: 1
     - Vector1_47fe3a571e8049db972220fbc85959f4: 0
     - Vector1_c33194e8040b461a8dda16429688aac1: 0
     m_Colors:

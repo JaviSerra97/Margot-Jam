@@ -177,26 +177,28 @@ public class PieceDrop : MonoBehaviour
 
         bool _isNeighbouhDown = false;
         RaycastHit2D centerHit = Physics2D.Raycast(transform.position + new Vector3(0, -sprite.bounds.size.y / 2 - 0.5f), Vector2.down, 0.5f);
-        //bool _isNeighbouhDown = DownNeighbour == centerHit.collider.gameObject;
-        //Debug.Log(this.name + " Down Neighbour is " + DownNeighbour + " And the object beneath is " + centerHit.collider.gameObject);
+
         if (centerHit.collider)
-            _isNeighbouhDown = centerHit.collider.gameObject.name.Contains(DownNeighbour.name);
+            _isNeighbouhDown = centerHit.collider.transform.parent.gameObject.name.Contains(DownNeighbour.name) || centerHit.collider.gameObject.name.Contains(DownNeighbour.name);
         else
-            return false;
-        //if (_isNeighbouhDown)
-        //{
+            return _isNeighbouhDown;
+
+        if (_isNeighbouhDown)
+        {
             //transform.GetChild(0).GetComponent<SpriteRenderer>().DOColor(Color.blue, 0.4f).SetLoops(2, LoopType.Yoyo).Play(); // Cambiar por vfx a elecci�n
-            //transform.GetChild(0).DOScale(1.25f, 0.4f).SetLoops(2, LoopType.Yoyo).Play();
-            transform.GetChild(0).GetComponent<SpriteRenderer>().material.DOFloat(1f, "FresnelRatio", 0.3f);
-            transform.GetChild(0).GetComponent<SpriteRenderer>().material.DOFloat(0.05f, "Distortion", 0.5f);
-            Invoke(nameof(ReturnNormal), 0.5f);
-        //}
-        //else
-        //{
-        //    transform.GetChild(0).GetComponent<SpriteRenderer>().DOColor(Color.black, 0.4f).SetLoops(2, LoopType.Yoyo).Play(); // Cambiar por vfx a elecci�n
-        //    transform.GetChild(0).DOScale(0.75f, 0.4f).SetLoops(2, LoopType.Yoyo).Play();
-        //    transform.GetChild(0).DOShakePosition(1.25f, 0.4f).Play();
-        //}
+            transform.GetChild(0).DOScale(1.10f, 0.1f).SetLoops(2, LoopType.Yoyo).Play();
+            transform.GetChild(0).GetComponent<SpriteRenderer>().material.DOFloat(1f, "FresnelRatio", 0.15f);
+            transform.GetChild(0).GetComponent<SpriteRenderer>().material.DOFloat(0.05f, "Distortion", 0.2f);
+            Invoke(nameof(ReturnNormal), 0.3f);
+        }
+        else
+        {
+            //transform.GetChild(0).GetComponent<SpriteRenderer>().DOColor(Color.black, 0.4f).SetLoops(2, LoopType.Yoyo).Play(); // Cambiar por vfx a elecci�n
+            transform.GetChild(0).DOShakePosition(1.1f, 0.4f).Play();
+            transform.GetChild(0).GetComponent<SpriteRenderer>().material.DOFloat(0f, "Saturation", 0.2f);
+            //transform.GetChild(0).DOScale(0.9f, 0.1f).SetLoops(2, LoopType.Yoyo).Play();
+            Invoke(nameof(ReturnNormal), 0.3f);
+        }
         return _isNeighbouhDown;
     }
 
@@ -204,6 +206,8 @@ public class PieceDrop : MonoBehaviour
     {
         transform.GetChild(0).GetComponent<SpriteRenderer>().material.DOFloat(0f, "FresnelRatio", 0.5f);
         transform.GetChild(0).GetComponent<SpriteRenderer>().material.DOFloat(0f, "Distortion", 0.5f);
+        transform.GetChild(0).GetComponent<SpriteRenderer>().material.DOFloat(1f, "Saturation", 0.5f);
+
     }
     public void TurnRight()
     {
