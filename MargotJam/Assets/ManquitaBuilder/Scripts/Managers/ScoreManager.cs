@@ -137,6 +137,7 @@ public class ScoreManager : MonoBehaviour
         {
             Debug.Log("Prueba superada"); // ** Cambiar aqui la variable deseada ** //
             GameBeated = true;
+            UnlockManager.Instance.CompleteThisLevel(SceneManager.GetActiveScene().buildIndex);
         }
 
         MultiplierText.transform.parent.gameObject.SetActive(false);

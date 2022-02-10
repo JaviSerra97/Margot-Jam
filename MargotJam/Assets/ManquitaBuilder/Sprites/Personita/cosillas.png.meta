@@ -1,0 +1,396 @@
+fileFormatVersion: 2
+guid: 6f9f67834615820409bf5c68fe895c5d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5740341995686347502
+    second: cosillas_0
+  - first:
+      213: 7022079876183474212
+    second: cosillas_1
+  - first:
+      213: -3650422406895683157
+    second: cosillas_2
+  - first:
+      213: 3040969619285414970
+    second: cosillas_3
+  - first:
+      213: 5800751274226173709
+    second: cosillas_4
+  - first:
+      213: -1424934266743395976
+    second: cosillas_5
+  - first:
+      213: -3662147570621606220
+    second: cosillas_6
+  - first:
+      213: -3338835437707421385
+    second: cosillas_7
+  - first:
+      213: 5407459623939920526
+    second: cosillas_8
+  - first:
+      213: 1229935004909862765
+    second: cosillas_9
+  - first:
+      213: -6405226880073803699
+    second: cosillas_10
+  - first:
+      213: 3014763431451579713
+    second: cosillas_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cosillas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 149
+        width: 90
+        height: 95
+      alignment: 9
+      pivot: {x: 0.8359883, y: 0.23285201}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21dbbd95e553650b0800000000000000
+      internalID: -5740341995686347502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosillas_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 148
+        width: 89
+        height: 94
+      alignment: 9
+      pivot: {x: 0.8276293, y: 0.2242654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420c55c5170737160800000000000000
+      internalID: 7022079876183474212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosillas_2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 140
+        width: 98
+        height: 79
+      alignment: 9
+      pivot: {x: 0.808561, y: 0.22659244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba93bd46928175dc0800000000000000
+      internalID: -3650422406895683157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosillas_3
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 149
+        width: 104
+        height: 36
+      alignment: 9
+      pivot: {x: 0.76999134, y: 0.7549922}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34134ac1c1b33a20800000000000000
+      internalID: 3040969619285414970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosillas_4
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 136
+        width: 105
+        height: 63
+      alignment: 9
+      pivot: {x: 0.7417079, y: 0.8342755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0745aadc88608050800000000000000
+      internalID: 5800751274226173709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosillas_5
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 118
+        width: 93
+        height: 78
+      alignment: 9
+      pivot: {x: 0.8019265, y: 0.8807565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8796a7285dd993ce0800000000000000
+      internalID: -1424934266743395976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosillas_6
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 126
+        width: 91
+        height: 65
+      alignment: 9
+      pivot: {x: 0.84416515, y: 0.8738338}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b61a0aff207d2dc0800000000000000
+      internalID: -3662147570621606220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosillas_7
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 137
+        width: 88
+        height: 55
+      alignment: 9
+      pivot: {x: 0.8313543, y: 0.41164023}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73996fbfbd21aa1d0800000000000000
+      internalID: -3338835437707421385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosillas_8
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 123
+        width: 92
+        height: 66
+      alignment: 9
+      pivot: {x: 0.85216355, y: 0.28728092}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82d436c0e72b0b40800000000000000
+      internalID: 5407459623939920526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosillas_9
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 118
+        width: 89
+        height: 95
+      alignment: 9
+      pivot: {x: 0.82763535, y: 0.21011609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f7878de5b911110800000000000000
+      internalID: 1229935004909862765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosillas_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 193
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48da63c6101c17a0800000000000000
+      internalID: -6405226880073803699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosillas_11
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 26
+        width: 106
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14552853e5796d920800000000000000
+      internalID: 3014763431451579713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
