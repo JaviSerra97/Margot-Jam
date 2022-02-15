@@ -29,14 +29,14 @@ public class UnlockManager : MonoBehaviour
             Destroy(this);
         }
         #endregion
-        SetStatesOnStart();
+        //SetStatesOnStart();
     }
 
-    void SetStatesOnStart()
+    public void SetStatesOnStart()
     {
         //Unlock first level
-        PlayerPrefs.SetInt(unlocksList[0].id, 1);
-        
+        FsSaveDataPlayerPrefs.Instance.SetInt(unlocksList[0].id, 1);
+
         foreach (LevelState s in unlocksList)
         {
             int state = PlayerPrefs.GetInt(s.id);
@@ -57,7 +57,7 @@ public class UnlockManager : MonoBehaviour
     //Llamar desde ScoreManager al superar la puntuación.
     public void CompleteThisLevel(int sceneIndex)
     {
-        unlocksList[sceneIndex].state = true; //El indice 0 del menu se compensa con el indice 0 de la lista
+        unlocksList[sceneIndex].state = true;
     }
 
     public void SetLevelsState(LevelManager manager)
@@ -69,7 +69,7 @@ public class UnlockManager : MonoBehaviour
             {
                 s = 1;
             }
-            PlayerPrefs.SetInt(unlocksList[i].id, s);
+            FsSaveDataPlayerPrefs.Instance.SetInt(unlocksList[i].id, s);
             
             manager.UnlockLevel(i, unlocksList[i].state);
         }
