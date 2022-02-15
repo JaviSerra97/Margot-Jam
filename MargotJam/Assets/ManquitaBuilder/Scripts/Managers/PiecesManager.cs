@@ -223,11 +223,15 @@ public class PiecesManager : MonoBehaviour
 
     void OnDropPiece()
     {
+        if(Time.timeScale == 0){return;}
+
         pieceDrop.DropPiece();
     }
 
     void OnRotatePiece()
     {
+        if(Time.timeScale == 0){return;}
+
         float v = input.actions["RotatePiece"].ReadValue<float>();
         if (v > 0)
         {
