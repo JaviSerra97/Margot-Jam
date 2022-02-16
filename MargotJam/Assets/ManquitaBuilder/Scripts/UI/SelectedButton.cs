@@ -18,6 +18,7 @@ public class SelectedButton : MonoBehaviour, ISelectHandler, IDeselectHandler
     public void OnSelect(BaseEventData eventData)
     {
         blink = true;
+        AudioManager.Instance.PlayHover();
         StartCoroutine(nameof(BlinkEffect));
         marker.SetActive(true);
     }

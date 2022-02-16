@@ -892,10 +892,17 @@ TextureImporter:
       name: UIs_46
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 477
         y: 475
         width: 110
         height: 106
+=======
+        x: 479
+        y: 69
+        width: 277
+        height: 139
+>>>>>>> switch
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

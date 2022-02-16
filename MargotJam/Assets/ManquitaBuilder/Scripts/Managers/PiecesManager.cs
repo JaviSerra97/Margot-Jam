@@ -56,6 +56,7 @@ public class PiecesManager : MonoBehaviour
         SetSequence();
         InitCamera();
         InitMaterial();
+        StartGame();
     }
 
     private void InitMaterial()
