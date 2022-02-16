@@ -4500,36 +4500,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   listOfLevels:
-  - id: "Temple of Kukulc\xE1n"
+  - id: Temple of Kukulcan
     levelInfo: {fileID: 11400000, guid: 53bc41619ee23ac4ba864b9d8e00ed2e, type: 2}
     mapMarker: {fileID: 1250157943}
-    unlocked: 0
-    lockedInfo: Achieve 180.000 points in "Tower Eiffel"
+    unlocked: 1
+    lockedInfo: 
   - id: Leaning Tower of Pisa
     levelInfo: {fileID: 11400000, guid: 577d109819c3f414c9662f4642bb01d3, type: 2}
     mapMarker: {fileID: 7413434575817640184}
     unlocked: 0
-    lockedInfo: 
+    lockedInfo: Achieve 500.000 points in "Temple of Kukulcan"
   - id: Eiffel Tower
     levelInfo: {fileID: 11400000, guid: 984cc9ba02860d9418b59f102dc85d15, type: 2}
     mapMarker: {fileID: 461579875}
     unlocked: 0
-    lockedInfo: 
+    lockedInfo: Achieve 500.000 points in "Leaning Tower of Pisa"
   - id: Colosseum
     levelInfo: {fileID: 11400000, guid: 95634ac2a003a1a4b912123b56914c19, type: 2}
     mapMarker: {fileID: 1155896744}
     unlocked: 0
-    lockedInfo: 
+    lockedInfo: Achieve 500.000 points in "Eiffel Tower"
   - id: Al-Khazneh
     levelInfo: {fileID: 11400000, guid: 3b4a95d09faedc24b883dcbd71ea12d7, type: 2}
     mapMarker: {fileID: 45769631}
     unlocked: 0
-    lockedInfo: 
+    lockedInfo: Achieve 500.000 points in "Colosseumr"
   - id: Taj Mahal
     levelInfo: {fileID: 11400000, guid: a4b96ee644cc3434d9896d9352b6b584, type: 2}
     mapMarker: {fileID: 191514986}
     unlocked: 0
-    lockedInfo: 
+    lockedInfo: Achieve 500.000 points in "Al-Khazneh"
   levelSprite: {fileID: 1405512104}
   levelName: {fileID: 631249987}
   levelInfo: {fileID: 1923759031}
@@ -5060,7 +5060,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963712014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 256.34433, y: 246.73271, z: -39.39186}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5150,8 +5150,8 @@ MonoBehaviour:
   SFXSlider: {fileID: 1489947503}
   Mixer: {fileID: 24100000, guid: ede5f9b9b95d65b44a110429988a6e25, type: 2}
   SFX_Button: {fileID: 1963712015}
-  Hover: {fileID: 8300000, guid: 562a764b2759bcc4c99d44528b32c93b, type: 3}
-  Click: {fileID: 8300000, guid: 68e1627a09f90b94d8ba0973cec19a05, type: 3}
+  Hover: {fileID: 8300000, guid: 70d9fd5453dbda44dba763c7ab7a225c, type: 3}
+  Click: {fileID: 8300000, guid: 9ee439507398cc147ab37a5abc969736, type: 3}
   Slider: {fileID: 8300000, guid: 5bd9e7c255218ac459895d265a0b92aa, type: 3}
 --- !u!1 &2139325126
 GameObject:

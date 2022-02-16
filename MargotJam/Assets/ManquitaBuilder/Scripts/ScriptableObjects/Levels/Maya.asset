@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db280fa46a46d864095dc6d63bbe6c88, type: 3}
   m_Name: Maya
   m_EditorClassIdentifier: 
-  id: "Temple of Kukulc\xE1n"
+  id: Temple of Kukulcan
   Sprite: {fileID: 21300000, guid: 42871ce3ad6703349b4add71bb469e0f, type: 3}
-  Info: 
+  Info: Worship the Feathered Serpent God, "Kukulcan",  from Maya civilization by
+    rebuilding its iconic temple. An 5x2 blocks pyramidal structure where you can
+    work your way to the gods.
   sceneIndex: 1

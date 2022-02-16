@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Taj Mahal
   Sprite: {fileID: 21300000, guid: 113b990dbbd5453419bd1cea28ca818a, type: 3}
-  Info: 
-  sceneIndex: 2
+  Info: Raise this White Marble Mausoleum by the side of Yamuna River, in the city
+    of Agra. A 7x7 block squared structure erected in memory of Emperor Shan Jahan's
+    wife.
+  sceneIndex: 6

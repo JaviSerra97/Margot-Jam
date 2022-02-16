@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Al-Khazneh
   Sprite: {fileID: 21300000, guid: 57cef701bbfccae44906402fd8e5380a, type: 3}
-  Info: 
-  sceneIndex: 2
+  Info: Rebuild one of the biggest temples of ancient city, Petra, from Nabatean
+    Kingdom. A 7x5 block squared structure originally carved into sandstone rock
+    in the canyons in Jordania.
+  sceneIndex: 5

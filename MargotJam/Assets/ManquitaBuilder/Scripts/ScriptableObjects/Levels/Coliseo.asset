@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Colosseum
   Sprite: {fileID: 21300000, guid: e425f02defbb09b4ca5a6bce70007e68, type: 3}
-  Info: 
-  sceneIndex: 2
+  Info: Gladiators, forums and various spectacles; now the entertainment is for you
+    to build this House of Fame from Rome. A 8x7 blocks squared structure nowadays
+    considered an example against death penalty.
+  sceneIndex: 4
