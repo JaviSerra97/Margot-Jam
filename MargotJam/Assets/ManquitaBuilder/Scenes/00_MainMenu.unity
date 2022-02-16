@@ -375,14 +375,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Petra
       objectReference: {fileID: 0}
-    - target: {fileID: 7413434574867229151, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -3489706808572292466, guid: ea5f184d900bd3545bff2bad2d3196f7, type: 3}
-    - target: {fileID: 7413434574998984956, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
 --- !u!224 &45769630 stripped
@@ -849,14 +841,6 @@ PrefabInstance:
     - target: {fileID: 7413434574867229137, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
       propertyPath: m_Name
       value: TajMahal
-      objectReference: {fileID: 0}
-    - target: {fileID: 7413434574867229151, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -3489706808572292466, guid: ea5f184d900bd3545bff2bad2d3196f7, type: 3}
-    - target: {fileID: 7413434574998984956, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
@@ -1401,7 +1385,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547934291}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31968e7fce6f80546a5ff3a52d544983, type: 3}
   m_Name: 
@@ -1634,14 +1618,6 @@ PrefabInstance:
     - target: {fileID: 7413434574867229137, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
       propertyPath: m_Name
       value: Coliseo
-      objectReference: {fileID: 0}
-    - target: {fileID: 7413434574867229151, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -3489706808572292466, guid: ea5f184d900bd3545bff2bad2d3196f7, type: 3}
-    - target: {fileID: 7413434574998984956, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
@@ -2776,7 +2752,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.0335999, y: -65.70871}
+  m_AnchoredPosition: {x: 3.100006, y: -58.100006}
   m_SizeDelta: {x: -29.9741, y: 88.9496}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1160748466
@@ -3060,7 +3036,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -72.505066}
+  m_AnchoredPosition: {x: 0, y: -61.547}
   m_SizeDelta: {x: 388.3425, y: 86.8484}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1200664071
@@ -3254,14 +3230,6 @@ PrefabInstance:
     - target: {fileID: 7413434574867229137, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
       propertyPath: m_Name
       value: Maya
-      objectReference: {fileID: 0}
-    - target: {fileID: 7413434574867229151, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -3489706808572292466, guid: ea5f184d900bd3545bff2bad2d3196f7, type: 3}
-    - target: {fileID: 7413434574998984956, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
@@ -5355,14 +5323,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eiffel
       objectReference: {fileID: 0}
-    - target: {fileID: 7413434574867229151, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -3489706808572292466, guid: ea5f184d900bd3545bff2bad2d3196f7, type: 3}
-    - target: {fileID: 7413434574998984956, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
 --- !u!224 &2139377890 stripped
@@ -5555,14 +5515,6 @@ PrefabInstance:
       value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 7413434574867229136, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7413434574867229136, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7413434574867229136, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -5613,14 +5565,6 @@ PrefabInstance:
     - target: {fileID: 7413434574867229137, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
       propertyPath: m_Name
       value: Pisa
-      objectReference: {fileID: 0}
-    - target: {fileID: 7413434574867229151, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -3489706808572292466, guid: ea5f184d900bd3545bff2bad2d3196f7, type: 3}
-    - target: {fileID: 7413434574998984956, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a2357a28bf055d4092c27acefaf80cb, type: 3}

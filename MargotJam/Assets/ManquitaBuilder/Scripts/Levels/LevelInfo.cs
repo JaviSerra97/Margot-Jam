@@ -8,6 +8,7 @@ public class LevelInfo : ScriptableObject
 {
     public string id;
     public Sprite Sprite;
+    [TextArea()]
     public string Info;
     public int sceneIndex;
 }
