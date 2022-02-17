@@ -29,7 +29,11 @@ public class UnlockManager : MonoBehaviour
             Destroy(this);
         }
         #endregion
-        //SetStatesOnStart();
+    }
+
+    private void Start()
+    {
+        SetStatesOnStart();
     }
 
     public void SetStatesOnStart()
@@ -39,7 +43,7 @@ public class UnlockManager : MonoBehaviour
 
         foreach (LevelState s in unlocksList)
         {
-            int state = PlayerPrefs.GetInt(s.id);
+            int state = FsSaveDataPlayerPrefs.Instance.LoadInt(s.id);
 
             switch (state)
             {
@@ -50,7 +54,7 @@ public class UnlockManager : MonoBehaviour
                     s.state = true;
                     break;
             }
-            //Debug.Log(s.id + ": " + s.state);
+            Debug.Log(s.id + ": " + s.state);
         }
     }
 

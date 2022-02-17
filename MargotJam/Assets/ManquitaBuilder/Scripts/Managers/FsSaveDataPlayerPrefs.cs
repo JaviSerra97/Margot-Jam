@@ -10,6 +10,7 @@
   The content herein is highly confidential and should be handled accordingly.
  *--------------------------------------------------------------------------------*/
 
+using System;
 using System.IO;
 using UnityEngine;
 
@@ -17,9 +18,6 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 {
     public static FsSaveDataPlayerPrefs Instance;
     
-    private UnityEngine.UI.Text textComponent;
-    private System.Text.StringBuilder stringBuilder = new System.Text.StringBuilder();
-
     private nn.account.Uid userId;
     private const string mountName = "MySave";
     private const string fileName = "MySaveData";
@@ -27,19 +25,10 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 #pragma warning disable 0414
     private nn.fs.FileHandle fileHandle = new nn.fs.FileHandle();
 #pragma warning restore 0414
-
-    private const string versionKey = "Version";
-    private const string counterKey = "Counter";
-
-    private nn.hid.NpadState npadState;
-    private nn.hid.NpadId[] npadIds = { nn.hid.NpadId.Handheld, nn.hid.NpadId.No1 };
-    private const int saveDataVersion = 1;
-    private int counter = 0;
-    private int saveData = 0;
-    private int loadData = 0;
-
-    void Awake()
+    
+    private void Awake()
     {
+        #region SINGLETON
         if (!Instance)
         {
             Instance = this;
@@ -48,11 +37,13 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         {
             Destroy(this);
         }
+        #endregion
     }
+
     private void Start()
     {
-        //textComponent = GameObject.Find("/Canvas/Text").GetComponent<UnityEngine.UI.Text>();
-
+#if UNITY_SWITCH && !UNITY_EDITOR
+        
         nn.account.Account.Initialize();
         nn.account.UserHandle userHandle = new nn.account.UserHandle();
 
@@ -65,69 +56,25 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         result = nn.fs.SaveData.Mount(mountName, userId);
         result.abortUnlessSuccess();
 
-        InitializeSaveData();
+        //InitializeSaveData();
         Load();
-        UnlockManager.Instance.SetStatesOnStart();
-
-        nn.hid.Npad.Initialize();
-        nn.hid.Npad.SetSupportedStyleSet(nn.hid.NpadStyle.Handheld | nn.hid.NpadStyle.JoyDual);
-        nn.hid.Npad.SetSupportedIdType(npadIds);
-        npadState = new nn.hid.NpadState();
+#endif
     }
 
-    public void SetInt(string key, int value)
+    public void SetInt(string id, int value)
     {
-        PlayerPrefs.SetInt(key, value);
+        PlayerPrefs.SetInt(id, value);
         SavePlayerPrefs();
     }
     
-/*
-    private void Update()
-    {
-        stringBuilder.Length = 0;
-        if (counter - loadData >= 300)
-        {
-            Load();
-            loadData = counter;
-        }
-        else if (counter - saveData >= 100)
-        {
-            PlayerPrefs.SetInt(counterKey, counter);
-            SavePlayerPrefs();
-            saveData = counter;
-        }
-        for (int i = 0; i < npadIds.Length; i++)
-        {
-            nn.hid.Npad.GetState(ref npadState, npadIds[i], nn.hid.Npad.GetStyleSet(npadIds[i]));
-            if ((npadState.buttons & nn.hid.NpadButton.Y) != 0)
-            {
-                ResetSaveData();
-            }
-            else if ((npadState.buttons & nn.hid.NpadButton.B) != 0)
-            {
-                Load();
-                loadData = counter;
-            }
-            else if ((npadState.buttons & nn.hid.NpadButton.A) != 0)
-            {
-                PlayerPrefs.SetInt(counterKey, counter);
-                SavePlayerPrefs();
-                saveData = counter;
-            }
-        }
-
-        stringBuilder.AppendFormat("A:Save, B:Load, Y:Reset\nCounter: {0}\nSave data: {1}\nLoad data {2}",
-            counter, saveData, loadData);
-        counter++;
-
-        textComponent.text = stringBuilder.ToString();
-    }*/
-
     private void OnDestroy()
     {
-        //nn.fs.FileSystem.Unmount(mountName);
+#if UNITY_SWITCH && !UNITY_EDITOR
+        nn.fs.FileSystem.Unmount(mountName);
+#endif
     }
 
+    /*
     private void InitializeSaveData()
     {
 #if !UNITY_SWITCH || UNITY_EDITOR
@@ -175,7 +122,7 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         // Nintendo Switch Guideline 0080
         UnityEngine.Switch.Notification.LeaveExitRequestHandlingSection();
 #endif
-    }
+    }*/
 
     private void SavePlayerPrefs()
     {
@@ -204,7 +151,7 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 #endif
     }
 
-    private void Load()
+    public int LoadInt(string id)
     {
 #if !(!UNITY_SWITCH || UNITY_EDITOR)
         nn.fs.EntryType entryType = 0;
@@ -227,15 +174,6 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 
         UnityEngine.Switch.PlayerPrefsHelper.rawData = data;
 #endif
-        int version = PlayerPrefs.GetInt(versionKey);
-        Debug.Assert(version == saveDataVersion); // Save data version up
-        counter = PlayerPrefs.GetInt(counterKey);
-    }
-
-    private void ResetSaveData()
-    {
-        counter = 0;
-        SavePlayerPrefs();
-        saveData = counter;
+        return PlayerPrefs.GetInt(id);
     }
 }
