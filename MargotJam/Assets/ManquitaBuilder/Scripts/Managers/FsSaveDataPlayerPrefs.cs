@@ -57,7 +57,7 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         result.abortUnlessSuccess();
 
         //InitializeSaveData();
-        Load();
+        //Load();
 #endif
     }
 
@@ -156,7 +156,7 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 #if !(!UNITY_SWITCH || UNITY_EDITOR)
         nn.fs.EntryType entryType = 0;
         nn.Result result = nn.fs.FileSystem.GetEntryType(ref entryType, filePath);
-        if (nn.fs.FileSystem.ResultPathNotFound.Includes(result)) { return; }
+        if (nn.fs.FileSystem.ResultPathNotFound.Includes(result)) { return 0; }
         result.abortUnlessSuccess();
 
         result = nn.fs.File.Open(ref fileHandle, filePath, nn.fs.OpenFileMode.Read);
