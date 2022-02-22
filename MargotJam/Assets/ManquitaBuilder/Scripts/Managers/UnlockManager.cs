@@ -30,20 +30,16 @@ public class UnlockManager : MonoBehaviour
         }
         #endregion
     }
-
-    private void Start()
-    {
-        SetStatesOnStart();
-    }
-
+    
     public void SetStatesOnStart()
     {
         //Unlock first level
-        FsSaveDataPlayerPrefs.Instance.SetInt(unlocksList[0].id, 1);
+        FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(unlocksList[0].id, 1);
 
         foreach (LevelState s in unlocksList)
         {
-            int state = FsSaveDataPlayerPrefs.Instance.LoadInt(s.id);
+            //int state = FsSaveDataPlayerPrefs.Instance.LoadInt(s.id);
+            int state = PlayerPrefs.GetInt(s.id);
 
             switch (state)
             {
@@ -54,8 +50,10 @@ public class UnlockManager : MonoBehaviour
                     s.state = true;
                     break;
             }
-            Debug.Log(s.id + ": " + s.state);
+            //Debug.Log(s.id + ": " + s.state);
         }
+        
+        SetLevelsState();
     }
 
     //Llamar desde ScoreManager al superar la puntuación.
@@ -64,7 +62,7 @@ public class UnlockManager : MonoBehaviour
         unlocksList[sceneIndex].state = true;
     }
 
-    public void SetLevelsState(LevelManager manager)
+    public void SetLevelsState()
     {
         for (int i = 0; i < unlocksList.Count; i++)
         {
@@ -73,9 +71,9 @@ public class UnlockManager : MonoBehaviour
             {
                 s = 1;
             }
-            FsSaveDataPlayerPrefs.Instance.SetInt(unlocksList[i].id, s);
+            FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(unlocksList[i].id, s);
             
-            manager.UnlockLevel(i, unlocksList[i].state);
+            LevelManager.Instance.UnlockLevel(i, unlocksList[i].state);
         }
     }
 }

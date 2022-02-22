@@ -21,6 +21,8 @@ public class LevelManager : MonoBehaviour
         public string lockedInfo;
     }
 
+    public static LevelManager Instance;
+    
     [Header("Levels list -----------------------------------------------------")]
     public List<Level> listOfLevels;
 
@@ -38,13 +40,18 @@ public class LevelManager : MonoBehaviour
     private GameObject currentMarker;
     private bool canPlay;
 
-    private void Start()
+    void Awake()
     {
-        UnlockManager.Instance.SetLevelsState(this);
-        
-        ShowSelectedLevel();
+        if (!Instance)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
-
+    
     void ShowSelectedLevel()
     {
         var selectedLevel = listOfLevels[listIndex];
@@ -133,6 +140,8 @@ public class LevelManager : MonoBehaviour
     public void UnlockLevel(int i, bool state)
     {
         listOfLevels[i].unlocked = state;
+        
+        ShowSelectedLevel();
     }
     
     [ContextMenu("Set ID")]

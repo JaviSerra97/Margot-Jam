@@ -9,7 +9,6 @@
 
   The content herein is highly confidential and should be handled accordingly.
  *--------------------------------------------------------------------------------*/
-
 using System;
 using System.IO;
 using UnityEngine;
@@ -18,17 +17,27 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 {
     public static FsSaveDataPlayerPrefs Instance;
     
+    private UnityEngine.UI.Text textComponent;
+    private System.Text.StringBuilder stringBuilder = new System.Text.StringBuilder();
+
     private nn.account.Uid userId;
-    private const string mountName = "MySave";
-    private const string fileName = "MySaveData";
+    private const string mountName = "BuilderSave";
+    private const string fileName = "BuilderData";
     private static readonly string filePath = string.Format("{0}:/{1}", mountName, fileName);
 #pragma warning disable 0414
     private nn.fs.FileHandle fileHandle = new nn.fs.FileHandle();
 #pragma warning restore 0414
-    
-    private void Awake()
+
+    private const string versionKey = "Version";
+    private const string counterKey = "Counter";
+
+    private const int saveDataVersion = 1;
+    private int counter = 0;
+    private int saveData = 0;
+    private int loadData = 0;
+
+    void Awake()
     {
-        #region SINGLETON
         if (!Instance)
         {
             Instance = this;
@@ -37,13 +46,10 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         {
             Destroy(this);
         }
-        #endregion
     }
-
+    
     private void Start()
     {
-#if UNITY_SWITCH && !UNITY_EDITOR
-        
         nn.account.Account.Initialize();
         nn.account.UserHandle userHandle = new nn.account.UserHandle();
 
@@ -56,17 +62,12 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         result = nn.fs.SaveData.Mount(mountName, userId);
         result.abortUnlessSuccess();
 
-        //InitializeSaveData();
-        //Load();
-#endif
+        InitializeSaveData();
+        Load();
+        
+        UnlockManager.Instance.SetStatesOnStart();
     }
 
-    public void SetInt(string id, int value)
-    {
-        PlayerPrefs.SetInt(id, value);
-        SavePlayerPrefs();
-    }
-    
     private void OnDestroy()
     {
 #if UNITY_SWITCH && !UNITY_EDITOR
@@ -74,7 +75,12 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 #endif
     }
 
-    /*
+    public void SetPlayerPrefs(string key, int collected)
+    {
+        PlayerPrefs.SetInt(key, collected);
+        SavePlayerPrefs();
+    }
+
     private void InitializeSaveData()
     {
 #if !UNITY_SWITCH || UNITY_EDITOR
@@ -122,7 +128,7 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         // Nintendo Switch Guideline 0080
         UnityEngine.Switch.Notification.LeaveExitRequestHandlingSection();
 #endif
-    }*/
+    }
 
     private void SavePlayerPrefs()
     {
@@ -138,6 +144,7 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         nn.Result result = nn.fs.File.Open(ref fileHandle, filePath, nn.fs.OpenFileMode.Write);
         result.abortUnlessSuccess();
 
+        nn.fs.File.SetSize(fileHandle, saveDataSize);
         const int offset = 0;
         result = nn.fs.File.Write(fileHandle, offset, data, data.LongLength, nn.fs.WriteOption.Flush);
         result.abortUnlessSuccess();
@@ -151,12 +158,12 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 #endif
     }
 
-    public int LoadInt(string id)
+    private void Load()
     {
 #if !(!UNITY_SWITCH || UNITY_EDITOR)
         nn.fs.EntryType entryType = 0;
         nn.Result result = nn.fs.FileSystem.GetEntryType(ref entryType, filePath);
-        if (nn.fs.FileSystem.ResultPathNotFound.Includes(result)) { return 0; }
+        if (nn.fs.FileSystem.ResultPathNotFound.Includes(result)) { return; }
         result.abortUnlessSuccess();
 
         result = nn.fs.File.Open(ref fileHandle, filePath, nn.fs.OpenFileMode.Read);
@@ -174,6 +181,16 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 
         UnityEngine.Switch.PlayerPrefsHelper.rawData = data;
 #endif
-        return PlayerPrefs.GetInt(id);
+        int version = PlayerPrefs.GetInt(versionKey);
+        Debug.Assert(version == saveDataVersion); // Save data version up
+        counter = PlayerPrefs.GetInt(counterKey);
+    }
+
+    private void ResetSaveData()
+    {
+        counter = 0;
+        SavePlayerPrefs();
+        saveData = counter;
     }
 }
+
