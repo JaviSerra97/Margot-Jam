@@ -16,6 +16,8 @@ public class UnlockManager : MonoBehaviour
     public static UnlockManager Instance;
 
     private int currentLevelIndex;
+
+    public bool init = false;
     
     private void Awake()
     {
@@ -54,8 +56,37 @@ public class UnlockManager : MonoBehaviour
         }
         
         SetLevelsState();
+
+        if (!init)
+        {
+            init = true;
+        }
     }
 
+    public void SetStatesOnReload()
+    {
+        if(!init) {return;}
+        
+        foreach (LevelState s in unlocksList)
+        {
+            //int state = FsSaveDataPlayerPrefs.Instance.LoadInt(s.id);
+            int state = PlayerPrefs.GetInt(s.id);
+
+            switch (state)
+            {
+                case 0:
+                    s.state = false;
+                    break;
+                case 1:
+                    s.state = true;
+                    break;
+            }
+            //Debug.Log(s.id + ": " + s.state);
+        }
+        
+        SetLevelsState();
+    }
+    
     //Llamar desde ScoreManager al superar la puntuación.
     public void CompleteThisLevel(int sceneIndex)
     {

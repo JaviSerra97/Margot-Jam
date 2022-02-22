@@ -51,6 +51,11 @@ public class LevelManager : MonoBehaviour
             Destroy(this);
         }
     }
+
+    void Start()
+    {
+        UnlockManager.Instance.SetStatesOnReload();
+    }
     
     void ShowSelectedLevel()
     {
