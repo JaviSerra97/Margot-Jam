@@ -1,0 +1,20 @@
+{
+    "name": "LeaderboardClient",
+    "rootNamespace": "",
+    "references": [
+        "nn",
+        "nn.npln"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "Switch"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

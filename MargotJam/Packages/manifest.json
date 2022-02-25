@@ -17,6 +17,7 @@
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.4.8",
     "com.unity.ugui": "1.0.0",
+    "net.nintendo.npln.unity": "file:C:/Nintendo/NX2020.3.17/NintendoSDK-NPLN/Unity/Packages/NX-NXFP2-a64/Develop/net.nintendo.npln.unity.tgz",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

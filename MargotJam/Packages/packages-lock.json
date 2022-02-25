@@ -232,6 +232,12 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "net.nintendo.npln.unity": {
+      "version": "file:C:/Nintendo/NX2020.3.17/NintendoSDK-NPLN/Unity/Packages/NX-NXFP2-a64/Develop/net.nintendo.npln.unity.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {}
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

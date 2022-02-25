@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
+using nn.npln.leaderboard;
 using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
@@ -188,11 +189,8 @@ public class ScoreManager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(moveDuration * 1.5f);
-        //Send Highscore a NEX
-        //if (PlayfabManager.Instance)
-        //{
-        //    PlayfabManager.Instance.UpdateHighscore(_score);
-        //}
+
+        LeaderboardClient.Instance.SetLeaderboardScore(_score, SceneManager.GetActiveScene().buildIndex);
 
         SFX_Manager.Instance.PlayFanfarriaSFX();
 
