@@ -66,6 +66,7 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         Load();
         
         UnlockManager.Instance.SetStatesOnStart();
+        LeaderboardClient.Instance.InitializeLeaderboard(userHandle);
     }
 
     private void OnDestroy()

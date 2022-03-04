@@ -11,19 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ManquitaBuilder/Scenes/01_Maya.unity
     guid: 3892ef3e7145a0c4898fcea8d0c20279
-  - enabled: 1
+  - enabled: 0
     path: Assets/ManquitaBuilder/Scenes/02_Pisa.unity
     guid: 9fe7e915f2219134bb083c41983a1bbc
-  - enabled: 1
+  - enabled: 0
     path: Assets/ManquitaBuilder/Scenes/03_Eiffel.unity
     guid: c5e7112c3fc437642aa650135b197b56
-  - enabled: 1
+  - enabled: 0
     path: Assets/ManquitaBuilder/Scenes/04_Coliseo.unity
     guid: c86e439adb01de343a9655c015411861
-  - enabled: 1
+  - enabled: 0
     path: Assets/ManquitaBuilder/Scenes/05_Petra.unity
     guid: 5b77f385056743c4597a50114f7ab09f
-  - enabled: 1
+  - enabled: 0
     path: Assets/ManquitaBuilder/Scenes/06_TajMahal.unity
     guid: d207f704e75fad94c9b8af0df8e10887
   m_configObjects:

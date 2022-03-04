@@ -32,6 +32,7 @@ namespace nns.npln
         /// </summary>
         public static bool TryOpenUser(out nn.account.UserHandle userHandle)
         {
+            
             nn.account.Account.Initialize();
 
             userHandle = default;
@@ -39,6 +40,8 @@ namespace nns.npln
             {
                 return true;
             }
+            
+            userHandle = default;
 
 #if NN_ACCOUNT_OPENUSER_ENABLE
             Debug.Log($"{nameof(nn.account.Account.TryOpenPreselectedUser)}() failed. Will try to open the first discovered user instead.");
