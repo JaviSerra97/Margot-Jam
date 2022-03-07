@@ -190,7 +190,7 @@ public class ScoreManager : MonoBehaviour
 
         yield return new WaitForSeconds(moveDuration * 1.5f);
 
-        LeaderboardClient.Instance.SetLeaderboardScore(_score, SceneManager.GetActiveScene().buildIndex);
+        LeaderboardClient.Instance.SetLeaderboardScore(_score, SceneManager.GetActiveScene().buildIndex - 1);
 
         SFX_Manager.Instance.PlayFanfarriaSFX();
 

@@ -216,6 +216,17 @@
                     "action": "PlayLevel",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0d12cbe2-8658-4fcf-a120-f88b0d7bd806",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlayLevel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

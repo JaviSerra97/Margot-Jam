@@ -46,25 +46,21 @@ public class RankingManager : MonoBehaviour
     }
 
     public void SetNearRankingData(IEnumerable<ScoreData> scoreData)
-        {
-            currentIndex = 0;
-        
-            foreach (var data in scoreData)
-            {
-                Debug.Log(data.GetRankData() + " - " + data.GetUserData() + " - " + data.GetScore());
-                /*
-                nearPlayersParent.transform.GetChild(currentIndex).GetChild(0).GetChild(0).GetComponent<TMP_Text>().text = data.GetRankData().GetRank().ToString();
-                nearPlayersParent.transform.GetChild(currentIndex).GetChild(1).GetComponent<TMP_Text>().text = data.GetUserData().GetDisplayName();
-                nearPlayersParent.transform.GetChild(currentIndex).GetChild(2).GetComponent<TMP_Text>().text = data.GetScore().ToString();
-                */
-                currentIndex++;
-            }
-    }
-
-    public void SetNearRankingDataTest(int index, int rank, string id, long score)
     {
-        nearPlayersParent.transform.GetChild(index).GetChild(0).GetChild(0).GetComponent<TMP_Text>().text = rank.ToString();
-        nearPlayersParent.transform.GetChild(index).GetChild(1).GetComponent<TMP_Text>().text = id;
-        nearPlayersParent.transform.GetChild(index).GetChild(2).GetComponent<TMP_Text>().text = score.ToString();
+        int i = 0;
+        
+        foreach (var data in scoreData)
+        {
+            nearPlayersParent.transform.GetChild(i).GetChild(0).GetChild(0).GetComponent<TMP_Text>().text =
+                data.GetRankData().GetRank().ToString();
+            nearPlayersParent.transform.GetChild(i).GetChild(1).GetComponent<TMP_Text>().text =
+                data.GetUserData().GetDisplayName();
+            nearPlayersParent.transform.GetChild(i).GetChild(2).GetComponent<TMP_Text>().text =
+                data.GetScore().ToString();
+            
+            i++;
+        }
+
     }
 }
+
