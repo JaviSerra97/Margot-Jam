@@ -186,16 +186,15 @@ public class LeaderboardClient : MonoBehaviour
         Debug.Log("| Rank | NPLN User ID           |   Score |");
         Debug.Log("|------|------------------------|---------|");
 
-        int i = 0;
+        scoreData = snapshot.GetScoreDataList();
         // 取得したスコアをログ出力します。
-        foreach (var scoreData in snapshot.GetScoreDataList())
+        foreach (var data in scoreData)
         {
             Debug.Log(string.Format("| {0,4} | {1,-22} | {2,7} | {3}",
-                scoreData.GetRankData().GetRank(),
-                scoreData.GetUserData().GetDisplayName(),
-                scoreData.GetScore(),
-                userId == scoreData.GetUserData().GetUserId() ? "** YOUR SCORE **" : ""));
-            RankingManager.Instance.SetNearRankingData(snapshot.GetScoreDataList());
+                data.GetRankData().GetRank(),
+                data.GetUserData().GetDisplayName(),
+                data.GetScore(),
+                userId == data.GetUserData().GetUserId() ? "** YOUR SCORE **" : ""));
         }
 
         // 以下のメソッドがtrueを返す場合は、より下位や上位のスコアデータを続けて取得することができます。
@@ -206,6 +205,7 @@ public class LeaderboardClient : MonoBehaviour
         // - snapshot.GetPreviousPageAsync()
         
         Debug.Log("Leaderboard fetched successfully.");
+        //RankingManager.Instance.SetNearRankingData(snapshot.GetScoreDataList());
         //Debug.Log("Set near ranking");
         return true;
     }
@@ -537,8 +537,11 @@ public class LeaderboardClient : MonoBehaviour
             {
                 return false;
             }
+            
             return true;
         });
+        
+        RankingManager.Instance.SetNearRankingData(scoreData);
     }
     #endregion
 }

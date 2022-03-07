@@ -87,8 +87,7 @@ public class PiecesManager : MonoBehaviour
         {
             pieceDrop = Instantiate(chosenSequence.sequences[sequenceIndex].listOfPieces[pieceIndex], spawnPoint.position, spawnPoint.rotation).GetComponent<PieceDrop>();
             pieceIndex++;
-
-            canDropPiece = false;
+            
             Invoke(nameof(AllowDrop), dropDelay);
         }
         else { CheckSequences(); }
@@ -105,7 +104,6 @@ public class PiecesManager : MonoBehaviour
         }
         else
         {
-            canDropPiece = false;
             StartCoroutine(EndGame());
         }
     }
@@ -230,6 +228,7 @@ public class PiecesManager : MonoBehaviour
         if (canDropPiece)
         {
             pieceDrop.DropPiece();
+            canDropPiece = false;
         }
     }
 

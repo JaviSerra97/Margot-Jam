@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using nn.npln.leaderboard;
 using TMPro;
 using UnityEngine;
@@ -47,18 +48,23 @@ public class RankingManager : MonoBehaviour
 
     public void SetNearRankingData(IEnumerable<ScoreData> scoreData)
     {
-        Debug.Log("Set near ranking");
+        Debug.Log(scoreData.Count() + "count");
         
         int i = 0;
         
         foreach (var data in scoreData)
         {
-            nearPlayersParent.transform.GetChild(i).GetChild(0).GetChild(0).GetComponent<TMP_Text>().text =
+            Debug.Log("Index: " + i);
+            /*nearPlayersParent.transform.GetChild(i).GetChild(0).GetChild(0).GetComponent<TMP_Text>().text =
                 data.GetRankData().GetRank().ToString();
             nearPlayersParent.transform.GetChild(i).GetChild(1).GetComponent<TMP_Text>().text =
                 data.GetUserData().GetDisplayName();
             nearPlayersParent.transform.GetChild(i).GetChild(2).GetComponent<TMP_Text>().text =
-                data.GetScore().ToString();
+                data.GetScore().ToString();*/
+
+            /*nearPlayersParent.transform.GetChild(i).GetChild(0).GetChild(0).GetComponent<TMP_Text>().text = "1";
+            nearPlayersParent.transform.GetChild(i).GetChild(1).GetComponent<TMP_Text>().text = "user";
+            nearPlayersParent.transform.GetChild(i).GetChild(2).GetComponent<TMP_Text>().text = "1997";*/
             
             i++;
         }
