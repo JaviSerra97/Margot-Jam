@@ -103,8 +103,9 @@ public class PiecesManager : MonoBehaviour
             pieceIndex = 0;
             CreateNextPiece();
         }
-        else 
+        else
         {
+            canDropPiece = false;
             StartCoroutine(EndGame());
         }
     }
@@ -226,7 +227,10 @@ public class PiecesManager : MonoBehaviour
     {
         if(Time.timeScale == 0){return;}
 
-        pieceDrop.DropPiece();
+        if (canDropPiece)
+        {
+            pieceDrop.DropPiece();
+        }
     }
 
     void OnRotatePiece()

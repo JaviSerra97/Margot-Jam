@@ -195,6 +195,7 @@ public class LeaderboardClient : MonoBehaviour
                 scoreData.GetUserData().GetDisplayName(),
                 scoreData.GetScore(),
                 userId == scoreData.GetUserData().GetUserId() ? "** YOUR SCORE **" : ""));
+            RankingManager.Instance.SetNearRankingData(snapshot.GetScoreDataList());
         }
 
         // 以下のメソッドがtrueを返す場合は、より下位や上位のスコアデータを続けて取得することができます。
@@ -205,7 +206,6 @@ public class LeaderboardClient : MonoBehaviour
         // - snapshot.GetPreviousPageAsync()
         
         Debug.Log("Leaderboard fetched successfully.");
-        //RankingManager.Instance.SetNearRankingData(snapshot.GetScoreDataList());
         //Debug.Log("Set near ranking");
         return true;
     }

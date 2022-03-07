@@ -47,6 +47,8 @@ public class RankingManager : MonoBehaviour
 
     public void SetNearRankingData(IEnumerable<ScoreData> scoreData)
     {
+        Debug.Log("Set near ranking");
+        
         int i = 0;
         
         foreach (var data in scoreData)
