@@ -9,8 +9,8 @@ public class RankingManager : MonoBehaviour
 {
     public static RankingManager Instance;
 
-    public Transform firstPlayerParent;
-    public Transform nearPlayersParent;
+    public List<RankingInfo> listOfPrefabs;
+
     private int currentIndex;
     
     void Awake()
@@ -28,29 +28,16 @@ public class RankingManager : MonoBehaviour
     public void SetFirstRankingData(IEnumerable<ScoreData> scoreData)
     {
         Debug.Log("Setting first");
+        
         foreach (var data in scoreData)
         {
-            firstPlayerParent.transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<TMP_Text>().text =
-                data.GetRankData().GetRank().ToString();
-            firstPlayerParent.transform.GetChild(0).GetChild(1).GetComponent<TMP_Text>().text =
-                data.GetUserData().GetDisplayName();
-            firstPlayerParent.transform.GetChild(0).GetChild(2).GetComponent<TMP_Text>().text =
-                data.GetScore().ToString();
-
-            /*
-            Debug.Log(string.Format("| {0,4} | {1,-22} | {2,7} | {3}",
-                scoreData.GetRankData().GetRank(),
-                scoreData.GetUserData().GetUserId(),
-                scoreData.GetScore(),
-                userId == scoreData.GetUserData().GetUserId() ? "** YOUR SCORE **" : ""));*/
+            listOfPrefabs[0].SetInfo(data.GetRankData().GetRank().ToString(), data.GetUserData().GetDisplayName(), data.GetScore().ToString());
         }
     }
 
     public void SetNearRankingData(IEnumerable<ScoreData> scoreData)
     {
-        Debug.Log(scoreData.Count() + "count");
-        
-        int i = 0;
+        int i = 1;
         
         foreach (var data in scoreData)
         {
@@ -62,9 +49,7 @@ public class RankingManager : MonoBehaviour
             nearPlayersParent.transform.GetChild(i).GetChild(2).GetComponent<TMP_Text>().text =
                 data.GetScore().ToString();*/
 
-            /*nearPlayersParent.transform.GetChild(i).GetChild(0).GetChild(0).GetComponent<TMP_Text>().text = "1";
-            nearPlayersParent.transform.GetChild(i).GetChild(1).GetComponent<TMP_Text>().text = "user";
-            nearPlayersParent.transform.GetChild(i).GetChild(2).GetComponent<TMP_Text>().text = "1997";*/
+            listOfPrefabs[i].SetInfo(data.GetRankData().GetRank().ToString(), data.GetUserData().GetDisplayName(), data.GetScore().ToString());
             
             i++;
         }
