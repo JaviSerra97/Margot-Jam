@@ -31,6 +31,8 @@ public class TutorialScreen : MonoBehaviour
         }
         else
             Invoke(nameof(HideScreen), 0.05f);
+        
+        Debug.Log("start");
     }
 
     public void StartGame()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PauseManager : MonoBehaviour
@@ -23,25 +24,37 @@ public class PauseManager : MonoBehaviour
         seq.Append(pausePanel.transform.DOScaleX(1.15f, 0.1f));
         seq.Append(pausePanel.transform.DOScaleX(1f, 0.1f));
         layout.GetChild(0).GetComponent<Button>().Select();
+        
+        isPaused = true;
     }
 
-    public void ResumeGame()
+    public void ResumeGame(bool doTween)
     {
-        pausePanel.transform.DOLocalMoveX(-1460f, tweenDuration).SetEase(ease).SetUpdate(true);
+        if (doTween)
+        {
+            pausePanel.transform.DOLocalMoveX(-1460f, tweenDuration).SetEase(ease).SetUpdate(true);
+        }
+        
         EventSystem.current.SetSelectedGameObject(null);
         Time.timeScale = 1;
+        isPaused = false;
+    }
+
+    public void RestartGame()
+    {
+        ResumeGame(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     
     void OnPause()
     {
-        isPaused = !isPaused;
-        if (isPaused)
+        if (!isPaused)
         {
             PauseGame();
         }
         else
         {
-            ResumeGame();
+            ResumeGame(true);
         }
     }
 }
