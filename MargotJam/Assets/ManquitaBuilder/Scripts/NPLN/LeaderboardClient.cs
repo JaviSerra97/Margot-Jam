@@ -1,18 +1,31 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using nn.account;
 using UnityEngine;
 using nn.npln;
 using nn.npln.leaderboard;
+using UnityEngine.PlayerLoop;
+
 public class LeaderboardClient : MonoBehaviour
 {
     public static LeaderboardClient Instance;
+    
+    [System.Serializable]
+    public class RankingData
+    {
+        public int rank;
+        public string displayName;
+        public long score;
+    }
 
-    private IEnumerable<ScoreData> scoreData;
+    public List<RankingData> rankingData = new List<RankingData>();
 
+    private bool setRanking = false;
+    
     private UserContext userContext;
     #region NPLN Logic
     //-------------------------------------------------------------------------------------------------
@@ -55,7 +68,7 @@ public class LeaderboardClient : MonoBehaviour
     /// ユーザー情報の登録は必須ではありませんが、登録した情報はリーダーボードの取得時にスコアに
     /// 付随する情報として取得することができます。
     /// </summary>
-    private async Task<bool> SetUserDataAsync(UserContext userContext, string displayName, MapValue applicationData = null)
+    private async Task<bool> SetUserDataAsync(UserContext userContext, MapValue applicationData = null)
     {
         // Leaderboardサービスのサービスクライアントを生成します。
         var client = new nn.npln.leaderboard.LeaderboardClient(userContext);
@@ -64,7 +77,13 @@ public class LeaderboardClient : MonoBehaviour
         var request = new SetUserDataRequest();
 
         // ユーザー情報として任意の表示名やnn.npln.MapValueを登録することが可能です。
-        request.SetDisplayName(displayName);
+        Uid outID = new Uid();
+        Account.GetLastOpenedUser(ref outID);
+        var nick = new Nickname();
+        Account.GetNickname(ref nick, outID);
+        request.SetDisplayName(nick.ToString());
+        Debug.Log("Nickname: " + nick);
+        
         if (applicationData != null)
         {
             request.SetApplicationData(applicationData);
@@ -132,7 +151,7 @@ public class LeaderboardClient : MonoBehaviour
     /// <summary>
     /// リーダーボードを取得してログ出力するサンプルコードです。
     /// </summary>
-    private async Task<bool> GetAndPrintLeaderboardAsync(UserContext userContext, int categoryID)
+    private async Task<bool> GetNearLeaderboardAsync(UserContext userContext, int categoryID)
     {
         // メソッド内で自分自身のNPLNユーザーIDを使用するため、まずはそれを取得します。
         var userId = default(string);
@@ -186,17 +205,18 @@ public class LeaderboardClient : MonoBehaviour
         Debug.Log("| Rank | NPLN User ID           |   Score |");
         Debug.Log("|------|------------------------|---------|");
 
-        scoreData = snapshot.GetScoreDataList();
         // 取得したスコアをログ出力します。
-        foreach (var data in scoreData)
+        foreach (var data in snapshot.GetScoreDataList())
         {
             Debug.Log(string.Format("| {0,4} | {1,-22} | {2,7} | {3}",
                 data.GetRankData().GetRank(),
                 data.GetUserData().GetDisplayName(),
                 data.GetScore(),
                 userId == data.GetUserData().GetUserId() ? "** YOUR SCORE **" : ""));
+            
+            AddRankingData(data.GetRankData().GetRank(), data.GetUserData().GetDisplayName(), data.GetScore());
         }
-
+        
         // 以下のメソッドがtrueを返す場合は、より下位や上位のスコアデータを続けて取得することができます。
         // - snapshot.CanRequestNextPage()
         // - snapshot.CanRequestPreviousPage()
@@ -204,9 +224,10 @@ public class LeaderboardClient : MonoBehaviour
         // - snapshot.GetNextPageAsync()
         // - snapshot.GetPreviousPageAsync()
         
-        Debug.Log("Leaderboard fetched successfully.");
+        Debug.Log("Near Leaderboard fetched successfully.");
         //RankingManager.Instance.SetNearRankingData(snapshot.GetScoreDataList());
-        //Debug.Log("Set near ranking");
+        setRanking = true;
+        
         return true;
     }
 
@@ -242,8 +263,9 @@ public class LeaderboardClient : MonoBehaviour
             var request = new GetRangeLeaderboardRequest();
 
             // 自分のスコアを中心として合計9つのスコアを取得するようリクエストオブジェクトを生成します。
+            request.SetOffset(0);
             request.SetPageSize(1);
-            
+
             // リーダーボードを非同期的に取得します。
             var rpcResult = await leaderboardRef.GetLeaderboardAsync(request);
 
@@ -257,10 +279,15 @@ public class LeaderboardClient : MonoBehaviour
             // 取得したリーダーボードの情報を保存します。
             snapshot = rpcResult.GetResponse();
         }
-        
-        RankingManager.Instance.SetFirstRankingData(snapshot.GetScoreDataList());
 
-        Debug.Log("Leaderboard fetched successfully.");
+        ClearRankingData();
+        
+        foreach (var data in snapshot.GetScoreDataList())
+        {
+            AddRankingData(data.GetRankData().GetRank(), data.GetUserData().GetDisplayName(), data.GetScore());
+        }
+
+        Debug.Log("Top Leaderboard fetched successfully.");
         return true;
     }
 
@@ -516,7 +543,7 @@ public class LeaderboardClient : MonoBehaviour
         
         m_LeaderboardTask = Task.Run(async () =>
         {
-            if (!await SetUserDataAsync(userContext, "My User"))
+            if (!await SetUserDataAsync(userContext))
             {
                 return false;
             }
@@ -524,24 +551,43 @@ public class LeaderboardClient : MonoBehaviour
             {
                 return false;
             }
-            /*if (!await GetFirstLeaderboardAsync(userContext, categoryID))
+            if (!await GetFirstLeaderboardAsync(userContext, categoryID))
             {
                 return false;
-            }*/
-            /*
-            if (!await GetNearLeaderboardAsync(userContext, 0))
-            {
-                return false;
-            }*/
-            if (!await GetAndPrintLeaderboardAsync(userContext, categoryID))
+            }
+            if (!await GetNearLeaderboardAsync(userContext, categoryID))
             {
                 return false;
             }
             
             return true;
         });
+    }
+
+    void Update()
+    {
+        if (!setRanking)
+        {
+            return;
+        }
+        RankingManager.Instance.SetRankings(rankingData);
+        setRanking = false;
+    }
+
+    void AddRankingData(int rank, string displayName, long score)
+    {
+        var newData = new RankingData();
+
+        newData.rank = rank;
+        newData.displayName = displayName;
+        newData.score = score;
         
-        RankingManager.Instance.SetNearRankingData(scoreData);
+        rankingData.Add(newData);
+    }
+
+    void ClearRankingData()
+    {
+        rankingData.Clear();
     }
     #endregion
 }

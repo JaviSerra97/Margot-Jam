@@ -9,10 +9,10 @@ public class RankingInfo : MonoBehaviour
     public TMP_Text nameText;
     public TMP_Text scoreText;
 
-    public void SetInfo(string ranking, string displayName, string score)
+    public void SetInfo(LeaderboardClient.RankingData data)
     {
-        rankingText.text = ranking;
-        nameText.text = displayName;
-        scoreText.text = score;
+        rankingText.text = data.rank.ToString();
+        nameText.text = data.displayName;
+        scoreText.text = data.score.ToString();
     }
 }

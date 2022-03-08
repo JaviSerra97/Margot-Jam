@@ -12,6 +12,8 @@ public class RankingManager : MonoBehaviour
     public List<RankingInfo> listOfPrefabs;
 
     private int currentIndex;
+
+    //private List<LeaderboardClient.RankingData> currentData;
     
     void Awake()
     {
@@ -25,35 +27,23 @@ public class RankingManager : MonoBehaviour
         }
     }
 
-    public void SetFirstRankingData(IEnumerable<ScoreData> scoreData)
+    void SetFirstRankingData(List<LeaderboardClient.RankingData> rankingData)
     {
-        Debug.Log("Setting first");
-        
-        foreach (var data in scoreData)
+        listOfPrefabs[0].SetInfo(rankingData[0]);
+    }
+
+    void SetNearRankingData(List<LeaderboardClient.RankingData> rankingData)
+    {
+        for (int i = 1; i < rankingData.Count; i++)
         {
-            listOfPrefabs[0].SetInfo(data.GetRankData().GetRank().ToString(), data.GetUserData().GetDisplayName(), data.GetScore().ToString());
+            listOfPrefabs[i].SetInfo(rankingData[i]);
         }
     }
 
-    public void SetNearRankingData(IEnumerable<ScoreData> scoreData)
+    public void SetRankings(List<LeaderboardClient.RankingData> rankingData)
     {
-        int i = 1;
-        
-        foreach (var data in scoreData)
-        {
-            Debug.Log("Index: " + i);
-            /*nearPlayersParent.transform.GetChild(i).GetChild(0).GetChild(0).GetComponent<TMP_Text>().text =
-                data.GetRankData().GetRank().ToString();
-            nearPlayersParent.transform.GetChild(i).GetChild(1).GetComponent<TMP_Text>().text =
-                data.GetUserData().GetDisplayName();
-            nearPlayersParent.transform.GetChild(i).GetChild(2).GetComponent<TMP_Text>().text =
-                data.GetScore().ToString();*/
-
-            listOfPrefabs[i].SetInfo(data.GetRankData().GetRank().ToString(), data.GetUserData().GetDisplayName(), data.GetScore().ToString());
-            
-            i++;
-        }
-
+        SetFirstRankingData(rankingData);
+        SetNearRankingData(rankingData);
     }
 }
 

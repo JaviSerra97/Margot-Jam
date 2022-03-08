@@ -190,7 +190,6 @@ public class ScoreManager : MonoBehaviour
 
         yield return new WaitForSeconds(moveDuration * 1.5f);
 
-        LeaderboardClient.Instance.SetLeaderboardScore(_score, SceneManager.GetActiveScene().buildIndex - 1);
 
         SFX_Manager.Instance.PlayFanfarriaSFX();
 
@@ -200,10 +199,13 @@ public class ScoreManager : MonoBehaviour
             GameBeated = true;
             UnlockManager.Instance?.CompleteThisLevel(SceneManager.GetActiveScene().buildIndex);
         }
+        
 
         MultiplierText.transform.parent.gameObject.SetActive(false);
         FinalScorePanel.SetActive(true);
-
+        
+        LeaderboardClient.Instance.SetLeaderboardScore(_score, SceneManager.GetActiveScene().buildIndex - 1);
+        
         //Record.SetActive(true);
         ScoreText.transform.parent.GetComponent<Animator>().SetTrigger("End");
     }
