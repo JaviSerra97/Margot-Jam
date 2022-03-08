@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
@@ -8,12 +9,14 @@ using UnityEngine.UI;
 
 public class PauseManager : MonoBehaviour
 {
+    
+    [Header("Panel")]
     public GameObject pausePanel;
     public Transform layout;
     public float tweenDuration;
     public Ease ease;
     private bool isPaused;
-
+    
     void PauseGame()
     {
         Time.timeScale = 0;
@@ -44,6 +47,12 @@ public class PauseManager : MonoBehaviour
     {
         ResumeGame(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void ExitGame()
+    {
+        ResumeGame(false);
+        SceneManager.LoadScene(0);
     }
     
     void OnPause()

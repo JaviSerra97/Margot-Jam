@@ -28,13 +28,13 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
     private nn.fs.FileHandle fileHandle = new nn.fs.FileHandle();
 #pragma warning restore 0414
 
-    private const string versionKey = "Version";
-    private const string counterKey = "Counter";
+   // private const string versionKey = "Version";
+    //private const string counterKey = "Counter";
 
-    private const int saveDataVersion = 1;
-    private int counter = 0;
-    private int saveData = 0;
-    private int loadData = 0;
+    //private const int saveDataVersion = 1;
+    //private int counter = 0;
+    //private int saveData = 0;
+    //private int loadData = 0;
 
     void Awake()
     {
@@ -76,22 +76,22 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 #endif
     }
 
-    public void SetPlayerPrefs(string key, int collected)
+    public void SetPlayerPrefs(string key, int unlocked)
     {
-        PlayerPrefs.SetInt(key, collected);
+        PlayerPrefs.SetInt(key, unlocked);
         SavePlayerPrefs();
     }
 
     private void InitializeSaveData()
     {
 #if !UNITY_SWITCH || UNITY_EDITOR
-        if (PlayerPrefs.HasKey(versionKey))
+        /*if (PlayerPrefs.HasKey(versionKey))
         {
             return;
         }
         PlayerPrefs.SetInt(versionKey, saveDataVersion);
         PlayerPrefs.SetInt(counterKey, 0);
-        PlayerPrefs.Save();
+        PlayerPrefs.Save();*/
 #else
         nn.fs.EntryType entryType = 0;
         nn.Result result = nn.fs.FileSystem.GetEntryType(ref entryType, filePath);
@@ -182,16 +182,16 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 
         UnityEngine.Switch.PlayerPrefsHelper.rawData = data;
 #endif
-        int version = PlayerPrefs.GetInt(versionKey);
+      /*  int version = PlayerPrefs.GetInt(versionKey);
         Debug.Assert(version == saveDataVersion); // Save data version up
-        counter = PlayerPrefs.GetInt(counterKey);
+        counter = PlayerPrefs.GetInt(counterKey);*/
     }
 
-    private void ResetSaveData()
+/*    private void ResetSaveData()
     {
         counter = 0;
         SavePlayerPrefs();
         saveData = counter;
-    }
+    }*/
 }
 

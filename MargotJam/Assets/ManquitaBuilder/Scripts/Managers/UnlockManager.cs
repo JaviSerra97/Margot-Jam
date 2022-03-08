@@ -52,7 +52,7 @@ public class UnlockManager : MonoBehaviour
                     s.state = true;
                     break;
             }
-            //Debug.Log(s.id + ": " + s.state);
+            Debug.Log("Playerprefs: " + s.id + ": " + s.state);
         }
         
         SetLevelsState();
