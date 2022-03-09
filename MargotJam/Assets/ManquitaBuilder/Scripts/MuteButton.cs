@@ -12,13 +12,13 @@ public class MuteButton : MonoBehaviour
     public void SwitchMute()
     {
         _muted = !_muted;
-        SoundGO.SetActive(!_muted);
+        SoundGO.SetActive(_muted);
         SFX_Manager.Instance.MuteSounds(_muted);
         Music.mute = _muted;
 
-        if (_muted)
+        /*if (_muted)
             ButtonImage.color = Color.red;
         else
-            ButtonImage.color = Color.white;
+            ButtonImage.color = Color.white;*/
     }
 }

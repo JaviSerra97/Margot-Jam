@@ -20,6 +20,9 @@ public class DifficultManager : MonoBehaviour
     public float speedEasy = 4f;
     public float speedHard = 10f;
 
+    [NonSerialized]
+    public bool GameEnded = false;
+
     private int _difficult; // 0 easy, 1 medium, 2 hard
     private int _failsInEasy;
     private int _streak;
@@ -28,6 +31,7 @@ public class DifficultManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        GameEnded = false;
         _difficult = 0;
         _failsInEasy = 0;
     }

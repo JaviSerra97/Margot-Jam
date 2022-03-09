@@ -793,11 +793,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &133614375 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4552575137660286230, guid: a68a6cd4f9a2f9e499fe698d1ac0c86e, type: 3}
-  m_PrefabInstance: {fileID: 4552575137608826417}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &144239196
 GameObject:
   m_ObjectHideFlags: 0
@@ -3592,7 +3587,7 @@ MonoBehaviour:
   ScoreText: {fileID: 254657937}
   MultiplierText: {fileID: 1169194917}
   FinalScorePanel: {fileID: 1786356713}
-  Record: {fileID: 133614375}
+  Record: {fileID: 0}
   scoreTextPrefab: {fileID: 6520088487010268886, guid: c66c7da896d6fd94c976a15a6bfe7ba0, type: 3}
   scorePoint: {fileID: 254657936}
   scaleDuration: 0.15
@@ -5268,6 +5263,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1985406579425329093, guid: 0111471c90eb8bb4e9fe6561509f0aa7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3cc72ced1a1287944893730241a5cf96, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0111471c90eb8bb4e9fe6561509f0aa7, type: 3}
 --- !u!1 &1090779763

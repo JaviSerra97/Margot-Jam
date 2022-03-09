@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class LevelManager : MonoBehaviour
 {
@@ -33,7 +34,11 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private TMP_Text unlockInfo;
 
     public GameObject lockImage;
-    
+
+    [Header("Fade Screen -----------------------------------------------------")]
+    public Image fadeImage;
+    public float fadeDuration;
+
     private int levelIndex = 0;
     private int listIndex = 0;
 
@@ -138,8 +143,15 @@ public class LevelManager : MonoBehaviour
         if (canPlay)
         {
             canPlay = false;
-            SceneManager.LoadScene(levelIndex);
+            fadeImage.gameObject.SetActive(true);
+            fadeImage.DOFade(1, fadeDuration).SetEase(Ease.Linear).Play();
+            Invoke(nameof(LoadLevelScene), fadeDuration * 1.1f);
         }
+    }
+
+    private void LoadLevelScene()
+    {
+        SceneManager.LoadScene(levelIndex);
     }
 
     public void UnlockLevel(int i, bool state)

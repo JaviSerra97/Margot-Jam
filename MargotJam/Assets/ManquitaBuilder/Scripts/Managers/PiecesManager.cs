@@ -36,6 +36,7 @@ public class PiecesManager : MonoBehaviour
 
     [Header("Material")]
     public Material BlockMaterial;
+
     private PiecesSequence chosenSequence;
     private bool canDropPiece;
 
@@ -45,6 +46,7 @@ public class PiecesManager : MonoBehaviour
     private PieceDrop pieceDrop;
     private PlayerInput input;
     private int _lerpCurrentValue;
+    private bool _gameEnded = false;
 
     private void Awake()
     {
@@ -110,6 +112,7 @@ public class PiecesManager : MonoBehaviour
 
      IEnumerator EndGame()
     {
+        DifficultManager.Instance.GameEnded = true;
         yield return new WaitForSeconds(2.5f);
         ScoreManager.Instance.GetFinalScore();
     }
@@ -179,6 +182,8 @@ public class PiecesManager : MonoBehaviour
         TutorialScreen.ShowTuto = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public bool isGameEnded() { return _gameEnded; }
 
     #region Camera
     /*[ContextMenu("Set Initial Pos")]

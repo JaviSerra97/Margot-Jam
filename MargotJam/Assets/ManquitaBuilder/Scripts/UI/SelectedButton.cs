@@ -39,7 +39,7 @@ public class SelectedButton : MonoBehaviour, ISelectHandler, IDeselectHandler
         while (blink)
         {
             marker.SetActive(!marker.activeSelf);
-            yield return new WaitForSeconds(blinkTime);
+            yield return new WaitForSecondsRealtime(blinkTime);
         }
     }
 }

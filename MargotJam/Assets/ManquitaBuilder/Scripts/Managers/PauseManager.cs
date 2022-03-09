@@ -19,6 +19,8 @@ public class PauseManager : MonoBehaviour
     
     void PauseGame()
     {
+        if (DifficultManager.Instance && DifficultManager.Instance.GameEnded) return;
+
         Time.timeScale = 0;
         
         Sequence seq = DOTween.Sequence();
@@ -31,7 +33,7 @@ public class PauseManager : MonoBehaviour
         isPaused = true;
     }
 
-    public void ResumeGame(bool doTween)
+    public void ResumeGame(bool doTween = true)
     {
         if (doTween)
         {
