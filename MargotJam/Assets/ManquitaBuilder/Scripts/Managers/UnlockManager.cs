@@ -52,7 +52,6 @@ public class UnlockManager : MonoBehaviour
                     s.state = true;
                     break;
             }
-            Debug.Log("Playerprefs: " + s.id + ": " + s.state);
         }
         
         SetLevelsState();
@@ -91,6 +90,11 @@ public class UnlockManager : MonoBehaviour
     public void CompleteThisLevel(int sceneIndex)
     {
         unlocksList[sceneIndex].state = true;
+
+        foreach (var l in unlocksList)
+        {
+            Debug.Log(l.id + ":" + l.state);
+        }
     }
 
     public void SetLevelsState()

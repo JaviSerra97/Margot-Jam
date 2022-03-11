@@ -17,9 +17,6 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 {
     public static FsSaveDataPlayerPrefs Instance;
     
-    private UnityEngine.UI.Text textComponent;
-    private System.Text.StringBuilder stringBuilder = new System.Text.StringBuilder();
-
     private nn.account.Uid userId;
     private const string mountName = "BuilderSave";
     private const string fileName = "BuilderData";
@@ -27,14 +24,14 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 #pragma warning disable 0414
     private nn.fs.FileHandle fileHandle = new nn.fs.FileHandle();
 #pragma warning restore 0414
+    
+    private const string versionKey = "Version";
+    private const string counterKey = "Counter";
 
-   // private const string versionKey = "Version";
-    //private const string counterKey = "Counter";
-
-    //private const int saveDataVersion = 1;
-    //private int counter = 0;
-    //private int saveData = 0;
-    //private int loadData = 0;
+    private const int saveDataVersion = 1;
+    private int counter = 0;
+    private int saveData = 0;
+    private int loadData = 0;
 
     void Awake()
     {
@@ -72,7 +69,10 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
     private void OnDestroy()
     {
 #if UNITY_SWITCH && !UNITY_EDITOR
-        nn.fs.FileSystem.Unmount(mountName);
+        if (Instance == this)
+        {
+            nn.fs.FileSystem.Unmount(mountName);
+        }
 #endif
     }
 
@@ -82,16 +82,16 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         SavePlayerPrefs();
     }
 
-    private void InitializeSaveData()
+   private void InitializeSaveData()
     {
 #if !UNITY_SWITCH || UNITY_EDITOR
-        /*if (PlayerPrefs.HasKey(versionKey))
+        if (PlayerPrefs.HasKey(versionKey))
         {
             return;
         }
         PlayerPrefs.SetInt(versionKey, saveDataVersion);
         PlayerPrefs.SetInt(counterKey, 0);
-        PlayerPrefs.Save();*/
+        PlayerPrefs.Save();
 #else
         nn.fs.EntryType entryType = 0;
         nn.Result result = nn.fs.FileSystem.GetEntryType(ref entryType, filePath);
@@ -182,16 +182,15 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 
         UnityEngine.Switch.PlayerPrefsHelper.rawData = data;
 #endif
-      /*  int version = PlayerPrefs.GetInt(versionKey);
+        int version = PlayerPrefs.GetInt(versionKey);
         Debug.Assert(version == saveDataVersion); // Save data version up
-        counter = PlayerPrefs.GetInt(counterKey);*/
+        counter = PlayerPrefs.GetInt(counterKey);
     }
 
-/*    private void ResetSaveData()
+    private void ResetSaveData()
     {
         counter = 0;
         SavePlayerPrefs();
         saveData = counter;
-    }*/
+    }
 }
-

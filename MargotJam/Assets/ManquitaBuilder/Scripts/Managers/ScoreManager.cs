@@ -196,10 +196,9 @@ public class ScoreManager : MonoBehaviour
         if (_score > ScoreToBeat)
         {
             Debug.Log("Prueba superada"); // ** Cambiar aqui la variable deseada ** //
+            UnlockManager.Instance.CompleteThisLevel(SceneManager.GetActiveScene().buildIndex);
             GameBeated = true;
-            UnlockManager.Instance?.CompleteThisLevel(SceneManager.GetActiveScene().buildIndex);
         }
-        
 
         MultiplierText.transform.parent.gameObject.SetActive(false);
         FinalScorePanel.SetActive(true);

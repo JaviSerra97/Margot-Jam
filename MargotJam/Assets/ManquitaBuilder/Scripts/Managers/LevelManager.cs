@@ -39,7 +39,7 @@ public class LevelManager : MonoBehaviour
     public Image fadeImage;
     public float fadeDuration;
 
-    private int levelIndex = 0;
+    public int levelIndex = 0;
     private int listIndex = 0;
 
     private GameObject currentMarker;
@@ -157,6 +157,8 @@ public class LevelManager : MonoBehaviour
     public void UnlockLevel(int i, bool state)
     {
         listOfLevels[i].unlocked = state;
+        
+        Debug.Log(listOfLevels[i].id + ":" + listOfLevels[i].unlocked);
         
         ShowSelectedLevel();
     }
