@@ -158,6 +158,7 @@ public class ScoreManager : MonoBehaviour
     {
         _score = Mathf.Max(0, _score);
         ScoreText.text = _score.ToString();
+        PauseManager.Instance.FinalScore_2.text = _score.ToString();
         scorePanel.transform.DOPunchScale(Vector3.one * 0.15f, 0.25f);
     }
 
@@ -196,7 +197,7 @@ public class ScoreManager : MonoBehaviour
         if (_score > ScoreToBeat)
         {
             Debug.Log("Prueba superada"); // ** Cambiar aqui la variable deseada ** //
-            UnlockManager.Instance.CompleteThisLevel(SceneManager.GetActiveScene().buildIndex);
+            UnlockManager.Instance?.CompleteThisLevel(SceneManager.GetActiveScene().buildIndex);
             GameBeated = true;
         }
 

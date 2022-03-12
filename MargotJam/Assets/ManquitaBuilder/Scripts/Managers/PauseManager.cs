@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -9,14 +10,36 @@ using UnityEngine.UI;
 
 public class PauseManager : MonoBehaviour
 {
-    
-    [Header("Panel")]
+    public static PauseManager Instance;
+    [Header("Pause Panel")]
     public GameObject pausePanel;
     public Transform layout;
     public float tweenDuration;
     public Ease ease;
-    private bool isPaused;
+    [Header("FadeImage")]
+    public Image FadeImage;
+    public float FadeDuration;
+    [Header("Final Score Text")]
+    public TextMeshProUGUI FinalScore_2; 
     
+    private bool _isPaused;
+    private bool _isLoading;
+
+    private void Awake()
+    {
+        if (!Instance)
+            Instance = this;
+        else
+            Destroy(this);
+    }
+
+    private void Start()
+    {
+        _isLoading = false;
+        FadeImage.gameObject.SetActive(true);
+        FadeImage.DOFade(0, FadeDuration);
+    }
+
     void PauseGame()
     {
         if (DifficultManager.Instance && DifficultManager.Instance.GameEnded) return;
@@ -30,7 +53,7 @@ public class PauseManager : MonoBehaviour
         seq.Append(pausePanel.transform.DOScaleX(1f, 0.1f));
         layout.GetChild(0).GetComponent<Button>().Select();
         
-        isPaused = true;
+        _isPaused = true;
     }
 
     public void ResumeGame(bool doTween = true)
@@ -42,24 +65,44 @@ public class PauseManager : MonoBehaviour
         
         EventSystem.current.SetSelectedGameObject(null);
         Time.timeScale = 1;
-        isPaused = false;
+        _isPaused = false;
     }
 
     public void RestartGame()
     {
-        ResumeGame(false);
+        if (_isLoading) return;
+
+        FadeImage.DOFade(1f, FadeDuration).SetUpdate(true);
+        StartCoroutine(LoadSameScene());
+    }
+
+    private IEnumerator LoadSameScene()
+    {
+        _isLoading = true;
+        yield return new WaitForSecondsRealtime(FadeDuration);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        ResumeGame(false); 
     }
 
     public void ExitGame()
     {
-        ResumeGame(false);
-        SceneManager.LoadScene(0);
+        if (_isLoading) return;
+
+        FadeImage.DOFade(1f, FadeDuration).SetUpdate(true);
+        StartCoroutine(LoadMainMenu());
     }
     
+    private IEnumerator LoadMainMenu() 
+    {
+        _isLoading = true;
+        yield return new WaitForSecondsRealtime(FadeDuration);
+        SceneManager.LoadScene(0); 
+        ResumeGame(false); 
+    }
+
     void OnPause()
     {
-        if (!isPaused)
+        if (!_isPaused)
         {
             PauseGame();
         }

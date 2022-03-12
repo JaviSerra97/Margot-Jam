@@ -14,9 +14,6 @@ public class PiecesManager : MonoBehaviour
     private const float MarginSideColliders = 0.45f;
     private const float PIECE_MARGIN = 0.25f;
 
-    public Image fadeImage;
-    public float fadeDuration;
-
     [Header("Camera Position")]
     public Transform LeftCollider;
     public Transform RightCollider;
@@ -58,7 +55,7 @@ public class PiecesManager : MonoBehaviour
         SetSequence();
         InitCamera();
         InitMaterial();
-        StartGame();
+        Invoke(nameof(StartGame), PauseManager.Instance.FadeDuration * 0.95f);
     }
 
     private void InitMaterial()
@@ -135,8 +132,6 @@ public class PiecesManager : MonoBehaviour
                 }
             }
         }
-
-        FadeScreen();
     }
 
     public void CheckMaxHeight(float y_pos)
@@ -163,10 +158,6 @@ public class PiecesManager : MonoBehaviour
         }
     }
 
-    void FadeScreen()
-    {
-        fadeImage.DOFade(0, fadeDuration).SetEase(Ease.Linear).Play();
-    }
 
     public void StartGame()
     {
