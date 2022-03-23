@@ -13,7 +13,7 @@ namespace nns.npln
         /// サンプルプログラム用のテナントIDソースです。
         /// 実際のアプリケーションコードでは、アプリケーションごとに割り当てられたテナントIDソースを使用してください。
         /// </summary>
-        public const string DEFAULT_TENANT_ID_SOURCE = "t-713a1c66";
+        public const string DEFAULT_TENANT_ID_SOURCE = "t-5f970f29";
 
         /// <summary>
         /// サンプルプログラムで使用するExecutorHolderです。

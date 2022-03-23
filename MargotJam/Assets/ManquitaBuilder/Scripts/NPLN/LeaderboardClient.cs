@@ -123,6 +123,7 @@ public class LeaderboardClient : MonoBehaviour
 
         // スコア値を設定します。この値の大小によってリーダーボード上の順位が決定されます。
         request.SetScore(score);
+        Debug.Log("Score: " + score);
         //request.SetScore(105665);
 
         // スコアに対して任意のnn.npln.MapValueを登録することも可能です。
