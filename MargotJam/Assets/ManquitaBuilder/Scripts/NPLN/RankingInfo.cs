@@ -9,10 +9,22 @@ public class RankingInfo : MonoBehaviour
     public TMP_Text nameText;
     public TMP_Text scoreText;
 
+    public Color userColor;
+    public Color normalColor;
+    
     public void SetInfo(LeaderboardClient.RankingData data)
     {
         rankingText.text = data.rank.ToString();
         nameText.text = data.displayName;
         scoreText.text = data.score.ToString();
+
+        if (data.isUser)
+        {
+            nameText.color = userColor;
+        }
+        else
+        {
+            nameText.color = normalColor;
+        }
     }
 }

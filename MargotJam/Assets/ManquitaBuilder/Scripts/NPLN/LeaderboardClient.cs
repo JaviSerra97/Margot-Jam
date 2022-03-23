@@ -20,6 +20,7 @@ public class LeaderboardClient : MonoBehaviour
         public int rank;
         public string displayName;
         public long score;
+        public bool isUser = false;
     }
 
     public List<RankingData> rankingData = new List<RankingData>();
@@ -214,8 +215,8 @@ public class LeaderboardClient : MonoBehaviour
                 data.GetUserData().GetDisplayName(),
                 data.GetScore(),
                 userId == data.GetUserData().GetUserId() ? "** YOUR SCORE **" : ""));
-            
-            AddRankingData(data.GetRankData().GetRank(), data.GetUserData().GetDisplayName(), data.GetScore());
+
+            AddRankingData(data.GetRankData().GetRank(), data.GetUserData().GetDisplayName(), data.GetScore(), userId == data.GetUserData().GetUserId());
         }
         
         // 以下のメソッドがtrueを返す場合は、より下位や上位のスコアデータを続けて取得することができます。
@@ -285,7 +286,7 @@ public class LeaderboardClient : MonoBehaviour
         
         foreach (var data in snapshot.GetScoreDataList())
         {
-            AddRankingData(data.GetRankData().GetRank(), data.GetUserData().GetDisplayName(), data.GetScore());
+            AddRankingData(data.GetRankData().GetRank(), data.GetUserData().GetDisplayName(), data.GetScore(), userId == data.GetUserData().GetUserId());
         }
 
         Debug.Log("Top Leaderboard fetched successfully.");
@@ -575,13 +576,14 @@ public class LeaderboardClient : MonoBehaviour
         setRanking = false;
     }
 
-    void AddRankingData(int rank, string displayName, long score)
+    void AddRankingData(int rank, string displayName, long score, bool isUser)
     {
         var newData = new RankingData();
 
         newData.rank = rank;
         newData.displayName = displayName;
         newData.score = score;
+        newData.isUser = isUser;
         
         rankingData.Add(newData);
     }
