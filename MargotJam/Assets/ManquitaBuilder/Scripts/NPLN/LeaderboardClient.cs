@@ -44,7 +44,7 @@ public class LeaderboardClient : MonoBehaviour
     /// 本サンプルでは、NPLNダッシュボードでカテゴリタイプを1つも登録していないときにのみ使用可能な
     /// サンプル用のカテゴリタイプを利用します。詳細はNPLNプログラミングマニュアルを参照してください。
     /// </summary>
-    private const string CATEGORY_TYPE_NAME = "SampleDesc";
+    private const string CATEGORY_TYPE_NAME = "Ranking";
 
     /// <summary>
     /// サンプルで使用するリーダーボードのカテゴリIDです。
