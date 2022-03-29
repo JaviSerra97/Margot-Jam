@@ -532,3 +532,5 @@ MonoBehaviour:
   rankingText: {fileID: 1044009443337498563}
   nameText: {fileID: 4497796065097820036}
   scoreText: {fileID: 4369960548821294604}
+  userColor: {r: 0.95294124, g: 0.79215693, b: 0.53333336, a: 1}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
