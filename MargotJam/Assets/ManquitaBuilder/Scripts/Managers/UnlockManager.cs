@@ -36,7 +36,8 @@ public class UnlockManager : MonoBehaviour
     public void SetStatesOnStart()
     {
         //Unlock first level
-        FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(unlocksList[0].id, 1);
+        string key = "Level_" + unlocksList[0].id;
+        FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(key, 1);
 
         foreach (LevelState s in unlocksList)
         {
@@ -56,10 +57,7 @@ public class UnlockManager : MonoBehaviour
         
         SetLevelsState();
 
-        if (!init)
-        {
-            init = true;
-        }
+        init = true;
     }
 
     public void SetStatesOnReload()
@@ -89,18 +87,22 @@ public class UnlockManager : MonoBehaviour
     //Llamar desde ScoreManager al superar la puntuación.
     public void CompleteThisLevel(int sceneIndex)
     {
-        unlocksList[sceneIndex].state = true;
-
+        string key = "Level_" + sceneIndex;
+        FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(key, 1);
+        
+        //unlocksList[sceneIndex].state = true;
+/*
         foreach (var l in unlocksList)
         {
             Debug.Log(l.id + ":" + l.state);
-        }
+        }*/
     }
 
     public void SetLevelsState()
     {
-        for (int i = 0; i < unlocksList.Count; i++)
+        for (int i = 1; i < unlocksList.Count; i++)
         {
+            /*
             var s = 0;
             if (unlocksList[i].state)
             {
@@ -109,6 +111,9 @@ public class UnlockManager : MonoBehaviour
             FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(unlocksList[i].id, s);
             
             LevelManager.Instance.UnlockLevel(i, unlocksList[i].state);
+            */
+            string key = "Level_" + i;
+            LevelManager.Instance.UnlockLevel(i, key);
         }
     }
 }

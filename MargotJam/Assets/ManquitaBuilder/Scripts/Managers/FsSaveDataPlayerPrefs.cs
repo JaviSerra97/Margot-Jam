@@ -79,6 +79,7 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
     public void SetPlayerPrefs(string key, int unlocked)
     {
         PlayerPrefs.SetInt(key, unlocked);
+        Debug.Log("Saved: " + key + ". Value: " + PlayerPrefs.GetInt(key));
         SavePlayerPrefs();
     }
 

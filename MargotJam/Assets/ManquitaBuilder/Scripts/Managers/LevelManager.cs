@@ -43,7 +43,7 @@ public class LevelManager : MonoBehaviour
     private int listIndex = 0;
 
     private GameObject currentMarker;
-    private bool canPlay;
+    public bool canPlay;
 
     void Awake()
     {
@@ -55,11 +55,12 @@ public class LevelManager : MonoBehaviour
         {
             Destroy(this);
         }
+        
+        UnlockManager.Instance.SetStatesOnReload();
     }
 
     void Start()
     {
-        UnlockManager.Instance.SetStatesOnReload();
     }
     
     void ShowSelectedLevel()
@@ -154,9 +155,9 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(levelIndex);
     }
 
-    public void UnlockLevel(int i, bool state)
+    public void UnlockLevel(int i, string key)
     {
-        listOfLevels[i].unlocked = state;
+        listOfLevels[i].unlocked = PlayerPrefs.GetInt(key) == 1;
         
         Debug.Log(listOfLevels[i].id + ":" + listOfLevels[i].unlocked);
         
