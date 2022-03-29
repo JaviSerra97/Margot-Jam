@@ -17,7 +17,7 @@ public class UnlockManager : MonoBehaviour
 
     private int currentLevelIndex;
 
-    public bool init = false;
+    public static bool init = false;
     
     private void Awake()
     {
@@ -56,32 +56,35 @@ public class UnlockManager : MonoBehaviour
         }
         
         SetLevelsState();
-
-        init = true;
     }
 
     public void SetStatesOnReload()
     {
-        if(!init) {return;}
-        
-        foreach (LevelState s in unlocksList)
+        if (init)
         {
-            //int state = FsSaveDataPlayerPrefs.Instance.LoadInt(s.id);
-            int state = PlayerPrefs.GetInt(s.id);
-
-            switch (state)
+            foreach (LevelState s in unlocksList)
             {
-                case 0:
-                    s.state = false;
-                    break;
-                case 1:
-                    s.state = true;
-                    break;
+                //int state = FsSaveDataPlayerPrefs.Instance.LoadInt(s.id);
+                int state = PlayerPrefs.GetInt(s.id);
+
+                switch (state)
+                {
+                    case 0:
+                        s.state = false;
+                        break;
+                    case 1:
+                        s.state = true;
+                        break;
+                }
+                //Debug.Log(s.id + ": " + s.state);
             }
-            //Debug.Log(s.id + ": " + s.state);
+
+            SetLevelsState();
         }
-        
-        SetLevelsState();
+        else
+        {
+            init = true;
+        }
     }
     
     //Llamar desde ScoreManager al superar la puntuación.

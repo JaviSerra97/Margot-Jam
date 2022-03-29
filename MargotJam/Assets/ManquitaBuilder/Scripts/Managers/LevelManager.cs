@@ -55,12 +55,11 @@ public class LevelManager : MonoBehaviour
         {
             Destroy(this);
         }
-        
-        UnlockManager.Instance.SetStatesOnReload();
     }
 
     void Start()
     {
+        UnlockManager.Instance.SetStatesOnReload();
     }
     
     void ShowSelectedLevel()

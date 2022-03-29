@@ -65,7 +65,7 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         UnlockManager.Instance.SetStatesOnStart();
         LeaderboardClient.Instance.InitializeLeaderboard(userHandle);
     }
-
+    
     private void OnDestroy()
     {
 #if UNITY_SWITCH && !UNITY_EDITOR
@@ -79,7 +79,7 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
     public void SetPlayerPrefs(string key, int unlocked)
     {
         PlayerPrefs.SetInt(key, unlocked);
-        Debug.Log("Saved: " + key + ". Value: " + PlayerPrefs.GetInt(key));
+//        Debug.Log("Saved: " + key + ". Value: " + PlayerPrefs.GetInt(key));
         SavePlayerPrefs();
     }
 

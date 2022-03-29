@@ -233,7 +233,7 @@
       }
     },
     "net.nintendo.npln.unity": {
-      "version": "file:C:/Nintendo/NX2020.3.17/NintendoSDK-NPLN/Unity/Packages/NX-NXFP2-a64/Develop/net.nintendo.npln.unity.tgz",
+      "version": "file:C:/Nintendo/NX2020.3.17/NintendoSDK-NPLN/Unity/Packages/NX-NXFP2-a64/Release/net.nintendo.npln.unity.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {}
