@@ -174,6 +174,11 @@ public class PieceDrop : MonoBehaviour
             GetComponent<BoxCollider2D>().enabled = false;
             transform.GetChild(0).gameObject.AddComponent<PolygonCollider2D>();
         }
+        else
+        {
+            GetComponent<BoxCollider2D>().enabled = false;
+            transform.GetChild(0).gameObject.AddComponent<BoxCollider2D>();
+        }
     }
 
     public bool CheckNeighbour()
