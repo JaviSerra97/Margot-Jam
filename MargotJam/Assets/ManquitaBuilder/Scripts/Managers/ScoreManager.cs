@@ -9,8 +9,8 @@ using System;
 
 public class ScoreManager : MonoBehaviour
 {
-    private const int POINTS_BITS = 231;
-    private const float POINTS_BIT_TIME = 0.002f;
+    private const int POINTS_BITS = 421;
+    private const float POINTS_BIT_TIME = 0.001f;
     public const float SCALE_TEXT = 1.65f;
 
     [Header("Condicion de victoria")]
