@@ -69,6 +69,7 @@ MonoBehaviour:
   projection: {fileID: 8193113340922183941}
   tweenDuration: 0.25
   DownNeighbour: {fileID: 1551869403454284002}
+  UsePolygonCol: 0
 --- !u!114 &4510474247335434521
 MonoBehaviour:
   m_ObjectHideFlags: 0

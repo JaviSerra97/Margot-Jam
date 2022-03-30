@@ -5,10 +5,11 @@ using TMPro;
 using DG.Tweening;
 using nn.npln.leaderboard;
 using UnityEngine.SceneManagement;
+using System;
 
 public class ScoreManager : MonoBehaviour
 {
-    private const int POINTS_BITS = 101;
+    private const int POINTS_BITS = 231;
     private const float POINTS_BIT_TIME = 0.002f;
     public const float SCALE_TEXT = 1.65f;
 
@@ -89,6 +90,7 @@ public class ScoreManager : MonoBehaviour
         //seq.Join(t.transform.DOBlendableLocalMoveBy(new Vector3(Random.Range(-1, 1), 0, 0), moveDuration));
         //Destroy(t, scaleDuration + moveDuration + 0.1f);
         //seq.OnComplete(UpdateUI);
+        Debug.LogWarning("[ScoreManager]: Adding " + p);
 
         // Nuevo Tween
         StartCoroutine(TextVFX(t));
@@ -110,16 +112,12 @@ public class ScoreManager : MonoBehaviour
         {
             points -= POINTS_BITS;
             _score += POINTS_BITS;
-            //text.GetComponent<TMP_Text>().text = points.ToString();
-            //scale = Mathf.Max(0.65f, points / AllPoints);
-            //text.transform.localScale = Vector3.one * scale;
+
             UpdateUI();
             yield return new WaitForSeconds(POINTS_BIT_TIME);
         }
         _score += points;
         UpdateUI();
-        //yield return new WaitForSeconds(POINTS_BIT_TIME);
-        //Destroy(text);
     }
 
     private IEnumerator PointsVFX_Negative(int points)
@@ -129,18 +127,15 @@ public class ScoreManager : MonoBehaviour
 
         while (points < -POINTS_BITS)
         {
+
             points += POINTS_BITS;
             _score -= POINTS_BITS;
-            //text.GetComponent<TMP_Text>().text = points.ToString();
-            //scale = Mathf.Max(0.9f, points / AllPoints);
-            //text.transform.localScale = Vector3.one * scale;
+
             UpdateUI();
             yield return new WaitForSeconds(POINTS_BIT_TIME);
         }
-        _score -= points;
+        _score += points;
         UpdateUI();
-        //yield return new WaitForSeconds(POINTS_BIT_TIME);
-        //Destroy(text);
     }
 
     private IEnumerator TextVFX(GameObject text)
@@ -157,8 +152,8 @@ public class ScoreManager : MonoBehaviour
     private void UpdateUI()
     {
         _score = Mathf.Max(0, _score);
-        ScoreText.text = _score.ToString();
-        PauseManager.Instance.FinalScore_2.text = _score.ToString();
+        ScoreText.text = String.Format("{0:n0}", _score);
+        PauseManager.Instance.FinalScore_2.text = String.Format("{0:n0}", _score);
         scorePanel.transform.DOPunchScale(Vector3.one * 0.15f, 0.25f);
     }
 
@@ -181,7 +176,6 @@ public class ScoreManager : MonoBehaviour
 
         foreach (PieceDrop piece in pieces)
         {
-            Debug.Log(piece.name);
             if (piece.CheckNeighbour())
                 AddPoints(ScoreForPlace, piece.transform.position);
             else
@@ -189,7 +183,7 @@ public class ScoreManager : MonoBehaviour
             yield return new WaitForSeconds(0.18f);
         }
 
-        yield return new WaitForSeconds(moveDuration * 1.5f);
+        yield return new WaitForSeconds(moveDuration * 10f);
 
 
         SFX_Manager.Instance.PlayFanfarriaSFX();

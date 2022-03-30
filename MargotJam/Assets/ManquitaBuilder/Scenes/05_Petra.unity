@@ -3583,7 +3583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ee81b77660905428f0682c2ac57ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreToBeat: 500000
+  ScoreToBeat: 1000000
   ScoreText: {fileID: 254657937}
   MultiplierText: {fileID: 1169194917}
   FinalScorePanel: {fileID: 1786356713}

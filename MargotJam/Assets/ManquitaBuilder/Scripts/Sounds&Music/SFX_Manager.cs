@@ -20,7 +20,7 @@ public class SFX_Manager : MonoBehaviour
 
     public void PlayHitSound()
     {
-        _source.PlayOneShot(HitSFX);
+        _source.PlayOneShot(HitSFX, 0.3f);
     }
 
     public void PlayFailSound()
@@ -30,7 +30,7 @@ public class SFX_Manager : MonoBehaviour
 
     public void PlayBounceSFX()
     {
-        _source.PlayOneShot(BounceSFX);
+        _source.PlayOneShot(BounceSFX, 0.3f);
     }
 
     public void PlayHoverSFX()

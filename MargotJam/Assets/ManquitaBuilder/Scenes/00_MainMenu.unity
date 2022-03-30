@@ -4443,12 +4443,12 @@ MonoBehaviour:
     levelInfo: {fileID: 11400000, guid: 577d109819c3f414c9662f4642bb01d3, type: 2}
     mapMarker: {fileID: 7413434575817640184}
     unlocked: 0
-    lockedInfo: Achieve 500.000 points in "Temple of Kukulcan"
+    lockedInfo: Achieve 700.000 points in "Temple of Kukulcan"
   - id: Eiffel Tower
     levelInfo: {fileID: 11400000, guid: 984cc9ba02860d9418b59f102dc85d15, type: 2}
     mapMarker: {fileID: 461579875}
     unlocked: 0
-    lockedInfo: Achieve 500.000 points in "Leaning Tower of Pisa"
+    lockedInfo: Achieve 800.000 points in "Leaning Tower of Pisa"
   - id: Colosseum
     levelInfo: {fileID: 11400000, guid: 95634ac2a003a1a4b912123b56914c19, type: 2}
     mapMarker: {fileID: 1155896744}
@@ -4458,12 +4458,12 @@ MonoBehaviour:
     levelInfo: {fileID: 11400000, guid: 3b4a95d09faedc24b883dcbd71ea12d7, type: 2}
     mapMarker: {fileID: 45769631}
     unlocked: 0
-    lockedInfo: Achieve 500.000 points in "Colosseumr"
+    lockedInfo: Achieve 1.500.000 points in "Colosseumr"
   - id: Taj Mahal
     levelInfo: {fileID: 11400000, guid: a4b96ee644cc3434d9896d9352b6b584, type: 2}
     mapMarker: {fileID: 191514986}
     unlocked: 0
-    lockedInfo: Achieve 500.000 points in "Al-Khazneh"
+    lockedInfo: Achieve 1.000.000 points in "Al-Khazneh"
   levelSprite: {fileID: 1405512104}
   levelName: {fileID: 631249987}
   levelInfo: {fileID: 1923759031}

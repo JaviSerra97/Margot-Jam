@@ -21,6 +21,8 @@ public class PieceDrop : MonoBehaviour
     public static float RAYCAST_VARIATION = 0.50f;
 
     public GameObject DownNeighbour;
+
+    public bool UsePolygonCol = true;
     
     private PieceMove move;
 
@@ -167,8 +169,11 @@ public class PieceDrop : MonoBehaviour
             SFX_Manager.Instance.PlayFailSound();
         }
 
-        GetComponent<BoxCollider2D>().enabled = false;
-        transform.GetChild(0).gameObject.AddComponent<PolygonCollider2D>();
+        if(UsePolygonCol)
+        {
+            GetComponent<BoxCollider2D>().enabled = false;
+            transform.GetChild(0).gameObject.AddComponent<PolygonCollider2D>();
+        }
     }
 
     public bool CheckNeighbour()
@@ -179,9 +184,6 @@ public class PieceDrop : MonoBehaviour
 
         if (centerHit.collider && DownNeighbour)
         {
-            Debug.Log(gameObject.name);
-            Debug.Log(DownNeighbour.name);
-            Debug.Log(centerHit.collider.gameObject.name);
             _isNeighbouhDown = centerHit.collider.transform.parent.gameObject.name.Contains(DownNeighbour.name) || centerHit.collider.gameObject.name.Contains(DownNeighbour.name);
         }
 
