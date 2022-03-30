@@ -183,7 +183,7 @@ public class ScoreManager : MonoBehaviour
             yield return new WaitForSeconds(0.18f);
         }
 
-        yield return new WaitForSeconds(moveDuration * 10f);
+        yield return new WaitForSeconds(2.2f);
 
 
         SFX_Manager.Instance.PlayFanfarriaSFX();
