@@ -832,8 +832,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ListOfLogos:
   - {fileID: 110997}
-  - {fileID: 1391465459}
-  - {fileID: 1672997051}
   FadeTime: 0.5
   LogoTime: 1
   fadeImage: {fileID: 887572260}
@@ -4661,6 +4659,8 @@ MonoBehaviour:
   soundHandler: {fileID: 1650374081}
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   deselectedColor: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
+  selectedScale: 2.5
+  deselectedScale: 1.5
   levelSprite: {fileID: 1405512104}
   levelText: {fileID: 631249987}
   canGetInput: 0

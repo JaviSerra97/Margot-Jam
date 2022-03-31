@@ -35,6 +35,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private Image soundHandler;
     [SerializeField] private Color selectedColor;
     [SerializeField] private Color deselectedColor;
+    [SerializeField] private float selectedScale;
+    [SerializeField] private float deselectedScale;
     private Slider currentSlider;
 
     [Header("Level Info ------------------------------------------------------")] 
@@ -184,14 +186,18 @@ public class MenuManager : MonoBehaviour
     void SelectMusicSlider()
     {
         musicHandler.color = selectedColor;
+        musicHandler.transform.localScale = Vector3.one * selectedScale;
         soundHandler.color = deselectedColor;
+        soundHandler.transform.localScale = Vector3.one * deselectedScale;
         currentSlider = musicSlider;
     }
 
     void SelectSoundSlider()
     {
         musicHandler.color = deselectedColor;
+        musicHandler.transform.localScale = Vector3.one * deselectedScale;
         soundHandler.color = selectedColor;
+        soundHandler.transform.localScale = Vector3.one * selectedScale;
         currentSlider = soundSlider;
     }
     

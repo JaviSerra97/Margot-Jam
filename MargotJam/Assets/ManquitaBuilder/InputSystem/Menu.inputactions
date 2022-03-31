@@ -19,7 +19,7 @@
                     "type": "Button",
                     "id": "ef2ddc7c-f05a-4704-85da-7119cdd6d261",
                     "expectedControlType": "Button",
-                    "processors": "AxisDeadzone(min=0.3)",
+                    "processors": "AxisDeadzone(min=0.8,max=1)",
                     "interactions": "",
                     "initialStateCheck": false
                 },
