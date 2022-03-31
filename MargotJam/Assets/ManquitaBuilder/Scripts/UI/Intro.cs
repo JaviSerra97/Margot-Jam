@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.EventSystems;
 
 public class Intro : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class Intro : MonoBehaviour
 
     public Image fadeImage;
     private int index;
+
+    public GameObject eventSystem;
     
     void Start()
     {
@@ -74,6 +77,8 @@ public class Intro : MonoBehaviour
 
     void OnDisable()
     {
-        //Allow inputs
+        MenuManager.Instance.canGetInput = true;
+        LevelManager.Instance.canGetInputs = true;
+        eventSystem.SetActive(true);
     }
 }

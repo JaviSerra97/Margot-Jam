@@ -44,6 +44,8 @@ public class LevelManager : MonoBehaviour
 
     private GameObject currentMarker;
     public bool canPlay;
+    public bool canGetInputs;
+    
 
     void Awake()
     {
@@ -120,9 +122,11 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    #region INPUTS
+
     void OnSwitchLevel(InputValue value)
     {
-        if(!MenuManager.Instance.OnLevels()){return;}
+        if(!MenuManager.Instance.OnLevels() || !canGetInputs){return;}
         
         float v = value.Get<float>();
         if (v > 0)
@@ -139,7 +143,7 @@ public class LevelManager : MonoBehaviour
 
     void OnPlayLevel()
     {
-        if(!MenuManager.Instance.OnLevels()){return;}
+        if(!MenuManager.Instance.OnLevels() || !canGetInputs){return;}
         if (canPlay)
         {
             canPlay = false;
@@ -148,6 +152,7 @@ public class LevelManager : MonoBehaviour
             Invoke(nameof(LoadLevelScene), fadeDuration * 1.1f);
         }
     }
+    #endregion
 
     private void LoadLevelScene()
     {

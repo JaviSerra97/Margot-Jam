@@ -51,6 +51,7 @@ public class MenuManager : MonoBehaviour
     private bool addValue;
     private bool decreaseValue;
     
+    public bool canGetInput;
     private bool onAnimation;
     private void Awake()
     {
@@ -198,7 +199,7 @@ public class MenuManager : MonoBehaviour
 
     void OnBackToMenu()
     {
-        if(onAnimation){return;}
+        if(onAnimation || !canGetInput){return;}
         
         if (isOnSettings)
         {
@@ -213,9 +214,7 @@ public class MenuManager : MonoBehaviour
 
     void OnSwitchSlider()
     {
-        if(onAnimation){return;}
-        
-        if(!isOnSettings || !switchSlider){ return; }
+        if(!isOnSettings || !switchSlider || onAnimation || !canGetInput){ return; }
 
         switchSlider = false;
         if (currentSlider == musicSlider)
@@ -230,7 +229,7 @@ public class MenuManager : MonoBehaviour
 
     void OnSliderValue(InputValue value)
     {
-        if(!isOnSettings || onAnimation){return;}
+        if(!isOnSettings || onAnimation || !canGetInput){return;}
 
         if (value.Get<float>() > 0)
         {

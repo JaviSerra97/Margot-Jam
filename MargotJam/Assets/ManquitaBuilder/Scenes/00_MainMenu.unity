@@ -837,6 +837,7 @@ MonoBehaviour:
   FadeTime: 0.5
   LogoTime: 1
   fadeImage: {fileID: 887572260}
+  eventSystem: {fileID: 1150287594}
 --- !u!1001 &191514984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2665,7 +2666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1150287595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2681,7 +2682,7 @@ MonoBehaviour:
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_SubmitAction: {fileID: 2064916234097673511, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
@@ -4662,6 +4663,7 @@ MonoBehaviour:
   deselectedColor: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
   levelSprite: {fileID: 1405512104}
   levelText: {fileID: 631249987}
+  canGetInput: 0
 --- !u!4 &1658821913
 Transform:
   m_ObjectHideFlags: 0
@@ -4759,6 +4761,7 @@ MonoBehaviour:
   fadeDuration: 1
   levelIndex: 0
   canPlay: 0
+  canGetInputs: 0
 --- !u!1 &1672997051
 GameObject:
   m_ObjectHideFlags: 0
