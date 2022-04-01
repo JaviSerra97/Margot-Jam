@@ -48,12 +48,17 @@ public class Intro : MonoBehaviour
             if (index > ListOfLogos.Count)
             {
                 StopCoroutine(IntroRoutine());
-                gameObject.SetActive(false);
+                fadeImage.DOFade(0, FadeTime).OnComplete(EndIntro);
                 return;
             }
 
             ListOfLogos[index - 1].SetActive(true);
         }
+    }
+
+    void EndIntro()
+    {
+        gameObject.SetActive(false);
     }
     
     IEnumerator IntroRoutine()
