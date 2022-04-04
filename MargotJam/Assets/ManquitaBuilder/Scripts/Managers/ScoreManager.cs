@@ -90,7 +90,6 @@ public class ScoreManager : MonoBehaviour
         //seq.Join(t.transform.DOBlendableLocalMoveBy(new Vector3(Random.Range(-1, 1), 0, 0), moveDuration));
         //Destroy(t, scaleDuration + moveDuration + 0.1f);
         //seq.OnComplete(UpdateUI);
-        Debug.LogWarning("[ScoreManager]: Adding " + p);
 
         // Nuevo Tween
         StartCoroutine(TextVFX(t));

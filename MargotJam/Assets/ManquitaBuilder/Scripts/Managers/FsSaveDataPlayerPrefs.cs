@@ -83,6 +83,12 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         SavePlayerPrefs();
     }
 
+    public void SetPlayerPrefs(string key, float value)
+    {
+        PlayerPrefs.SetFloat(key, value);
+        SavePlayerPrefs();
+    }
+
    private void InitializeSaveData()
     {
 #if !UNITY_SWITCH || UNITY_EDITOR

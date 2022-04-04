@@ -22,6 +22,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject buttonsHeader;
     [SerializeField] private GameObject settingsPanel;
     [SerializeField] private GameObject settingsHeader;
+    [SerializeField] private Animator HowToPanel;
     [SerializeField] private float changePanelDuration;
     [SerializeField] private GameObject levelsPanel;
     [SerializeField] private float showLevelsDuration;
@@ -48,6 +49,7 @@ public class MenuManager : MonoBehaviour
 
     private bool isOnSettings;
     private bool isOnLevels;
+    private bool isOnHowTo;
 
     private bool switchSlider = true;
     private bool addValue;
@@ -117,6 +119,21 @@ public class MenuManager : MonoBehaviour
         buttonsPanel.GetComponentInChildren<Button>().Select();
         isOnSettings = false;
     }
+    public void OnHowToButton()
+    {
+        if(canInteract)
+        {
+            isOnHowTo = true;
+            HowToPanel.SetTrigger("Appear");
+        }
+    }
+
+    public void OnHowToBack()
+    {
+        isOnHowTo = false;
+        HowToPanel.SetTrigger("Disappear");
+    }
+
 
     public bool OnLevels()
     {
@@ -215,6 +232,11 @@ public class MenuManager : MonoBehaviour
         if (isOnLevels)
         {
             OnLevelsBack();
+        }
+
+        if(isOnHowTo)
+        {
+            OnHowToBack();
         }
     }
 

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
+
     public static AudioManager Instance;
     [Header("Audio Manager")]
     public Slider MusicSlider;
@@ -35,7 +36,7 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        SetSliders();
+        Invoke(nameof(SetSliders), 2f);
     }
 
 
@@ -50,12 +51,14 @@ public class AudioManager : MonoBehaviour
     {
         v = Mathf.Clamp(v, 0.001f, Mathf.Infinity);
         Mixer.SetFloat(MUSIC_VOLUME_TAG, Mathf.Log10(v) * 20);
+        FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(MUSIC_VOLUME_TAG,v);
     }
 
     public void setEffectVolume(float v)
     {
         v = Mathf.Clamp(v, 0.001f, Mathf.Infinity);
         Mixer.SetFloat(SFX_VOLUME_TAG, Mathf.Log10(v) * 20);
+        FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(MUSIC_VOLUME_TAG, v);
     }
     #endregion
 
@@ -63,10 +66,14 @@ public class AudioManager : MonoBehaviour
 
     private void SetSliders()
     {
-        Mixer.GetFloat(MUSIC_VOLUME_TAG, out _sliderValue); // Cambiar este valor por el guardado en los player prefs
-        MusicSlider.value = LogConversion(_sliderValue); 
+        //Mixer.GetFloat(MUSIC_VOLUME_TAG, out _sliderValue); // Quitar comentario para volver a lo anterior
+        _sliderValue = PlayerPrefs.GetFloat(MUSIC_VOLUME_TAG); // Comentar para volver a lo anterior
+        Mixer.SetFloat(MUSIC_VOLUME_TAG, Mathf.Log10(_sliderValue) * 20); // Comentar para volver a lo anterior
+        MusicSlider.value = LogConversion(_sliderValue);
 
-        Mixer.GetFloat(SFX_VOLUME_TAG, out _sliderValue); // Y este tambien
+        //Mixer.GetFloat(SFX_VOLUME_TAG, out _sliderValue); // Quitar comentario para volver a lo anterior
+        _sliderValue = PlayerPrefs.GetFloat(SFX_VOLUME_TAG); // Comentar para volver a lo anterior
+        Mixer.SetFloat(SFX_VOLUME_TAG, Mathf.Log10(_sliderValue) * 20); // Comentar para volver a lo anterior
         SFXSlider.value = LogConversion(_sliderValue);
     }
 
