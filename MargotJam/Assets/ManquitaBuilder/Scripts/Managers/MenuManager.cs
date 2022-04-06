@@ -102,7 +102,7 @@ public class MenuManager : MonoBehaviour
 
     public void OnSettingsButton()
     {
-        if (canInteract)
+        if (canInteract && !isOnSettings)
         {
             ChangePanel(buttonsPanel, settingsPanel);
             ChangePanel(buttonsHeader, settingsHeader);

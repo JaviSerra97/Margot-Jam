@@ -17,7 +17,7 @@ PlayerSettings:
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
-  m_ShowUnitySplashScreen: 1
+  m_ShowUnitySplashScreen: 0
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
@@ -135,6 +135,13 @@ PlayerSettings:
     Others: 1
   bundleVersion: 1.0.0
   preloadedAssets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -499,7 +506,7 @@ PlayerSettings:
   locationUsageDescription: 
   microphoneUsageDescription: 
   bluetoothUsageDescription: 
-  switchNMETAOverride: Application.aarch64.lp64.nmeta
+  switchNMETAOverride: NMETA/Application.aarch64.lp64.nmeta
   switchNetLibKey: 
   switchSocketMemoryPoolSize: 6144
   switchSocketAllocatorPoolSize: 128
@@ -509,7 +516,7 @@ PlayerSettings:
   switchUseGOLDLinker: 0
   switchApplicationID: 0x01007e3018012000
   switchNSODependencies: 
-  switchTitleNames_0: 
+  switchTitleNames_0: 'World Map: Crafted City Builder'
   switchTitleNames_1: 
   switchTitleNames_2: 
   switchTitleNames_3: 
@@ -525,7 +532,7 @@ PlayerSettings:
   switchTitleNames_13: 
   switchTitleNames_14: 
   switchTitleNames_15: 
-  switchPublisherNames_0: 
+  switchPublisherNames_0: Cooking and Publishing SL
   switchPublisherNames_1: 
   switchPublisherNames_2: 
   switchPublisherNames_3: 
@@ -541,7 +548,7 @@ PlayerSettings:
   switchPublisherNames_13: 
   switchPublisherNames_14: 
   switchPublisherNames_15: 
-  switchIcons_0: {fileID: 0}
+  switchIcons_0: {fileID: 2800000, guid: c135722801635c140b54831a07a21c16, type: 3}
   switchIcons_1: {fileID: 0}
   switchIcons_2: {fileID: 0}
   switchIcons_3: {fileID: 0}
@@ -557,7 +564,7 @@ PlayerSettings:
   switchIcons_13: {fileID: 0}
   switchIcons_14: {fileID: 0}
   switchIcons_15: {fileID: 0}
-  switchSmallIcons_0: {fileID: 0}
+  switchSmallIcons_0: {fileID: 2800000, guid: 7ad4b3b908a8e974b9ad8efa363aff7b, type: 3}
   switchSmallIcons_1: {fileID: 0}
   switchSmallIcons_2: {fileID: 0}
   switchSmallIcons_3: {fileID: 0}
@@ -575,15 +582,15 @@ PlayerSettings:
   switchSmallIcons_15: {fileID: 0}
   switchManualHTML: 
   switchAccessibleURLs: 
-  switchLegalInformation: 
+  switchLegalInformation: D:/Users/Javier/Downloads/legal_info_01007e3018012000_37cb.zip
   switchMainThreadStackSize: 1048576
   switchPresenceGroupId: 
   switchLogoHandling: 0
   switchReleaseVersion: 0
   switchDisplayVersion: 1.0.0
   switchStartupUserAccount: 2
-  switchTouchScreenUsage: 2
-  switchSupportedLanguagesMask: 0
+  switchTouchScreenUsage: 0
+  switchSupportedLanguagesMask: 1
   switchLogoType: 0
   switchApplicationErrorCodeCategory: 
   switchUserAccountSaveDataSize: 1048576
@@ -591,16 +598,16 @@ PlayerSettings:
   switchApplicationAttribute: 0
   switchCardSpecSize: -1
   switchCardSpecClock: -1
-  switchRatingsMask: 0
+  switchRatingsMask: 2040
   switchRatingsInt_0: 0
   switchRatingsInt_1: 0
   switchRatingsInt_2: 0
-  switchRatingsInt_3: 0
+  switchRatingsInt_3: 6
   switchRatingsInt_4: 0
   switchRatingsInt_5: 0
-  switchRatingsInt_6: 0
-  switchRatingsInt_7: 0
-  switchRatingsInt_8: 0
+  switchRatingsInt_6: 3
+  switchRatingsInt_7: 3
+  switchRatingsInt_8: 3
   switchRatingsInt_9: 0
   switchRatingsInt_10: 0
   switchRatingsInt_11: 0

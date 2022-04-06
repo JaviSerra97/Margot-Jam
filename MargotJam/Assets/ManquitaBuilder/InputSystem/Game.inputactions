@@ -37,6 +37,17 @@
                 {
                     "name": "",
                     "id": "1a420690-fe8c-473e-a658-da106f96a86b",
+                    "path": "<SwitchProControllerHID>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DropPiece",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "07715365-497e-4727-a723-a0139a6cb555",
                     "path": "<NPad>/buttonEast",
                     "interactions": "",
                     "processors": "",
