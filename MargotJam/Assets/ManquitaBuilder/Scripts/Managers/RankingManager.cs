@@ -11,6 +11,8 @@ public class RankingManager : MonoBehaviour
 
     public List<RankingInfo> listOfPrefabs;
 
+    public GameObject scorePanel, noConnectionPanel, loadingText;
+    
     private int currentIndex;
 
     //private List<LeaderboardClient.RankingData> currentData;
@@ -38,12 +40,26 @@ public class RankingManager : MonoBehaviour
         {
             listOfPrefabs[i].SetInfo(rankingData[i]);
         }
+        
+        LeaderboardReady();
     }
 
     public void SetRankings(List<LeaderboardClient.RankingData> rankingData)
     {
         SetFirstRankingData(rankingData);
         SetNearRankingData(rankingData);
+    }
+
+    public void LeaderboardReady()
+    {
+        loadingText.SetActive(false);
+        scorePanel.SetActive(true);
+    }
+    
+    public void SetNoConnection()
+    {
+        loadingText.SetActive(false);
+        noConnectionPanel.SetActive(true);
     }
 }
 

@@ -182,7 +182,7 @@ public class ScoreManager : MonoBehaviour
             yield return new WaitForSeconds(0.18f);
         }
 
-        yield return new WaitForSeconds(2.2f);
+        yield return new WaitForSeconds(3.5f);
 
 
         SFX_Manager.Instance.PlayFanfarriaSFX();
@@ -203,6 +203,8 @@ public class ScoreManager : MonoBehaviour
         ScoreText.transform.parent.GetComponent<Animator>().SetTrigger("End");
     }
 
+  
+    
     public void OnBackButton(int index)
     {
         SceneManager.LoadScene(index);

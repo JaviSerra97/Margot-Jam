@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Threading.Tasks;
+using nn;
 using nn.account;
 using UnityEngine;
 using nn.npln;
 using nn.npln.leaderboard;
 using UnityEngine.PlayerLoop;
+using UnityEngine.Switch;
 
 public class LeaderboardClient : MonoBehaviour
 {
@@ -28,6 +31,11 @@ public class LeaderboardClient : MonoBehaviour
     private bool setRanking = false;
     
     private UserContext userContext;
+    private UserHandle userHandle;
+
+    private int score;
+    private int categoryID;
+    
     #region NPLN Logic
     //-------------------------------------------------------------------------------------------------
     // 定数定義
@@ -73,7 +81,6 @@ public class LeaderboardClient : MonoBehaviour
     {
         // Leaderboardサービスのサービスクライアントを生成します。
         var client = new nn.npln.leaderboard.LeaderboardClient(userContext);
-
         // ユーザー情報を登録するためのリクエストオブジェクトです。
         var request = new SetUserDataRequest();
 
@@ -101,6 +108,7 @@ public class LeaderboardClient : MonoBehaviour
         }
 
         Debug.Log("User data set successfully.");
+        
         return true;
     }
 
@@ -110,44 +118,45 @@ public class LeaderboardClient : MonoBehaviour
     private async Task<bool> SetScoreAsync(UserContext userContext, long score, int categoryID ,MapValue applicationData = null)
     {
         // Leaderboardサービスのサービスクライアントを生成します。
-        var client = new nn.npln.leaderboard.LeaderboardClient(userContext);
+            var client = new nn.npln.leaderboard.LeaderboardClient(userContext);
 
-        // スコアを登録するためには、最初にスコアの登録先となるリーダーボードを決定しなければなりません。
-        // 登録先のリーダーボードはカテゴリ名で識別します。まずはカテゴリ名を生成します。
-        var categoryName = $"{CATEGORY_TYPE_NAME}_{categoryID:x8}";
-        // 次にLeaderboardClient.CreateLeaderboardReference()を呼び出し、登録先のリーダーボードを参照するLeaderboardReference
-        // オブジェクトを生成します。この時、引数としてリーダーボードのカテゴリ名を与えます。
-        var leaderboardRef = client.CreateLeaderboardReference(categoryName);
+            // スコアを登録するためには、最初にスコアの登録先となるリーダーボードを決定しなければなりません。
+            // 登録先のリーダーボードはカテゴリ名で識別します。まずはカテゴリ名を生成します。
+            var categoryName = $"{CATEGORY_TYPE_NAME}_{categoryID:x8}";
+            // 次にLeaderboardClient.CreateLeaderboardReference()を呼び出し、登録先のリーダーボードを参照するLeaderboardReference
+            // オブジェクトを生成します。この時、引数としてリーダーボードのカテゴリ名を与えます。
+            var leaderboardRef = client.CreateLeaderboardReference(categoryName);
 
-        // スコアを登録するためのリクエストオブジェクトです。
-        var request = new SetScoreRequest();
+            // スコアを登録するためのリクエストオブジェクトです。
+            var request = new SetScoreRequest();
 
-        // スコア値を設定します。この値の大小によってリーダーボード上の順位が決定されます。
-        request.SetScore(score);
-        Debug.Log("Score: " + score);
-        //request.SetScore(105665);
+            // スコア値を設定します。この値の大小によってリーダーボード上の順位が決定されます。
+            request.SetScore(score);
+            Debug.Log("Score: " + score);
+            //request.SetScore(105665);
 
-        // スコアに対して任意のnn.npln.MapValueを登録することも可能です。
-        // このMapValueはスコア毎に登録が可能なものであり、ユーザー情報の登録時に設定したMapValueとは別に管理されます。
-        // ユーザー情報と同様にリーダーボードの取得時に読み取り可能です。
-        // 順位には影響しません。
-        if (applicationData != null)
-        {
-            request.SetApplicationData(applicationData);
-        }
+            // スコアに対して任意のnn.npln.MapValueを登録することも可能です。
+            // このMapValueはスコア毎に登録が可能なものであり、ユーザー情報の登録時に設定したMapValueとは別に管理されます。
+            // ユーザー情報と同様にリーダーボードの取得時に読み取り可能です。
+            // 順位には影響しません。
+            if (applicationData != null)
+            {
+                request.SetApplicationData(applicationData);
+            }
 
-        // スコアを非同期的に登録します。
-        var rpcResult = await leaderboardRef.SetScoreAsync(request);
+            // スコアを非同期的に登録します。
+            var rpcResult = await leaderboardRef.SetScoreAsync(request);
 
-        // 登録が正常に完了したかどうかを確認します。
-        if (!rpcResult.IsOk())
-        {
-            Debug.Log($"Failed to set user score: {rpcResult.Dump()}");
-            return false;
-        }
+            // 登録が正常に完了したかどうかを確認します。
+            if (!rpcResult.IsOk())
+            {
+                Debug.Log($"Failed to set user score: {rpcResult.Dump()}");
+                return false;
+            }
 
-        Debug.Log("Score set successfully.");
-        return true;
+            Debug.Log("Score set successfully.");
+
+            return true;
     }
 
     /// <summary>
@@ -156,141 +165,144 @@ public class LeaderboardClient : MonoBehaviour
     private async Task<bool> GetNearLeaderboardAsync(UserContext userContext, int categoryID)
     {
         // メソッド内で自分自身のNPLNユーザーIDを使用するため、まずはそれを取得します。
-        var userId = default(string);
-        {
-            // NPLNユーザーIDを非同期的に取得します。
-            var rpcResult = await userContext.WaitForAuthenticationAsync();
-
-            // 正常に取得できたかどうかを確認します。
-            if (!rpcResult.IsOk())
+            var userId = default(string);
             {
-                Debug.Log($"Failed to authenticate NPLN user: {rpcResult.Dump()}");
-                return false;
+                // NPLNユーザーIDを非同期的に取得します。
+                var rpcResult = await userContext.WaitForAuthenticationAsync();
+
+                // 正常に取得できたかどうかを確認します。
+                if (!rpcResult.IsOk())
+                {
+                    Debug.Log($"Failed to authenticate NPLN user: {rpcResult.Dump()}");
+                    return false;
+                }
+
+                userId = rpcResult.GetResponse();
             }
 
-            userId = rpcResult.GetResponse();
-        }
-
-        // 取得したリーダーボードを格納するオブジェクトです。
-        var snapshot = default(LeaderboardSnapshot);
-        {
-            // Leaderboardサービスのサービスクライアントを生成します。
-            var client = new nn.npln.leaderboard.LeaderboardClient(userContext);
-
-            // 取得するリーダーボードを参照するLeaderboardReferenceオブジェクトを生成します。
-            var categoryName = $"{CATEGORY_TYPE_NAME}_{categoryID:x8}";
-            var leaderboardRef = client.CreateLeaderboardReference(categoryName);
-
-            // このサンプルでは、周辺リーダーボードを取得することにします。
-            var request = new GetNearLeaderboardRequest();
-
-            // 自分のスコアを中心として合計9つのスコアを取得するようリクエストオブジェクトを生成します。
-            request.SetPageSize(5);
-            request.SetUserIdToCenter(userId);
-
-            // リーダーボードを非同期的に取得します。
-            var rpcResult = await leaderboardRef.GetLeaderboardAsync(request);
-
-            // 正常に取得できたかどうかを確認します。
-            if (!rpcResult.IsOk())
+            // 取得したリーダーボードを格納するオブジェクトです。
+            var snapshot = default(LeaderboardSnapshot);
             {
-                Debug.Log($"Failed to get near leaderboard: {rpcResult.Dump()}");
-                return false;
+                // Leaderboardサービスのサービスクライアントを生成します。
+                var client = new nn.npln.leaderboard.LeaderboardClient(userContext);
+
+                // 取得するリーダーボードを参照するLeaderboardReferenceオブジェクトを生成します。
+                var categoryName = $"{CATEGORY_TYPE_NAME}_{categoryID:x8}";
+                var leaderboardRef = client.CreateLeaderboardReference(categoryName);
+
+                // このサンプルでは、周辺リーダーボードを取得することにします。
+                var request = new GetNearLeaderboardRequest();
+
+                // 自分のスコアを中心として合計9つのスコアを取得するようリクエストオブジェクトを生成します。
+                request.SetPageSize(5);
+                request.SetUserIdToCenter(userId);
+
+                // リーダーボードを非同期的に取得します。
+                var rpcResult = await leaderboardRef.GetLeaderboardAsync(request);
+
+                // 正常に取得できたかどうかを確認します。
+                if (!rpcResult.IsOk())
+                {
+                    Debug.Log($"Failed to get near leaderboard: {rpcResult.Dump()}");
+                    return false;
+                }
+
+                // 取得したリーダーボードの情報を保存します。
+                snapshot = rpcResult.GetResponse();
             }
 
-            // 取得したリーダーボードの情報を保存します。
-            snapshot = rpcResult.GetResponse();
-        }
+            // 取得したリーダーボードのスコアをログ出力します。
+            // まずは、スコア表のヘッダを出力します。
+            Debug.Log("| Rank | NPLN User ID           |   Score |");
+            Debug.Log("|------|------------------------|---------|");
 
-        // 取得したリーダーボードのスコアをログ出力します。
-        // まずは、スコア表のヘッダを出力します。
-        Debug.Log("| Rank | NPLN User ID           |   Score |");
-        Debug.Log("|------|------------------------|---------|");
+            // 取得したスコアをログ出力します。
+            foreach (var data in snapshot.GetScoreDataList())
+            {
+                Debug.Log(string.Format("| {0,4} | {1,-22} | {2,7} | {3}",
+                    data.GetRankData().GetRank(),
+                    data.GetUserData().GetDisplayName(),
+                    data.GetScore(),
+                    userId == data.GetUserData().GetUserId() ? "** YOUR SCORE **" : ""));
 
-        // 取得したスコアをログ出力します。
-        foreach (var data in snapshot.GetScoreDataList())
-        {
-            Debug.Log(string.Format("| {0,4} | {1,-22} | {2,7} | {3}",
-                data.GetRankData().GetRank(),
-                data.GetUserData().GetDisplayName(),
-                data.GetScore(),
-                userId == data.GetUserData().GetUserId() ? "** YOUR SCORE **" : ""));
+                AddRankingData(data.GetRankData().GetRank(), data.GetUserData().GetDisplayName(), data.GetScore(),
+                    userId == data.GetUserData().GetUserId());
+            }
 
-            AddRankingData(data.GetRankData().GetRank(), data.GetUserData().GetDisplayName(), data.GetScore(), userId == data.GetUserData().GetUserId());
-        }
-        
-        // 以下のメソッドがtrueを返す場合は、より下位や上位のスコアデータを続けて取得することができます。
-        // - snapshot.CanRequestNextPage()
-        // - snapshot.CanRequestPreviousPage()
-        // スコアデータを続けて取得するには以下のメソッドを呼び出してください。
-        // - snapshot.GetNextPageAsync()
-        // - snapshot.GetPreviousPageAsync()
-        
-        Debug.Log("Near Leaderboard fetched successfully.");
-        //RankingManager.Instance.SetNearRankingData(snapshot.GetScoreDataList());
-        setRanking = true;
-        
-        return true;
+            // 以下のメソッドがtrueを返す場合は、より下位や上位のスコアデータを続けて取得することができます。
+            // - snapshot.CanRequestNextPage()
+            // - snapshot.CanRequestPreviousPage()
+            // スコアデータを続けて取得するには以下のメソッドを呼び出してください。
+            // - snapshot.GetNextPageAsync()
+            // - snapshot.GetPreviousPageAsync()
+
+            Debug.Log("Near Leaderboard fetched successfully.");
+            //RankingManager.Instance.SetNearRankingData(snapshot.GetScoreDataList());
+            setRanking = true;
+            
+            return true;
     }
 
     private async Task<bool> GetFirstLeaderboardAsync(UserContext userContext, int categoryID)
     {
         // メソッド内で自分自身のNPLNユーザーIDを使用するため、まずはそれを取得します。
-        var userId = default(string);
-        {
-            // NPLNユーザーIDを非同期的に取得します。
-            var rpcResult = await userContext.WaitForAuthenticationAsync();
-
-            // 正常に取得できたかどうかを確認します。
-            if (!rpcResult.IsOk())
+            var userId = default(string);
             {
-                Debug.Log($"Failed to authenticate NPLN user: {rpcResult.Dump()}");
-                return false;
+                // NPLNユーザーIDを非同期的に取得します。
+                var rpcResult = await userContext.WaitForAuthenticationAsync();
+
+                // 正常に取得できたかどうかを確認します。
+                if (!rpcResult.IsOk())
+                {
+                    Debug.Log($"Failed to authenticate NPLN user: {rpcResult.Dump()}");
+                    return false;
+                }
+
+                userId = rpcResult.GetResponse();
             }
 
-            userId = rpcResult.GetResponse();
-        }
-
-        // 取得したリーダーボードを格納するオブジェクトです。
-        var snapshot = default(LeaderboardSnapshot);
-        {
-            // Leaderboardサービスのサービスクライアントを生成します。
-            var client = new nn.npln.leaderboard.LeaderboardClient(userContext);
-
-            // 取得するリーダーボードを参照するLeaderboardReferenceオブジェクトを生成します。
-            var categoryName = $"{CATEGORY_TYPE_NAME}_{categoryID:x8}";
-            var leaderboardRef = client.CreateLeaderboardReference(categoryName);
-
-            // このサンプルでは、周辺リーダーボードを取得することにします。
-            var request = new GetRangeLeaderboardRequest();
-
-            // 自分のスコアを中心として合計9つのスコアを取得するようリクエストオブジェクトを生成します。
-            request.SetOffset(0);
-            request.SetPageSize(1);
-
-            // リーダーボードを非同期的に取得します。
-            var rpcResult = await leaderboardRef.GetLeaderboardAsync(request);
-
-            // 正常に取得できたかどうかを確認します。
-            if (!rpcResult.IsOk())
+            // 取得したリーダーボードを格納するオブジェクトです。
+            var snapshot = default(LeaderboardSnapshot);
             {
-                Debug.Log($"Failed to get near leaderboard: {rpcResult.Dump()}");
-                return false;
+                // Leaderboardサービスのサービスクライアントを生成します。
+                var client = new nn.npln.leaderboard.LeaderboardClient(userContext);
+
+                // 取得するリーダーボードを参照するLeaderboardReferenceオブジェクトを生成します。
+                var categoryName = $"{CATEGORY_TYPE_NAME}_{categoryID:x8}";
+                var leaderboardRef = client.CreateLeaderboardReference(categoryName);
+
+                // このサンプルでは、周辺リーダーボードを取得することにします。
+                var request = new GetRangeLeaderboardRequest();
+
+                // 自分のスコアを中心として合計9つのスコアを取得するようリクエストオブジェクトを生成します。
+                request.SetOffset(0);
+                request.SetPageSize(1);
+
+                // リーダーボードを非同期的に取得します。
+                var rpcResult = await leaderboardRef.GetLeaderboardAsync(request);
+
+                // 正常に取得できたかどうかを確認します。
+                if (!rpcResult.IsOk())
+                {
+                    Debug.Log($"Failed to get near leaderboard: {rpcResult.Dump()}");
+                    return false;
+                }
+
+                // 取得したリーダーボードの情報を保存します。
+                snapshot = rpcResult.GetResponse();
             }
 
-            // 取得したリーダーボードの情報を保存します。
-            snapshot = rpcResult.GetResponse();
-        }
+            ClearRankingData();
 
-        ClearRankingData();
-        
-        foreach (var data in snapshot.GetScoreDataList())
-        {
-            AddRankingData(data.GetRankData().GetRank(), data.GetUserData().GetDisplayName(), data.GetScore(), userId == data.GetUserData().GetUserId());
-        }
+            foreach (var data in snapshot.GetScoreDataList())
+            {
+                AddRankingData(data.GetRankData().GetRank(), data.GetUserData().GetDisplayName(), data.GetScore(),
+                    userId == data.GetUserData().GetUserId());
+            }
 
-        Debug.Log("Top Leaderboard fetched successfully.");
-        return true;
+            Debug.Log("Top Leaderboard fetched successfully.");
+
+            return true;
     }
 
     /// <summary>
@@ -517,9 +529,14 @@ public class LeaderboardClient : MonoBehaviour
             DestroyImmediate(this);
     }
     
-    public void InitializeLeaderboard(nn.account.UserHandle userHandle)
+    public void InitializeLeaderboard(nn.account.UserHandle user)
     {
-        m_InitTask= Task.Run(async () =>
+        userHandle = user;
+        
+        //NetworkInterfaceWrapper.EnterNetworkConnecting(false);
+        //NetworkInterfaceWrapper.WaitForNetworkConnecting();
+
+        m_InitTask = Task.Run(async () =>
         {
             /*
             if (!nns.npln.Common.TryOpenUser(out var userHandle))
@@ -527,43 +544,138 @@ public class LeaderboardClient : MonoBehaviour
                 return false;
             }*/
 
-            userContext = UserContext.Create(TENANT_ID_SOURCE, NsaIdTokenRetriever.Create(userHandle), UserConfig.CreateForPrearrangedUser(), nns.npln.Common.ExecutorHolder);
+            userContext = UserContext.Create(TENANT_ID_SOURCE, NsaIdTokenRetriever.Create(userHandle),
+                UserConfig.CreateForPrearrangedUser(0), nns.npln.Common.ExecutorHolder);
             /*
             // Leaderboardサービスを使用するNPLNユーザーの情報を登録します。
             if (!await SetUserDataAsync(userContext, "My User"))
             {
                 return false;
             }*/
-            
+
             return true;
         });
     }
 
-    public void SetLeaderboardScore(int score, int categoryID)
+    bool CheckServiceAccount()
+    {
+        var result = NetworkServiceAccount.EnsureAvailable(userHandle);
+        
+        while (NetworkServiceAccount.ResultNetworkServiceAccountUnavailable.Includes(result))
+        {
+            result = NetworkServiceAccount.EnsureAvailable(userHandle);
+        }
+        
+        if (!result.IsSuccess())
+        {
+            if (Account.ResultCancelledByUser.Includes(result))
+                nn.err.Error.Show(result, true);
+
+            return false;
+        }
+
+        return true;
+    }
+
+    public void SetLeaderboardScore()
+    {
+        if (!CheckServiceAccount())
+        {
+            SetLeaderboardScore();
+            return;
+        }
+        
+        NetworkInterfaceWrapper.EnterNetworkConnecting(false, true);
+        NetworkInterfaceWrapper.WaitForNetworkConnecting();
+        
+        if (NetworkInterfaceWrapper.IsNetworkAccepted())
+        {
+            m_LeaderboardTask = Task.Run(async () =>
+            {
+                if (!await SetUserDataAsync(userContext))
+                {
+                    return false;
+                }
+
+                if (!await SetScoreAsync(userContext, score, categoryID))
+                {
+                    return false;
+                }
+
+                if (!await GetFirstLeaderboardAsync(userContext, categoryID))
+                {
+                    return false;
+                }
+
+                if (!await GetNearLeaderboardAsync(userContext, categoryID))
+                {
+                    return false;
+                }
+                
+                NetworkInterfaceWrapper.LeaveNetworkConnecting();
+
+                return true;
+            });
+        }
+        else
+        {
+            UnableToConnect();
+        }
+    }
+    
+    public void SetLeaderboardScore(int _score, int _categoryID)
     {
         if(!m_InitTask.IsCompleted) return;
-        
-        m_LeaderboardTask = Task.Run(async () =>
+
+        if (!CheckServiceAccount())
         {
-            if (!await SetUserDataAsync(userContext))
+            //SetLeaderboardScore();
+            UnableToConnect();
+            return;
+        }
+        
+        NetworkInterfaceWrapper.EnterNetworkConnecting(false, true);
+        NetworkInterfaceWrapper.WaitForNetworkConnecting();
+        
+        if (NetworkInterfaceWrapper.IsNetworkAccepted())
+        {
+            m_LeaderboardTask = Task.Run(async () =>
             {
-                return false;
-            }
-            if (!await SetScoreAsync(userContext, score, categoryID))
-            {
-                return false;
-            }
-            if (!await GetFirstLeaderboardAsync(userContext, categoryID))
-            {
-                return false;
-            }
-            if (!await GetNearLeaderboardAsync(userContext, categoryID))
-            {
-                return false;
-            }
-            
-            return true;
-        });
+                if (!await SetUserDataAsync(userContext))
+                {
+                    return false;
+                }
+
+                if (!await SetScoreAsync(userContext, _score, _categoryID))
+                {
+                    return false;
+                }
+
+                if (!await GetFirstLeaderboardAsync(userContext, _categoryID))
+                {
+                    return false;
+                }
+
+                if (!await GetNearLeaderboardAsync(userContext, _categoryID))
+                {
+                    return false;
+                }
+                
+                NetworkInterfaceWrapper.LeaveNetworkConnecting();
+
+                return true;
+            });
+        }
+        else
+        {
+            UnableToConnect();
+        }
+    }
+
+    void UnableToConnect()
+    {
+        NetworkInterfaceWrapper.LeaveNetworkConnecting();
+        RankingManager.Instance.SetNoConnection();
     }
 
     void Update()

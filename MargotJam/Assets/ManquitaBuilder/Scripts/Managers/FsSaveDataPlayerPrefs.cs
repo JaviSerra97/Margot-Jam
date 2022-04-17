@@ -54,6 +54,7 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         {
             nn.Nn.Abort("Failed to open preselected user.");
         }
+        
         nn.Result result = nn.account.Account.GetUserId(ref userId, userHandle);
         result.abortUnlessSuccess();
         result = nn.fs.SaveData.Mount(mountName, userId);

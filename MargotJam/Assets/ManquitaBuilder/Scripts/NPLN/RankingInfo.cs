@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -16,7 +17,7 @@ public class RankingInfo : MonoBehaviour
     {
         rankingText.text = data.rank.ToString();
         nameText.text = data.displayName;
-        scoreText.text = data.score.ToString();
+        scoreText.text = data.score.ToString("N0");
 
         if (data.isUser)
         {

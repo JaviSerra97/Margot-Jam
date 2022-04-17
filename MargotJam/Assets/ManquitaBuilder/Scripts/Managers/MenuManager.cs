@@ -91,7 +91,7 @@ public class MenuManager : MonoBehaviour
 
     public void OnPlayButton()
     {
-        if (canInteract)
+        if (canInteract && !isOnSettings && !isOnHowTo && !isOnLevels)
         {
             EventSystem.current.SetSelectedGameObject(null);
             //ChangePanel(menuCanvas, levelsCanvas);
@@ -102,7 +102,7 @@ public class MenuManager : MonoBehaviour
 
     public void OnSettingsButton()
     {
-        if (canInteract && !isOnSettings)
+        if (canInteract && !isOnSettings && !isOnHowTo && !isOnLevels)
         {
             ChangePanel(buttonsPanel, settingsPanel);
             ChangePanel(buttonsHeader, settingsHeader);
@@ -121,7 +121,7 @@ public class MenuManager : MonoBehaviour
     }
     public void OnHowToButton()
     {
-        if(canInteract)
+        if(canInteract && !isOnSettings && !isOnHowTo && !isOnLevels)
         {
             isOnHowTo = true;
             HowToPanel.SetTrigger("Appear");

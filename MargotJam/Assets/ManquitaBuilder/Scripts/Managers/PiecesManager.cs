@@ -47,7 +47,7 @@ public class PiecesManager : MonoBehaviour
 
     private void Awake()
     {
-        input = GetComponent<PlayerInput>();
+        input = GetComponentInParent<PlayerInput>();
     }
 
     private void Start()
@@ -219,6 +219,7 @@ public class PiecesManager : MonoBehaviour
 
     void OnDropPiece()
     {
+        Debug.Log("Drop");
         if(Time.timeScale == 0){return;}
 
         if (canDropPiece)
@@ -230,14 +231,16 @@ public class PiecesManager : MonoBehaviour
 
     void OnRotatePiece()
     {
+        Debug.Log("Rotate");
         if(Time.timeScale == 0){return;}
 
         float v = input.actions["RotatePiece"].ReadValue<float>();
-        if (v > 0)
+        Debug.Log(v);
+        if (v > 0 && canDropPiece)
         {
             pieceDrop.TurnRight();
         }
-        else if (v < 0)
+        else if (v < 0 && canDropPiece)
         {
             pieceDrop.TurnLeft();
         }

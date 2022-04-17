@@ -63,19 +63,8 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "1a420690-fe8c-473e-a658-da106f96a86b",
-                    "path": "<NPad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "BackToMenu",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "1c4dcb22-f65c-4eff-8f92-c6329b0e30cc",
-                    "path": "<Gamepad>/buttonEast",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -228,41 +217,19 @@
                 },
                 {
                     "name": "",
-                    "id": "e3334836-960e-410d-8b15-bbe9060caead",
-                    "path": "<NPad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PlayLevel",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "0d12cbe2-8658-4fcf-a120-f88b0d7bd806",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "PlayLevel",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "5210729e-68f5-4f7c-bc44-e4df8ff78187",
-                    "path": "<NPad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PressButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "cc73b322-ad2c-48e4-a22d-f7c33ba6bef0",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
