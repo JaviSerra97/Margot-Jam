@@ -526,7 +526,7 @@ public class LeaderboardClient : MonoBehaviour
         if (!Instance)
             Instance = this;
         else
-            DestroyImmediate(this);
+            Destroy(this);
     }
     
     public void InitializeLeaderboard(nn.account.UserHandle user)

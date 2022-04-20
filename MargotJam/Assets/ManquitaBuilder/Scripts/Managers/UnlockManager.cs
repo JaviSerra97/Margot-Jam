@@ -37,12 +37,15 @@ public class UnlockManager : MonoBehaviour
     {
         //Unlock first level
         string key = "Level_" + unlocksList[0].id;
-        FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(key, 1);
+        if (PlayerPrefs.GetInt(key) != 1)
+        {
+            FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(key, 1);
+        }
 
         foreach (LevelState s in unlocksList)
         {
             //int state = FsSaveDataPlayerPrefs.Instance.LoadInt(s.id);
-            int state = PlayerPrefs.GetInt(s.id);
+            int state = PlayerPrefs.GetInt(s.id, 0);
 
             switch (state)
             {

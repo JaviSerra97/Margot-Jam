@@ -48,6 +48,7 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
     private void Start()
     {
         nn.account.Account.Initialize();
+        Debug.Log("Init");
         nn.account.UserHandle userHandle = new nn.account.UserHandle();
 
         if (!nn.account.Account.TryOpenPreselectedUser(ref userHandle))
@@ -60,11 +61,13 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         result = nn.fs.SaveData.Mount(mountName, userId);
         result.abortUnlessSuccess();
 
-        //InitializeSaveData();
-        Load();
+        InitializeSaveData();
+        //Load();
         
         UnlockManager.Instance.SetStatesOnStart();
+       
         LeaderboardClient.Instance.InitializeLeaderboard(userHandle);
+        Debug.Log("Leaderboard");
     }
     
     private void OnDestroy()
@@ -92,8 +95,9 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 
    private void InitializeSaveData()
     {
-#if !UNITY_SWITCH || UNITY_EDITOR
         /*
+#if !UNITY_SWITCH || UNITY_EDITOR
+        
         if (PlayerPrefs.HasKey(versionKey))
         {
             return;
@@ -101,12 +105,13 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         PlayerPrefs.SetInt(versionKey, saveDataVersion);
         PlayerPrefs.SetInt(counterKey, 0);
         PlayerPrefs.Save();
-        */
-#else
+        
+#else*/
         nn.fs.EntryType entryType = 0;
         nn.Result result = nn.fs.FileSystem.GetEntryType(ref entryType, filePath);
         if (result.IsSuccess())
         {
+            Load();
             return;
         }
         if (!nn.fs.FileSystem.ResultPathNotFound.Includes(result))
@@ -114,8 +119,8 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
             result.abortUnlessSuccess();
         }
 
-        PlayerPrefs.SetInt(versionKey, saveDataVersion);
-        PlayerPrefs.SetInt(counterKey, 0);
+        //PlayerPrefs.SetInt(versionKey, saveDataVersion);
+        //PlayerPrefs.SetInt(counterKey, 0);
         byte[] data = UnityEngine.Switch.PlayerPrefsHelper.rawData;
         long saveDataSize = data.LongLength;
 
@@ -124,7 +129,7 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
 
         result = nn.fs.File.Create(filePath, saveDataSize);
         result.abortUnlessSuccess();
-
+/*
         result = nn.fs.File.Open(ref fileHandle, filePath, nn.fs.OpenFileMode.Write);
         result.abortUnlessSuccess();
 
@@ -135,10 +140,10 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         nn.fs.File.Close(fileHandle);
         result = nn.fs.FileSystem.Commit(mountName);
         result.abortUnlessSuccess();
-
+*/
         // Nintendo Switch Guideline 0080
         UnityEngine.Switch.Notification.LeaveExitRequestHandlingSection();
-#endif
+//#endif
     }
 
     private void SavePlayerPrefs()
