@@ -67,7 +67,8 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         UnlockManager.Instance.SetStatesOnStart();
        
         LeaderboardClient.Instance.InitializeLeaderboard(userHandle);
-        Debug.Log("Leaderboard");
+        
+        AudioManager.Instance.SetSliders();
     }
     
     private void OnDestroy()
@@ -144,6 +145,8 @@ public class FsSaveDataPlayerPrefs : MonoBehaviour
         // Nintendo Switch Guideline 0080
         UnityEngine.Switch.Notification.LeaveExitRequestHandlingSection();
 //#endif
+
+        UnlockManager.Instance.UnlockFirstLevel();
     }
 
     private void SavePlayerPrefs()

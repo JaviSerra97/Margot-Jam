@@ -48,6 +48,10 @@ public class PiecesManager : MonoBehaviour
     private void Awake()
     {
         input = GetComponentInParent<PlayerInput>();
+
+        spawnPoint = GameObject.Find("PiecesSpawnPoint").transform;
+        LeftCollider = GameObject.Find("LeftScreenLimits").transform;
+        RightCollider = GameObject.Find("RightScreenLimits").transform;
     }
 
     private void Start()
@@ -67,6 +71,8 @@ public class PiecesManager : MonoBehaviour
 
     private void InitCamera()
     {
+        MainCamera = Camera.main;
+        
         _lerpCurrentValue = 0;
         MainCamera.transform.position = new Vector3(MainCamera.transform.position.x, StartY, -10f);
         MainCamera.orthographicSize = StartOrtho;

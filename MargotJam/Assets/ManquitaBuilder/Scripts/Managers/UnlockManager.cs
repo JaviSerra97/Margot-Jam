@@ -32,16 +32,18 @@ public class UnlockManager : MonoBehaviour
         }
         #endregion
     }
-    
-    public void SetStatesOnStart()
+
+    public void UnlockFirstLevel()
     {
-        //Unlock first level
         string key = "Level_" + unlocksList[0].id;
         if (PlayerPrefs.GetInt(key) != 1)
         {
             FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(key, 1);
         }
-
+    }
+    
+    public void SetStatesOnStart()
+    {
         foreach (LevelState s in unlocksList)
         {
             //int state = FsSaveDataPlayerPrefs.Instance.LoadInt(s.id);

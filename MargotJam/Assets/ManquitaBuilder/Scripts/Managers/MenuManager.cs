@@ -118,6 +118,8 @@ public class MenuManager : MonoBehaviour
         ChangePanel(settingsHeader, buttonsHeader);
         buttonsPanel.GetComponentInChildren<Button>().Select();
         isOnSettings = false;
+        
+        AudioManager.Instance.CheckSettings();
     }
     public void OnHowToButton()
     {

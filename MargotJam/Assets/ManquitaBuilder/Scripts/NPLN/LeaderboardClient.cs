@@ -521,6 +521,8 @@ public class LeaderboardClient : MonoBehaviour
     private Task<bool> m_LeaderboardTask;
     private bool m_SampleCompleted;
 
+    private bool hasToken;
+    
     void Awake()
     {
         if (!Instance)
@@ -557,26 +559,82 @@ public class LeaderboardClient : MonoBehaviour
         });
     }
 
-    bool CheckServiceAccount()
+
+    IEnumerator CheckServiceAccount()
     {
-        var result = NetworkServiceAccount.EnsureAvailable(userHandle);
+        NetworkInterfaceWrapper.EnterNetworkConnecting(false, true);
+        NetworkInterfaceWrapper.WaitForNetworkConnecting();
         
-        while (NetworkServiceAccount.ResultNetworkServiceAccountUnavailable.Includes(result))
-        {
-            result = NetworkServiceAccount.EnsureAvailable(userHandle);
-        }
-        
-        if (!result.IsSuccess())
-        {
-            if (Account.ResultCancelledByUser.Includes(result))
-                nn.err.Error.Show(result, true);
+        var linkedAccountCheckResult = NetworkServiceAccount.EnsureAvailable(userHandle);
 
-            return false;
+        while (NetworkServiceAccount.ResultNetworkServiceAccountUnavailable.Includes(linkedAccountCheckResult))
+        {
+            linkedAccountCheckResult = NetworkServiceAccount.EnsureAvailable(userHandle);
         }
 
-        return true;
+        if (!linkedAccountCheckResult.IsSuccess())
+        {
+            if (Account.ResultCancelledByUser.Includes(linkedAccountCheckResult))
+            {
+                UnableToConnect();
+                nn.err.Error.Show(new Result(124, 200));
+                yield break;
+            }
+        }
+
+        AsyncContext async = new AsyncContext();
+        var ensureIdTokenResult = NetworkServiceAccount.EnsurIdTokenCacheAsync(async, userHandle);
+
+        if (ensureIdTokenResult.IsSuccess())
+        {
+            bool finished = false;
+            while (!finished)
+            {
+                yield return null;
+                async.HasDone(ref finished);
+            }
+
+            var asyncResult = async.GetResult();
+            if (asyncResult.IsSuccess())
+            {
+                NetworkFunctions();
+
+                ulong size = NetworkServiceAccount.IdTokenLengthMax;
+                byte[] buffer = new byte[NetworkServiceAccount.IdTokenLengthMax];
+                Result loadIdTokenCacheResult =
+                    NetworkServiceAccount.LoadIdTokenCache(ref size, buffer, userHandle);
+
+                if (loadIdTokenCacheResult.IsSuccess())
+                {
+                    yield break;
+                }
+            }
+            else
+            {
+                if (NetworkServiceAccount.ResultNetworkServiceAccountUnavailable.Includes(asyncResult))
+                {
+                    NetworkServiceAccount.EnsureAvailable(userHandle);
+                }
+                else if (Account.ResultCancelledByUser.Includes(asyncResult))
+                {
+                    UnableToConnect();
+                    nn.err.Error.Show(new Result(124, 200));
+                    yield break;
+                }
+                else if (NetworkServiceAccount.ResultNetworkCommunicationError.Includes(asyncResult))
+                {
+                    UnableToConnect();
+                    nn.err.Error.Show(asyncResult);
+                    yield break;
+                }
+            }
+        }
+
+        NetworkFunctions();
     }
 
+
+    /*
     public void SetLeaderboardScore()
     {
         if (!CheckServiceAccount())
@@ -621,22 +679,27 @@ public class LeaderboardClient : MonoBehaviour
         {
             UnableToConnect();
         }
-    }
+    }*/
     
     public void SetLeaderboardScore(int _score, int _categoryID)
     {
         if(!m_InitTask.IsCompleted) return;
 
-        if (!CheckServiceAccount())
+        score = _score;
+        categoryID = _categoryID;
+
+        StartCoroutine(CheckServiceAccount());
+    }
+
+    void NetworkFunctions()
+    {/*
+        if (!hasToken)
         {
             //SetLeaderboardScore();
             UnableToConnect();
             return;
-        }
-        
-        NetworkInterfaceWrapper.EnterNetworkConnecting(false, true);
-        NetworkInterfaceWrapper.WaitForNetworkConnecting();
-        
+        }*/
+
         if (NetworkInterfaceWrapper.IsNetworkAccepted())
         {
             m_LeaderboardTask = Task.Run(async () =>
@@ -646,17 +709,17 @@ public class LeaderboardClient : MonoBehaviour
                     return false;
                 }
 
-                if (!await SetScoreAsync(userContext, _score, _categoryID))
+                if (!await SetScoreAsync(userContext, score, categoryID))
                 {
                     return false;
                 }
 
-                if (!await GetFirstLeaderboardAsync(userContext, _categoryID))
+                if (!await GetFirstLeaderboardAsync(userContext, categoryID))
                 {
                     return false;
                 }
 
-                if (!await GetNearLeaderboardAsync(userContext, _categoryID))
+                if (!await GetNearLeaderboardAsync(userContext, categoryID))
                 {
                     return false;
                 }
@@ -671,7 +734,7 @@ public class LeaderboardClient : MonoBehaviour
             UnableToConnect();
         }
     }
-
+    
     void UnableToConnect()
     {
         NetworkInterfaceWrapper.LeaveNetworkConnecting();

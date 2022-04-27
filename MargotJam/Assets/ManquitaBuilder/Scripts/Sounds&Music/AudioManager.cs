@@ -27,18 +27,38 @@ public class AudioManager : MonoBehaviour
     public static string MUSIC_VOLUME_TAG = "MusicVolume";
     public static string SFX_VOLUME_TAG = "EffectVolume";
 
+    private float musicVolume;
+    private float effectsVolume;
+    
+    public bool valueChanged;
+    private bool init;
+    
     private void Awake()
     {
         Instance = this;
         MusicSlider.onValueChanged.AddListener(setMusicVolume);
         SFXSlider.onValueChanged.AddListener(setEffectVolume);
+
+        init = false;
     }
 
     void Start()
     {
-        Invoke(nameof(SetSliders), 2f);
+        SetSliders();
+        //Invoke(nameof(SetSliders), 2f);
     }
 
+    public void CheckSettings()
+    {
+        if (valueChanged)
+        {
+            valueChanged = false;
+            
+            FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(MUSIC_VOLUME_TAG, musicVolume);
+            FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(SFX_VOLUME_TAG, effectsVolume);
+        }
+    }
+    
 
     #region Audio Mixer
     public void setGeneralVolume(float v)
@@ -51,30 +71,47 @@ public class AudioManager : MonoBehaviour
     {
         v = Mathf.Clamp(v, 0.001f, Mathf.Infinity);
         Mixer.SetFloat(MUSIC_VOLUME_TAG, Mathf.Log10(v) * 20);
-        FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(MUSIC_VOLUME_TAG,v);
+        //FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(MUSIC_VOLUME_TAG,v);
+        musicVolume = v;
+        
+        if (init)
+        {
+            valueChanged = true;
+        }
     }
 
     public void setEffectVolume(float v)
     {
         v = Mathf.Clamp(v, 0.001f, Mathf.Infinity);
         Mixer.SetFloat(SFX_VOLUME_TAG, Mathf.Log10(v) * 20);
-        FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(MUSIC_VOLUME_TAG, v);
+        //FsSaveDataPlayerPrefs.Instance.SetPlayerPrefs(SFX_VOLUME_TAG, v);
+        effectsVolume = v;
+        
+        if (init)
+        {
+            valueChanged = true;
+        }
     }
     #endregion
 
     #region SLIDERS
 
-    private void SetSliders()
+    public void SetSliders()
     {
         //Mixer.GetFloat(MUSIC_VOLUME_TAG, out _sliderValue); // Quitar comentario para volver a lo anterior
         _sliderValue = PlayerPrefs.GetFloat(MUSIC_VOLUME_TAG); // Comentar para volver a lo anterior
         Mixer.SetFloat(MUSIC_VOLUME_TAG, Mathf.Log10(_sliderValue) * 20); // Comentar para volver a lo anterior
-        MusicSlider.value = LogConversion(_sliderValue);
+        //MusicSlider.value = LogConversion(_sliderValue);
+        MusicSlider.value = _sliderValue;
+        
 
         //Mixer.GetFloat(SFX_VOLUME_TAG, out _sliderValue); // Quitar comentario para volver a lo anterior
         _sliderValue = PlayerPrefs.GetFloat(SFX_VOLUME_TAG); // Comentar para volver a lo anterior
         Mixer.SetFloat(SFX_VOLUME_TAG, Mathf.Log10(_sliderValue) * 20); // Comentar para volver a lo anterior
-        SFXSlider.value = LogConversion(_sliderValue);
+        //SFXSlider.value = LogConversion(_sliderValue);
+        SFXSlider.value = _sliderValue;
+
+        init = true;
     }
 
 
